@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Classes: Taxonomy</title>
+		<link rel="stylesheet" type="text/css" href="../front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Archive Classes: Taxonomy</h1>
+				<p>Looking at <a href="#supertypes">supertypes</a>, <a href="#types">types</a>, and <a href="#modifiers">modifiers</a>.</p>
+				<h2 id="supertypes">Classes: Supertypes</h2>
+				<p>There are four concrete supertype classes and one <a href="#interactions">abstract</a> supertype class.</p>
+				<ul>
+				  <li><a href="#region">.region</a></li>
+				  <li><a href="#group">.group</a></li>
+				  <li><a href="#zone">.zone</a></li>
+				  <li><a href="#actions">.actions</a></li>
+				  <li><a href="#interactions">.interactions</a></li>
+				</ul>
+				<p>Let's expand those supertypes:
+				<ul>
+				  <li id="region">.region
+				    <ul>
+				      <li>#header</li>
+				      <li>#dashboard</li>
+				      <li>#main</li>
+				      <li>#footer</li>
+				    </ul>
+				  </li>
+				  <li id="group">.group <a href="#note1">*</a>
+				    <ul>
+				      <li><a href="pattern-index.html">.index</a></li>
+				      <li><a href="listbox.html">.listbox</a></li>
+				      <li><a href="meta.html">.meta</a></li>
+				      <li><a href="blurb.html">.blurb</a></li>
+				      <li><a href="preface.html">.preface</a></li>
+				      <li><a href="comments.html">.comments</a></li>
+				      <li><a href="stats.html">.stats</a></li>
+			      </ul>
+				  </li>
+				  <li id="zone">.zone [IN DEVELOPMENT]
+				    <ul>
+				      <li>.system
+				        <ul>
+				          <li>.splash also #home [PLS MERGE]</li>
+				          <li>.sessions</li>
+				          <li>.docs</li>
+				          <li>.comms</li>
+				        </ul>
+				      </li>
+				      <li>.home
+				        <ul><li><a href="types.html#objects">objects</a></li></ul></li></li>
+				        </li>
+				      <li>.searchbrowse</li>
+				      <li>.tags</li>
+				      <li>.translation</li>
+				    </ul>
+			    </li>
+			    <li id="actions"><a href="actions.html">.actions</a>
+			      <ul>
+			        <li>.navigation</li>
+			        <li>.pagination</li>
+			        <li>.button</li>
+			        <li>.action</li>
+			      </ul>
+			    </li>
+			    <li id="interactions">Also, the <em>abstract</em> supertype <a href="interactions.html">interactions</a>. By abstract, we mean those form elements don't have this class written into the views, but we think of them as belonging to the interactions class.</li>
+          </ul>
+          <p>There are also these nulls, set in <code>types-groups.css</code>, which are .groups and #regions, but do not have patterns or a lot of layout. They can be useful for skins.</p>
+  				<ul>
+  				  <li>.module</li>
+  				  <li>.wrapper</li>
+  				  <li>#outer</li>
+  				  <li>#inner</li>
+  				</ul>
+				<h2 id="types">Classes: Types</h2>
+				<p>We can divide types into these abstract classes:</p>
+				<ul>
+					<li><a href="#objects">object</a></li>
+					<li><a href="#data">data</a></li>
+				</ul>
+				<p>Let's expand those:
+				<ul>
+					<li id="objects">object
+						<ul>
+							<li>.user</li>
+							<li>.work
+								<ul>
+									<li>.series
+										<ul>
+											<li>.part</li>
+										</ul>
+									</li>
+									<li>.chapter</li>
+								</ul>
+							</li>
+							<li>.bookmark
+								<ul>
+									<li><a href="modifiers.html">.rec</a></li>
+								</ul>
+							</li>
+							<li>.skin</li>
+							<li>.tags
+								<ul>
+									<li>.tag
+										<ul>
+											<li>.freeform</li>
+										</ul>
+									</li>
+									<li>.required-tags (these are the oldest part of the codebase; we're basically stuck with them and can't strictly follow the taxonomy; so in some places we have hyphenated (<cite>rating-explicit</cite>) and other idiosyncratic names)
+										<ul>
+											<li>.rating
+												<ul>
+													<li>general-audience</li>
+													<li>teen</li>
+													<li>mature</li>
+													<li>explicit</li>
+													<li>notrated and none</li>
+												</ul>
+											</li>
+											<li>.category, which is equal to .relationships
+												<ul>
+													<li>femslash</li>
+													<li>gen</li>
+													<li>het</li>
+													<li>slash</li>
+													<li>multi</li>
+													<li>other</li>
+													<li>none</li>
+												</ul>
+											</li>
+											<li>.warning also sometimes .warnings
+												<ul>
+													<li>yes</li>
+													<li>no and none</li>
+													<li>choosenotto and eschewed</li>
+													<li>.death</li>
+													<li>.noncon</li>
+													<li>.underage</li>
+												</ul>
+											</li>
+											<li>abstract "status", which is like <a href="modifiers.html#states">modifiers</a>
+											<ul>
+												<li>external and external-work</li>
+												<li>.iswip</li>
+												<li>complete and complete-yes</li>
+												<li>incomplete and complete-no</li>
+											</ul>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>.tagset
+								<ul>
+									<li>.nomination</li>
+								</ul>
+							</li>
+							<li>.collection
+								<ul>
+									<li>.challenge</li>
+									<li>.item</li>
+									<li>.prompt [IN REVIEW]</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li id="data">data
+						<ul>
+							<li>.heading</li>
+							<li>.title</li>
+							<li>.byline</li>
+							<li>.datetime</li>
+							<li>.news</li>
+							<li>.notes</li>
+							<li>.footnote</li>
+							<li>.summary</li>
+							<li>.toc</li>
+							<li>.faq</li>
+							<li>.rules</li>
+							<li>.intro</li>
+							<li>.count</li>
+							<li><a href="modifiers.html#states">.status</a></li>
+							<li>.notice</li>
+							<li>.error</li>
+							<li>.icon</li>
+							<li>.symbol</li>
+							<li>.question [IN REVIEW]</li>
+							<li>.alphabet
+							  <ul><li>.letter</li></ul>
+							</li>
+							<li>.media
+							  <ul>
+							    <li>.medium</li>
+							  </ul>
+							</li>
+						</ul>
+					</li>
+					<h2 id="modifiers">Classes: Modifiers</h2>
+					<p>Modifiers can be grouped into these abstract classes:</p>
+					<ul>
+						<li>roles</li>
+						<li>states</li>
+						<li>contexts</li>
+						<li>abilities</li>
+						<li>modes</li>
+					</ul>
+					<p>Let's expand those abstracts and list the concrete classes we have in the codebase:</p>
+					<ul>
+						<li>roles
+							<ul>
+								<li>.wrangler</li>
+								<li>.translator</li>
+								<li>.user</li>
+								<li>.visitor</li>
+								<li>.admin</li>
+								<li>.participant also .member also .requester also pos .prompter [IN REVIEW]</li>
+								<li>.pinch-hitter</li>
+								<li>.mod</li>
+								<li>.owner</li>
+							</ul>
+						</li>
+						<li id="states">states
+						<ul>
+							<li><a href="actions.html">.current</a></li>
+							<li>.hidden</li>
+							<li>.public</li>
+							<li>.private</li>
+							<li>.mystery</li>
+							<li>.important</li>
+							<li>.caution</li>
+							<li>.required</li>
+							<li>.latest also .recent [PLS MERGE]</li>
+							<li>.open</li>
+							<li>.closed</li>
+							<li>abstract "pending"
+							<ul>
+								<li>draft</li>
+								<li>preview</li>
+								<li>unreviewed</li>
+								<li>unread</li>
+								<li>unfulfilled</li>
+								<li>unwrangled</li>
+							</ul>
+							<li>abstract "completed"
+								<ul>
+									<li>reviewed</li>
+									<li>read</li>
+									<li>replied</li>
+									<li>claimed</li>
+									<li>posted</li>
+								</ul>
+							</li>
+							<li>abstract "relationship" 
+								<ul>
+									<li>.child</li>
+									<li>.parent</li>
+									<li>.synonym</li>
+									<li>.meta (tag)</li>
+									<li>.canonical</li>
+									<li>.own</li>
+								</ul>
+							</li>
+							<li>contexts
+								<ul>
+									<li>.dashboard</li>
+									<li>.primary</li>
+									<li>.secondary</li>
+									<li>.tertiary</li>
+									<li>.start</li>
+									<li>.end</li>
+								</ul>
+							</li>
+							<li>abilities (interactions)
+								<ul>
+									<li>.draggable</li>
+									<li>.droppable</li>
+									<li>.sortable</li>
+									<li>.dynamic</li>
+									<li>.expandable</li>
+								</ul>
+							</li>
+							<li>modes [IN DEVELOPMENT mainly concerned with interactions]
+								<ul>
+									<li>.simple</li>
+									<li>.brief</li>
+									<li>.verbose</li>
+								</ul>
+							</li>
+						</ul>
+						<h2 id="travellers">Travellers</h2>
+						<p>Index is the most used example of the polyvalent "types or states of groups"</p>
+						<ul>
+							<li>.index</li>
+							<li>.tree</li>
+							<li>.cloud</li>
+						</ul>
+						<hr />
+						<h3>Notes</h3>
+						<p id="note1">obviously not unclassed blocks like div,ol,ul,dl but arguably also table <a href="#groups">back up</a></p>
+						<h5>Back</h5>
+						<p>Return to the <a href="./index.html">documentation index</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

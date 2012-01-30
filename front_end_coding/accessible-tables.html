@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Coding Standards</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Coding an Accessible Table</h1>
+				<p>We don't use a ton of tables in the archive, but it's worth knowing how to write them well. A table is the right way to mark up three or more pieces of information in a matrix for cross referencing.
+				</p>
+				<h2>Structure</h2>
+				<code><pre>
+&lt;table summary="Explain what the table does, 
+list the data types it shows, 
+and what you can do with them"&gt;
+	&lt;caption&gt;Ten words or fewer!&lt;/caption&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th scope="col"&gt;Heading&lt;/th&gt;
+			&lt;th scope="col"&gt;Heading&lt;/th&gt;
+			&lt;th scope="col"&gt;Heading&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th scope="row" colspan="2"&gt;Whole table operator&lt;/th&gt;
+			&lt;td&gt;&lt;input type="submit"&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;th scope="row"&gt;Row Heading&lt;/th&gt;
+			&lt;td&gt;Value&lt;/td&gt;
+			&lt;td&gt;Value&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+				</pre></code>
+				<h3>Some tags in detail</h3>
+				<dl>
+				<dt><code>&lt;table <em>summary</em></code></dt>
+				<dd><p>It's really useful to summarise what the table does, and what sort of things it displays. Your summary is a "table glance"; it's useful to users of screenreaders, and it's useful for developers in two key ways: (1) so it's not necessary to load a view and put in data to know what it shows, and (2) so you can test the table does what it is meant to do!</p>
+				  <h5>An example summary from AO3</h5>
+				  <p><q>This table shows the participants in your collection; you can change their roles, remove participants and add new ones</q></p></dd>
+				<dt><code>&lt;caption</code></dt>
+				<dd><p>Unlike summary, captions are visible on the page. Ours are hidden in our default style, but can be shown with skins.</p>
+				<p>A caption should be really <em>short</em> and written in <em>simple</em> language. You can copy from the .landmark heading if there is one in the view already. Captions can be very useful to people with cognitive disabilities, and people browsing on small screens and phones, amongst others.</p>
+				</dd> 
+				<dt><code>&lt;thead</code></dt>
+				<dd>Group your main headings in a thead. You can have multiple rows <code>&lt;tr&gt;</code> in a thead, so you can further group your headings in more complicated tables.</dd>
+				<dt><code>&lt;th scope="col</code></dt>
+				<dd><p>It's important to <strong>scope your headings</strong>, so user agents can tell what heading relates to what part of the table. A scope is a direction. It's obvious when you look at a heading that the bold word above the normal weight word is the heading for that column, but it's not always obvious to a screenreader what heading relates to what. Some user agents announce the relevant headings before every td, which can really help non visual spatial navigation.</p></dd>
+				<dt><code>&lt;tfoot</code></dt>
+				<dd><p>It's really weird that the foot comes before the body! It's so that with a really long table, a user agent can print the head and foot to the page and then scroll or paginate the body, and possibly progressively load it.</p>
+				<p>You don't always need a tfoot, but if you have a "check all" or a final "submit" table row? This is where those things should go.</p>
+				</dd>
+				<dt><code>&lt;tbody</code></dt>
+				<dd><p>This where the main content of your table lives; it's probably where you're used to a table beginning if you've used tables before, but for us it comes a way down the markup.</p>
+				</dd>
+				<dt><code>&lt;th scope="row</code></dt>
+				<dd><p>In most of our tables, a row begins with a username, or a work title, or some other kind of object name. It's important to organise tables this way, like with all our markup: first we name something, and then we show it. We mark this up as a row heading as well.</p></dd>
+				</dl>
+				<h3>Things to Remember</h3>
+				<p>We don't ever use tables just for layout.</p>
+				<p>If a table just shows two kinds of data, or "paired" data, it's probably a definition list masquerading as a table and should be rewritten. Most of our user-facing <a href="forms.html">forms</a> are definition lists.</p>
+				<p>If a table is gigantic and filled with loads of things listed in a row stretching off the screen, like, name, date, tags, summary, user actions, it's <a href="blurb.html">a blurb</a> confused about itself and should be rewritten.</p>
+				<p>If you can't read and understand what a table does in the markup, it's probably confusing and inaccessible to a user. Fix it!</p>
+				<p>If you want to check your work against some real examples, there are lots of tables in the admin views; a lot of admin work is managing tabular data.</p>
+			<hr />
+			<table summary="Explain what the table does, 
+      list the data types it shows, 
+      and what you can do with them">
+      	<caption>Ten words or fewer!</caption>
+      	<thead>
+      		<tr>
+      			<th scope="col">Heading</th>
+      			<th scope="col">Heading</th>
+      			<th scope="col">Heading</th>
+      		</tr>
+      	</thead>
+      	<tfoot>
+      		<tr>
+      			<th scope="row" colspan="2">Whole table operator</th>
+      			<td><input type="submit"></td>
+      		</tr>
+      	</tfoot>
+      	<tbody>
+      		<tr>
+      			<th scope="row">Row Heading</th>
+      			<td>Value</td>
+      			<td>Value</td>
+      		</tr>
+      	</tbody>
+      </table>
+      <h4>Going further with tables</h4>
+      <p>Our tables generally show lots of data, and not all text-to-speech agents support <code>scope</code>; we are considering titling our <code>td</code>s in addition to scoping columns and rows, so users always know what property a table value relates to. It's not clear whether this is useful or annoying. At the moment, there are some pilot tables which are both scoped and titled, in tag wrangling, our most used tabular data views. It would be very useful for someone to research this. If you use a screenreader regularly, your input is especially desired.</p>
+      <ul>
+        <li><a href="http://www.usability.com.au/resources/tables.cfm">Accessible Data Tables</a></li>
+        <li><a href="http://joeclark.org/book/sashay/serialization/Chapter10.html">Joe Clark, Tables and Frames</a></li>
+        <li><a href="http://www.w3.org/TR/html4/struct/tables.html">W3C Tables Spec.</a></li>
+        <li><a href="http://www.w3schools.com/html/html_tables.asp">W3C Schools: Tables</a></li>
+      </ul>
+      </div>
+								<p><a href="index.html">&larr; Back</a></p>
+								</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pattern: Preface</title>
+		<link rel="stylesheet" type="text/css" href="../front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Design Pattern: Preface</h1>
+				<p>Preface groups together user notes about a work, collection, or challenge. It's a bit like <a href="listbox.html">listbox</a>, but it has some differences: preface always contains a blockquote. Modules that are grouped in preface include: summary, notes, end notes, faq, rules, about, description. On a work page, preface is inside #workskin, so it can be styled in workskins as well as site skins.
+				</p>
+				<p>The present preface style is declared in <cite>group-preface.css</cite></p>
+				<h2>preface HTML Structure</h2>
+				<h3>Quick Ref: <code>[always] {sometimes}</code></h3>
+				<p></p><pre>[preface]
+	{title heading} {byline heading}
+	[block module]
+	  [heading] {span actions}[/heading]
+	  [blockquote userstuff]
+	  {p note} {ul actions}
+	[block module]
+[/preface]
+</pre>
+				<p></p>
+				<h3>Rules</h3>
+				<p>Preface can be any block containing a child that can contain these blocks: <code>h1&#8212;6, p, div, ul, ol, dl, blockquote</code>. Normally it's a div.</p>
+				<p>Preface can have lots of child modules. You can have a preface with restricted children: <code>table.preface, ol, ul, or dl.preface</code>, so long as the block children are given the module class.</p>
+				<p>You can <strong>never</strong> have an inline preface, or a phrase element preface.</p>
+				<h3>preface XHTML Diagram (example)</h3>
+				<ol class="diagram" id="prefacehtml">
+					<li><code>&lt;div class="preface"></code>
+						<ol>
+						  <li><code>&lt;div class="faq module"></code>
+						    <ol>
+							<li><code>&lt;h3 class="heading">FAQ</code>
+								<ol>
+									<li><code>&lt;span class="action"></code>
+										<ol>
+											<li><code>&lt;a class="open">&darr;&lt;/a></code></li>
+										</ol>
+										<code>&lt;/span></code>
+									</li>
+								</ol>
+								<code>&lt;/h3></code>
+							</li>
+							<li><code>&lt;blockquote class="userstuff"></code>
+								<ol>
+									<li><code>&lt;p>...&lt;/p></code></li>
+							  </ol>
+							</li>
+							<code>&lt;/blockquote></code>
+						</li>
+					</ol>
+				</li>
+					<code>&lt;/div></code>
+				</li>
+			</ol>
+		</li> 
+	</li>		</ol>
+					</li>
+				</ol>
+				<h5>Back</h5>
+				<p>Return to the <a href="./index.html">documentation index</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

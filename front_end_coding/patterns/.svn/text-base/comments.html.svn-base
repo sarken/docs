@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pattern: Comments</title>
+		<link rel="stylesheet" type="text/css" href="../front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+  		<div class="article">
+  			<h1>Design Pattern: Comments</h1>
+  			<p>WIP 21/10/2011</p>
+  			<p>The present comments style is declared in <code>comments.css</code>. They are a <a href="supertypes.html#group">group</a>.</p>
+  			<h2 id="comments">Comments</h2>
+  			<p>Comments can be alone http://../works/comments or at the end of a work view http://../works/1234#comments. They thread, so this diagram shows some variations.</p>
+  			<ol class="diagram">
+
+  						<li>div #comments_placeholder
+  							<ol>
+  								<li>ol .thread
+  									<ol>
+  										<li class="emphasise">li .comment .odd
+  											<ol>
+  												<li>h4 <span>a</span></li>
+  												<li>div .icon <span>img .icon</span></li>
+  												<li>blockquote .userstuff</li>
+  												<li>p .datetime</li>
+  												<li>h5 .landmark</li>
+  												<li>ul .navigation
+  													<ol>
+  														<li>li <span>a</span></li>
+  													</ol>
+  												</li>
+  											</ol>
+  										</li>
+  										<li>li .comment .even ...</li>
+  										<li>li .comment .odd
+  											<ol>
+  												<li>ol .thread
+  													<ol>
+  														<li>li .comment .even...
+  															<ol>
+  																<li>ol .thread
+  																	<ol>
+  																		<li>li .comment .odd...</li>
+  																		<li>li .comment .even...</li>
+  																		<li>li .comment .odd...
+  																			<ol>
+  																				<li>ol .thread
+  																					<ol>
+  																						<li>li .comment .even</li>
+  																					</ol>
+  																				</li>
+  																			</ol>
+  																		</li>
+  																	</ol>
+  																</li>
+  															</ol>
+  														<li>li .comment .odd...</li>
+  														<li>li .comment .even</li>
+  													</ol>
+  												</li>
+  											</ol>
+  										</li>
+  										<li>li .comment .even...</li>
+
+
+  									</ol>
+  								</li>
+
+  							</ol>
+
+				<p>Return to the <a href="./index.html">documentation index</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

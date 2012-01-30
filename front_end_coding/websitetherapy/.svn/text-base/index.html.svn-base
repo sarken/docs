@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Website Therapy</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+<h1><a href="http://transformativeworks.org" id="logo"><img src="images/logo.png" alt="OTW" /></a> <a href="index.html">websitetherapy</a></h1>
+<ol class="navigation" role="navigation">
+<li><a href="one.html">1</a></li>
+<li><a href="two.html">2</a></li>
+<li><a href="three.html">3</a></li>
+<li><a href="four.html">4</a></li>
+<li><a href="five.html">5</a></li>
+<li><a href="six.html">6</a></li>
+<li><a href="seven.html">7</a></li>
+<li><a href="eight.html">8</a></li>
+<li><a href="nine.html">9</a></li>
+</ol>
+<div id="content">
+<h2>a new hope</h2>
+<p>Come in, kick your shoes off. Brew some coffee.</p>
+<p>Take a <a href="http://www.google.co.uk/search?q=how+screenshot+vista">screenshot</a> of your webpage to remind you where you started. Grab some software from the <a href="resources.html">resources</a>. Log on to #otw and say hi. </p>
+</div>
+		<ul class="navigation" id="footer">
+			<li><a href=""></a></li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<html>
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css"><!--
+/*MEYERS RESET.***********************************************do not edit */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, 
+em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td	
+{ border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; list-style: none; margin: 0; padding: 0; }
+/************************************************end of uneditable rules */
+
+/* GLOBAL RULES. 
+See internal wiki "Em scale" to grok the font sizing and measures. body p set to 14px.
+Colours:
+red:	#900 (otw brand red)
+white:	#fffef9 (off-white)
+blacks:	#111, #222 (links, text)
+greys:	#ddd, #ccc, #bbb, #999, #777, #333 (borders, backgrounds, reverse text)
+plus system messages in system-messages.css (red, yellow, green, blue)
+*/
+
+@font-face	{ font-family: "Fertigo"; src: url(Fertigo.otf); }
+
+body	{ background: #fffef9; color: #222; font: 100%/1.125 Candara, Corbel, Geneva, Verdana, Tahoma, Helvetica, Arial, sans-serif; }
+
+a, a:link	{ color: #222; }
+a:hover	{ color: #999; }
+a:focus { background:#900; color:#fffef9}
+a:visited	{ color: #777; }
+a img	{ border: 0; }
+a.tag	{ color: #111; text-decoration:none; padding: 0 0.125em; border-bottom:1px dotted; }
+a.tag:hover	{ background: #900; color: #fffef9; }
+
+body p	{ font-size: 0.875em; line-height: 1.286; margin: 0.643em 0; }
+
+h1, h2, h3, h4, h5, h6	{ font-family: Fertigo, Cambria, Constantia, Palatino, Georgia, sans-serif; font-weight: 400;}
+h1	{ font-size: 2.25em; line-height: 0.5; margin: 1.125em 0 0.875em; }
+h2	{ font-size: 1.5em; line-height: 1; margin: .75em 0; }
+h3	{ font-size: 1.125em; line-height: 1; margin: .5625em 0; }
+h4	{ font-size: 1em; line-height: 1.125; margin:0.5625em 0; }
+h5	{ font-size: 0.75em; line-height: 1.5; margin: .375em 0; }
+h6	{ font-size: 0.625em; line-height: 1.8; margin: .3125em 0; }
+
+hr	{ margin: 0.75em auto; border-bottom: 3px double; }
+hr.clear, .clearboth	{ clear: both; height: 0; border: 0; }
+
+blockquote, pre	{ font: 100 1em/1.125 Corbel, Geneva, Verdana, Tahoma, Helvetica, Arial, sans-serif; margin: 1.5em; }
+kbd, tt, code	{ font: normal 0.75em consolas, courier, monospace; margin: auto; padding: 0.25em; }
+strong, b, .important	{ font-weight: 900; }
+em, cite, i	{ font-style: oblique; }
+cite em, em cite, cite i, i cite, i em, em i, em em, i i, cite cite	{ font-style: normal; }
+em cite, i cite	{ text-decoration: underline; }
+abbr, acronym	{ font-variant: small-caps; cursor: help; }
+
+/* TABLES AND LISTS */
+table	{ margin:auto; padding: 0.375em; }
+caption	{ position: absolute; margin-left: -999em; }
+caption, th, td	{ text-align: left; }
+th	{ background:#777; color:#fff; font-weight: 100; padding: 0.25em;}
+td th	{ padding-right: 3em; }
+td	{ padding:0.375em; border:1px solid #ddd;}
+td .navigation { background:#ddd;}
+	/* STORY VIEWS: shows on works (text) -chapter, series, post-new & preview-edit (excluding forms rules), tos and faq*/
+/*
+set story styles
+*/
+div.story-show {padding:0.5625em 4.5em;}
+.story-show { font-family:Candara, Corbel, Geneva, Verdana, Helvetica, Arial, sans-serif; padding:1.5em 3.5em;}
+.story-show a, .story-show a:link { color:#111; text-decoration:none; border-bottom:1px dotted #777; padding-right:0.125em}
+.story-show a:hover { border-bottom:0}
+.story-show a:visited { text-decoration:underline}
+
+.story-show dl	{ font-size:1em; margin:1.5em 0; border-bottom:0.25em double #777; }
+.story-show dt	{ font-weight:bold; }
+.story-show dd	{ line-height:1.5; font-size:0.875em; text-indent:3em; margin-top:1.25em; margin-bottom:1.25em; }
+.story-show dd p	{ text-indent:0; margin:0; padding:0; }
+
+
+/*headings */
+.story-show h1	{ font-family:Cambria, Constantia, Palatino, Georgia, serif; text-align:center; }
+.story-show h2	{ color:#333; font-variant:normal; text-align:left; text-transform:none; margin:1.5em 0;}
+.story-show h3	{ background:#333; color:#fffef9; font-weight:100; padding: 0.125em; border-bottom:0.25em double #fffef9; }
+.story-show h4	{ font-variant:small-caps; font-size:1.25em;}
+.story-show h5	{ font-weight:600; font-size: 1em;}
+.story-show h6	{ font-size: 0.875em; border-bottom:1px solid; }
+.chapter-title a {color:#fffef9;}
+
+/*quotes and stresses*/
+.story-show blockquote	{ font-size:1em; margin:auto auto auto 1.5em; padding:0.75em; border-left:2px solid #999; }
+.story-show blockquote blockquote	{ padding:0.25em; border:0; }
+.story-show hr	{ width:33%; margin:0.875em auto; border:1px solid; }
+
+.dropcap	{ font:3em Georgia, serif; }
+.flashback	{ font-style:italic; }
+.caps	{ font-variant:small-caps}
+
+.story-show h2, .story-edit-title	{ font-weight:700; font-size:1.5em; text-align:center; }
+.help a:link {display:block;float:right;}
+.help dd {border:1px solid #bbb; padding:0.25em}
+
+
+--></style>
+</head>
+	<body>
+		<div class="story-show help">
+		<h4>Limited <acronym title="hypertext markup language">HTML</acronym> available</h4>
+		<p>Some tips:</p>
+		<dl>
+		<!--scriptaculous blind initial state dd hidden-->
+		<dt>For headings, use heading tags: <code>h1, h2, h3, h4, h5, h6</code></dt>
+		<dd id="headings">
+		<ul>
+			<li><h1>&lt;h1&gt;Title&lt;h1&gt;</h1></li>
+			<li><h2>&lt;h2&gt;Subtitle&lt;h2&gt;</h2></li>
+			<li><h3>&lt;h3&gt;Chapter title&lt;h3&gt;</h3></li>
+			<li><h4>&lt;h4&gt;Scene title&lt;h4&gt;</h4></li>
+			<li><h5>&lt;h5&gt;Subtitle&lt;h5&gt;</h5></li>
+			<li><h6>&lt;h6&gt;Footnote title&lt;h6&gt;</h6></li>
+		</ul>
+		</dd>
+		<dt>For emphasis, use emphasis tags <code>em, strong, i, b</code> </dt>
+		<dd id="emphasis">
+		<ul>
+			<li><p>&lt;em&gt;<em>Rodney</em>&lt;/em&gt; McKay</p></li>
+			<li><p>I will &lt;strong&gt;<strong>never</strong>&lt;/strong&gt; understand you!<p></li>
+		</ul>
+		</dd>
+		<dt>To quote poetry, phrases, use quote tags: <code>blockquote, q, cite</code> </dt>
+		<dd id="quotes">
+		<ul>
+			<li>&lt;blockquote&gt;<blockquote>To quote a block of text</blockquote>&lt;/blockquote&gt;</li>
+			<li><p>Use q to &lt;q&gt;<q>To quote a phrase</q>&lt;/q&gt;</p></li>
+			<li><p>Try cite to cite &lt;cite&gt;<cite>a phrase or title</cite>&lt;/cite&gt;</p></li>
+		</ul>
+		</dd>
+		</dl>
+		</div>
+	</body>
+</html>

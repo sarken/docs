@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>The Em Scale</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Ems</h1>
+				<p>I've dismantled the em scale as of 01/09/11 as our parser is still broken and we can't fix it, so we can't use anything that relies on valid XHTML. This document is therefore mostly obsolete. We still use ems, but we size the containing element #main to 0.875em and all spaces are recalculated from 14px.</p>
+				 <blockquote>
+					<p>The em is a sliding measure. One em is a distance equal to the type size. In 6 point type, an em is 6 points; in 12 point type an em is 12 points and in 60 point type an em is 60 points. Thus a one em space is proportionately the same in any size.<br/>
+						~Robert Bringhurst
+					</p>
+				</blockquote>
+				<p>The Archive styles use <a href="http://www.w3.org/TR/CSS21/syndata.html#length-units" class="external text" title="http://www.w3.org/TR/CSS21/syndata.html#length-units" rel="nofollow">ems</a> to size text, most elements, and as units for margins and padding.
+				</p>
+				<p>The Archive core styles use the traditional scale: 6, 8, 9, 10, 12, 14, 16, 18, 24, 36, 48, 60, 72.
+				</p>
+				<p>We set the body at 100%, or default. The default text size on most web browsers is 16px <a href="http://alistapart.com/d/howtosizetextincss/ss-test-0.html" class="external autonumber" title="http://alistapart.com/d/howtosizetextincss/ss-test-0.html" rel="nofollow">[1]</a>. So 1em is equal to 16 pixels.
+				</p>
+				<p><code>body { font: 100% Candara, Corbel, Geneva, Verdana, Tahoma, Helvetica, Arial, sans-serif; }</code>
+				</p>
+				<p>And then the body paragraph text at 14px by dividing 14 by 16:
+				</p>
+				<p><code> body p {font-size: 0.875em;}</code>
+				</p>
+				<a name="The_Scale_in_Ems"></a><h2><span class="mw-headline"> The Scale in Ems </span></h2>
+				<ul>
+					<li>72/16 = 4.5em
+					</li>
+					<li>60/16 = 3.75em
+					</li>
+					<li>48/16 = 3em
+					</li>
+					<li>36/16 = 2.25em
+					</li>
+					<li>24/16 = 1.5em
+					</li>
+					<li>18/16 = 1.125em
+					</li>
+					<li>16/16 = 1em
+					</li>
+					<li><strong>14/16 = 0.875em</strong>
+					</li>
+					<li>12/16 = 0.75em
+					</li>
+					<li>10/16 = 0.625em
+					</li>
+					<li> 9/16 = 0.5625em
+					</li>
+					<li> 8/16 = 0.5em
+					</li>
+				</ul>
+				<p>	<img alt="" src="images/Em-scale.jpg" />
+					</a>
+				</p>
+				<a name="Choosing_a_font-size"></a><h2><span class="mw-headline"> Choosing a <code>font-size</code> </span></h2>
+				<ul>
+					<li>Remember that font-size is <b>inherited</b> from the parent element so it's easier to target specific selectors rather than their containing blocks (ie <code>#sidebar li </code> rather than <code>#sidebar</code>. If you choose to style containing blocks, you will need to recalculate the scale from 14px.
+					</li>
+					<li>Decide where the element you are styling fits in the page hierarchy. Is it greater or lesser than p? Definition terms used as headings probably would do well at 1em. Footnotes would do well at 0.75em.
+					</li>
+				</ul>
+				<a name="Margins_and_Padding"></a><h2>Margins and Padding</h2>
+				<p>It can be a bit difficult to get your head round using ems for margins and padding, so here are some tips:
+				</p>
+				<ul>
+					<li>A single space (like between words) is approximately 0.25em.
+					</li>
+					<li>Choosing values from the scale will automatically make your page look balanced.
+					</li>
+				</ul>
+				<a name="Resources"></a><h2>Resources </span></h2>
+				<ul>
+					<li><a href="http://alistapart.com/articles/elastic/" class="external text" title="http://alistapart.com/articles/elastic/" rel="nofollow">Elastic Design</a>
+					</li>
+					<li><a href="http://24ways.org/2005/an-explanation-of-ems" class="external text" title="http://24ways.org/2005/an-explanation-of-ems" rel="nofollow">An Explanation of Ems</a>
+					</li>
+					<li><a href="http://alistapart.com/articles/howtosizetextincss" class="external text" title="http://alistapart.com/articles/howtosizetextincss" rel="nofollow">How to size text in CSS</a>
+					</li>
+					<li><a href="http://webtypography.net/" class="external text" title="http://webtypography.net/" rel="nofollow">The Elements of Typographic Style Applied to the Web</a>
+					</li>
+				</ul>
+					<p><a href="index.html">&larr; Back</a></p>
+					</div>
+		</div>
+	</body>
+</html>

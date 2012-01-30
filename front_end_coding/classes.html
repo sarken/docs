@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Front End Help Index</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Classes</h1>
+				<p>Classes are general and written in English. Do <strong>not</strong> give every element on every page a unique class. Do <strong>not</strong> give elements very specific names. Classes are inherited from their parent element. Classes are combined together to style elements uniquely.
+				</p>
+				<p>Classes are used to add structural meaning. A good class describes more specifically the function of the element to which it is applied. A bad class is something like <code>red</code> ; a good class is something like <code>warning</code>. (Imagine that you were creating a skin for people with red-green color blindness, and you wanted to change the appearance of words using the class <code>red</code> to be the color blue! That would be very confusing and therefore harder to maintain.)
+				</p>
+				<p>
+					Class names are short and, ideally, English words in common usage. If you find yourself combining several words to make a class, like english_user_information, stop and think whether you could use several more general classes: english user information.
+				</p>
+				<p>Our classes are how we describe and document our data, so it's very important to use them consistently and accurately. If you find a class that doesn't fit this system, it's probably a mistake and needs fixing.
+				</p>
+				<h3 id="navigation">Navigation and Actions</h3>
+				<ul>
+					<li>.navigation</li>
+					<li>.landmark</li>
+					<li>.submit</li>
+					<li>.filters</li>
+				</ul>
+				<h3 id="metadata-grouping">Metadata Grouping</h3>
+				<ul>
+					<li>.index <dfn>:list of blurbs</dfn></li>
+					<li>.blurb <dfn>:standalone metadata of work, collection, bookmark, shown in indices</dfn></li>
+					<li>.meta <dfn>:complementary meta data shown at page head</dfn></li>
+					<li>.profile <dfn>:home page metadata</dfn></li>
+					<li>.preface <dfn>:complementary metadata surrounding individual work (notes, description, summary)</dfn>
+					</li>
+					<li>.stats <dfn>:sublist of countable metadata (hits, comments, bookmarks, wordcount etc)</dfn></li>
+				</ul>
+				<h3 id="content-type">Content Type</h3>
+				<ul>
+					<li>.work</li>
+					<li>.series</li>
+					<li>.bookmark</li>
+					<li>.collection</li>
+					<li>.chapter</li>
+					<li>.comment</li>
+					<li>.tag</li>
+				</ul>
+				<h3 id="metadata">Meta data</h3>
+				<ul>
+					<li>.heading</li>
+					<li>.title</li>
+					<li>.byline</li>
+					<li>.summary</li>
+					<li>.notes</li>
+					<li>.footnote</li>
+					<li>.description</li>
+					<li>.faq</li>
+					<li>.cast</li>
+					<li>.tags</li>
+					<li>.warning</li>
+					<li>.datetime</li>
+					<li>.email</li>
+					<li>.birthday</li>
+					<li>.location</li>
+				</ul>
+				<h3 id="presentational">Grouping and spacing presentational elements</h3>
+				<ul>
+					<li>.clear <dfn>:null presentational, clears both</dfn></li>
+					<li>.module <dfn>:group several blocks (default: position:relative, hasLayout)</dfn></li>
+					<li>.wrapper <dfn>:null presentational, wraps block (default: drop shadow)</dfn></li>
+					<li>.sidebar <dfn>:indicates page with #dashboard child of body</dfn></li>
+				</ul>
+				<h3 id="roles-and-states">Roles and States</h3>
+				<h4>Roles</h4>
+				<ul>
+					<li>.anonymous</li>
+					<li>.orphan</li>
+					<li>.pseud</li>
+					<li>.user</li>
+					<li>.admin</li>
+					<li>.wrangler</li>
+					<li>.userstuff</li>
+				</ul>
+				<h4>States</h4>
+				<ul>
+					<li>.requested</li>
+					<li>.required</li>
+					<li>.current</li>
+					<li>.odd</li>
+					<li>.even</li>
+					<li>.own</li>
+					<li>.draft</li>
+					<li>.new</li>
+				</ul>
+			</div>
+			<div class="article">
+				<h2>What Kind and Where?</h2>
+				<p>It might be useful to look at some <a href="diagrams.html">diagrams of pages</a> on our archive, to really understand that in CSS, we write a path <em>to</em> places in our XHTML; we don't need to give everything a unique name, because we describe it: "what kind and where".
+				</p>
+			</div>
+			<div class="article">
+				<h2>Rails Classes</h2>
+				<p>Rails automatically generates a unique class on #main on each page, named by the view partial #main calls. This means that each page on the archive can have rules set independently, which is very useful for tweaking the layout, but ought not to be used as a core technique.
+				</p>
+				<p>http://archiveofourown.org/media = #main.media-index</p>
+				<p>http://archiveofourown.org/users/lim/works = #main.works-index .sidebar</p>
+				<p>
+				<h3 id="errors">System Messages and Warnings</h3>
+				<p>This is a work in progress. Could <em>you</em> design a system of messages and warnings? Check the issues list!
+				</p>
+				<ul>
+					<li>.warning</li>
+					<li>.error</li>
+					<li>.message</li>
+					<li>.instructions</li>
+					<li>.notice</li>
+					<li>.flash</li>
+					<li>.symbol, .symbols</li>
+					<li>.question</li>
+					<li>.help</li>
+					<li>.important</li>
+					<li>.note</li>
+				</ul>
+				<p><a href="index.html">&larr; Back</a></p>
+			</div>
+		</div>
+	</body>
+</html>

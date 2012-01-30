@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Writing A Skin</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Writing A Skin</h1>
+				<ol>
+					<li><a href="#intro">Introduction to skins</a></li>
+					<li><a href="#works">Changing the work view</a></li>
+					<li><a href="#developing">Developing your skin</a></li>
+				</ol>
+				<h2 id="intro">1. Introduction to skins</h2>
+				<p>Let's walk through writing a simple skin, step by step. To see the changes, try adding these lines one at a time and refreshing.
+				</p>
+				<ol>
+					<li>
+						<p>Let's change the font and the font colour. The star means "everywhere":</p>
+						<p><code>* { font-family: georgia,serif;
+								color: #342f16;
+								}
+							</code>
+						</p>
+					</li>
+					<li>
+						<p>
+							Now the page body background. Let's put an image there, and by default it will tile in all directions.
+						</p>
+						<p>
+						  Note -- we're using an image hosted on tinypic, but for your own private skins you can host your images anywhere.
+						  <a href="http://photobucket.com">Photobucket</a> and <a href="http://imageshack.us">imageshack.us</a> are common alternatives. 
+						  Because you are the only one seeing your skin, you don't need to worry about running out of bandwidth.
+						</p>
+						<p><code>	body {
+								background: url(http://i52.tinypic.com/b6d2ld.jpg);
+								}
+							</code>
+						</p>
+					</li>
+					<li>
+						<p>Let's change the header. We'll put a different picture there and make sure the header has enough height to show the whole image. This image only repeats along in a line, so we'll start it in the top left and say repeat-x (down is repeat-y).
+						</p>
+						<p><code>
+								#header {
+								background: url(http://i53.tinypic.com/2yl4j04.png) top left repeat-x;
+								height: 214px;
+								}
+							</code>
+						</p>
+					</li>
+					<li>
+						<p>
+							Now, let's hide that giant black line!
+						</p>
+						<p><code>
+								#header .clear {
+								visibility: hidden;
+								}
+							</code>
+						</p>
+					</li>
+					<li>
+						<p>I don't like that white colour on the page title, so I'll change it to the global colour:</p>
+						<p><code>
+								#header h1,
+								#header h1 a {
+								color: #342f16;
+								}
+							</code>
+						</p>
+					</li>
+					<li>
+						<p>The navigation looks a bit weird, so let's take off that styling:</p>
+						<p><code>
+								#header .navigation a {
+								background: transparent;
+								border: 0;
+								}
+								<br />
+								#header .navigation span.current {
+								background: transparent !important;
+								border: 1px dashed;
+								}
+							</code>
+						</p>
+					</li>
+					<li>
+						<p>
+							Now the main content. Let's make it like a piece of paper. I'm using pixel values for the fixed size pictures, and em values for the scalable elements:
+						</p>
+						<p><code>
+								#main {
+								background: white url(http://i56.tinypic.com/20fdnvc.png) top right repeat-x;
+								margin: 0 1em;
+								padding-top: 50px;
+								}
+							</code>
+						</p>
+					</li>
+					<li>
+						<p>	And just a tweak, I don't like that blue colour against the background now:</p>
+						<p><code>
+								.flash {
+								background:transparent;
+								}
+							</code>
+						</p>
+					</li>
+				</ol>
+				<h3>Completed Code</h3>
+				<p>	So here's the whole thing:</p>
+<pre><code>
+*	{ 
+	font-family: georgia,serif !important; color: #342f16;
+	}
+body { 
+	background: url(http://i52.tinypic.com/b6d2ld.jpg); 
+	}
+#header { 
+	background: url(http://i53.tinypic.com/2yl4j04.png) top left repeat-x;
+	height: 214px;	
+	}
+#header .clear {	
+	visibility: hidden;
+	}
+#header h1, #header h1 a {
+	color: #342f16;
+	}
+#header .navigation a {
+	background: transparent;
+	border: 0;
+	}
+#header .navigation span.current {
+	background: transparent !important;
+	border: 1px dashed;
+	}
+#main {
+	background: white url(http://i56.tinypic.com/20fdnvc.png) top right repeat-x;
+	margin: 0 1em;
+	padding-top: 50px;
+	}
+
+.flash {
+	background:transparent;
+	}
+</code></pre>
+			</div>
+			<div class="article">
+				<h2 id="works">2. Changing the work view</h2>
+				<h3>.userstuff</h3>
+				<p>All user copy is marked with the <code>.userstuff</code> class, so you can make changes to it without worrying about messing up the site layout.
+				</p>
+				<p>You may want to change the font:</p>
+				<p><code>.userstuff {font-family:georgia,serif;}</code></p>
+				<p>Indent paragraphs:</p>
+				<p><code>.userstuff p {text-indent: 2.5em;}</code></p>
+				<p>Maybe you want to do something very specific like block user-embedded images but still keep the site icons:
+				</p>
+				<p><code>.userstuff img {display:none;}</code></p>
+				<h3>Too Much Information</h3>
+				<p>The work view has a lot of metadata on it. You might want to suppress some. You can hide the whole meta block:
+				</p>
+				<p><code>.meta {display:none;}</code></p>
+				<p>And the whole preface:</p>
+				<p><code>.preface {display:none;}</code></p>
+				<p>Or just the bits you don't want to know:</p>
+				<p><code>.meta .warning, .preface .notes, .preface .summary {display:none;}</code></p>
+				<p>In the same way, you might want to highlight some metadata:</p>
+				<p><code>.rating {background:red; font-weight:bold;}</code></p>
+				<p>You can take this approach all over the archive. Try redesigning the <a href="diagrams.html#blurbxhtml">blurb</a> to suit yourself better.
+				</p>
+			</div>
+			<div class="article">
+				<h2 id="developing">3. Developing your skin</h2>
+				<p>If you're interested in the development of the the AO3 Front End, the docs are open to you. You can work through from <a href="whatiscss">What Is CSS</a> or jump right into the detailed <a href="frontend-user-guide.html">Front End User Guide</a>. To write a skin, you don't need to read all that, but you may find these useful:
+				</p>
+				<ul>
+					<li><a href="classes.html">Classes</a></li>
+					<li><a href="diagrams.html">Element Diagrams</a></li>
+				</ul>
+				<p>The most useful classes and identities are:</p>
+				<ol>
+					<li>#header</li>
+					<li>#dashboard</li>
+					<li>#main</li>
+					<li>.footer</li>
+					<li>.tag</li>
+					<li>.navigation</li>
+					<li>.landmark</li>
+					<li>.filters</li>
+					<li>.index</li>
+					<li>.blurb</li>
+					<li>.userstuff</li>
+					<li>#chapters</li>
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>

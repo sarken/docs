@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Accessibility statement</h1>
+				<h2>Everyone is welcome</h2>
+				<p>This page is an overview of ways we have tried to make the Archive accessible. Accessibility is always a work in progress, so this document will and should change.
+				</p>
+				<p>If you have any questions or comments, please do send us <a href="http://archiveofourown.org/support">feedback</a>. Portions of this document have been taken from <a href="">diveintoaccessibility.com</a>. 
+				</p>
+				<h3>Standards compliance</h3>
+				<p>
+				  Note: many people have access to the AO3 code and can edit it; so standards compliance is generally a moving target for us. 
+				  However, this represents the standards we strive to meet; where we sometimes miss the mark, we will aim to get back into compliance
+				  with code review at a future date.
+				</p>
+				<p>
+				  When we talk about pages complying with a standard, we mean that the <em>site framework</em> (that is, the code for the archive interface surrounding
+				  user content like fanworks, summaries, descriptions, etc) complies. 
+				  We do not try to validate our user-generated content, though we do parse it for display using Nokogiri, an XHTML-compliant 
+				  parser. But as a rule, we aim to encourage valid and accessible coding from our users through advocacy and training, not auto formatting. 
+				</p>
+				<ol>
+					<li>
+						<p>Most importantly, all pages on this site use structured semantic markup.  H1 is used for the site name. H2 is used for the individual page name. H3 is used for section headings within the page. H4 is used for article names, like the name of commenter or the titles on a list of works.
+							For example, on this page, JAWS users can skip to the next section within the accessibility statement by pressing <kbd>ALT+INSERT+3</kbd>.
+						</p>
+					</li>
+					<li>
+						<p>All framework pages on this site are or work towards <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> <acronym title="triple A">AAA</acronym> approved, complying wih <a href="http://www.w3.org/TR/WAI-WEBCONTENT/full-checklist.html">all priority 1, 2, and 3 guidelines</a> of the <a href="http://www.w3.org/TR/WCAG10/"><acronym title="World Wide Web Consortium">W3C</acronym> Web Content Accessibility Guidelines</a>.  This is a judgement call. 
+					</li>
+					<li>
+						<p>All framework pages on this site are <a href="http://www.cynthiasays.com/">Section 508 approved</a>, complying with all of the <acronym title="United States">U.S.</acronym> Federal Government <a href="http://www.section508.gov/">Section 508 Guidelines</a>.  Again, a judgement call.  
+						</p>
+					</li>
+					<li>
+						<p><del>All framework pages on this site <a href="http://validator.w3.org/">validate as <acronym title="extensible hypertext markup language">XHTML</acronym> 1.0 Strict</a>.  This is not a judgement call; a program can determine with 100% accuracy whether a page is valid XHTML.  For example, you can <a href="http://validator.w3.org/check">enter your AO3 user page URL on the W3 validator and check it for XHTML validity</a>.</del> <ins>ARIA roles cannot be validated with an XHTML 1.0 Strict checker.</ins>
+						</p>
+					</li>
+				</ol>
+				<h3>Languages</h3>
+				<p>
+				  The Archive is an international development, made by people who speak lots of different languages. Our goal is to 
+				  build a translation tool to allow the archive interface to be translated into any language that has volunteers to work on it.
+				</p>
+				<h3>Navigation aids</h3>
+				<ol>
+					<li><p>[BREADCRUMBS]</p></li>
+					<li>
+						<p>
+						  We aim to make our help and FAQs accessible in multiple ways. 
+						</p>
+					</li>
+					<li>
+						<p>We have tried to provide help that is not biased towards sighted or mouse methods of using archive, by describing pages and interactions in several different ways, but we know we could always use help at doing this better, so please do <a href="http://archiveofourown.org/support">send us feedback</a>.
+						</p>
+					</li>
+					<li><p>Our help buttons are styled text, so you can make them bigger if they're hard to see.</p></li>
+					<li>
+						<p>The home page and all archive pages include a search box.  Advanced search options are available from any search results page.
+						</p>
+					</li>
+					<li>
+						<p>All navigation, sorting, actions, and page regions are announced by a relevant and descriptive heading. These headings are hidden from visual browsers by default, but are available if your browser supports them. We're working on a skin you can use to show these headings to any browser.
+						</p>
+					</li>
+					<li>
+						<p>Blocks containing unlabelled content have been titled, so you don't have to work out what something is from its context.
+						</p>
+					</li>
+				</ol>
+				<h3>Links</h3>
+				<ol>
+					<li>
+						<p>Some links have title attributes which describe the link in greater detail, unless the text of the link already fully describes the target (such as the headline of an article).
+						</p>
+					</li>
+					<li><p>Links are written to make sense out of context.</p></li>
+					<li><p>Navigation and action links are written as large and distinct buttons. They can be scaled up with text zoom to make them easier to click on with a mouse or a joystick. We're working on a 'bright button' and 'big button' skin to make them easier to see and click, and a 'fixed button' skin so they're always on the screen, which might be more useful if you're using a switch interface.</p></li> 
+				</ol>
+				<h3>Forms</h3>
+				<ol>
+				  <li><p>Our forms are laid out in a limited and regular number of ways, and we've tried to make it clear when a form begins and ends.</p></li>
+				  <li><p>We have labelled everything to make it clear what we're asking you to do. In very short forms those labels are hidden but we're working on a skin you can use to show them.</p></li>
+				  <li><p>We've written our forms so that you can click on the text to check the little box or button.</p></li>
+			    </ol>
+				<h3>Images</h3>
+				<ol>
+					<li>
+						<p>All images used in this site are described with text alternatives.  Purely decorative graphics include null <code>ALT</code> attributes.
+						</p>
+					</li>
+					<li>
+						<p>Our logo has a spoken or text equivalent, which communicates the <em>intent and feel</em> of the graphic.
+						</p>
+					</li>
+				</ol>
+				<h3>Visual design</h3>
+				<ol>
+					<li><p>The Archive uses cascading style sheets for visual layout.</p></li>
+					<li>
+						<p>The Archive uses only relative font sizes, compatible with the user-specified "text size" option in visual browsers. 
+						</p>
+					</li>
+					<li>
+						<p>If your browser or browsing device does not support stylesheets at all, the content of each page is still readable.
+						</p>
+					</li>
+				</ol>
+				<h3>Alternative Visual Layouts (Skins)</h3>
+			  	<p>
+  				  You can skin the archive interface for yourself in any way that you find useful. We also work on (and welcome user contributions of!) public skins that help solve accessibility issues. 
+  				</p>
+  					<p>We try to design in an accessible way, which means that we've made the interface <em>open</em> for you to <em>adapt</em> easily, rather than thinking to know what you need better than you do yourself. AO3 is lucky in that there are people using, coding, and testing via many different methods. But we are still limited: we design to be open to everything but can only test with the tools available to us, which are, roughly: about thirty browsers for screen and handheld with various customisations, Lynx, Chromevox, Fangs, switchXS, Dragon Dictate, mouseless browsing and Vimium. So if you come across a hurdle, or something that could be better, it's really a big help for you to send it in. </p>
+  					<p>You don't have to know how to code (though we'll teach you that too if you like) to adapt the archive. Writing in with layout changes that would help you means someone knows to try making a skin to suit those requirements******can't phrase this right?</p>
+		    <h3>Javascript</h3>
+				<p>
+				  We use Javascript on the AO3 to improve usability and performance, but all our content and core functionality is accessible with Javascript turned off.
+				</p>
+				<h3>Screenreaders</h3>
+				<ol>
+					<li>
+						<p>We use headings and lists to structure our pages. You can jump around the page regions by heading. Lists should always give you an accurate count of the number of different items on a page. If they don't please <a href="http://archiveofourown.org/support">tell us</a>.
+						</p>
+					</li>
+					<li><p>We have implemented basic <a href=""><abbr title="">ARIA</abbr> landmark roles</a> and as we go along we are adding in more <a href=""><abbr title="">WAI-ARIA</abbr> attributes as we figure out how best to use them.</p></li>
+				    <li><p>We plan to support aural skins in the future</p></li>
+					<li>
+						<p>We have an experimental aural stylesheet. We are investigating supporting a say-instead or pronunication dictionary. If you would like to help, please <a href="http://transformativeworks.org/how-you-can-help/volunteer">volunteer</a> or send us <a href="http://archiveofourown.org/support">feedback</a>.
+						</p>
+					</li>
+				</ol>
+				<h3>Keyboard Access</h3>
+				<ol>
+					<li>
+						<p>We write our pages in a logical order, so you can tab through the whole archive. We decided not to add accesskeys, because we know they can sometimes mess up your own shortcuts.
+						</p>
+					</li>
+					<li>
+						<p>We are looking at using a new way to develop a really good keyboard interface, but this will take us a long time.
+						</p>
+					</li>
+				</ol>
+				<h3>Small Screens, Slow Internet</h3>
+				<p>We try and keep our site pages relatively small and functioning on screens of any size including mobile devices.</p>
+					<p><a href="index.html">&larr; Back</a></p>
+					</div>
+		</div>
+	</body>
+</html>

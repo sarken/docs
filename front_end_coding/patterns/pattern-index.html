@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pattern: Index</title>
+		<link rel="stylesheet" type="text/css" href="../front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Design Pattern: Index</h1>
+				<p>Index is a very general class of list. You'll most often see it containing blurbs, or as the content in a listbox, but it isn't restricted to those. Index has very few rules; it's a flexible grouping class; it doesn't have its own css sheet.
+				</p>
+				<p>The present index style is declared in <cite>types-groups.css</cite>. Index is the most used example of the polyvalent "<a href="types.html">types</a> or <a href="modifiers.html">states</a> of <a href="supertypes.html">groups</a>"</p>
+				<h2>Index HTML Structure</h2>
+				<h3>Rules</h3>
+				<p>An index can be any kind of list. So an index could be:
+				<ul>
+					<li>ul.index</li>
+					<li>ol.index</li>
+					<li>dl.index</li>
+				</ul>
+				<p>You can <strong>never</strong> have <strong>any</strong> other kind of index.</p>
+				<h3>dl.index</h3>
+				<p>dl.index has some extra rules, which are new, so they might change a lot as we work them out. We use dl.index wherever we have paired (property:value) data, like a list of usernames paired with the fic they wrote, or a list of languages paired with the number of works in each language. dl.index shows up inside forms sometimes, so the <span title="15/10/2011">present</span> style has a lot of zeroed-out values. Sometimes, dl.index can function as the briefest "blurb" pattern, like in the following example from <cite>archiveofourown.org/users/.../works/show_multiple</cite>
+				</p>
+				<h4>dl index XHTML Diagram (example)</h4>
+				<ol class="diagram" id="indexhtml">
+					<li><code>&lt;dl class="index"></code>
+						<ol>
+							<li><code>&lt;dt></code>
+								<ol>
+									<li><code>&lt;a href="../">Title &lt;/a></code></li>
+								</ol>
+								<code>&lt;/dt></code>
+							</li>
+							<li><code>&lt;dd></code>
+								<ol>
+									<li><code>&lt;span class="fandom">(</code>
+										<ol><li><code>&lt;a href="../">Fandom &lt;/a></code></li></ol>	
+										<code>)&lt;/span></code>
+									</li>
+									<li><code>&lt;ul class="actions" role="menu"></code>
+										<ol>
+											<li><code>&lt;li></code>
+												<ol>
+													<li><code>&lt;a href="../">Deletet&lt;/a></code></li>
+												</ol><code>&lt;/li></code>
+											</li>
+											<li><code>&lt;li></code>
+												<ol>
+													<li><code>&lt;a href="../">Edit&lt;/a></code></li>
+												</ol><code>&lt;/li></code>
+											</li>
+											<li><code>&lt;li></code>
+												<ol>
+													<li><code>&lt;a href="../" role="button">Orphan&lt;/a></code></li>
+												</ol><code>&lt;/li></code>
+											</li>
+										</ol>	<code>&lt;/ul></code>
+									</li>
+								</ol><code>&lt;/dd></code>
+							</li>
+						</ol>
+						<code>&lt;/dl></code>
+					</li>
+				</ol>
+				<h3>The big mystery of the missing classes</h3>
+				<p>If you've been following the front end design closely, you may have noticed that, logically, and following the Coding Standards, the index classes ought to show what is contained within the group, and that the blurb pattern often has those classes. You're absolutely right; a lot of the codebase is wrong! It should logically go:</p>
+				<p><pre>
+&lt;ul class="collection blurb index group">
+  &lt;li class="own group">...&lt;/li>
+   &lt;li class="group">...
+</pre></p>
+<p>But we're stuck with it, really. This is the whiteknuckle experience of coding a massive, live website <em>and</em> supporting user skins before 1.0. Have some Pimms and get over it, is my advice.</p>
+
+<h5>Back</h5>
+				<p>Return to the <a href="./index.html">documentation index</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

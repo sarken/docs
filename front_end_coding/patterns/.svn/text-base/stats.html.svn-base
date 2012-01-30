@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pattern: Stats</title>
+		<link rel="stylesheet" type="text/css" href="../front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Design Pattern: stats</h1>
+				<p>Stats are a definition list. We use stats at the end of <a href="meta.html">meta</a> or <a href="blurb.html">blurb</a> and similar descriptive blocks. Stats are always a list of paired properties and values, and they're usually countable values or some kind of binary status (yes/no, open/closed). Think graphable!</p>
+				<p>The present stats style is declared in <cite>types-groups.css</cite></p>
+				<h2>stats HTML Structure</h2>
+				<h3>Quick Ref: <code>[always] {sometimes}</code></h3>
+				<pre>
+  [dl stats]
+    [dt]
+    [dd][/dd]
+  [/dl]
+    </pre>
+				<h3>Rules</h3>
+				<p>Stats are always a dl.stats</p>
+				<p>You can never have any other kind of stats.</p>
+				<p>Stats always come at the end of meta and work blurb. Stats may appear in other contexts. dl.stats may appear within a dd.stats because of automatic class assignment, but it can't be depended on.</p>
+				<h4>Notes</h4>
+				<p>It's important to always remember to clear a stats pattern in a meta pattern. You can look for the recurring issues on this in google code, if you're interested. If you need to turn that clear off, the path is: <code title="css">.meta .stats .clear {clear:none;}</code></p>
+				<h5>Back</h5>
+				<p>Return to the <a href="../index.html">documentation index</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

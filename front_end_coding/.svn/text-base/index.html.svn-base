@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Front End Help Index</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+		<style type="text/css"><!--
+		ol { padding: 0 1em; text-indent:2em; margin:1.5em 0}
+		--></style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Working with the Archive Front End</h1>
+				<h2>Introduction</h2>
+				<p>These pages are, like the archive, a work in progress.</p>
+				<p>It is not necessary to read all these pages before you start coding! They are intended to be references you can use as you go along. But it's very important that you refer to these documents and read the <a href="frontend-user-guide.html">Front End User Guide</a> and the <a href="http://wiki.transformativeworks.org/mediawiki/Coding_Standards:_XHTML/CSS">Coding Standards at the OTW internal wiki</a> before you commit any code to the Archive.
+				</p>
+
+				<p><strong>If you have only basic experience with HTML/CSS</strong>: read the whole <a href="#levelone">Getting Started</a> section below and try out the exercises. You might enjoy <a href="writing-a-skin.html">writing an archive skin</a> to get started; then move on to the <a href="frontend-user-guide.html">Front End User Guide</a>.
+				</p>
+				
+				<p><strong>Otherwise</strong>: If you do have experience with front end coding, our (and soon your) coding practice may be <em>radically</em> different to what you've done before. Start by reading the <a href="frontend-user-guide.html">Front End User Guide</a>.
+				</p>
+				
+				<h4 id="levelone">Getting Started with <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> and <acronym title="Cascading Style Sheets">CSS</acronym></h4>
+				<ol>
+				  <li><a href="tools.html">Setting up some useful tools</a></li>
+					<li><a href="semantic-xhtml.html">What is Semantic <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>?</a></li>
+					<li><a href="whatiscss.html">What is <acronym title="Cascading Style Sheets">CSS</acronym>?</a></li>
+					<li><a href="semaccflex.html">Semantic, Accessible, Flexible Design (v incomplete)</a></li>
+					<!-- <li><a href="./websitetherapy">Website Therapy</a> NOT COMPLETED</li> -->
+					<li><a href="writing-a-skin.html">Writing a Skin</a></li>
+				</ol>
+				<h4 id="leveltwo">How We Code Stuff</h4>
+				<ul>
+					<li><a href="http://wiki.transformativeworks.org/mediawiki/Coding_Standards:_XHTML/CSS">Coding Standards (at the OTW internal wiki)</a></li>
+					<li><a href="frontend-user-guide.html">Front End User Guide</a></li>
+					<li><a href="blurb.html">Case Study: The Blurb</a></li>
+					<li><a href="accessible-tables.html">Coding Accessible Tables</a></li>
+					<li><a href="style-guide.html">Archive Style Guide</a></li>
+					<li><a href="css-shorthand.html"><acronym>CSS</acronym> Shorthand</a></li>
+					<li><a href="classes.html">Classes</a></li>
+					<!--junked because of parser issue <li><a href="em-scale.html">Em Scale</a></li>-->
+					<li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+				</ul>
+				<h5 id="patterns"><a href="patterns/index.html">Patterns</a></h5>
+				<ul>
+				 	<li><a href="patterns/xhtml-page-structure.html"><acronym>XHTML</acronym> Page Templates</a></li>
+					<li><a href="patterns/diagrams.html">Diagrams of HTML Structures</a></li>
+					<li><a href="patterns/actions.html">Design Pattern: Actions (nav)</a></li>
+					<li><a href="patterns/forms.html">Design Pattern: Interactions (forms)</a></li>
+					<li><a href="patterns/pattern-index.html">Design Pattern: Index</a></li>
+					<li><a href="patterns/blurb.html">Design Pattern: Blurb</a></li>
+				  <li><a href="patterns/listbox.html">Design Pattern: Listbox</a></li>
+					<li><a href="patterns/meta.html">Design Pattern: Meta</a></li>
+					<li><a href="patterns/preface.html">Design Pattern: Preface</a></li>
+					<li><a href="patterns/comments.html">Design Pattern: Comments</a></li>
+					<li><a href="patterns/comments.html">Design Pattern: Stats</a></li>
+				</ul>
+				<h4 id="levelthree">Finding and Fixing Problems</h4>
+				<ul>
+					<!-- <li><a href="validating.html">Validating</a></li> -->
+					<li><a href="embuggerance.html">Debugging the Front End</a></li>
+					<li><a href="debugging-the-cascade.html">Debugging the Cascade</a></li>
+					<li><a href="debugging-ie.html">Debugging for Internet Explorer</a></li>
+					<li><a href="floats.html">Floats</a></li>
+				</ul>
+				<h4>Major Front-End Projects To Do</h4>
+				<ul>
+<!--				<li><a href="interfacenotes.html">Interface Notes</a></li>
+					<li><a href="http://code.google.com/p/otwarchive/source/detail?r=2120">Commit Message</a></li>-->
+					<li><a href="forms.html">Forms</a></li>
+					<li>Proposals: Zoning the Archive</li>
+					<li><a href="mailings.html">Mailings</a></li>
+				  <li>Errors and Validation</li>
+				  <li>Footer</li>
+				  <li>Help</li>
+				  <li>Site Map</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

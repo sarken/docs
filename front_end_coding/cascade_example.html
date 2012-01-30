@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  	<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+      li.bat:hover {color: purple;}
+      .foo:hover {color: red;}
+      #bar:hover, #bar2:hover, #bar3:hover {color: blue;}
+    </style>
+  </head>
+  <body>
+    <p>Here is the style declaration for this page:</p>
+    <blockquote><pre><code>
+      &lt;style type="text/css">
+        li.bat:hover {color: purple;}
+        .foo:hover {color: red;}
+        #bar:hover, #bar2:hover, #bar3:hover {color: blue;}
+      &lt;/style>
+    </code></pre></blockquote>
+  
+    <ul>
+      <li id="bar" class="foo" style="color: green">
+        <code>&lt;li id="bar" class="foo" style="color: green"></code> This line is green because inline styles override &lt;style> blocks (which override stylesheets).
+       </li>
+    </ul>
+
+    <p>Hover your mouse over the rest of these lines to see the answer, but try and guess the answer first!</p>
+  
+    <ul>
+      <li id="bar2" class="foo">
+        what color am I? <code>&lt;li id="bar2" class="foo"></code> 
+      </li>
+
+      <li id="bar3"><span class="foo">
+        what color am I? <code>&lt;li id="bar3">&lt;span class="foo"></code>
+      </span></li>
+
+      <li class="foo bat">
+        what color am I? <code>&lt;li class="foo bat"></code>
+      </li>
+  
+    </ul>
+    
+    <p><a href="index.html">&larr; Back to the Documentation Index</a></p>        
+  </body>
+</html>
+
+

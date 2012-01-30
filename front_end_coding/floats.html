@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Understanding Floats</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Floats, Lube and Balloons</h1>
+				<p>You can only float block level elements.</p>
+				<ol class="diagram">
+					<li>ul
+						<ol>
+							<li>li</li>
+							<li>li</li>
+							<li>li</li>
+							<li>li</li>
+						</ol>
+					</li>
+				</ol>
+				<p>Floating an element shrinkwraps it around its contents. They float up like balloons until they hit the ceiling of the block above them.
+				</p>
+				<ol class="diagram">
+					<li>ul
+						<ol>
+							<li class="float">li</li>
+							<li class="float">li</li>
+							<li class="float">li</li>
+							<li class="float">li</li>
+						</ol>
+					</li>
+				</ol>
+				<p>Floating the containing or parent block shrinkwraps it around its contents or child elements.</p>
+				<p>Whether those children are floated...</p>
+				<ol class="diagram">
+					<li class="float">ul
+						<ol>
+							<li class="float">li</li>
+							<li class="float">li</li>
+							<li class="float">li</li>
+							<li class="float">li</li>
+						</ol>
+					</li>
+				</ol>
+				<p>...or static.</p>
+				<ol class="diagram">
+					<li class="float">ul
+						<ol>
+							<li>li</li>
+							<li>li</li>
+							<li>li</li>
+							<li>li</li>
+						</ol>
+					</li>
+				</ol>
+				<h2>Swap Shop</h2>
+				<p>Floats will always go as far to the top (left or right) as they can..
+				<p class="diagram float"><span>Resize this window and watch the <span class="float">span</span>.</span></p>
+				<p>Use floats to position elements in corners.</p>
+				<ol class="diagram">
+					<li class="float" style="width:100%;">div
+						<ol>
+							<li class="float" title="floated image">img</li>
+							<li>h3</li>
+							<li>p</li>
+						</ol>
+					</li>
+				</ol>
+				<p>
+				<h2>Clear</h2>
+				<p>Use clears and widths on blocks to pen floats so they don't get away from you.</p>
+				<ol class="diagram">
+					<li>p {width: 100%;}</li>
+					<li class="float" style="background:transparent;border:none;">
+						<ol>
+							<li class="float">li</li>
+							<li class="float">li</li>
+							<li class="float clear">li clear:left</li>
+							<li class="float">li</li>
+							<li class="float">li</li>
+							<li class="float clear" style="width:100%;">li clear:left width:100%</li>
+							<li class="float">li</li>
+							<li class="float">li</li>
+							<li class="float">li</li>
+						</ol>
+					</li>
+				</ol>
+				<p>But only clear what you need or you can get gaps:</p>
+				<ol class="diagram">
+					<li class="float" style="width:100%;">body
+						<ol>
+							<li class="float" title="left floated div">div dash
+								<ol>
+									<li>h3</li>
+									<li>p</li>
+									<li>p</li>
+								</ol>
+							</li>
+							<li>div main
+								<ol>
+									<li class="float clear" style="clear:left;">#main h3 clear:left</li>
+									
+								</ol>
+							</li>
+						</ol>
+					</li>
+				</ol>
+				<div class="clear"><!-- --></div>
+				<h2>Resources</h2>
+				<ul>
+				<li><a href="http://www.w3schools.com/css/pr_class_float.asp">w3c schools on float</a></li>
+				<li><a href="http://blogs.sitepoint.com/2005/02/26/simple-clearing-of-floats/">float/clear methods</a></li>
+				<li><a href="http://www.w3.org/TR/CSS2/visuren.html#floats">float spec w3c</a></li>
+				</ul>
+							</div>
+			<p><a href="index.html">&larr; Back</a></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Case Study: The Blurb, Structure and Design</title>
+		<link rel="stylesheet" type="text/css" href="../front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Case Study: The Blurb</h1>
+				<p>The blurb is a <a href="supertypes.html#group">group</a></p>
+				<p>
+					On our archive, what we call a blurb is the small summary box which provides a description of a work, a bookmark, a collection, user or series. Blurbs appear on what we call index pages &#8212; for instance, a page of search results. Here is an example which should look very familiar:
+					<img src="images/workblurb.png" alt="screenshot of workblurb">
+					This is a work blurb using the default archive display code.
+				</p>
+				<h2>The Blurb HTML Structure</h2>
+				<p>
+					Since we usually have many blurbs listed together, the index page that holds the blurbs is coded as an HTML list,
+					and each blurb is coded as a list item.
+				</p>
+				<p>
+					For more detail, now let's look at the work blurb.
+				</p>
+				<p>
+					The work blurb is the most used chunk of HTML code in the archive, so we've revised it a <em>lot</em>.
+					It has to contain lots of information and allow different ways of accessing its material.
+					The blurb is flexible, accessible, and has multiple redundancies (says the same thing in different ways).
+					The <acronym title="extensible hypertext markup language">XHTML</acronym> structure is laid out like so
+					(this diagram includes the outer index container).
+				</p>
+				<h3>Blurb XHTML Diagram</h3>
+				<ol class="diagram" id="blurbxhtml">
+					<li>landmark heading level 3 "list of works" <code>&lt;h3 class="landmark">list of works&lt;/h3></code></li>
+					<li>list container work index <code>&lt;ul class="work index"></code>
+						<ol>
+							<li class="emphasise">list item work blurb <code>&lt;li class="work blurb"></code>
+								<ol>
+									<li>division header module <code>&lt;div class="header module"></code>
+										<ol>
+											<li>heading level 4 title link by user link <code>&lt;h4 title="title"></code></li>
+											<li>heading level 5 fandom tag link <code>&lt;h5 title="fandom"></code></li>
+											<li>unordered list of required tags <code>&lt;ul class="required-tags"></code>
+												<ol>
+													<li>list item with rating symbol<code>&lt;li>...&lt;span class="rating...</code></li>
+													<li>list item with warnings symbol<code>&lt;li>...&lt;span class="warnings...</code></li>
+													<li>list item with category symbol<code>&lt;li>...&lt;span class="category...</code></li>
+													<li>list item with WIP/Complete symbol<code>&lt;li>...&lt;span class="iswip...</code></li>
+												</ol>
+											</li>
+											<li>paragraph datetime <code>&lt;p class="datetime"></code></li>
+										</ol>
+									</li>
+									<li>landmark heading level 6 "tags" <code>&lt;h6 class="landmark">Tags&lt;/h6></code></li>
+									<li>unordered list of tags <code>&lt;ul class="tags"></code>
+										<ol>
+											<li>list item(s) with warnings tags (if any) <code>&lt;li class="warnings">&lt;a class="tags"...</code></li>
+											<li>list item(s) with relationships tags <code>&lt;li class="relationships">&lt;a class="tags"...</code>
+											</li>
+											<li>(and so on for the other kinds of tags)</li>
+										</ol>
+									</li>
+									<li>landmark heading level 6 "summary" <code>&lt;h6 class="landmark">Summary&lt;/h6></code></li>
+									<li>blockquote of summary <code>&lt;blockquote class="userstuff summary" title="summary"></code></li>
+									<li>definition list of stats <code>&lt;dl class="stats" title="stats"></code>
+										<ol>
+											<li>definition list property:value pairs <code>&lt;dt>Words:&lt;/dt>&lt;dd>151&lt;/dd>...</code></li>
+										</ol>
+									</li>
+								</ol>
+							</li>
+							<li>next list item work blurb</li>
+						</ol>
+					</li>
+				</ol>
+				<p>
+					Here are some of the important things to understand about this layout:
+				</p>
+				<ul>
+					<li>The content of the blurb (all the information it contains) is presented in <strong>logically readable order</strong>, which
+						has NOTHING to do with the order in which that information is displayed visually in a browser. The title comes
+						first even though visually the first thing you see is the square of the required-tags icons.
+					</li>
+					<li>We <strong>don't use inline style attributes</strong> -- that is, you don't see any CSS embedded into the code like
+						this: <code>&lt;p style="color: blue;"></code>.
+						This kind of styling is much harder to track down later on for debugging and maintenance. Please don't do it!
+					</li>
+					<li>We almost always <strong>use classes rather than ids</strong>. CSS rules attached to ids have higher
+						priority than CSS rules attached to classes, so
+						to make it as easy as possible to create skins, it's better if we use classes by default.
+					</li>
+					<li>The class names are short, common single words.</li>
+					<li>The class names describe and document what the information contained in that HTML element is.</li>
+					<li>Classes are used <strong>in combination</strong>.
+						<ul>
+							<li>Multiple classes are often declared on the same element (eg <code>work blurb</code>, <code>work index</code>).
+							</li>
+							<li>Classes are also nested: ie, CSS rules from the classes on an outer HTML tag will be inherited by an inner tag,
+								as long as they aren't overridden.
+							</li>
+						</ul>
+					</li>
+					<li>A class is only declared on the outermost element that needs it. That is, we have <code>work blurb</code>
+						and then the class <code>blurb</code> is inherited all the way down; we don't ALSO declare, for instance, <code>&lt;p class="blurb datetime"></code>.
+						We just declare <code>&lt;p class="datetime"></code> and let it inherit the blurb class from above.
+					</li>
+					<li>We use headings with the <code>landmark</code> class and the <code>title</code> attribute to label otherwise unlabeled sections of HTML.
+						These are not displayed with the default CSS rules but are available to screenreaders and other special browsers
+						to help with navigation.
+					</li>
+				</ul>
+				<p>
+					Here is the full HTML source code from the archive for the example blurb shown at the top, so you can look through it in detail:
+          
+          <pre style="height: 30em;"><code>&lt;li class=&quot;work blurb&quot; id=&quot;work_4658&quot; role=&quot;article&quot;&gt;
+
+  &lt;div class=&quot;header module&quot;&gt;
+    &lt;h4 title=&quot;title&quot;&gt;
+      &lt;a href=&quot;/works/4658&quot;&gt;zip&lt;/a&gt;
+      by
+      &lt;a href=&quot;/users/Enigel/pseuds/zenigel&quot; class=&quot;login author&quot;&gt;zenigel (Enigel)&lt;/a&gt;
+      &lt;img alt=&quot;(Restricted)&quot; src=&quot;/images/lockblue.png?1301764950&quot; title=&quot;Restricted&quot; width=&quot;15&quot; height=&quot;15&quot;&gt;
+    &lt;/h4&gt;
+
+    &lt;h5 title=&quot;fandom&quot;&gt;
+      &lt;a href=&quot;/tags/Testing&quot; class=&quot;tag&quot;&gt;Testing&lt;/a&gt;
+      &amp;nbsp;
+    &lt;/h5&gt;
+
+    &lt;ul class=&quot;required-tags&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;/help/symbols-key.html&quot; class=&quot;symbol question&quot; rel=&quot;ibox&amp;amp;type=3&quot; title=&quot;Symbols key&quot;&gt;&lt;span class=&quot;rating-mature rating&quot; title=&quot;Mature&quot;&gt;&lt;span class=&quot;text&quot;&gt;Mature&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/help/symbols-key.html&quot; class=&quot;symbol question&quot; rel=&quot;ibox&amp;amp;type=3&quot; title=&quot;Symbols key&quot;&gt;&lt;span class=&quot;warning-choosenotto warnings&quot; title=&quot;Choose Not To Use Archive Warnings&quot;&gt;&lt;span class=&quot;text&quot;&gt;Choose Not To Use Archive Warnings&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/help/symbols-key.html&quot; class=&quot;symbol question&quot; rel=&quot;ibox&amp;amp;type=3&quot; title=&quot;Symbols key&quot;&gt;&lt;span class=&quot;category-gen category&quot; title=&quot;Gen&quot;&gt;&lt;span class=&quot;text&quot;&gt;Gen&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;/help/symbols-key.html&quot; class=&quot;symbol question&quot; rel=&quot;ibox&amp;amp;type=3&quot; title=&quot;Symbols key&quot;&gt;&lt;span class=&quot;complete-yes iswip&quot; title=&quot;Complete Work&quot;&gt;&lt;span class=&quot;text&quot;&gt;Complete Work&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class=&quot;datetime&quot;&gt;10 Dec 2009&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h6 class=&quot;landmark&quot;&gt;Tags&lt;/h6&gt;
+  &lt;ul class=&quot;tags&quot;&gt;
+    &lt;li class=&quot;warnings&quot;&gt;&lt;strong&gt;&lt;a href=&quot;/tags/Choose%20Not%20To%20Use%20Archive%20Warnings&quot; class=&quot;tag&quot;&gt;Author Chose Not To Use Archive Warnings&lt;/a&gt;, &lt;/strong&gt;&lt;/li&gt;&lt;li class=&quot;relationships&quot;&gt;&lt;a href=&quot;/tags/code*s*coder&quot; class=&quot;tag&quot;&gt;code/coder&lt;/a&gt;, &lt;/li&gt; &lt;li class=&quot;relationships&quot;&gt;&lt;a href=&quot;/tags/Testing%20Coder*s*Code&quot; class=&quot;tag&quot;&gt;Testing Coder/Code&lt;/a&gt;, &lt;/li&gt;&lt;li class=&quot;freeforms&quot;&gt;&lt;a href=&quot;/tags/testing%20stuff&quot; class=&quot;tag&quot;&gt;testing stuff&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h6 class=&quot;landmark&quot;&gt;Summary&lt;/h6&gt;
+  &lt;blockquote class=&quot;userstuff summary&quot; title=&quot;summary&quot;&gt;
+    &lt;p&gt;&lt;code&gt;it was a dark and stormy night.&lt;/code&gt;&lt;/p&gt;&lt;p&gt;all Creation lay quiet.&lt;/p&gt;&lt;p&gt;the Coder alone was typing at her keyboard, trying to stop the storm she'd created.&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;dl class=&quot;stats&quot; title=&quot;stats&quot;&gt;
+    &lt;dt&gt;Words:&lt;/dt&gt;
+    &lt;dd&gt;151&lt;/dd&gt;
+    &lt;dt&gt;Chapters:&lt;/dt&gt;
+    &lt;dd&gt;3/3&lt;/dd&gt;
+    &lt;dt&gt;Comments:&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href=&quot;/works/4658?show_comments=true&amp;amp;view_full_work=true#comments&quot;&gt;5&lt;/a&gt;&lt;/dd&gt;
+    &lt;dt&gt;Kudos: &lt;/dt&gt;
+    &lt;dd&gt;&lt;a href=&quot;/works/4658?view_full_work=true#comments&quot;&gt;1&lt;/a&gt;&lt;/dd&gt;
+    &lt;dt&gt;Bookmarks:&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href=&quot;/works/4658/bookmarks&quot;&gt;2&lt;/a&gt;&lt;/dd&gt;
+    &lt;dt&gt;Hits:&lt;/dt&gt;
+    &lt;dd&gt;8&lt;/dd&gt;
+  &lt;/dl&gt;
+  
+&lt;/li&gt;
+            
+          </code></pre>
+				</p>
+				<p>
+					This aspect of the blurb should be changed only with the most extreme caution! Everything about the <em>display</em> can be reorganised (and in fact the blurb can be skinned pretty easily by our users), but the HTML structure should not be altered.
+				</p>
+				<p>
+					Also, notice that the <a href="#blurbxhtml">blurb diagram</a> looks like a lot of boxes nested inside larger boxes. It's like the diagrams in <a href="whatiscss.html">What is CSS</a>. It's useful to know that all <acronym>XHTML</acronym> elements are boxes, and that because all our markup is <a href="http://en.wikipedia.org/wiki/Well-formed_element">well formed</a>, everything on the archive is a box in a box. (You might find it useful to install the <a href="http://chrispederick.com/work/web-developer/">Web Developer</a> plugin.)
+				</p>
+				<h3>Reasons For The Structure</h3>
+				<p>Among other reasons, this structure means it is easy for a piece of software to accurately count the number of items (blurbs) shown in an index. Each new item &#8212;work, index, page region&#8212; is announced by a heading, so users know what information is attached to what title. As a result, a list of headings summarises the entire index page.
+				</p>
+				<p>For example, a screenreader user may:</p>
+				<ol>
+					<li>enter search query <kbd>tag: bab5 het long</kbd></li>
+					<li>jump to the <code>Work List</code> <a href="classes.html#landmark">landmark</a> heading</li>
+					<li>hear "list of 17 items"</li>
+					<li>hear heading level 4 "fic title"</li>
+					<li>list headings level 4</li>
+					<li>jump to item 4 and select title link</li>
+				</ol>
+				<p>This markup, which counts, groups, and names data, allows both linear and non-linear interactions. This means the page makes sense if you read it top to bottom, makes sense if you read parts of it out of context, and helps you jump around. Without this way of writing pages, it's hard to give alternative access technologies the kind of spatial interaction that a visual, mousing browser affords.
+				</p>
+				<h2>The Blurb Display</h2>
+				<p>
+					As noted above, while the HTML structure of the blurb is incredibly important and should not be altered unless the actual content and purpose of the blurb changes (and probably pretty significantly so), the display, which is governed entirely by CSS, is much more flexible.
+				</p>
+				<p>Here you see two different examples of the work blurb from the AO3, one using the default CSS and one using a skin,
+					which have some of their fields mapped to the blurb diagram to help give you the idea.
+					<img src="images/blurb_diagram_mapping.png" border=0 alt="blurb displays" width=700 />
+					These blurbs use the SAME EXACT HTML CODE. The only thing different is the CSS.
+				</p>
+				<p>Let's look at how the default CSS display is done for the blurb. '<ins datetime="2010-10-1015:46:10UTC">Right now</ins>,
+					the default set of CSS rules for the blurb class is:
+				</p>
+				<p><pre><code>
+/* BLURB*/
+.blurb ul li,.blurb dd ul li  { display: inline }
+li.blurb      { padding-left: 0.5em; padding-right: 0.5em; padding-top: 0.25em; padding-bottom: 0.25em; position: relative; clear:left; min-height: 100px }
+.blurb .module      { float:none;}
+.work .blurb .header, .series .blurb .header,   .blurb .work .header, .bookmark .blurb .header, .works .blurb .header, .story-list .blurb .header, .work.blurb .header  
+              { min-height:55px; }
+.blurb .header h4     { font-size: 1.1425em; margin: 0.375em 5.25em 0 65px }
+#main .blurb .header img        { position: relative; margin: 0; }
+.blurb .header h5, .blurb .header ul  
+        { font-size: 1em; margin: 0.375em 6em 0 65px }
+.blurb h4 a:link,.blurb h4 img  { color: #900; vertical-align: bottom }
+.blurb ul.required-tags   { position: absolute; top: 0; width:60px; margin:0;}
+.blurb ul.required-tags li, #main .blurb ul.required-tags li img, .blurb ul.required-tags li a  
+        { position:static; display: inline; height: 25px; width: 25px; margin: 0; padding: 0; border:none; }
+.blurb .relationships     { background: #eee;}              
+.blurb blockquote, .blurb ul.wranglers, .blurb form
+        { clear: none; margin: 0.5625em auto; text-align: justify }
+.blurb dl.stats     { background: #eee; font-size: 0.8575em; text-align: right; padding: 0 0.3em 0.3em; margin-top: 0.1em; }
+.blurb.own dl.stats       { padding-left: 11em; }
+</code></pre>
+				</p>
+				<p>Let's examine the first rule, <code>.blurb ul li,.blurb dd ul li  { display: inline }</code>, piece by piece.
+				</p>
+				<dl>
+					<dt><code>.blurb ul li</code></dt>
+					<dd>This is a selector. A CSS selector tells the browser how to select (ie, identify) the HTML elements that
+						the CSS rule should be applied to. This selector says, to translate it into English,
+						<em>any list item (li) that appears inside an unordered list (ul)
+							that appears inside any element that has the CSS class "blurb"
+						</em>.
+					</dd>
+					<dt><code>.blurb dd ul li</code></dt>
+					<dd>A second selector (you can have as many as you want in a CSS rule, comma-separated as here): <em>any list item (li) that appears inside an unordered list (ul) that appears inside a definition list description (dd)
+							that appears inside any element that has the CSS class "blurb"
+						</em>
+					</dd>
+					<dt><code>{ ... }</code></dt>
+					<dd>This is the set of CSS rules that should be applied to these selected HTML elements. There can be as many rules as you want,
+						listed as a semicolon-separated list of property:value pairs.
+					</dd>
+					<dt><code>display: inline</code></dt>
+					<dd>
+						There is only one property:value pair in this particular set of rules. It says to display these selected HTML elements inline
+						(that is, following one another on the same line) instead of one after another each on a new line
+						(which would otherwise be the default behavior for list items).
+					</dd>
+				</dl>
+				<p>Which bits of the HTML does this affect? Let's look at the HTML and figure out which items match the rule.
+				</p>
+				<p>
+				<p>
+					Notice here that the blurb display is controlled by the single HTML class, "blurb". Every blurb in the archive, of whatever type, should
+					use this class. If you look at the HTML source for a works listing, the typical work blurb is declared like this:
+          
+          <pre><code>&lt;li id="work_1234" class="work blurb"></code></pre>
+				</p>
+				<p>
+					Notice that the class declaration ALSO includes the class "work".
+				</p>
+				<p>
+					There are many different blurbs in the archive -- the work blurb, the user blurb, the collection blurb, etc -- which are all quite similar in their
+					underlying purpose. Rather than having one set of CSS code for the work blurb, another very similar set for the slightly-different-looking user blurb
+					with its icon, and so forth, we have made the generic blurb CSS code contains everything that these blurbs have in common
+					(which we have deliberately made a lot!).
+				</p>
+				<p>Then, to create the different blurbs, we modify the basic setup slightly for different classes of blurb using the more specific class name. Normally these modifications are only going to be one or two lines. The most modification is for bookmark blurbs:
+				</p>
+				<p><pre><code>
+/* BOOKMARK*/
+ .bookmark p.count    { float: right }
+ .bookmark .count img,  .bookmark .symbol img 
+        { height: 25px; width: 25px }
+ .bookmark p.count span   { background: url(/images/category-none.png) top left no-repeat; border: 1px solid #eee; display: block; float: left; height: 25px; line-height: 1.875; margin: 0 2.5px 0 0; text-align: center; width: 25px }
+ .bookmark .blurb     { border: 1px solid #ccc; padding: 0.125em 0.4em; }
+ .bookmark .user    { clear:right; border: 1px solid #ddd; width:auto; margin: 0.25em 0.125em; padding: 0.125em; }
+ #main .bookmark .user .navigation 
+        { font-size: 0.8575em; margin: 0.5em 0 0.5em -.5em}
+
+</code></pre>
+				</p>
+				<p>
+					So what this means is, let's say we decided to add individual user blogs to the archive, and we then wanted an index of blogs.
+					Instead of coding it up from scratch, you would copy the HTML structure used for work blurbs or user blurbs eg, and you would
+					only add a few lines of css using something like the .blog .blurb classnames combined in order to make the blog blurbs
+					look the way you wanted them to, keeping everything as consistent as possible with the other blurbs.
+				</p>
+				<h5>Back</h5>
+				<p>Return to the <a href="index.html">documentation index</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

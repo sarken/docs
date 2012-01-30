@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Debugging the Cascade</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Finding and Fixing Cascade Errors</h1>
+				<p>When Front End talks about a "cascade error", we mean that somewhere in the stylesheets, a style is being applied in error. Mostly this is due to the rules of <em>inheritance</em>and <em>specificity</em>.
+				</p>
+				<p>To find cascade errors, first go and look at the page where it's showing up. Find the element, and look up its styles in the stylesheets. The <a href="">Style Guide</a>will help you. Some people like to use <a href="">Firebug</a>to help with this. I use <a href="">Web Developer</a>.
+				</p>
+				<h2 id="order">Order</h2>
+				<p>Hierarchy is very important in  <acronym title="cascading style sheets">CSS</acronym>. The order in which you write rules decides which rules are followed:
+				</p>
+				<p><code>p {color:blue; color: red;} </code>
+				</p>
+				<p style="color:red;">paragraph is red</p>
+				<p>This always follows, whether the rules come right next to each other:
+				<p><code>p {color:red;}<br />p {color:blue;} </code>
+				</p>
+				<p style="color:blue">paragraph is blue</p>
+				<p>...Or are separated by many other rules in the cascade:</p>
+				<p><code>p {color:red;}<br />li {color:green;} <br />blockquote {font size: larger;}<br />...<br />p {color: blue;}
+					</code>
+				</p>
+				<p style="color:blue">paragraph is blue</p>
+				<p>In the archive we use lots of stylesheets, but they make up a <em>single cascade</em>. They stack up in the order they are called in the html document <code>&lt;head&gt;</code>. You can look at that by viewing source, or browsing to otwarchive/app/public/stylesheets/site/2.0.  Don't change this order.
+				</p>
+				<p>The main sheets fit together like this:</p>
+				<ol>
+					<li>01-core.css</li>
+					<li>02-elements.css </li>
+					<li>03-region-header.css </li>
+					<li>04-region-dashboard.css </li>
+					<li>05-region-main.css </li>
+					<li>06-region-footer.css </li>
+					<li>07-interactions.css </li>
+					<li>08-actions.css </li>
+					<li>09-roles-states.css </li>
+					<li>10-types-groups.css </li>
+					<li>11-group-listbox.css </li>
+					<li>12-group-meta.css </li>
+					<li>13-group-blurb.css </li>
+					<li>14-group-preface.css </li>
+					<li>15-group-comments.css </li>
+					<li>16-zone-system.css </li>
+					<li>17-zone-home.css </li>
+					<li>18-zone-searchbrowse.css </li>
+					<li>19-zone-tags.css </li>
+					<li>20-zone-translation.css</li>
+					<li>21-userstuff.css </li>
+					<li>22-system-messages.css </li>
+				</ol>
+				<p>Then there are roles, which show different styles to different kinds of user and user agent, like: an iPhone, <abbr title="Internet Explorer 6">IE6</abbr>, a printer etc. These are all equally at position 23 in the cascade:</p>
+				<ul>
+    			<li>23-role-translator.css</li>
+    			<li>24-role-admin.css</li>
+    			<li>25-role-handheld.css</li>
+    			<li>26-role-aural.css</li>
+    			<li>27-role-print.css</li>
+    			<li>28-role-ie8_or_lower.css</li>
+    			<li>29-role-ie5.css</li>
+    			<li>30-role-ie6.css</li>
+    			<li>31-role-ie7.css</li>
+    		</ul>
+				<p>So, for example, userstuff.css overrides the table styles set in elements.css, so users get plain tables. And admin.css overrides the colour of the header set in region-header, so admins can tell when they're logged in.
+				</p>
+				<div class="aside">
+					<p>By the way:</p>
+					<ol>
+						<li><dfn>Inline style</dfn>: <code>&lt;div style=""</code>overrides</li>
+						<li><dfn>Internal style tag</dfn>: <code>&lt;style type="text/css"&gt; &lt;/style&gt;</code>overrides</li>
+						<li><dfn>External stylesheet</dfn>: <code>stylesheet.css</code></li>
+					</ol>
+					<p>But we <strong>don't use inline styles on the archive</strong>.</p>
+				</div>
+				<h2 id="cascade-errors">Cascade Errors</h2>
+				<p>Sometimes you write a rule and nothing happens. No matter what you do, the element doesn't change its display! Sometimes this is because there is a rule <em>lower down</em>the cascade, that is overriding your rule. This is the most common type of cascade error.
+				</p>
+				<p>But sometimes you've checked everything is <em>in order</em>, and still your style does not show up. This is because there is another type of hierarchy operating in the cascade. It is called "specificity".
+				</p>
+				<h2 id="specificity">Specificity</h2>
+				<p>There are lots of ways to select an element with  <acronym title="cascading style sheets">CSS</acronym>. Not all selectors have equal weights. They have a hierarchical order:
+				</p>
+				<ol>
+					<li>!important</li>
+					<li>#id</li>
+					<li>[attribute]</li>
+					<li>.class</li>
+					<li>element</li>
+				</ol>
+				<p>Compare these two rules:</p>
+				<p>
+				  <code>
+				    #main li {color:red;}<br/>
+				    li p.instructions {color:blue;}
+				  </code>
+				</p>
+				<table summary="counting the specificity of css selectors">
+					<tr>
+						<th scope="col">rule</th>
+						<th scope="col">!important</th>
+						<th scope="col">#id</th>
+						<th scope="col">[attribute]</th>
+						<th scope="col">.class</th>
+						<th scope="col">element</th>
+					</tr>
+					<tr>
+						<th scope="row">	<code>#main li {color:red;}<code></th>
+						<td>0</td>
+						<td>1</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+					</tr>
+					<tr>
+						<th scope="row">	<code>li p.instructions {color:blue;}</code></th>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<th scope="row">	<code>li[title="instructions"] {color: green;}</code></th>
+						<td>0</td>
+						<td>0</td>
+						<td>1</td>
+						<td>1</td>
+						<td>1</td>
+					</tr>
+				</table>
+				<p>#main li has a value of 1001, and li p.instructions has a value of only 12, so #main li is always going to override li p.instructions, even though it comes <em>after</em>#main li in the cascade. li[title="instructions"] has a value of 111, so it falls in between. So the HTML code <code>&lt;div id="main">...&lt;li title="instructions">...&lt;p class="instructions">guess my color!&lt;/p>&lt;/li>&lt;/div></code>will be RED.
+				</p>
+				<p>Counting in this way is what we mean by "weighing up" a declaration.<sup><a href="#one">*</a></sup></p>
+				
+				<h3>Weighting</h3>
+				<p>We use some very specific paths on the archive sheets, but we only infrequently use #ids or !important. This is because it is a lot easier to override <code>.meta dd dd</code>, with a weight of 12, than it is to override <code>#main .meta dd dd</code>, with a weight of 1012.
+				</p>
+				<p>Only use tag and class selectors. The only place #ids are acceptable are in the four region sheets. Regions are shown on every page: #header, #dashboard, #main, #footer, and are set in region-header, region-dashboard, region-main, and region-footer.</p>
+				<h3>Debugging</h3>
+				<p>When your element won't change, no matter what you tell it, and you've validated your code and spellchecked your selector, it's quite likely your selector is not specific enough. So weigh it and see. You might need to make it weightier, or more specific, or you might need to make the higher rule lighter, or less specific.
+				</p>
+			</div>
+			<div class="article">
+				<p id="one" style="font-size:80%">Pedantry: Specificity actually uses an infinite base counting system, so 11 elements do not outweigh 1 class, but you do not need to specify 11 elements ever on our archive so this fact is incidental.
+				</p>
+				<p><a href="index.html">&larr; Back</a></p>
+			</div>
+		</div>
+	</body>
+</html>

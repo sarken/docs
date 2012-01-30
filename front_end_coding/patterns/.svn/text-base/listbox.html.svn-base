@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pattern: Listbox</title>
+		<link rel="stylesheet" type="text/css" href="../front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Design Pattern: Listbox</h1>
+				<p>A listbox is a box containing a list. We use listbox to show more than one index on a page. Listboxes can be list items and they can nest, but they don't have to. They can be expandable, draggable and sortable. You can have a single listbox on a page so long as that page could show multiple indexes with enough user data; they don't need to be logicked out. 
+				</p>
+				<p>The present listbox style is declared in <cite>listbox.css</cite>. It's a <a href="supertypes.html#group">group</a>.</p>
+				<h2>Listbox HTML Structure</h2>
+				<h3>Quick Ref: <code>[always] {sometimes}</code></h3>
+				<p></p><pre>[listbox]
+	[heading] {span actions}[/heading]
+	{p note}{/p} {ul actions} {div form}
+	[index]
+		{listbox}...{/listbox}
+	[/index]
+	{p note} {ul actions}
+[/listbox]
+</pre>
+				<p></p>
+				<h3>Rules</h3>
+				<p>A listbox can be any block container that can contain these blocks: <code>h1&#8212;6, p, div, ul, ol, dl</code>. So this means a listbox could be a:
+				</p>
+				<ul>
+					<li>fieldset.listbox</li>
+					<li>div.listbox</li>
+					<li>li.listbox</li>
+					<li>dd.listbox</li>
+					<li>td.listbox (not recommended)</li>
+					<li>form.listbox (not recommended)</li>
+				</ul>
+				<p>You can never have an inline listbox of any kind. You can <strong>never</strong> have a listbox with restricted children: <strong>no</strong> <code>table.listbox, ol, ul, or dl.listbox</code>
+				</p>
+				<h3>Listbox XHTML Diagram (example)</h3>
+				<ol class="diagram" id="listboxhtml">
+					<li><code>&lt;div class="works listbox"></code>
+						<ol>
+							<li><code>&lt;h3 class="heading">Recent Works</code>
+								<ol>
+									<li><code>&lt;span class="action"></code>
+										<ol>
+											<li><code>&lt;a class="open">&darr;&lt;/a></code></li>
+										</ol>
+										<code>&lt;/span></code>
+									</li>
+								</ol>
+								<code>&lt;/h3></code>
+							</li>
+							<li><code>&lt;ul class="index"></code>
+								<ol>
+									<li><code>&lt;li class="work blurb">...&lt;/li></code></li>
+									<li><code>&lt;li class="work blurb">...&lt;/li></code></li>
+								</ol>
+							</li>
+							<li><code>&lt;p class="actions">Show All&lt;/p></code></li>
+						</ol>
+					</li>
+				</ol>
+				<h4>Notes</h4>
+				<p>We call it listbox (instead of indexbox) because a listbox might be a dynamically inserted form or form component, and therefore would need managed focus. This seems most closely related to <a href="http://www.w3.org/TR/wai-aria/roles#listbox">the ARIA role listbox</a>.</p>
+				<p>At the <span title="08/10/2011">moment</span> there are no listboxes in the codebase with the role listbox.</p>
+				<h5>Back</h5>
+				<p>Return to the <a href="./index.html">documentation index</a>.</p>
+			</div>
+		</div>
+	</body>
+</html>

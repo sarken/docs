@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Debugging the Front End</title>
+		<link rel="stylesheet" type="text/css" href="http://www.kekkai.org/lim/goodies/Front-End-Help/front-end.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Debugging the Front End</h1>
+				<h2>Solving problems efficiently and productively</h2>
+				<p>Debugging is a process of naming and solving problems. The most time consuming part is identifying the problem.
+				</p>
+				<p>The front end uses these tools to debug:</p>
+				<ul>
+					<li><p><a href="https://addons.mozilla.org/en-US/firefox/addon/60">Web Developer</a></p></li>
+					<li><p><a href="http://www.google.co.uk/">Google</a></p></li>
+					<li><p><strong>Your Brain</strong></p></li>
+				</ul>
+				<h3>Web Developer</h3>
+				<p>Web Developer helps us <em>locate</em> the problem.</p>
+				<p style="overflow: auto;">
+					<img src="WD-P.html" alt="screenshot of web developer plugin targeting a page element" />
+				</p>
+				<h3>Google</h3>
+				<p>Google helps us <em>describe</em> the problem.</p>
+				<ol>
+					<li>
+						<p>Identify <a href="http://www.google.com/support/websearch/bin/answer.py?hl=en&amp;answer=134479">key words</a>.
+						</p>
+					</li>
+					<li>
+						<p>Reformulate the <a href="http://www.lib.washington.edu/uwill/research101/Search07.htm#1">query</a>.</p>
+					</li>
+					<li><p>Discount red herrings with <a href="">boolean operators</a>.</p></li>
+				</ol>
+				<h3>Your Brain</h3>
+				<p>Your brain helps us to <em>evaluate</em> Google's solutions.</p>
+				<h4>Evaluating Sources</h4>
+				<p>Google has many answers, but they're not all useful, accurate, or informed. So how do you know what advice to take and what advice to reject? How can you make <em>well-advised</em> coding choices?
+				</p>
+				<h5>Some Authoritative Sources</h5>
+				<ul>
+					<li><a href="http://www.w3.org/">w3c</a>:
+						<ul>
+							<li><a href="http://www.w3.org/TR/xhtml1/">xhtml 1.0</a></li>
+							<li><a href="http://www.w3.org/TR/html4/">html 4</a></li>
+							<li><a href="http://www.w3.org/TR/CSS21/">css2.1</a></li>
+							<li><a href="http://www.w3.org/WAI/">WAI</a></li>
+						</ul>
+					</li>
+					<li><a href="http://css-discuss.incutio.com/">css-discuss</a></li>
+					<li><a href="http://www.zeldman.com/">Jeffrey Zeldman</a></li>
+					<li><a href="http://joeclark.org/book/">Joe Clark</a></li>
+					<li><a href="http://www.positioniseverything.net/">Position Is Everything</a></li>
+					<li><a href="http://www.satzansatz.de/cssd/onhavinglayout.html">Ingo Chao</a></li>
+					<li><a href="http://meyerweb.com/eric/css/">Eric Meyer</a></li>
+				</ul>
+				<p>Not all these sources will agree with each other, and they won't always give appropriate solutions, but they will generally provide evidence and a <em>logical chain of reasoning</em> that you can follow so you know why you're doing something.
+				</p>
+				<p>Sources which do not provide both evidence and a chain of reasoning are not valuable because you cannot accurately test, reproduce, or adapt their methods.
+				</p>
+				<h3>So far:</h3>
+				<dl>
+					<dt>Web Developer</dt>
+					<dd>What</dd>
+					<dt>Google</dt>
+					<dd>How</dd>
+					<dt>Your Brain</dt>
+					<dd>Why</dd>
+				</dl>
+				<p>If you do not know <em>why</em> you are doing something, you are <a href="http://pragprog.com/the-pragmatic-programmer/extracts/coincidence">programming by coincidence</a>, and your contribution may be difficult to maintain and ultimately worthless.
+				</p>
+			</div>
+			<div class="article">
+				<h2>Conclusion</h2>
+				<h3>Notes on best practice</h3>
+				<p>Over time, you will build up a kind of horse sense and your debugging process will speed up. A number of layout problems re-present in development as new structures are added and the cascade is refined.
+				</p>
+				<p> You will begin to reflexively validate XHTML, as many many layout bugs are caused by bad nests and poorly formed structures. You will acquire quirks-sense: Internet Explorers 4-7, for example, have an enormous number of bugs caused by unintentional triggering of its hasLayout property, and you will find yourself often reformulating your query to include +hasLayout.
+				</p>
+				<p>It is important, however, to uphold the <em>analytical method</em>, as it is just as mistaken to rely on magic spells when you know a hundred as when you only know three. If you don't record or explain your process, the project cannot collectively gain from your insight. Debugging is therefore constructive in two ways: it solves problems we have and it helps us build a store of tools to solve problems we haven't yet encountered.
+				</p>
+				<h3>Pragmatism, Perspective</h3>
+				<p>Sometimes reported code issues are mistaken in their priorities. Sometimes the coding labour and kilobytes required to resolve an issue are not worth the solution. Sometimes the changes needed are <em>disproportionate</em> to the reported issue. It is more important, for example, that the Archive be accessible to screenreaders, than that every link have the exact pixel padding for every visual browser. Before you commit, you must always ask yourself: is this response proportionate? Is it necessary? Is it productive? <em>Every</em> decision you make has both costs and benefits. Name the cost of your decision.
+				</p>
+				<p>It is not necessary or desirable for the Archive to look identical in every browser. "Pixel precison" is not a reasonable or desirable goal because our layout is designed to be <em>flexible</em> and adaptable, so it will work in contexts not yet conceived. When adding styles, you must consider that keeping the code simple and easy to maintain is a <strong>priority</strong>. Part of working on Front End is constantly explaining this to the rest of the AO3 staff. It's a social hack. It can be frustrating, but it is a necessary part of upholding our principles of <em>accessibility</em> and <em>flexibility</em> resting on a strong base of <em>typographic, relational</em> design.
+				</p>
+				<p>I don't have great advice for you in this; I have never succeeded in this advocacy. Some resources you might find useful are: <a href="http://articles.sitepoint.com/article/liquid-design">The Web is Not Print</a>, <a href="http://webdesign.about.com/od/webdesignbasics/a/aa021003a.htm">Web Design is Not Print Design</a>, <a href="http://webdesign.about.com/od/webdesigntutorials/a/aa061404.htm">You can't Get Every Page To Look Identical So Stop Trying</a>, <a href="http://lists.w3.org/Archives/Public/w3c-wai-ig/2005JulSep/0165.html">accessibility of fixed, liquid, and elastic design</a>, <a href="http://www.littlespringsdesign.com/blog/blog/2009/03/11/photoshop-layout-is-not-your-friend/">Photoshop Layout is NOT Your Friend</a>...there are copious resources online. Essentially you have to prepare yourself for the fact that the rest of AO3 will think you are incompetent, unreasonable, and kinda angry! But it's okay, it's worth it.
+				</p>
+				<h3>More complex and specific methods</h3>
+				<p>The approach laid out is a set of general principles for you to build upon. Listed following are some more detailed and specifical methods you can use:
+				</p>
+				<ul>
+					<li><a href="http://www.communitymx.com/content/article.cfm?cid=A33F8E6B1608B4E6">Debugging CSS, the Easy Way</a>
+					</li>
+					<li><a href="http://www.devchix.com/2007/02/12/css-debugging-and-editing-with-firebug/">Debugging with Firebug</a>
+					</li>
+					<li><a href="http://24ways.org/2007/diagnostic-styling">Diagnostic Styling</a></li>
+					<li><a href="http://css.tests.free.fr/en/debugging_css.php">Debugging CSS</a></li>
+				</ul>
+				<p><a href="index.html">&larr; Back</a></p>
+			</div>
+		</div>
+	</body>
+</html>

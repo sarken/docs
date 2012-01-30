@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Front End - Forms</title>
+		<link rel="stylesheet" type="text/css" href="front-end.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="article">
+				<h1>Forms</h1>
+				<h2>Rationalising our forms</h2>
+				<p>Needs updating 11/10/2011. I have written a SINGLE general form style /me pastes hastily from interactions.css:</p>
+				<p><pre>We might develop two MODES: .simple and .verbose, in early draft in sandbox
+        We also have some jS WIDGETS, which are custom form interactions, like autocomplete 
+        and a few variations for INTERACTION TYPES, which are, roughly:
+        .post, .login, make .associations, set .preferences, [.search, .filter] => in searchbrowse</pre></p>
+				<p>A lot of development time is spent on forms, from process design, to layout, to database hook up, to front end coding, to layout again, to css debugging. Most of this development is not an efficient use of resources.</p>
+				<p>Instead of developing each form on each page individually, we should rationalise. By this I mean identify four to five <em>classes</em> of forms, and define robust xhtml and css templates for each class.</p>
+				<p>Then we can spend our development time on the <em>new problems</em> each form presents: what the form does and how it interacts with the database, instead of reinventing the wheel, or the page, one form at a time.</p>
+				<h3>What sort of classes?</h3>
+				<p>I haven't rigorously defined them, but as a general idea, we could say that forms basically do these things:</p>
+				<ul>
+				<li>preference switching (turning things on and off, user preferences? filters?)</li>
+				<li>metadata entry (tagging, titling etc)</li>
+				<li>u-g-v entry (writing in a textarea)</li>
+				<li>associations (tag wrangling, collecting, translating)</li>
+				<li>searching, sorting (these are to be developed)</li>
+				</ul>
+				<p>Ira is reviewing forms to come up with a good broad system. Obviously some forms fit in more than one class (so we'd chunk those up by classed fieldsets), but with partial xhtml structures that combine and a properly ordered set of general rules, we design for multiple classes. This is not a huge project and could be completed in a month, if there were documentation support.</p>
+				<p>In terms of design and front end coding, once these classes are defined, we just need to <em>classify</em> the form, and the view will be finished.</p>
+				<h3>Problems</h3>
+				<p>This approach will give the site coherency, not just visually, but in the xhtml structure, so for screenreaders as well, but it also means that ADT will have to give up its pixel-precision Photoshop layouting. I, obviously, think this would be an extremely good thing, as I have often said, but I am aware that ADT really really likes its fantasy of total control. If it helps, here's a good blog post: <a href="http://www.littlespringsdesign.com/blog/blog/2009/03/11/photoshop-layout-is-not-your-friend/">Photoshop layout is not your friend</a>.</p>
+				<h3>Resources</h3>
+				<ul>
+				<li><a href="http://code.google.com/p/otwarchive/issues/list?can=2&amp;q=component=Forms">Googlecode Issues: Component:Forms</a> (30)</li>
+				<li><a href="http://wiki.transformativeworks.org/mediawiki/Forms">Original Coding Guidelines for Forms on A03</a></li>
+				<li><a href="http://www.slideshare.net/lukew/web-form-design-best-practices">Web Form Design Best Practices</a></li>
+				<li><a href="http://www.456bereastreet.com/archive/200701/styling_form_controls_with_css_revisited/">Styling form controls with CSS</a></li>
+				<li><a href="http://www.oreilly.com/catalog/cssckbk2/appendixd/appd.pdf">CSS Cookbook Appendix D - form controls [warning: PDF]</a></li>
+				</ul>
+			<p><a href="index.html">&larr; Back</a></p>
+			</div>
+		</div>
+	</body>
+</html>
