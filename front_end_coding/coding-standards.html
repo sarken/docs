@@ -9,24 +9,70 @@
 		<div class="wrapper">
 			<div class="article">
 				<h1>Coding Standards</h1>
-        <p>
-          These can be found <a href="http://wiki.transformativeworks.org/mediawiki/Coding_Standards:_XHTML/CSS">at the OTW internal wiki</a>.
-        </p>
-        <h3>HTML Inviolable Rules</h3>
-        <ol>
-          <li><strong>All tags must be closed</strong></li>
-          <li>All markup must be valid and well-formed.</li>
-          <li>Tables are only for tabular data: three or more pieces of information that can be cross referenced in a matrix.</li>
-          <li>All markup must degrade gracefully.</li>
-        </ol>
-        <h3>CSS Inviolable Rules</h3>
-        <ol>
-          <li>All classes must be single common English words (no-hyphenation-please)</li>
-          <li>No CSS3 for critical display.</li>
-          <li>All styles must degrade gracefully.</li>
-        </ol>
-      		<p><a href="index.html">&larr; Back</a></p>
-      		</div>
-    </div>
-  </body>
+        <p>This is a guide to the specifications and formatting standards used in our front-end code, which involves a CSS cascade and a consistent HTML framework used across many of our pages. Our standards help us write code that is super-accessible and as easily maintainable as possible, so if you're committing code, please make sure it follows these standards.
+				</p>
+				<h2>XHTML Specifications</h2>
+				<p>All of our pages are written in <a href="http://www.w3.org/TR/xhtml1/">XHTML 1.0</a> (Strict), which is a cleaner, stricter version of HTML that separates content from presentation. Our pages use <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</code> as their DOCTYPE declaration.
+				</p>
+				<p>Writing in XHTML 1.0 (Strict) means:
+				  <ul>
+				    <li>All markup must be written in lowercase</li>
+				    <li>All tags must be closed
+				      <ul>
+				        <li>Empty tags are closed within the tag: <code>&lt;br /&gt;</code></li>
+				        <li>Non-empty tags have a corresponding closing tag: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+				      </ul>
+				    <li>All tags must be properly nested</li>
+				    </li>
+				    <li>No <a href="http://webdesign.about.com/od/htmltags/a/bltags_deprctag.htm">deprecated elements</a> are included</li>
+				  </ul>
+				</p>
+				<p>While we will never validate as a site due to user-created content, our pages should broadly validate using <a href="http://validator.w3.org">the W3C Markup Validation Service</a>.
+				</p>
+					<h3>Content-Type/Charset</h3>
+					<p>The archive uses the UTF-8 character set: <code>&lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8"/&gt;</code>
+					</p>
+					<h3>Frequently Used Fragments</h3>
+					<p>There are some patterns that appear in many places throughout the archive. There are diagrams of these recurring patterns available in our <a href="patterns/index.html">Patterns Index</a>.
+					</p>
+						<h4>Forms</h4>
+						<!-- This should be moved to the Forms section of Patterns if it's not too outdated -->
+						<p>Forms, which are styled in 07-interactions.css, should be labeled with fieldsets and legends. Every submit button should be marked up with a <code>&lt;p class="submit"&gt;</code>. On some forms there are cancel buttons, so apply an <code>&lt;input class="cancel"...&gt;</code> and add cancel to that paragraph's classes: <code>&lt;p class="submit cancel"&gt;</code>.
+						</p>
+						<p>Form controls are inline elements, which means they have to be wrapped in block level elements.
+						</p>
+							<h5>Definition Lists</h5>
+							<p>We generally want forms set up as <a href="http://www.w3schools.com/tags/tag_dl.asp" title="HTML dl tag">definition lists</a> (<code>&lt;dl&gt;</code>) because the <a href="http://www.w3schools.com/tags/tag_dt.asp" title="HTML dt tag">term</a>  (<code>&lt;dt&gt;</code>) and <a href="http://www.w3schools.com/tags/tag_dd.asp" title="HTML dd tag">defintion</a> (<code>&lt;dd&gt;</code>) structure corresponds nicely to the typical label: [input] structure of a form. We use <code>&lt;dt&gt;</code> for the label and <code>&lt;dd&gt;</code> for the input, and a <code>&lt;dt&gt;</code> can contain more than one <code>&lt;dd&gt;</code>. However, since a <code>&lt;dl&gt;</code> can only<code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
+							</p>
+							<p>Here is the basic template to follow to meet all these rules:</p>
+							<h5>Other Form Structures</h5>
+							<p>Some forms cannot be logically structured as terms and definitions. As a last resort, these can be structured as paragraphs and can include linebreaks.
+							</p>
+					<h3>XHTML Identifiers</h3>
+					<p>Identifiers are attributes that add meaning to an XHTML element by providing more information about the element's function. Identifiers come in two varieties, <code>class</code> and <code>id</code>. 
+					</p>
+					<p>Class names are short and, ideally, English words in common usage. If you find yourself combining several words to make a class, like english_user_information, stop and think whether you could use several more general classes: english user information.</p>
+						<h4>Ids</h4>
+						<p>
+						</p>				
+						<h4>Classes</h4>
+						<p>
+						</p>
+						<h4>Our Identifier Naming Conventions</h4>
+						<p>Class names should be short, lowercase English (U.S.) words in common usage. They should describe the function, not presentation, of the element to which they are applied. There is more information available in the <a href="/classes.html">Classes</a> document.
+						</p>
+							<h5>Banned Words</h5>
+							<p>Anything used in an <code>id</code> or <code>class</code>.
+							</p>
+					<h3>References</h3>
+					<p>
+					</p>
+				<h2>CSS Specifications</h2>
+				<p>
+				</p>
+
+				<p><a href="index.html">&larr; Back</a></p>
+			</div>
+		</div>
+	</body>
 </html>
