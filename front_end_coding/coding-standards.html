@@ -70,6 +70,18 @@
 				<p>We use aproximately 30 external stylesheets written primarily to <a href="http://www.w3.org/TR/CSS2/">CSS 2.1 Specifications</a>, although we do permit the use of CSS3 to provide non-essential formatting frills, such as box shadows, text shadows, and gradients.
 				</p>
 				<p>Before submitting any code, it is always a good idea to check your CSS with <a href="http://jigsaw.w3.org/css-validator/">the W3C CSS validation service</a>.</p>
+					<h3>Units of Measurement</h3>
+					<p>Since Archive users and visitors browse the site with a variety of technologies, needs, and settings, we want our layout to be as flexible as possible. Using the right units of measurement in the right context helps us accomplish that.
+						<h4>Screen</h4>
+						<p>We use relative measurements to specify all text and most element sizes on our screen layout.
+						</p> 
+						<p>We set our text size using <a href="ems.html">ems</a> and unitless line height. We also use ems to set padding, margins, and widths and heights for other elements.
+						</p>
+						<p>However, there are times when using an absolute measurement is the best option. For example, we use pixels in instances where an element's <code>margin</code> is dependent on the size of an image (e.g., on top of collection profiles).
+						</p>
+						<h4>Print</h4>
+						<p>We have a separate stylesheet that controls the appearance of pages printed from the Archive. Text in our print stylesheet is sized using points.
+						</p>
 					<h3>Our CSS Formatting Conventions</h3>
 					<p>Since our stylesheets are edited by multiple coders, we have developed a house style that will allow us to easily read, track changes to, and avoid mistakes in our markup.
 					</p>
