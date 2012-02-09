@@ -9,23 +9,23 @@
 		<div class="wrapper">
 			<div class="article">
 				<h1>Ems</h1>
-				<p>I've dismantled the em scale as of 01/09/11 as our parser is still broken and we can't fix it, so we can't use anything that relies on valid XHTML. This document is therefore mostly obsolete. We still use ems, but we size the containing element #main to 0.875em and all spaces are recalculated from 14px.</p>
+				<p>This document is mostly obsolete. We still use ems, but we size the containing element #main to 0.875em and all spaces are recalculated from 14px.</p>
 				 <blockquote>
 					<p>The em is a sliding measure. One em is a distance equal to the type size. In 6 point type, an em is 6 points; in 12 point type an em is 12 points and in 60 point type an em is 60 points. Thus a one em space is proportionately the same in any size.<br/>
-						~Robert Bringhurst
+						-<cite>Robert Bringhurst</cite>
 					</p>
 				</blockquote>
-				<p>The Archive styles use <a href="http://www.w3.org/TR/CSS21/syndata.html#length-units" class="external text" title="http://www.w3.org/TR/CSS21/syndata.html#length-units" rel="nofollow">ems</a> to size text, most elements, and as units for margins and padding.
+				<p>The Archive styles use <a href="http://www.w3.org/TR/CSS21/syndata.html#length-units" class="external text" title="http://www.w3.org/TR/CSS21/syndata.html#length-units" rel="nofollow">ems</a> to size text and most elements, and to specify margins and padding.
 				</p>
-				<p>The Archive core styles use the traditional scale: 6, 8, 9, 10, 12, 14, 16, 18, 24, 36, 48, 60, 72.
+				<p>While users can change their browser's text size to suit their needs, the default size on most web browsers is 16 pixels <a href="http://alistapart.com/d/howtosizetextincss/ss-test-0.html" class="external autonumber" title="http://alistapart.com/d/howtosizetextincss/ss-test-0.html" rel="nofollow">[1]</a>. So, since an em is equal to the text size, 1em is 16 pixels.
 				</p>
-				<p>We set the body at 100%, or default. The default text size on most web browsers is 16px <a href="http://alistapart.com/d/howtosizetextincss/ss-test-0.html" class="external autonumber" title="http://alistapart.com/d/howtosizetextincss/ss-test-0.html" rel="nofollow">[1]</a>. So 1em is equal to 16 pixels.
+				<p>The Archive styles use the traditional scale: 6, 8, 9, 10, 12, 14, 16, 18, 24, 36, 48, 60, 72. The main text on the Archive is 14.
 				</p>
-				<p><code>body { font: 100% Candara, Corbel, Geneva, Verdana, Tahoma, Helvetica, Arial, sans-serif; }</code>
-				</p>
-				<p>And then the body paragraph text at 14px by dividing 14 by 16:
-				</p>
-				<p><code> body p {font-size: 0.875em;}</code>
+				<p>To ensure that all browsers can properly display, resize, and zoom on our text, the first thing we do when working with ems is set the <code>body</code> font size to 100%, or the default font size for the user's web browser: <blockquote><code>body {<br />
+&nbsp;&nbsp;font: 100%/1.125 'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;<br />
+}</code>.</p>
+				<p>Since we want the main Archive text to be 14 pixels, we divide 14 by 16, determining that we should set the font size to 0.875em: <blockquote><code>#main {
+&nbp;&nbsp;font-size: 0.875em;</code></blockquote>
 				</p>
 				<a name="The_Scale_in_Ems"></a><h2><span class="mw-headline"> The Scale in Ems </span></h2>
 				<ul>
@@ -59,9 +59,9 @@
 				</p>
 				<a name="Choosing_a_font-size"></a><h2><span class="mw-headline"> Choosing a <code>font-size</code> </span></h2>
 				<ul>
-					<li>Remember that font-size is <b>inherited</b> from the parent element so it's easier to target specific selectors rather than their containing blocks (ie <code>#sidebar li </code> rather than <code>#sidebar</code>. If you choose to style containing blocks, you will need to recalculate the scale from 14px.
+					<li>Remember that font-size is <b>inherited</b> from the parent element so it's easier to target specific selectors rather than their containing blocks (i.e., <code>#sidebar li </code> rather than <code>#sidebar</code>. If you choose to style containing blocks, you will need to recalculate the scale from 14px.
 					</li>
-					<li>Decide where the element you are styling fits in the page hierarchy. Is it greater or lesser than p? Definition terms used as headings probably would do well at 1em. Footnotes would do well at 0.75em.
+					<li>Decide where the element you are styling fits in the page hierarchy. Is it greater or lesser than <code>p</code>? Definition terms used as headings probably would do well at 1em. Footnotes would do well at 0.75em.
 					</li>
 				</ul>
 				<a name="Margins_and_Padding"></a><h2>Margins and Padding</h2>
@@ -70,6 +70,7 @@
 				<ul>
 					<li>A single space (like between words) is approximately 0.25em.
 					</li>
+					<li>Our font size in <code>#main</code> is 0.875em/1.286, so <code>margin: 0.643em auto;</code> gives you a single blank line (approximately 9px) between block elements.</li>
 					<li>Choosing values from the scale will automatically make your page look balanced.
 					</li>
 				</ul>
