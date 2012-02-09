@@ -27,7 +27,7 @@
 				    <li>No <a href="http://webdesign.about.com/od/htmltags/a/bltags_deprctag.htm">deprecated elements</a> are included</li>
 				  </ul>
 				</p>
-				<p>While we will never validate as a site due to user-created content, our pages should broadly validate using <a href="http://validator.w3.org">the W3C Markup Validation Service</a>.
+				<p>While our use of the ARIA <code>role</code> attribute means our pages will not validate, we still recommend checking your work with <a href="http://validator.w3.org">the W3C Markup Validation Service</a>.
 				</p>
 					<h3>Content-Type/Charset</h3>
 					<p>The archive uses the UTF-8 character set: <code>&lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8"/&gt;</code>
@@ -49,17 +49,16 @@
 							<p>Some forms cannot be logically structured as terms and definitions. As a last resort, these can be structured as paragraphs and can include linebreaks.
 							</p>
 					<h3>XHTML Identifiers</h3>
-					<p>Identifiers are attributes that add meaning to an XHTML element by providing more information about the element's function. Identifiers come in two varieties, <code>class</code> and <code>id</code>. 
-					</p>
-					<p>Class names are short and, ideally, English words in common usage. If you find yourself combining several words to make a class, like english_user_information, stop and think whether you could use several more general classes: english user information.</p>
+					<p>Identifiers are attributes that add meaning to an XHTML element by providing more information about the element's function. Identifiers come in two varieties, <code>class</code> and <code>id</code>. An element can have one, both, or neither type of identifier.</p>
 						<h4>Ids</h4>
-						<p>
-						</p>				
+						<p>The <code>id</code> identifier assigns a name to an element. The name can only be used once per document, and each element can only have one <code>id</code>.
+						</p>
+						<p>Stylesheets, scripts, and user agents can referece an elements by its <code>id</code>. An <code>id</code> can also serve as an anchor in a hyperlink or as a name for a declared <code>object</code> element.</p>
 						<h4>Classes</h4>
-						<p>
+						<p>A <code>class</code> identifier assigns a name to an element, but <code>class</code> names can be used multiple times per document and any element can have multiple <code>class</code> names, with each name separated by a single space: <code>&lt;div class="preface group"&gt;This div has the names group and preface.&lt;/div&gt;</code>.
 						</p>
 						<h4>Our Identifier Naming Conventions</h4>
-						<p>Class names should be short, lowercase English (U.S.) words in common usage. They should describe the function, not presentation, of the element to which they are applied. There is more information available in the <a href="/classes.html">Classes</a> document.
+						<p>Class names should be short, lowercase English (U.S.) words in common usage. They should describe the function, not presentation, of the element to which they are applied. There is more information available in the <a href="classes.html">Classes document</a>.
 						</p>
 							<h5>Banned Words</h5>
 							<p>Anything used in an <code>id</code> or <code>class</code>.
@@ -68,8 +67,42 @@
 					<p>
 					</p>
 				<h2>CSS Specifications</h2>
-				<p>
+				<p>We use aproximately 30 external stylesheets written primarily to <a href="http://www.w3.org/TR/CSS2/">CSS 2.1 Specifications</a>, although we do permit the use of CSS3 to provide non-essential formatting frills, such as box shadows, text shadows, and gradients.
 				</p>
+				<p>Before submitting any code, it is always a good idea to check your CSS with <a href="http://jigsaw.w3.org/css-validator/">the W3C CSS validation service</a>.</p>
+					<h3>Our CSS Formatting Conventions</h3>
+					<p>Since our stylesheets are edited by multiple coders, we have developed a house style that will allow us to easily read, track changes to, and avoid mistakes in our markup.
+					</p>
+					<p>A declaration block written for the archive should be formatted with:
+						<ul>
+							<li>The opening curly brace on the same line as the selector, separated by a single space</li>
+							<li>Each property indented and on a new line</li>
+								<ul>
+									<li>CSS 2.1 properties should be indented by two spaces</li>
+									<li>CSS3 properties should be listed last and indented by four spaces</li>
+								</ul>
+							<li>A space between the colon and the property value</li>
+							<li>A semi-colon at the end of each property, including the last</li>
+							<li>The closing curly brace on a new line, not indented</li>
+							<li>A single blank line between declaration blocks</li>
+							<li>A zero preceding any decimal value that is less than 1 (e.g. <code>0.643em</code>)</li>
+						</ul>
+					</p>
+					<p>Here is an example:
+						<pre>#header ul.primary {
+  float: none;
+  margin: auto;
+  background: #900 url(/images/skins/textures/tiles/red-ao3.png);
+  border-bottom: 2px solid #700;
+  padding: 0.25em 120px;
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.5);
+}
+
+#header .primary a, #header .primary .current, #header .primary input, #header .search input {
+  border-color: #a00;
+  border-bottom-color: #400;
+}</pre>
+					</p>
 
 				<p><a href="index.html">&larr; Back</a></p>
 			</div>
