@@ -199,24 +199,19 @@
 					<dd>If Georgia is not available, we fall back to the user's default serif font.
 					</dd>
 					<dd><span style="font-family: Georgia;">Georgia</span> should be used in the structural elements <code>h1, h2, h3, h4, h5, h6</code> or in elements with the class <code>.heading</code></dd>
-						</dl>
-					</dd>
-					<dd><span style="font-family: Georgia;">Georgia</span> should <strong>not</strong> be used in these structural elements:
-						<dl>
-							<dt>Definition terms, captions</dt>
-							<dd><code>dt, caption</code></dd>
-							<dt>Emphasised and strongly emphasised text</dt>
-							<dd><code>em, strong</code></dd>
-						</dl>
 					</dd>
 					<dt>Body text</dt>
-					<dd><code>'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;</code></dd>
+					<dd><span style="font-family: 'Lucida Grande';">Lucida Grande</span>, <span style="font-family:'Verdana';">Verdana</span></dd>
+					<dd>The full stack is <code>'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;</code></dd>
 					<dd>'Lucida Grande' is an Apple system font. All Mac users have Lucida. Verdana is a core web font; nearly everybody has it on their PC. Where these fonts are not available, we fall back through the stack.
 					</dd>
-					<dd>
-						<p><span style="font-family: 'Lucida Grande';">Lucida Grande</span>/<span style="font-family:'Verdana';">Verdana</span> should be used in the main body of the text, like this paragraph.
-						</p>
+					<dd><span style="font-family: 'Lucida Grande';">Lucida Grande</span>/<span style="font-family:'Verdana';">Verdana</span> should be used in the main body of the text, on navigation actions, and on almost anything that isn't a heading.
 					</dd>
+					<dt>Code and Dates</dt>
+					<dd><span style="font-family: Monaco;">Monaco</span>, <span style="font-family: Courier;">Courier</span></dd>
+					<dd><span style="font-family: Monaco;">Monaco</span> is an Apple system font. All Mac users have it. <span style="font-family: Courier;">Courier</span> is a core web font. Nearly everyone has it.</dd>
+					<dd>The full stack is <code>'Monaco', 'Consolas', Courier, monospace;</code></dd>
+					<dd>We use monospace fonts for <code>kbd, tt, code, var, pre</code> and many instances of dates and times, which typically have the class <code>datetime</code>.</dd>
 				</dl>
 				<p class="totop"><a href="#top">top</a></p>
 				<h3 id="screen_colors">Colors</a></h3>
@@ -298,41 +293,45 @@
 				<p>Don't use other colors.</p>
 				<p class="totop"><a href="#top">top</a></p>
 				<h3 id="screen_links">Banners, Buttons, Links</h3>
-				<p>These resources should be in a public area like "Press Kit", I suspect. Links to be directed once live.
+				<p>These resources should be in a public area.
 				</p>
 				<dl>
 					<dt>Graphic links</dt>
 					<dd>
-					<dl>
-						<dt><a href="http://www.transformativeworks.org/"><img class="inline" src="brandbook_files/otw_logo100.png" alt="red icon"></a> <a href="http://www.transformativeworks.org/">
+						<dl>
+							<dt><a href="http://www.transformativeworks.org/"><img class="inline" src="brandbook_files/otw_logo100.png" alt="red icon"></a> <a href="http://www.transformativeworks.org/">
 							<img class="inline" src="Screen/Images/otw_logo_100_75.png alt="icon with margins" /></a></dt>
-						<dd><code>&lt;a
+							<dd><code>&lt;a
 href="http://www.transformativeworks.org/"&gt;&lt;img src="../"
 alt="Organization for Transformative Works" /&gt;&lt;/a&gt;</code></dd>
-						
-					<dt>Blah blahblah: more banners and crap go here.</dt>
-					<dd><code>tba</code></dd>
-					</dl>
-						</dd>
-						<dt>Plain code links</dt>
-						<dd>
-							<dl>
-								<dt><a href="http://archiveofourown.org/"><acronym title="Archive of Our Own">A03</acronym></a>
-								</dt>
-								<dd><code></code>
-								...etc</dd>
-							</dl>
-						</dd>
-					</dl>
-					<p class="totop"><a href="#top">top</a></p>
-					<h3 id="screen_email">Email</h3>
-					<p>To Be Defined.</p>
-					<p class="totop"><a href="#top">top</a></p>
-					<hr>
-					<h2>In Print</h2>
-					<p>Our default print stylesheet is called <code>27-role-print.css</code>.
+						</dl>
+					</dd>
+					<dt>Plain code links</dt>
+					<dd>
+						<dl>
+							<dt><a href="http://archiveofourown.org/"><acronym title="Archive of Our Own">A03</acronym></a>
+							</dt>
+							<dd><code>&lt;a href="http://archiveofourown.org/">&lt;acronym title="Archive of Our Own">A03&lt;/acronym>&lt;/a></code>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+				<p class="totop"><a href="#top">top</a></p>
+				<h3 id="screen_email">Email</h3>
+				<p>To be defined. Should be based on screen.</p>
+				<p class="totop"><a href="#top">top</a></p>
+				<hr>
+				<h2>In Print</h2>
+				<p>Our default print stylesheet is called <code>27-role-print.css</code>.
 					<h3 id="print_fonts">Fonts</h3>
-										<p class="totop"><a href="#top">top</a></p>
+					<dl>
+						<dt>All Text</dt>
+						<dd><span style="font-family: serif;">serif</span>
+						</dd>
+						Serif is a family of fonts rather than a specifc font. It tells the system to use its default serif font.
+						</dd>
+					</dl>
+					<p class="totop"><a href="#top">top</a></p>
 					<h3 id="print_colors">Colors</a></h3>
 					<div style="margin: auto auto 0pt; height: 3em;">
 						<div style="background: rgb(0, 0, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
