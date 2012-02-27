@@ -6,7 +6,7 @@
 		<title>Archive Style Guide</title>
 	</head>
 	<style type="text/css"><!--
-		dt {width:auto;}
+		dt {width:auto; padding-right:0.25em;}
 		dd {font-family:serif;}
 		-->
 	</style>
@@ -19,7 +19,7 @@
 						<ul>
 							<li><a href="#general_logo">Logo</a></li>
 							<li><a href="#general_fonts">Fonts</a></li>
-							<li><a href="#general_colours">Colours</a></li>
+							<li><a href="#general_colors">Colors</a></li>
 						</ul>
 					</li>
 					<li>On Screen
@@ -27,7 +27,7 @@
 							<li><a href="#screen_resources">Resources</a></li>
 							<li><a href="#screen_logo">Logo</a></li>
 							<li><a href="#screen_fonts">Fonts</a></li>
-							<li><a href="#screen_colours">Colours</a></li>
+							<li><a href="#screen_colors">Colors</a></li>
 							<li><a href="#screen_xhtml"><acronym title="extensible hypertext markup language">XHTML</acronym></a></li>
 							<li><a href="#screen_css"><acronym title="cascading style sheets">CSS</acronym></a></li>
 							<li><a href="#screen_links">Banners, Buttons, Links</a></li>
@@ -38,7 +38,7 @@
 						<ul>
 							<li><a href="#print_styles">Print Styles</a></li>
 							<li><a href="#print_fonts">Fonts</a></li>
-							<li><a href="#print_colours">Colours</a></li>
+							<li><a href="#print_colors">Colors</a></li>
 						</ul>
 					</li>
 					<li>Spoken
@@ -62,36 +62,36 @@
 			</div>
 			<div class="article">
 				<h2>In General</h2>
-				<h3><a name="general_logo">Logo</a></h3>
+				<h3 id="general_logo">Logo</h3>
 				<p>This is our logo: <img src="ao3_logo.png" alt="our logo in red"></p>
-				<p>On a screen it's shown in red, colour #990000.</p>
+				<p>On a screen it's shown in red, color #990000. The shorthand for this color is #900.</p>
 				<p>The
-					logo has an aspect ratio of [INSERT]. The height is
-					always [INSERT] of the width. Don't change the aspect ratio.
+					logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 				</p>
 				<p class="totop"><a href="#top">top</a></p>
-				<h3><a name="general_fonts">Fonts</a></h3>
+				<h3 id="general_fonts">Fonts</h3>
 				<dl>
 					<dt>Headings, Subheadings, Titles, Addresses</dt>
-					<dd style="font-family: Fertigo;">Fertigo</dd>
-					<dd>We load this font when a user first accesses the archive, but you can also <a href="http://www.josbuivenga.demon.nl/fertigo.html">download Fertigo for free</a> yourself.
+					<dd style="font-family: Georgia;">Georgia</dd>
+					<dd>Georgia is a core web font; this means that everyone has it installed on their computer.
 					</dd>
-					<dd>Use <span style="font-family: Fertigo">Fertigo</span> on the screen and in print when writing the Archive name. Use it for lettering on icons and logos.
+					<dd>Use <span style="font-family: Georgia">Georgia</span> on the screen and in print when writing the Archive name. Use it for lettering on icons and logos.
 					</dd>
-					<dt>Body text, Serif (print)</dt>
-					<dd style="font-family: georgia;">Georgia</dd>
-					<dd>Georgia is a core web font; this means that everyone has it installed on their computer.</dd>
-					<dd>Use <span style="font-family: georgia;">Georgia</span> to print out pages from the Archive.</dd>
-					<dt>Body text, Sans-serif (screen)</dt>
-					<dd><span style="font-family:'Lucida Grande';">Lucida Grande</span>/ <span style="font-family:verdana;">Verdana
+					<dt>Body text, Serif (Print)</dt>
+					<dd style="font-family: serif">serif</dd>
+					<dd>Serif is a family of fonts rather than a specifc font. It tells the system to use its default serif font.</dd>
+					<dd>Use a <span style="font-family: serif;">serif</span> to print out pages from the Archive.</dd>
+					<dt>Body text, Sans-serif (Screen)</dt>
+					<dd><span style="font-family:'Lucida Grande';">Lucida Grande</span>/<span style="font-family:verdana;">Verdana
 					</dd>
 					<dd><span style="font-family:'Lucida Grande';">Lucida Grande</span> is an Apple system font. All Apple users have it. <span style="font-family:'Verdana';">Verdana</span> is a core web font. All PC users have it.
 					</dd>
 					<dd>Use <span style="font-family: verdana;">Lucida/Verdana</span> for electronic materials, like web pages.
 					</dd>
+					<dd>Our full sans-serif font stack is Lucida Grande, Lucida Sans Unicode, GNU Unifont, Verdana, Helvetica, and finally the general sans-serif family.</dd>
 				</dl>
 				<p class="totop"><a href="#top">top</a></p>
-				<h3><a name="general_colours">Colours</a></h3>
+				<h3 id="general_colors">Colors</h3>
 				<div style="margin: auto auto 0pt; height: 3em;">
 					<div style="background: rgb(153, 0, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 					<div style="background: rgb(0, 0, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
@@ -99,8 +99,8 @@
 					<div style="background: rgb(51, 51, 51) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 					<div style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 				</div>
-				<table class="colours" summary="The five colours we use in our materials, and their hexadecimal, CMYK, and RGB values">
-					<caption>We use five basic colours in all our materials</caption>
+				<table class="colors" summary="The five colors we use in our materials, and their hexadecimal, CMYK, and RGB values">
+					<caption>We use five basic colors in all our materials</caption>
 					<tbody>
 						<tr>
 							<td colspan="2" style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"></td>
@@ -177,7 +177,7 @@
 				<p class="totop"><a href="#top">top</a></p>
 				<hr>
 				<h2>On the Screen</h2>
-				<h3><a name="screen_resources">Resources</a></h3>
+				<h3 id="screen_resources">Resources</h3>
 				<p>Download these branding resources (right click and save)</p>
 				<ul>
 					<li><a href="Screen/Screen.zip">All Screen Resources, zipped</li>
@@ -189,10 +189,10 @@
 					<li><a href="Screen/Photoshop/AO3_Brushes.csh">Photoshop Custom Brush Pack (raster)</a></li>
 				</ul>
 				<p class="totop"><a href="#top">top</a></p>
-				<h3><a name="screen_logo">Logo</a></h3>
+				<h3 id="screen_logo">Logo</h3>
 				<p>This is our logo: <img src="ao3_logo.png" alt="our logo in red"></p>
 				<p>On the screen we show it in this red: <code>#990000</code>. Don't change the colour.</p>
-				<h3><a name="screen_fonts">Fonts</a></h3>
+				<h3 id="screen_fonts">Fonts</h3>
 				<dl>
 					<dt>Headings, Subheadings, Titles, Addresses</dt>
 					<dd><span style="font-family: Fertigo;">400 weight, Fertigo</span>
@@ -228,15 +228,15 @@
 					</dd>
 				</dl>
 				<p class="totop"><a href="#top">top</a></p>
-				<h3><a name="screen_colours">Colours</a></h3>
+				<h3 id="screen_colors">Colors</a></h3>
 				<div style="margin: auto auto 0pt; height: 3em;">
 					<div style="background: rgb(153, 0, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 					<div style="background: rgb(255, 255, 255) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 					<div style="background: rgb(51, 51, 51) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 					<div style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 				</div>
-				<table class="colours" summary="The colours we use in our website, how they are used, and their hexadecimal and RGB values">
-					<caption>We use these colours on the screen</caption>
+				<table class="colors" summary="The colors we use in our website, how they are used, and their hexadecimal and RGB values">
+					<caption>We use these colors on the screen</caption>
 					<tbody>
 						<tr>
 							<td colspan="2" style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"></td>
@@ -287,7 +287,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<p>We also use a range of light greys to colour boxes and mark borders.</p>
+				<p>We also use a range of light greys to color boxes and mark borders.</p>
 				<ul>
 					<li style="background:#eee;">#eee</li>
 					<li style="background:#ddd">#ddd</li>
@@ -304,8 +304,8 @@
 					<li style="background:#efd1d1; border:2px solid #af2020">red: error, go back and fix this problem</li>
 					<li style="background:#EFE14A; border:2px solid #AFA42B">yellow: warning, click to proceed, correct this error before you proceed</li>
 				</ul>
-				<p>Don't use other colours.</p>
-				<h3><a name="screen_xhtml"><acronym title="extensible hypertext markup language">XHTML</acronym></a></h3>
+				<p>Don't use other colors.</p>
+				<h3 id="screen_xhtml"><acronym title="extensible hypertext markup language">XHTML</acronym></h3>
 				<p>Our webpages are written in <acronym title="extensible hypertext markup language">XHTML</acronym> 1.0 Strict.
 				</p>
 				<p>They must be well formed; they should broadly validate. This means that, in general, they should pass the checker at the <a href="http://validator.w3.org/">W3C Markup Validation Service</a>.
@@ -315,11 +315,11 @@
 				<p>These requirements are detailed in our Accessibility Statement and our <a href="">Coding Standards</a>
 				</p>
 				<p class="totop"><a href="#top">top</a></p>
-				<h3><a name="screen_css"><acronym title="cascading style sheets">CSS</acronym></a></h3>
+				<h3 id="screen_css"><acronym title="cascading style sheets">CSS</acronym></h3>
 				<p>We style our webpages with <acronym title="cascading style sheets">CSS</acronym>. The specifics should be detailed in our site docs, not in the brand book.
 				</p>
 				<p class="totop"><a href="#top">top</a></p>
-				<h3><a name="screen_links">Banners, Buttons, Links</a></h3>
+				<h3 id="screen_links">Banners, Buttons, Links</h3>
 				<p>These resources should be in a public area like "Press Kit", I suspect. Links to be directed once live.
 				</p>
 				<dl>
@@ -347,21 +347,21 @@ alt="Organization for Transformative Works" /&gt;&lt;/a&gt;</code></dd>
 						</dd>
 					</dl>
 					<p class="totop"><a href="#top">top</a></p>
-					<h3><a name="screen_email">Email</a></h3>
+					<h3 id="screen_email">Email</h3>
 					<p>To Be Defined.</p>
 					<p class="totop"><a href="#top">top</a></p>
 					<hr>
 					<h2>In Print</h2>
-					<p>Our default print stylesheet is called <code>print.css</code>.
-					<h3><a name="print_fonts">Fonts</a></h3>
+					<p>Our default print stylesheet is called <code>27-role-print.css</code>.
+					<h3 id="print_fonts">Fonts</h3>
 										<p class="totop"><a href="#top">top</a></p>
-					<h3><a name="print_colours">Colours</a></h3>
+					<h3 id="print_colors">Colors</a></h3>
 					<div style="margin: auto auto 0pt; height: 3em;">
 						<div style="background: rgb(0, 0, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 						<div style="border: 1px solid ; background: rgb(255, 255, 255) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; height: 20%;"></div>
 					</div>
-					<table class="colours" summary="The two colours we use in our materials, and their hexadecimal, CMYK, and RGB values">
-						<caption>We use two colours in our print styles</caption>
+					<table class="colors" summary="The two colors we use in our print materials, and their hexadecimal, CMYK, and RGB values">
+						<caption>We use two colors in our print styles</caption>
 						<tbody><tr>
 							<td colspan="2" style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"></td>
 							<th scope="col"><abbr title="hexadecimal">HEX</abbr></th>
@@ -400,8 +400,9 @@ alt="Organization for Transformative Works" /&gt;&lt;/a&gt;</code></dd>
 							<td style="background: rgb(0, 0, 0) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">&nbsp;</td>
 						</tr>
 					</tbody></table>
-					<p>Don't use any other colours.</p>
+					<p>Don't use any other colors.</p>
 					<p class="totop"><a href="#top">top</a></p>
+					<p><a href="index.html">&larr; Back</a></p>
 					</div>
 		</div>
 	</body></html>
