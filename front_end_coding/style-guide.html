@@ -28,8 +28,6 @@
 							<li><a href="#screen_logo">Logo</a></li>
 							<li><a href="#screen_fonts">Fonts</a></li>
 							<li><a href="#screen_colors">Colors</a></li>
-							<li><a href="#screen_xhtml"><acronym title="extensible hypertext markup language">XHTML</acronym></a></li>
-							<li><a href="#screen_css"><acronym title="cascading style sheets">CSS</acronym></a></li>
 							<li><a href="#screen_links">Banners, Buttons, Links</a></li>
 							<li><a href="#screen_email">Email</a></li>
 						</ul>
@@ -86,9 +84,8 @@
 					</dd>
 					<dd><span style="font-family:'Lucida Grande';">Lucida Grande</span> is an Apple system font. All Apple users have it. <span style="font-family:'Verdana';">Verdana</span> is a core web font. All PC users have it.
 					</dd>
-					<dd>Use <span style="font-family: verdana;">Lucida/Verdana</span> for electronic materials, like web pages.
+					<dd>Use <span style="font-family: 'Lucida Grande';">Lucida Grande</span>/<span style="font-family:'Verdana';">Verdana</span> for electronic materials, like web pages.
 					</dd>
-					<dd>Our full sans-serif font stack is Lucida Grande, Lucida Sans Unicode, GNU Unifont, Verdana, Helvetica, and finally the general sans-serif family.</dd>
 				</dl>
 				<p class="totop"><a href="#top">top</a></p>
 				<h3 id="general_colors">Colors</h3>
@@ -182,7 +179,7 @@
 				<ul>
 					<li><a href="Screen/Screen.zip">All Screen Resources, zipped</li>
 					<li><a href="Screen/Images/ao3_logo.svg">Logo SVG</a>(size in px)</li>
-					<li><a href="Screen/Images/ao3_logo.jpg">Logo JPG</a>(size in px)/li>
+					<li><a href="Screen/Images/ao3_logo.jpg">Logo JPG</a>(size in px)</li>
 					<li><a href="Screen/Images/ao3_logo.png">Logo PNG</a>(size in px)</li>
 					<li><a href="Screen/Font">TrueType font comprising AO3 logo (a), OTW logo (l) and OTW wordmark (w)</a></li>
 					<li><a href="Screen/Photoshop/AO3_Shapes.csh">Photoshop Custom Shape Pack (vector)</a></li>
@@ -191,26 +188,20 @@
 				<p class="totop"><a href="#top">top</a></p>
 				<h3 id="screen_logo">Logo</h3>
 				<p>This is our logo: <img src="ao3_logo.png" alt="our logo in red"></p>
-				<p>On the screen we show it in this red: <code>#990000</code>. Don't change the colour.</p>
+				<p>On the screen we show it in this red: <code>#990000</code>. Don't change the color.</p>
 				<h3 id="screen_fonts">Fonts</h3>
 				<dl>
 					<dt>Headings, Subheadings, Titles, Addresses</dt>
-					<dd><span style="font-family: Fertigo;">400 weight, Fertigo</span>
+					<dd><span style="font-family: Georgia;">400 weight, Georgia</span>
 					</dd>
-					<dd>We load this font when a user first accesses the archive, but you can also <a href="http://www.josbuivenga.demon.nl/fertigo.html">download Fertigo for free</a> yourself.
+					<dd><span style="font-family: Georgia;">Georgia</span> is a core web font; this means that everyone has it installed on their computer
 					</dd>
-					<dd>Where Fertigo is not available, we fall back through the other brand fonts, like so: <code>h1, h2, h3, h4, h5, h6	{ font-family: FertigoProRegular, Cambria, Constantia, Palatino, Georgia, sans-serif; font-weight: 400;}
-						</code>. In other words: Cambria is Fertigo's understudy.
+					<dd>If Georgia is not available, we fall back to the user's default serif font.
 					</dd>
-					<dd><span style="font-family: Fertigo;">Fertigo</span> should be used in these structural elements:
-						<dl>
-							<dt>Headings</dt>
-							<dd><code>h1, h2, h3, h4, h5, h6</code></dd>
-							<dt>Main Navigation:</dt>
-							<dd><code>.navigation a</code></dd>
+					<dd><span style="font-family: Georgia;">Georgia</span> should be used in the structural elements <code>h1, h2, h3, h4, h5, h6</code> or in elements with the class <code>.heading</code></dd>
 						</dl>
 					</dd>
-					<dd><span style="font-family: Fertigo;">Fertigo</span> should <strong>not</strong> be used in these structural elements:
+					<dd><span style="font-family: Georgia;">Georgia</span> should <strong>not</strong> be used in these structural elements:
 						<dl>
 							<dt>Definition terms, captions</dt>
 							<dd><code>dt, caption</code></dd>
@@ -219,11 +210,11 @@
 						</dl>
 					</dd>
 					<dt>Body text</dt>
-					<dd><code>'Lucida Grande', Verdana, Helvetica, Tahoma, Arial, sans-serif</code></dd>
+					<dd><code>'Lucida Grande', 'Lucida Sans Unicode', 'GNU Unifont', Verdana, Helvetica, sans-serif;</code></dd>
 					<dd>'Lucida Grande' is an Apple system font. All Mac users have Lucida. Verdana is a core web font; nearly everybody has it on their PC. Where these fonts are not available, we fall back through the stack.
 					</dd>
 					<dd>
-						<p><span style="font-family: verdana;">Lucida/Verdana</span> should be used in the main body of the text, like this paragraph.
+						<p><span style="font-family: 'Lucida Grande';">Lucida Grande</span>/<span style="font-family:'Verdana';">Verdana</span> should be used in the main body of the text, like this paragraph.
 						</p>
 					</dd>
 				</dl>
@@ -297,27 +288,14 @@
 					<li style="background:#777">#777</li>
 					<li style="background:#555">#555</li>
 				</ul>
-				<p>System and error messages use their own separate colour scheme. This has not yet been rigorously designed, but roughly follows:
+				<p>System and error messages use their own separate color scheme:
 				</p>
 				<ul>
-					<li style="background:#d1e1ef; border:2px solid #c2d2df">blue: success, messages, additional information</li>
-					<li style="background:#efd1d1; border:2px solid #af2020">red: error, go back and fix this problem</li>
-					<li style="background:#EFE14A; border:2px solid #AFA42B">yellow: warning, click to proceed, correct this error before you proceed</li>
+					<li style="background:#d1e1ef; border:1px solid #c2d2df">blue: success, messages, additional information. The background is #d1e1ef with a border of #c2d2df.</li>
+					<li style="background:#efd1d1; border: 1px solid #900">red: error, go back and fix this problem. The background is #efd1d1 with a border of #900.</li>
+					<li style="background:#ffe34e; border: 1px solid #d89e36; color: #000">yellow: warning, click to proceed, correct this error before you proceed. #ffe34e with a border of #d89e36 and #000 text.</li>
 				</ul>
 				<p>Don't use other colors.</p>
-				<h3 id="screen_xhtml"><acronym title="extensible hypertext markup language">XHTML</acronym></h3>
-				<p>Our webpages are written in <acronym title="extensible hypertext markup language">XHTML</acronym> 1.0 Strict.
-				</p>
-				<p>They must be well formed; they should broadly validate. This means that, in general, they should pass the checker at the <a href="http://validator.w3.org/">W3C Markup Validation Service</a>.
-				</p>
-				<p>Our <acronym title="extensible hypertext markup language">XHTML</acronym> documents must degrade gracefully. This means that they must not lose critical <em>content</em> when accessed by alternative technologies, like really old browsers, screen readers, or mobile phones. It does not mean it should look the same in every browser.
-				</p>
-				<p>These requirements are detailed in our Accessibility Statement and our <a href="">Coding Standards</a>
-				</p>
-				<p class="totop"><a href="#top">top</a></p>
-				<h3 id="screen_css"><acronym title="cascading style sheets">CSS</acronym></h3>
-				<p>We style our webpages with <acronym title="cascading style sheets">CSS</acronym>. The specifics should be detailed in our site docs, not in the brand book.
-				</p>
 				<p class="totop"><a href="#top">top</a></p>
 				<h3 id="screen_links">Banners, Buttons, Links</h3>
 				<p>These resources should be in a public area like "Press Kit", I suspect. Links to be directed once live.
