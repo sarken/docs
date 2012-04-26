@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-		<head>
+	<head>
 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Tools</title>
 		<link rel="stylesheet" type="text/css" href="front-end.css"/>
@@ -9,10 +9,16 @@
 		<div class="wrapper">
 			<div class="article">
 				<h1>Tools</h1>
+				
+				<p>Here's the set of basic tools that we'll be using. Please install all of these, even if you have similar tools that you already like -- it will make life easier if we are all using the same set of tools.</p>
+				
+				<h2 id="firefox">Firefox</h2>
+				
+				<p>In general, the way we will work on projects is to first get them working and looking good in <a href="http://www.mozilla.com/en-US/firefox/">Firefox</a>, and then move to cross-browser compatibility towards release time, since this almost invariably involves putting in all sorts of kludginess.</p>
 
         <h2 id="web_developer_toolbar">Web Developer Toolbar</h2>
         
-        <p>One of the most invaluable tools you can have for working on HTML/CSS in general is 
+        <p>One of the most valuable tools you can have for working on HTML/CSS is 
         a browser plugin that lets you examine and edit the CSS of any web page "live" -- that is,
         rather than having to edit source code, save a file, and refresh the archive page every 
         time you want to test some new change to CSS, you can just edit the CSS within your
@@ -34,7 +40,24 @@
           
           <img src="images/web_developer_toolbar-open.png" alt="The Edit CSS window opened" />
         </p>
+        
+        <p>If you're working on Internet Explorer compatibility, the <a href="http://www.microsoft.com/download/en/details.aspx?id=18359">IE Developer Toolbar</a> may be similarly useful.
+        </p>
+        
+        <h2 id="firebug">Firebug</h2>
+        
+        <p><a href="http://getfirebug.com">Firebug</a> is another browser extension that's a great tool for anyone working with JavaScript, HTML and CSS.</p>
+        
+        <p>It's a Firefox-only extension that lets you edit, debug, and monitor CSS, HTML, and JavaScript live in any web page, in addition to being able to monitor network use, download sizes and JavaScript efficiency.</p>
 
+				<h2 id="scriptaculous">Scriptaculous</h2>
+				
+				<p><a href="http://script.aculo.us/downloads">Scriptaculous</a> is the JavaScript library that comes built in with Rails. This allows you to easily do all sorts of useful effects and also many silly ones. You don't actually need to know Javascript yourself -- just stick the library files in and learn a few basic patterns you can copy and paste, and off you go.</p>
+				
+				<p>Whenever using JavaScript, you must remember to check what your pages look like when you have JavaScript disabled (hint: once you have Web Developer Toolbar installed, it lets you disable/enable Javascript easily) and make sure they still function. Scriptaculous effects degrade in an okay way out of the box, and we will be talking more about other ways to ensure accessibility along the way, but keep it in mind.</p>
+
+<p>Even if you hate JavaScript, please go with us on this. Bad JavaScript makes baby unicorns cry! But when used right, it lets us make pages that are dramatically more usable and reduce load on our servers by doing some of the work in the user's browser.</p>
+        
         <p><a href="index.html">&larr; Back to the Documentation Index</a></p>        
       </div>
     </div>
