@@ -42,9 +42,24 @@
 						<p>Form controls are inline elements, which means they have to be wrapped in block level elements.
 						</p>
 							<h5>Definition Lists</h5>
-							<p>We generally want forms set up as <a href="http://www.w3schools.com/tags/tag_dl.asp" title="HTML dl tag">definition lists</a> (<code>&lt;dl&gt;</code>) because the <a href="http://www.w3schools.com/tags/tag_dt.asp" title="HTML dt tag">term</a>  (<code>&lt;dt&gt;</code>) and <a href="http://www.w3schools.com/tags/tag_dd.asp" title="HTML dd tag">defintion</a> (<code>&lt;dd&gt;</code>) structure corresponds nicely to the typical label: [input] structure of a form. We use <code>&lt;dt&gt;</code> for the label and <code>&lt;dd&gt;</code> for the input, and a <code>&lt;dt&gt;</code> can contain more than one <code>&lt;dd&gt;</code>. However, since a <code>&lt;dl&gt;</code> can only<code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
+							<p>We generally want forms set up as <a href="http://www.w3schools.com/tags/tag_dl.asp" title="HTML dl tag">definition lists</a> (<code>&lt;dl&gt;</code>) because the <a href="http://www.w3schools.com/tags/tag_dt.asp" title="HTML dt tag">term</a>  (<code>&lt;dt&gt;</code>) and <a href="http://www.w3schools.com/tags/tag_dd.asp" title="HTML dd tag">defintion</a> (<code>&lt;dd&gt;</code>) structure corresponds nicely to the typical label: [input] structure of a form. We use <code>&lt;dt&gt;</code> for the label and <code>&lt;dd&gt;</code> for the input, and a <code>&lt;dt&gt;</code> can contain more than one <code>&lt;dd&gt;</code>. However, since a <code>&lt;dl&gt;</code> can only contain<code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
 							</p>
 							<p>Here is the basic template to follow to meet all these rules:</p>
+<h6>Quick Ref: <code>[always] {sometimes}</code></h6>
+				<pre>
+[form]
+  [fieldset]
+    [legend] [/legend]
+    [h3 class="landmark heading"] [/h3]
+    [dl]
+      [dt] [label] [/label] [/dt]
+      [dd] [input] [/dd]
+      {dd} {input} {/dd}
+    [/dl]
+    [p class="submit actions"] [input type="submit"] [/p]
+  [/fieldset]
+[/form]
+</pre>
 							<h5>Other Form Structures</h5>
 							<p>Some forms cannot be logically structured as terms and definitions. As a last resort, these can be structured as paragraphs and can include linebreaks.
 							</p>
