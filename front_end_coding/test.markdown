@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: front_end_guide
 title: Test | AO3 Front End Documentation
 ---
 
