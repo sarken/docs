@@ -1,3 +1,56 @@
 body {
-  background: pink;
+  background: #fff;
+  color: #111;
+  font: 1em/1 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.375em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+code {
+  background: #eee;
+  border: 1px #ccc solid;
+}
+
+ul, ol {
+  margin: 0 auto;
+  width: 95%;
+}
+
+p + p, li + li {
+  margin-top: 1.6em;
+}
+
+.header {
+  background: #900;
+  color: #fff;
+}
+
+.main {
+  line-height: 1.6;
+  max-width: 39em;
+  min-width: 30em;
+  width: 35em;
 }
