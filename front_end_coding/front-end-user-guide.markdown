@@ -1,6 +1,6 @@
 ---
 layout: front_end_guide
-title: Front End User Guide | AO3 Front End Documentation
+title: Front End User Guide | Front End Help
 ---
 # Front End User Guide
 
@@ -24,7 +24,7 @@ Layout makers and post-release users: If you are remaking the interface, you can
 
 There Archive has 32 stylesheets, the first 29 of which are always loaded. Of the remaining eight, three are media-specific (handheld for mobile devices, aural for speech synthesizers, and print for printers), four are Internet Explorer conditionals (used only when the site is accessed in the corresponding version of Internet Explorer), and one is our sandbox (always loaded, but home to temporary or experimental styles we aren't ready to put into the first 29). On your development environment, you will see all of the stylesheets listed in the document head. The order they are listed in is the cascade hierarchy.
 
-Things are a little different on our test and production environments, which use our skin system to combine the stylesheets. If you look at the page source on either of these environments, you will notice that the first 29 stylesheets have been grouped into a single file named 01_site_screen_.css. (These skin stylesheets are cached, so if a change fails to show up after being deployed to test or production, the first step to figuring out why is to ask the person in charge of the code push to recache the stylesheets.)
+Things are a little different on our test and production environments, which use our skin system to combine the stylesheets. If you look at the page source on either of these environments, you will notice that the first 29 stylesheets have been grouped into a single file named 01\_site\_screen\_.css. (These skin stylesheets are cached, so if a change fails to show up after being deployed to test or production, the first step to figuring out why is to ask the person in charge of the code push to recache the stylesheets.)
 
 ### Core
 
