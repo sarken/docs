@@ -1,1 +1,2 @@
-markdown: redcarpet2
+markdown: redcarpet
+pygments: false
