@@ -5,29 +5,29 @@ body {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: bold;
   line-height: 1.25;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.25em;
   font-weight: bold;
   line-height: 1.25;
 }
 
 h3 {
   border-bottom: 1px #bebebe solid;
-  font-size: 1.75em;
+  font-size: 2em;
   font-weight: bold;
   line-height: 1.25;
-  margin-top: 1em;
+  margin-top: 1.25em;
 }
 
 h4 {
   border-bottom: 1px #cdcdcd solid;
   color: #333;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: bold;
   line-height: 1.25;
   margin-top: 1em;
@@ -35,14 +35,14 @@ h4 {
 
 h5 {
   border-bottom: 1px #ddd dotted;
-  font-size: 1.375em;
+  font-size: 1.5em;
   font-weight: bold;
   line-height: 1.25;
   margin-top: 1em;
 }
 
 h6 {
-  font-size: 1.125em;
+  font-size: 1.375em;
   font-weight: bold;
   line-height: 1.25;
   margin-top: 1em;
@@ -113,8 +113,8 @@ h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
   width: 35em;
 }
 
-.header .guide {
-  font-size: 0.75em;
+.header .page {
+  font-size: 1.5em;
 }
 
 /* main */
@@ -127,12 +127,11 @@ h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
   width: 35em;
 }
 
-.navigation li {
-  display: inline-block;
-  padding: 0.5em;
+.navigation ul, .navigation li {
+  display: inline;
 }
 
 .bottom {
   border-top: 1px #ddd solid;
-  margin: 2em 0 1em;
+  margin: 3em 0 1em;
 }
