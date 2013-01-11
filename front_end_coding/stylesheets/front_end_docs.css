@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-  border-bottom: 1px #ccc solid;
+  border-bottom: 1px #bebebe solid;
   font-size: 1.75em;
   font-weight: bold;
   line-height: 1.25;
@@ -25,7 +25,7 @@ h3 {
 }
 
 h4 {
-  border-bottom: 1px #eee dotted;
+  border-bottom: 1px #cdcdcd solid;
   color: #333;
   font-size: 1.5em;
   font-weight: bold;
@@ -34,6 +34,7 @@ h4 {
 }
 
 h5 {
+  border-bottom: 1px #ddd dotted;
   font-size: 1.375em;
   font-weight: bold;
   line-height: 1.25;
@@ -49,6 +50,10 @@ h6 {
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
 }
 
 code {
@@ -104,7 +109,12 @@ h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
 
 .header .title {
   margin: 0 auto;
+  padding: 1em 0;
   width: 35em;
+}
+
+.header .guide {
+  font-size: 0.75em;
 }
 
 /* main */
@@ -117,6 +127,12 @@ h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
   width: 35em;
 }
 
+.navigation li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
 .bottom {
   border-top: 1px #ddd solid;
+  margin: 2em 0 1em;
 }
