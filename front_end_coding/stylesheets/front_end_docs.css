@@ -1,42 +1,49 @@
 body {
   background: #fff;
   color: #111;
-  font: 1em/1 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+  font: 1em/1.6 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
 }
 
 h1 {
   font-size: 2.25em;
   font-weight: bold;
+  line-height: 1.25;
 }
 
 h2 {
   font-size: 2em;
-  font-style: italic;
   font-weight: bold;
+  line-height: 1.25;
 }
 
 h3 {
-  border-bottom: 1px #ccc solid; 
+  border-bottom: 1px #ccc solid;
   font-size: 1.75em;
   font-weight: bold;
+  line-height: 1.25;
   margin-top: 1em;
 }
 
 h4 {
+  border-bottom: 1px #eee dotted;
+  color: #333;
   font-size: 1.5em;
   font-weight: bold;
+  line-height: 1.25;
   margin-top: 1em;
 }
 
 h5 {
   font-size: 1.375em;
   font-weight: bold;
+  line-height: 1.25;
   margin-top: 1em;
 }
 
 h6 {
   font-size: 1.125em;
   font-weight: bold;
+  line-height: 1.25;
   margin-top: 1em;
 }
 
@@ -93,6 +100,11 @@ h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
 .header a:hover, .header a:active, .header a:focus {
   border-bottom: 1px solid;
   outline: none;
+}
+
+.header .title {
+  margin: 0 auto;
+  width: 35em;
 }
 
 /* main */
