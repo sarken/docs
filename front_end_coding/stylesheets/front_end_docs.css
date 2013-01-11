@@ -1,25 +1,25 @@
 body {
   background: #fff;
   color: #111;
-  font: 1em/1.6 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
+  font: 1em/1.5 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Verdana, Arial, sans-serif;
 }
 
 h1 {
   font-size: 2.5em;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.25;
 }
 
 h2 {
   font-size: 2.25em;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.25;
 }
 
 h3 {
   border-bottom: 1px #bebebe solid;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 300;
   line-height: 1.25;
   margin-top: 1.25em;
 }
@@ -27,23 +27,23 @@ h3 {
 h4 {
   border-bottom: 1px #cdcdcd solid;
   color: #333;
-  font-size: 1.75em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 700;
   line-height: 1.25;
   margin-top: 1em;
 }
 
 h5 {
   border-bottom: 1px #ddd dotted;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.25em;
+  font-weight: 700;
   line-height: 1.25;
   margin-top: 1em;
 }
 
 h6 {
   font-size: 1.375em;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.25;
   margin-top: 1em;
 }
@@ -57,8 +57,7 @@ a:hover {
 }
 
 code {
-  background: #eee;
-  border: 1px #ccc solid;
+  border: 1px #ddd solid;
   font-family: Consolas, "Lucida Console", Monaco, Courier, monospace;
 }
 
@@ -120,8 +119,8 @@ h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
 /* main */
 
 .main {
-  line-height: 1.6;
-  margin: 1em auto;
+  line-height: 1.5;
+  margin: 1.5em auto;
   max-width: 39em;
   min-width: 30em;
   width: 35em;
