@@ -6,32 +6,48 @@ body {
 
 h1 {
   font-size: 2.25em;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 2em;
+  font-style: italic;
+  font-weight: bold;
 }
 
 h3 {
+  border-bottom: 1px #ccc solid; 
   font-size: 1.75em;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
 h4 {
   font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
 h5 {
   font-size: 1.375em;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
 h6 {
-  font-size: 1em;
+  font-size: 1.125em;
   font-weight: bold;
+  margin-top: 1em;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
 }
 
 code {
   background: #eee;
   border: 1px #ccc solid;
+  font-family: Consolas, "Lucida Console", Monaco, Courier, monospace;
 }
 
 ul, ol {
@@ -39,18 +55,56 @@ ul, ol {
   width: 95%;
 }
 
-p + p, li + li {
+ul {
+  list-style: square inside;
+}
+
+ol {
+  list-style: decimal-leading-zero inside;
+}
+
+li {
+  display: list-item;
+}
+
+li ul {
+  list-style-type: circle;
+}
+
+li ol {
+  list-style-type: lower-alpha;
+}
+
+h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
   margin-top: 1.6em;
 }
+
+/* header */
 
 .header {
   background: #900;
   color: #fff;
 }
 
+.header a, .header a:visited, .header a:active {
+  color: #fff;
+}
+
+.header a:hover, .header a:active, .header a:focus {
+  border-bottom: 1px solid;
+  outline: none;
+}
+
+/* main */
+
 .main {
   line-height: 1.6;
+  margin: 1em auto;
   max-width: 39em;
   min-width: 30em;
   width: 35em;
+}
+
+.bottom {
+  border-top: 1px #ddd solid;
 }

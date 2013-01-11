@@ -1,17 +1,30 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{{ page.title }} | Front End Help</title>
-      <link rel="stylesheet" type="text/css" href="/docs/stylesheets/reset.css" />
-      <link rel="stylesheet" type="text/css" href="/docs/stylesheets/github.css" />
-      <link rel="stylesheet" type="text/css" href="stylesheets/front_end_docs.css" />
+    <link rel="stylesheet" type="text/css" href="/docs/stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/docs/stylesheets/github.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/front_end_docs.css" />
   </head>
   <body>
     <div class="header">
-      <h1>Front End Help</h1>
+      <h1><a href="/front_end_guide/index.html">Front End Help</a></h1>
       <h2>{{ page.title }}</h2>
     </div>
     <div class="main">
       {{ content }}
+      <div class="bottom navigation">
+        <ul>
+          <li>
+            <a href="#top">Top</a>
+          </li>
+          <li>
+            <a href="/front_end_guide/index.html">Home</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
