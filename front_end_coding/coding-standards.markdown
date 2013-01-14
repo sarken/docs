@@ -42,20 +42,21 @@ We generally want forms set up as [definition lists](http://www.w3schools.com/ta
 Here is the basic template to follow to meet all these rules:
 
 Key: <code>[always] {sometimes}</code>
-```html
-[form]
-  [fieldset]
-    [legend] [/legend]
-    [h3 class="landmark heading"] [/h3]
-    [dl]
-      [dt] [label] [/label] [/dt]
-      [dd] [input] [/dd]
-      {dd} {input} {/dd}
-    [/dl]
-    [p class="submit actions"] [input type="submit"] [/p]
-  [/fieldset]
-[/form]
-```
+
+    ```html
+    [form]
+        [fieldset]
+            [legend] [/legend]
+            [h3 class="landmark heading"] [/h3]
+            [dl]
+                [dt] [label] [/label] [/dt]
+                [dd] [input] [/dd]
+                {dd} {input} {/dd}
+            [/dl]
+            [p class="submit actions"] [input type="submit"] [/p]
+        [/fieldset]
+    [/form]
+    ```
 
 ###### Other Form Structures
 
