@@ -12,7 +12,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
 
 1.  Let's change the font and the font color for the entire page using the universal selector (`*`) and `!important`, which will ensure that our changes override the defaults across the whole site.
 
-  *Note*: Once you've entered the style block into the CSS field, you'll need to select "Submit" after the form and "Use" on the following page to see the changes. After that, changes will be visible immediately after using the "Update" button on the skin form.
+    *Note*: Once you've entered the style block into the CSS field, you'll need to select "Submit" after the form and "Use" on the following page to see the changes. After that, changes will be visible immediately after using the "Update" button on the skin form.
 
 2.  Now let's use an image for the background of the page. Background images tile in all directions by default.
 
