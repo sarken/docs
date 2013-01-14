@@ -94,7 +94,7 @@ li ol {
   list-style-type: lower-alpha;
 }
 
-h3 + p, h4 + p, h5 + p, h6 + p, p + p, ul + p, ol + p, p + ul, p + ol, p + pre code {
+h3 + p, h4 + p, h5 + p, h6 + p, p + p, ul + p, ol + p, p + ul, p + ol {
   margin-top: 1.6em;
 }
 
