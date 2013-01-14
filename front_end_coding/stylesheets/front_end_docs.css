@@ -63,6 +63,11 @@ code {
   font-size: 0.875em;
 }
 
+pre code {
+  background: transparent;
+  border: none;
+}
+
 ul, ol {
   margin: 0 auto;
   width: 95%;
