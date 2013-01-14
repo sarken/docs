@@ -47,6 +47,14 @@ h6 {
   margin-top: 1em;
 }
 
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
 a, a:visited, a:active {
   text-decoration: none;
 }
@@ -61,6 +69,14 @@ code {
   border: 1px #ccc solid;
   font-family: Consolas, "Lucida Console", Monaco, Courier, monospace;
   font-size: 0.875em;
+}
+
+pre {
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 pre code {
