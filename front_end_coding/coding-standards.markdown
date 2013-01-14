@@ -45,16 +45,16 @@ Key: `[always] {sometimes}`
 
 ```html
 <form>
-        <fieldset>
+  <fieldset>
             <legend> </legend>
             <h3 class="landmark heading"> </h3>
             <dl>
                 <dt> <label> </label> </dt>
                 <dd> <input> </dd>
-                Sometimes: <dd> <input> </dd>
+                { <dd> <input> </dd> }
             </dl>
             <p class="submit actions"> <input type="submit"> </p>
-        </fieldset>
+  </fieldset>
 </form>
 ```
 
