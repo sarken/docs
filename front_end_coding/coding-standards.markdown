@@ -44,7 +44,7 @@ Here is the basic template to follow to meet all these rules:
 Key: `[always] {sometimes}`
 
 ```html
-    <form>
+<form>
         <fieldset>
             <legend> </legend>
             <h3 class="landmark heading"> </h3>
@@ -55,7 +55,7 @@ Key: `[always] {sometimes}`
             </dl>
             <p class="submit actions"> <input type="submit"> </p>
         </fieldset>
-    </form>
+</form>
 ```
 
 ###### Other Form Structures
