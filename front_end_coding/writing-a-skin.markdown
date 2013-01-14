@@ -13,7 +13,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
 1.  Let's change the font and the font color for the entire page using the universal selector (`*`) and `!important`, which will ensure that our changes override the defaults across the whole site.
 
     ```css
-    * {
+    \* {
       font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif !important;
       color: #444;
     }
