@@ -43,19 +43,19 @@ Here is the basic template to follow to meet all these rules:
 
 Key: `[always] {sometimes}`
 
-    ```
-    [form]
-        [fieldset]
-            [legend] [/legend]
-            [h3 class="landmark heading"] [/h3]
-            [dl]
-                [dt] [label] [/label] [/dt]
-                [dd] [input] [/dd]
+    ```html
+    <form>
+        <fieldset>
+            <legend> </legend>
+            <h3 class="landmark heading"> </h3>
+            <dl>
+                <dt> <label> </label> </dt>
+                <dd> <input> <dd>
                 {dd} {input} {/dd}
-            [/dl]
-            [p class="submit actions"] [input type="submit"] [/p]
-        [/fieldset]
-    [/form]
+            </dl>
+            <p class="submit actions"> <input type="submit"> </p>
+        </fieldset>
+    </form>
     ```
 
 ###### Other Form Structures
