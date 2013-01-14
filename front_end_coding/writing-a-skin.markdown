@@ -10,7 +10,7 @@ The skin system is also a great way to get familiar with CSS in general or the A
 
 Here we'll walk through a simple skin that modifies the Archive's default appearance by changing fonts and colors, adding images, and adjusting margins and borders.
 
-1. Let's change the font and the font color for the entire page using the universal selector (`*`) and `!important`, which will ensure that our changes override the defaults across the whole site.
+1.  Let's change the font and the font color for the entire page using the universal selector (`*`) and `!important`, which will ensure that our changes override the defaults across the whole site.
 
   ```css
   * {
@@ -21,7 +21,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
 
   *Note*: Once you've entered the style block into the CSS field, you'll need to select "Submit" after the form and "Use" on the following page to see the changes. After that, changes will be visible immediately after using the "Update" button on the skin form.
 
-2. Now let's use an image for the background of the page. Background images tile in all directions by default.
+2.  Now let's use an image for the background of the page. Background images tile in all directions by default.
 
   We'll use a cheerful stripe pattern called [sing together](http://www.colourlovers.com/pattern/850926/sing_together) by [electroCUTE!](http://www.colourlovers.com/lover/electroCUTE%21), which we've uploaded to [tinypic](http://tinypic.com). (For your own private skins you can host your images anywhere; [Photobucket](http://photobucket.com) and [Image Shack](http://imageshack.us) are common alternatives. Because you are the only one seeing your skin, you probably don't need to worry about running out of bandwidth.) 
 
@@ -33,7 +33,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
   }
   ```
 
-3. The Archive's signature red clashes with that, so let's take the pinkish red from the palette and use that to replace the red in the header and footer. We'll also change the borders on the header and footer and remove the 3D effect from the header.
+3.  The Archive's signature red clashes with that, so let's take the pinkish red from the palette and use that to replace the red in the header and footer. We'll also change the borders on the header and footer and remove the 3D effect from the header.
 
   ```css
   #header ul.primary, #footer {
@@ -50,7 +50,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
   }
   ```
 
-4. It's hard to read on that busy pattern, so let's give the main content of the site a translucent white background. We'll let the pattern stick out on the sides by setting some margins, and we'll also round off the corners and give our white area a light shadow. We've previously been using hexadecimal values for the colors, but here we'll switch to RGBa to lower the opacity of our colors. (If you're using Internet Explorer 8 or earlier, you'll see solid colors instead. If this were the official Archive layout, we might use a special stylesheet to add transparency for Internet Explorer 8 and lower.)
+4.  It's hard to read on that busy pattern, so let's give the main content of the site a translucent white background. We'll let the pattern stick out on the sides by setting some margins, and we'll also round off the corners and give our white area a light shadow. We've previously been using hexadecimal values for the colors, but here we'll switch to RGBa to lower the opacity of our colors. (If you're using Internet Explorer 8 or earlier, you'll see solid colors instead. If this were the official Archive layout, we might use a special stylesheet to add transparency for Internet Explorer 8 and lower.)
 
   ```css
   #main {
@@ -61,7 +61,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
   }
 ```
 
-5. Pages that belong to users or collections have an additional navigation section called the dashboard. Not only does that need to be styled, but we also need to adjust `#main` slightly so it still has margins when the dashboard is present. We'll give the dashboard a translucent yellow background, rounded edges, no borders, and highlighting for current and hover areas.
+5.  Pages that belong to users or collections have an additional navigation section called the dashboard. Not only does that need to be styled, but we also need to adjust `#main` slightly so it still has margins when the dashboard is present. We'll give the dashboard a translucent yellow background, rounded edges, no borders, and highlighting for current and hover areas.
 
   ```css
   #main.dashboard {
