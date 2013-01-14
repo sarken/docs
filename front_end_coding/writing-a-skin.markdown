@@ -8,7 +8,11 @@ The skin system is also a great way to get familiar with CSS in general or the A
 
 ### Styling the Header, Dashboard, Main, and Footer Regions
 
-Here we'll walk through a simple skin that modifies the Archive's default appearance by changing fonts and colors, adding images, and adjusting margins and borders. Once you've entered the style block from the first step into the CSS field, you'll need to select "Submit" after the form and "Use" on the following page to see the changes. After that, changes will be visible immediately after using the "Update" button on the skin form.
+Here we'll walk through a simple skin that modifies the Archive's default appearance by changing fonts and colors, adding images, and adjusting margins and borders.
+
+For our colors and images, we'll be using a cheerful stripe pattern called [sing together](http://www.colourlovers.com/pattern/850926/sing_together) and its color palette, [like fireflies](http://www.colourlovers.com/palette/1172215/like_fireflies), both of which are by [electroCUTE!](http://www.colourlovers.com/lover/electroCUTE%21). We've uploaded our image to [tinypic](http://tinypic.com), but you can host your images anywhere. Because you are the only one seeing your skin, you probably don't need to worry about running out of bandwidth.
+
+Once you've entered the style block from the first step into the CSS field, you'll need to select "Submit" after the form and "Use" on the following page to see the changes. After that, using the "Update" button on the skin form will save the changes and let you see them. It's a good idea to do it after each step so you can understand exactly what changes we've made.
 
 1.  Let's change the font and the font color for the entire page using the universal selector (`*`) and `!important`, which will ensure that our changes override the defaults across the whole site.
 
@@ -19,11 +23,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
     }
     ```
 
-2.  Now let's use an image for the background of the page. Background images tile in all directions by default.
-
-    We'll use a cheerful stripe pattern called [sing together](http://www.colourlovers.com/pattern/850926/sing_together) by [electroCUTE!](http://www.colourlovers.com/lover/electroCUTE%21), which we've uploaded to [tinypic](http://tinypic.com). (For your own private skins you can host your images anywhere; [Photobucket](http://photobucket.com) and [Image Shack](http://imageshack.us) are common alternatives. Because you are the only one seeing your skin, you probably don't need to worry about running out of bandwidth.) 
-
-    We'll also set the lightest color from the corresponding [like fireflies](http://www.colourlovers.com/palette/1172215/like_fireflies) palette as the fallback color to make sure we don't see the usual white even if our image fails to load.
+2.  Now let's use out striped pattern for the background of the page. We'll also set the lightest color from the corresponding palette as the fallback color to make sure we don't see the usual white even if our image fails to load.
 
     ```css
     body {
@@ -31,7 +31,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
     }
     ```
 
-3.  The Archive's signature red clashes with that, so let's take the pinkish red from the palette and use that to replace the red in the header and footer. We'll also change the borders on the header and footer and remove the 3D effect from the header.
+3.  The Archive's signature red clashes with that, so let's take the pinkish red from the palette and use that to replace the red in the header and footer. We'll also change the borders on the header and footer and remove the shadow effect from the header.
 
     ```css
     #header ul.primary, #footer {
@@ -48,7 +48,7 @@ Here we'll walk through a simple skin that modifies the Archive's default appear
     }
     ```
 
-4.  It's hard to read on that busy pattern, so let's give the main content of the site a translucent white background. We'll let the pattern stick out on the sides by setting some margins, and we'll also round off the corners and give our white area a light shadow. We've previously been using hexadecimal values for the colors, but here we'll switch to RGBa to lower the opacity of our colors. (If you're using Internet Explorer 8 or earlier, you'll see solid colors instead. If this were the official Archive layout, we might use a special stylesheet to add transparency for Internet Explorer 8 and lower.)
+4.  It's hard to read on that busy pattern, so let's give the main content of the site a translucent white background. We'll let the pattern stick out on the sides by setting some margins, and we'll also round off the corners and give our white area a drop shadow. We've previously been using hexadecimal values for the colors, but here we'll switch to RGBa to lower the opacity of our colors. (If you're using Internet Explorer 8 or earlier, you'll see solid colors instead. If this were the official Archive layout, we might use a special stylesheet to add transparency for Internet Explorer 8 and lower.)
 
     ```css
     #main {
