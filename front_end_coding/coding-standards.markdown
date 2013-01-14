@@ -6,17 +6,18 @@ This is a guide to the specifications and formatting standards used in our front
 
 ### XHTML Specifications
 
-All of our pages are written in [XHTML 1.0](http://www.w3.org/TR/xhtml1/) (Strict), which is a cleaner, stricter version of HTML that separates content from presentation. Our pages use `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">` as their DOCTYPE declaration.
+All of our pages are written in [XHTML 1.0](http://www.w3.org/TR/xhtml1/) (Strict), which is a cleaner, stricter version of HTML that separates content from presentation. Our pages use `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">` as their `DOCTYPE` declaration.
 
 Writing in XHTML 1.0 (Strict) means:
+
 * All markup must be written in lowercase
 * All tags must be closed
   * Empty tags are closed within the tag: `<br />`
-  * Non-empty tags have a corresponding closing tag:`<p>This is a paragraph.</p>`
+  * Non-empty tags have a corresponding closing tag: `<p>This is a paragraph.</p>`
 * All tags must be properly nested
 * No [deprecated elements](http://webdesign.about.com/od/htmltags/a/bltags_deprctag.htm) are included
 
-While our use of the ARIA `role` attribute means our pages will not validate, we still recommend checking your work with [the W3C Markup Validation Service](http://validator.w3.org").
+While our use of the ARIA `role` attribute means our pages will not validate, we still recommend checking your work with [the W3C Markup Validation Service](http://validator.w3.org") to catch any mistakes.
 
 #### Content-Type/Charset
 
@@ -36,12 +37,12 @@ Form controls are inline elements, which means they have to be wrapped in block 
 
 ###### Definition Lists
 
-We generally want forms set up as [definition lists](http://www.w3schools.com/tags/tag_dl.asp) (`<dl>`) because the [term](http://www.w3schools.com/tags/tag_dt.asp) (`<dt>`) and [definition](http://www.w3schools.com/tags/tag_dd.asp) (`<dd>`) structure corresponds nicely to the typical label: [input] structure of a form. We use `<dt>` for the label and `<dd>` for the input, and a `<dt>` can contain more than one `<dd>`. However, since a `<dl>` can only contain `<dt>` and `<dd>` as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
+We generally want forms set up as [definition lists](http://www.w3schools.com/tags/tag_dl.asp) (`<dl>`) because the [term](http://www.w3schools.com/tags/tag_dt.asp) (`<dt>`) and [definition](http://www.w3schools.com/tags/tag_dd.asp) (`<dd>`) structure corresponds nicely to the typical `<label>Label</label> <input>` structure of a form. We use `<dt>` for the label and `<dd>` for the input, and a `<dt>` can contain more than one `<dd>`. However, since a `<dl>` can only contain `<dt>` and `<dd>` as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
 
 Here is the basic template to follow to meet all these rules:
 
-Quick Ref: <code>[always] {sometimes}</code>
-				<pre>
+Key: <code>[always] {sometimes}</code>
+```html
 [form]
   [fieldset]
     [legend] [/legend]
@@ -54,7 +55,7 @@ Quick Ref: <code>[always] {sometimes}</code>
     [p class="submit actions"] [input type="submit"] [/p]
   [/fieldset]
 [/form]
-</pre>
+```
 
 ###### Other Form Structures
 
