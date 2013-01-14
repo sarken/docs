@@ -41,7 +41,9 @@ We generally want forms set up as [definition lists](http://www.w3schools.com/ta
 
 Here is the basic template to follow to meet all these rules:
 
-Key: `[always] {sometimes}`
+Key: 
+: <always>
+: {sometimes}
 
 ```html
 <form>
