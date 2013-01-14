@@ -41,7 +41,7 @@ We generally want forms set up as [definition lists](http://www.w3schools.com/ta
 
 Here is the basic template to follow to meet all these rules:
 
-Key: <always> | {sometimes}
+**Key:** `<always>` | `{sometimes}`
 
 ```html
 <form>
@@ -127,16 +127,19 @@ A declaration block written for the archive should be formatted with:
 * A zero preceding any decimal value that is less than 1 (e.g. `0.643em`)
 
 Here is an example:
-						<blockquote><code>#header ul.primary {<br />
-&nbsp;&nbsp;float: none;<br />
-&nbsp;&nbsp;margin: auto;<br />
-&nbsp;&nbsp;background: #900 url(/images/skins/textures/tiles/red-ao3.png);<br />
-&nbsp;&nbsp;border-bottom: 2px solid #700;<br />
-&nbsp;&nbsp;padding: 0.25em 120px;<br />
-&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: inset 0 -5px 10px rgba(0,0,0,0.5);<br />
-}<br />
-<br />
-#header .primary a, #header .primary .current, #header .primary input, #header .search input {<br />
-&nbsp;&nbsp;border-color: #a00;<br />
-&nbsp;&nbsp;border-bottom-color: #400;<br />
-}</code></blockquote>
+
+```css
+#header ul.primary {
+  float: none;
+  margin: auto;
+  background: #900 url(/images/skins/textures/tiles/red-ao3.png);
+  border-bottom: 2px solid #700;
+  padding: 0.25em 120px;
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.5);
+}
+    
+#header .primary a, #header .primary .current, #header .primary input, #header .search input {
+  border-color: #a00;
+  border-bottom-color: #400;
+}
+```
