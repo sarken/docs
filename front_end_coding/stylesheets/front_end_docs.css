@@ -34,6 +34,7 @@ h4 {
 }
 
 h5 {
+  border-bottom: 1px #dcdcdc dotted;
   font-size: 1.375em;
   line-height: 1.25;
   margin-top: 1em;
@@ -133,7 +134,7 @@ h3 + p, h4 + p, h5 + p, h6 + p, p + p, li + li {
 
 .navigation li + li {
   margin-top: 0;
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .bottom {
