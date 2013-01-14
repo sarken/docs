@@ -64,8 +64,9 @@ code {
 }
 
 pre code {
-  background: transparent;
-  border: none;
+  display: block;
+  padding: 1em;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 ul, ol {
@@ -93,7 +94,7 @@ li ol {
   list-style-type: lower-alpha;
 }
 
-h3 + p, h4 + p, h5 + p, h6 + p, p + p, ul + p, ol + p, p + ul, p + ol {
+h3 + p, h4 + p, h5 + p, h6 + p, p + p, ul + p, ol + p, p + ul, p + ol, p + pre code {
   margin-top: 1.6em;
 }
 
