@@ -8,18 +8,16 @@ The skin system is also a great way to get familiar with CSS in general or the A
 
 ### Styling the Header, Dashboard, Main, and Footer Regions
 
-Here we'll walk through a simple skin that modifies the Archive's default appearance by changing fonts and colors, adding images, and adjusting margins and borders.
+Here we'll walk through a simple skin that modifies the Archive's default appearance by changing fonts and colors, adding images, and adjusting margins and borders. Once you've entered the style block from the first step into the CSS field, you'll need to select "Submit" after the form and "Use" on the following page to see the changes. After that, changes will be visible immediately after using the "Update" button on the skin form.
 
 1.  Let's change the font and the font color for the entire page using the universal selector (`*`) and `!important`, which will ensure that our changes override the defaults across the whole site.
 
-    ``css
-    `* {
+    ```css
+    * {
       font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif !important;
       color: #444;
     }
     ```
-
-    *Note*: Once you've entered the style block into the CSS field, you'll need to select "Submit" after the form and "Use" on the following page to see the changes. After that, changes will be visible immediately after using the "Update" button on the skin form.
 
 2.  Now let's use an image for the background of the page. Background images tile in all directions by default.
 
