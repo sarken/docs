@@ -4,7 +4,7 @@ title: Writing a Skin
 ---
 Anyone with an Archive account can customize the way the Archive is presented to them by creating and applying a site skin that either modifies the default display or restyles the Archive from scratch. 
 
-The skin system is also a great way to get familiar with CSS in general or the Archive's class structure. You can create a new skin by logging in and going to [the Skins index](http://archiveofourown.org/skins), where you will find a Create Skin button. Click that and you will be taken to a form, which will already be set up to create a Site Skin -- you just need to enter a title.
+The skin system is also a great way to get familiar with CSS in general or the Archive's class structure. You can create a new skin by logging in and going to [the Skins index](http://archiveofourown.org/skins), where you will find a "Create Skin" link. Select that and you will be taken to a form, which will already be set up to create a Site Skin -- you just need to enter a unique title.
 
 ### Styling the Header, Dashboard, Main, and Footer Regions
 
@@ -23,7 +23,7 @@ Once you've entered the style block from the first step into the CSS field, you'
     }
     ```
 
-2.  Now let's use out striped pattern for the background of the page. We'll also set the lightest color from the corresponding palette as the fallback color to make sure we don't see the usual white even if our image fails to load.
+2.  Now let's use our striped pattern for the background of the page. We'll also set the lightest color from the corresponding palette as the fallback color to make sure we don't see the usual white even if our image fails to load.
 
     ```css
     body {
@@ -101,7 +101,7 @@ If you spend a few minutes browsing the site with that in your skin, you'll noti
 
 (You can go back and delete the `.userstuff` styles now -- we won't be using it elsewhere in the tutorial.)
 
-If you *only* want to change the way works are displayed, using `#workskin` is your best bet. It's primary function is to help work creators make work skins, which style the work for anyone who views it on the Archive, but it is also an effective way to modify works for your personal site skin. 
+If you *only* want to change the way works are displayed, using `#workskin` is your best bet. Its primary function is to help work creators make work skins, which style the work for anyone who views it on the Archive, but it is also an effective way to modify works for your personal site skin. 
 
 You may want to...
 
