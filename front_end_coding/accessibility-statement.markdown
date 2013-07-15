@@ -6,7 +6,7 @@ title: Accessibility Statement
 
 This page is an overview of ways we have tried to make the Archive accessible. Accessibility is always a work in progress, so this document will and should change.
 
-If you have any questions or comments, please do send us [feedback](http://archiveofourown.org/support). Portions of this document have been taken from diveintoaccessibility.com. 
+If you have any questions or comments, please do send us [feedback](http://archiveofourown.org/support). Portions of this document have been taken from [diveintoaccessibility.com](http://diveintoaccessibility.com). 
 
 #### Standards Compliance
 
@@ -90,7 +90,7 @@ We use JavaScript on the AO3 to improve usability and performance, but all our c
 
 1.  We use headings and lists to structure our pages. You can jump around the page regions by heading. Lists should always give you an accurate count of the number of different items on a page. If they don't, please [tell us](http://archiveofourown.org/support).
 
-2.  We have implemented basic <a href=""><abbr title="">ARIA</abbr> landmark roles</a> and as we go along we are adding in more <a href=""><abbr title="">WAI-ARIA</abbr> attributes as we figure out how best to use them.
+2.  We have implemented basic ARIA landmark roles and as we go along we are adding in more WAI-ARIA attributes as we figure out how best to use them.
 
 3.  We have an experimental aural stylesheet. We are investigating supporting a say-instead or pronunication dictionary. If you would like to help, please [volunteer](http://transformativeworks.org/volunteer) or send us [feedback](http://archiveofourown.org/support).
 
