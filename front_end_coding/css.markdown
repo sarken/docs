@@ -136,9 +136,13 @@ body #footer p {
 }
 ```
 
-#### Values
+#### Properties and Values
 
-On our archive, we use hex codes to define colours. Hex codes are a set of six letters (a-f) and digits (0-9) that make up a colour. #000000 is black. #ffffff is white. Everything else is somewhere in between.
+Think of each selector as a box. We can make it stack up, give it a background colour (or an image or both), a border, and we can give that border a colour and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, colour, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
+				
+##### Values
+
+On the Archive, we primarily use hex codes to define colors. Hex codes are a set of six letters (a-f) and digits (0-9) that make up a colour. `#000000` is black. `#ffffff` is white. Everything else is somewhere in between.
 
 
 				<p style="text-align:center;">
@@ -153,8 +157,10 @@ We use [ems](em-scale.html) as the general unit of measurement. 1 em is 100% of 
 Em is a scalable measurement, so if your visitor needs to zoom in or scale up the text, your layout is less likely to go madly wrong. Em the measurement is different from the <acronym>HTML</acronym> tag &lt;em&gt;, which means <em>emphasis</em>. <a href="em-scale.html">Learn about our "Em Scale"</a>.
 				</p>
 
-##### Block and Inline
-				<p>HTML elements come in two flavours: block-level and inline.</p>
+###### Block and Inline
+
+HTML elements come in two flavours: block-level and inline.
+
 				<ol class="diagram" title="block level html elements stacking up">
 					<li>&lt;ul&gt;
 						<ol>
@@ -165,9 +171,9 @@ Em is a scalable measurement, so if your visitor needs to zoom in or scale up th
 					</li>
 				</ol>
 				<p class="diagram">Elements like <span>&lt;a href="http://..."&gt;<a href="">links</a>&lt;/a&gt;</span> and <span>&lt;em&gt;<em>emphasis</em>&lt;/em&gt;</span> run along in a line, like text does.
-				</p>
-				<p>Elements are either block or inline by default,* but in <acronym>CSS</acronym> we can decide how we want to display <em>every single element</em> on the screen. So we can make the list items &lt;li&gt; of an unordered list &lt;ul&gt;, which is a block containing a stack of blocks, into a line of elements very easily, by making the declaration: <code>ul li {display:inline;}</code>
-				</p>
+
+Elements are either block or inline by default, but with CSS we can decide how we want to display *every single element* on the screen. So we can make the list items (`<li>`) of an unordered list (`<ul>`), which is a block containing a stack of blocks, into a line of elements very easily, with the rule `ul li { display: inline; }`
+
 				<ol class="diagram" title="block level html elements displayed inline">
 					<li>&lt;ul&gt;
 						<ol>
@@ -177,11 +183,8 @@ Em is a scalable measurement, so if your visitor needs to zoom in or scale up th
 						</ol>
 					</li>
 				</ol>
-				<p>Think of each #selector as a box. We can make it stack up, give it a background colour (or an image or both), a border, and we can give that border a colour and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, colour, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
-				</p>
-				<p>So <acronym>CSS</acronym> is a short profile of how your page is presented:</p>
-				<p><code>a.otw { background: #900; color:#fff; border:2px solid #000; font: 100 small-caps 1.5em 'gill sans',sans-serif; text-decoration:none; padding:0.15em }</code></p>
-				<p style="text-align:center;"><a href="http://transformativeworks.org/" title="Organisation for Transformative Works">OTW</a>  to <a class="otw" href="http://transformativeworks.org/" title="the same link with css styling applied">OTW</a></p>
+				
+Think of each selector as a box. We can make it stack up, give it a background colour (or an image or both), a border, and we can give that border a colour and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, colour, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
 				
 ### Resources
 * [CSS Terms and Definitions](http://www.impressivewebs.com/css-terms-definitions/)
