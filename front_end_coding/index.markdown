@@ -23,7 +23,7 @@ Our coding practice may be radically different from anything you've done before.
 * Case Study: The Blurb
 * Coding Accessible Tables
 * Archive Style Guide
-* CSS Shorthand
+* [CSS Shorthand](css-shorthand)
 * [Classes](classes)
 * Em Scale
 * [Accessibility Statement](accessibility-statement)
