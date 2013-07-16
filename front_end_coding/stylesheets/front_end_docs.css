@@ -56,11 +56,11 @@ i, em {
 }
 
 a, a:visited, a:active {
+  border-bottom: 1px solid;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: 1px solid;
   text-decoration: none;
 }
 
@@ -69,6 +69,7 @@ code {
   border: 1px #ccc solid;
   font-family: Consolas, "Lucida Console", Monaco, Courier, monospace;
   font-size: 0.875em;
+  padding: 0.25em;
 }
 
 pre {
@@ -110,7 +111,7 @@ li ol {
   list-style-type: lower-alpha;
 }
 
-h3 + p, h4 + p, h5 + p, h6 + p, p + p, ul + p, ol + p, p + ul, p + ol, li + li {
+h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 + ul, h5 + ul, h6 + ul, p + p, ul + p, ol + p, p + ul, p + ol, li + li {
   margin-top: 1.6em;
 }
 

@@ -20,7 +20,7 @@ When we talk about pages complying with a standard, we mean that the *site frame
 
 4.  All framework pages on this site are <a href="http://www.cynthiasays.com/">Section 508 approved</a>, complying with all of the <acronym title="United States">U.S.</acronym> Federal Government <a href="http://www.section508.gov/">Section 508 Guidelines</a>.  Again, a judgement call.  
 
-5.  While ARIA roles cannot be validated with an XHTML 1.0 Strict checker, all framework pages on this site otherwise <a href="http://validator.w3.org/">validate as <acronym title="extensible hypertext markup language">XHTML</acronym> 1.0 Strict</a>.  This is not a judgement call; a program can determine with 100% accuracy whether a page is valid XHTML. For example, you can enter your AO3 user page URL on the [W3 validator](http://validator.w3.org/check) and check it for XHTML validity.
+5.  While <abbr title="Accessible Rich Internet Applications">ARIA</abbr> roles cannot be validated with an XHTML 1.0 Strict checker, all framework pages on this site otherwise <a href="http://validator.w3.org/">validate as <acronym title="extensible hypertext markup language">XHTML</acronym> 1.0 Strict</a>.  This is not a judgement call; a program can determine with 100% accuracy whether a page is valid XHTML. For example, you can enter your AO3 user page URL on the [W3 validator](http://validator.w3.org/check) and check it for XHTML validity.
 
 ### Languages
 
@@ -90,7 +90,7 @@ We use JavaScript on the AO3 to improve usability and performance, but all our c
 
 1.  We use headings and lists to structure our pages. You can jump around the page regions by heading. Lists should always give you an accurate count of the number of different items on a page. If they don't, please [tell us](http://archiveofourown.org/support).
 
-2.  We have implemented basic ARIA landmark roles and as we go along we are adding in more WAI-ARIA attributes as we figure out how best to use them.
+2.  We have implemented basic ARIA landmark roles and as we go along we are adding in more ARIA attributes as we figure out how best to use them.
 
 3.  We have an experimental aural stylesheet. We are investigating supporting a say-instead or pronunication dictionary. If you would like to help, please [volunteer](http://transformativeworks.org/volunteer) or send us [feedback](http://archiveofourown.org/support).
 

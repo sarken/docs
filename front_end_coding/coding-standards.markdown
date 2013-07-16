@@ -12,12 +12,12 @@ Writing in XHTML 1.0 (Strict) means:
 
 * All markup must be written in lowercase
 * All tags must be closed
-  * Empty tags are closed within the tag: `<br />`
-  * Non-empty tags have a corresponding closing tag: `<p>This is a paragraph.</p>`
+  * Empty tags are closed within the tag, e.g. `<br />`
+  * Non-empty tags have a corresponding closing tag, e.g. `<p>This is a paragraph.</p>`
 * All tags must be properly nested
 * No [deprecated elements](http://webdesign.about.com/od/htmltags/a/bltags_deprctag.htm) are included
 
-While our use of the ARIA `role` attribute means our pages will not validate, we still recommend checking your work with [the W3C Markup Validation Service](http://validator.w3.org") to catch any mistakes.
+While our use of the <abbr title="Accessible Rich Internet Applications">ARIA</abbr> `role` attribute means our pages will not validate, we still recommend checking your work with [the W3C Markup Validation Service](http://validator.w3.org") to catch any mistakes.
 
 #### Content-Type/Charset
 
