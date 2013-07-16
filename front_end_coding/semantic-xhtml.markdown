@@ -6,7 +6,7 @@ In our [Coding Standards](coding-standards), we say that with semantic <abbr tit
 
 XHTML has a creed, and that creed is the topic of our next section:
 
-*** "Code what you mean; mean what you code."
+### "Code what you mean; mean what you code."
 
 The combination of CSS and XHTML separates style from content: the way things **look** from what things **mean**. CSS takes care of how everything looks; XHTML controls what things mean. In this way, you can build consistent, logical documents that can be read on any device, by any user agent, whether that be a screen reader, a palm pilot, a printer, or whatever the *next* gadget might be.
 
@@ -16,11 +16,11 @@ So, throw out your `<font>` tags! Release your `<b>bolding</b>`! Deny your layou
 
 Computers don't understand that `<i>this</i>` word is emphasised but `<i>The Lord of the Rings</i>` is a book unless you tell them that `<em>this</em>` word is emphasised and `<cite>The Lord of the Rings</cite>` is a book.
 
-**** But It Looks Bad!
+#### But It Looks Bad!
 
 Once your content is marked up in a consistent, semantic, and logical manner, you can go wild with your presentational CSS. You can change the way your entire site looks by changing a single line in a single document. If you decide you want to put a border around every image, for example, you can just write `img { border: 1px solid black; }`
 
-*** Resources
+### Resources
 
 * [W3School's HTML Reference](http://www.w3schools.com/tags/default.asp) lists all HTML tags and notes which are new to HTML5 and which are deprecated.
 
