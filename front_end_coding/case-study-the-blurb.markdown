@@ -1,6 +1,6 @@
 ---
 layout: front_end_guide
-title: Case Study/: The Blurb
+title: Case Study The Blurb
 ---
 On the Archive, we use the term "blurb" to refer to the small summary box which provides a description of a work, a bookmark, a collection, user, or series. Blurbs appear on what we call index pages —- for example, the [works page for the Alternate Universe tag](http://archiveofourown.org/tags/Alternate%20Universe/works) or the [bookmarks page for the user testy](http://archiveofourown.org/users/testy/bookmarks) are both index pages.
 
