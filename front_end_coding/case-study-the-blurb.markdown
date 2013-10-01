@@ -2,7 +2,7 @@
 layout: front_end_guide
 title: Case Study The Blurb
 ---
-On the Archive, we use the term "blurb" to refer to the small summary box which provides a description of a work, a bookmark, a collection, user, or series. Blurbs appear on what we call index pages —- for example, the [http://archiveofourown.org/tags/Alternate%20Universe/works](works page for the Alternate Universe tag) or the [http://archiveofourown.org/users/testy/bookmarks](bookmarks page for the user testy).
+On the Archive, we use the term "blurb" to refer to the small summary box which provides a description of a work, a bookmark, a collection, user, or series. Blurbs appear on what we call index pages —- for example, the [works page for the Alternate Universe tag](http://archiveofourown.org/tags/Alternate%20Universe/works) or the [bookmarks page for the user testy](http://archiveofourown.org/users/testy/bookmarks).
 
 ![work blurb in the default Archive style](/images/workblurb.png)
 
@@ -15,33 +15,73 @@ Since we usually have many blurbs listed together, the index page that holds the
 ```
 <h3 class="landmark heading">Listing Works</h3>
 <ol class="work index group">
-  <li class="work blurb group" id="work_808390" role="article">
+  <li class="work blurb group" id="work_1234" role="article">
     <!--title, author, fandom-->
     <div class="header module">
 
       <h4 class="heading" title="title">
-        <a href="/works/808390">My Work's Title</a> by <a href="/users/testy/pseuds/testy" class="login author" rel="author">testy</a>  
+        <a href="...">Work's Title</a> by <a href="..." class="login author" rel="author">testy</a>  
       </h4>
 
       <h5 class="fandoms heading" title="fandom">
-        <a href="http://test.archiveofourown.org/tags/My%20Work&#x27;s%20Fandom/works" class="tag">My Work&#x27;s Fandom</a> &nbsp;
+        <a href="..." class="tag">Work's Fandom</a>
   	  </h5>
 
       <!--required tags-->
   	  <ul class="required-tags">
-<li> <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="rating-general-audience rating" title="General Audiences"><span class="text">General Audiences</span></span></a></li>
-<li> <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="warning-no warnings" title="No Archive Warnings Apply"><span class="text">No Archive Warnings Apply</span></span></a></li>
-<li> <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="category-multi category" title="F/M, M/M"><span class="text">F/M, M/M</span></span></a></li>
-<li> <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="complete-no iswip" title="Work in Progress"><span class="text">Work in Progress</span></span></a></li>
-</ul>
-  	<p class="datetime">30 Sep 2013</p>
-  </div>
+        <li>
+          <a href="..." aria-controls="#modal" class="help symbol question modal" title="Symbols key">
+            <span class="rating-general-audience rating" title="General Audiences">
+              <span class="text">General Audiences</span>
+            </span>
+          </a>
+        </li>
+        <li> 
+          <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="warning-no warnings" title="No Archive Warnings Apply"><span class="text">No Archive Warnings Apply</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="category-multi category" title="F/M, M/M"><span class="text">F/M, M/M</span></span></a>
+        </li>
+        <li>
+          <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="complete-no iswip" title="Work in Progress"><span class="text">Work in Progress</span></span>
+          </a>
+        </li>
+     </ul>
+  	  
+  	  <p class="datetime">30 Sep 2013</p>
+    </div>
 	  
-  <!--warnings again, cast, freeform tags-->
-  <h6 class="landmark heading">Tags</h6>
-  <ul class="tags commas">
-  	<li class='warnings'><strong><a href="http://test.archiveofourown.org/tags/No%20Archive%20Warnings%20Apply/works" class="tag">No Archive Warnings Apply</a></strong></li><li class='relationships'><a href="http://test.archiveofourown.org/tags/Female%20Character*s*Male%20Character/works" class="tag">Female Character/Male Character</a></li> <li class='relationships'><a href="http://test.archiveofourown.org/tags/Male%20Character*s*Other%20Male%20Character/works" class="tag">Male Character/Other Male Character</a></li><li class='characters'><a href="http://test.archiveofourown.org/tags/Female%20Character%20-%20Character/works" class="tag">Female Character - Character</a></li> <li class='characters'><a href="http://test.archiveofourown.org/tags/Male%20Character/works" class="tag">Male Character</a></li> <li class='characters'><a href="http://test.archiveofourown.org/tags/Other%20Male%20Character/works" class="tag">Other Male Character</a></li><li class='freeforms'><a href="http://test.archiveofourown.org/tags/Tags%20are%20Fun/works" class="tag">Tags are Fun</a></li> <li class='freeforms'><a href="http://test.archiveofourown.org/tags/Additional%20Tag/works" class="tag">Additional Tag</a></li>
-  </ul>
+    <!--warnings again, cast, freeform tags-->
+    <h6 class="landmark heading">Tags</h6>
+    <ul class="tags commas">
+  	  <li class='warnings'>
+  	    <strong>
+  	      <a href="http://test.archiveofourown.org/tags/No%20Archive%20Warnings%20Apply/works" class="tag">No Archive Warnings Apply</a>
+  	    </strong>
+  	  </li>
+  	  <li class='relationships'>
+  	    <a href="http://test.archiveofourown.org/tags/Female%20Character*s*Male%20Character/works" class="tag">Female Character/Male Character</a>
+  	  </li> 
+  	  <li class='relationships'>
+  	    <a href="http://test.archiveofourown.org/tags/Male%20Character*s*Other%20Male%20Character/works" class="tag">Male Character/Other Male Character</a>
+  	  </li>
+  	  <li class='characters'>
+  	    <a href="http://test.archiveofourown.org/tags/Female%20Character%20-%20Character/works" class="tag">Female Character - Character</a>
+  	  </li>
+  	  <li class='characters'>
+  	    <a href="http://test.archiveofourown.org/tags/Male%20Character/works" class="tag">Male Character</a>
+  	  </li>
+  	  <li class='characters'>
+  	    <a href="http://test.archiveofourown.org/tags/Other%20Male%20Character/works" class="tag">Other Male Character</a>
+  	  </li>
+  	  <li class='freeforms'>
+  	    <a href="http://test.archiveofourown.org/tags/Tags%20are%20Fun/works" class="tag">Tags are Fun</a>
+  	  </li>
+  	  <li class='freeforms'>
+  	    <a href="http://test.archiveofourown.org/tags/Additional%20Tag/works" class="tag">Additional Tag</a>
+  	  </li>
+    </ul>
 
   <!--summary-->	
   	<h6 class="landmark heading">Summary</h6>
