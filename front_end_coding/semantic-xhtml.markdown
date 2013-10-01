@@ -10,15 +10,15 @@ XHTML has a creed, and that creed is the topic of our next section:
 
 The combination of CSS and XHTML separates style from content: the way things **look** from what things **mean**. CSS takes care of how everything looks; XHTML controls what things mean. In this way, you can build consistent, logical documents that can be read on any device, by any user agent, whether that be a screen reader, a palm pilot, a printer, or whatever the *next* gadget might be.
 
-It's *faster and easier* to code correctly, because there is a *process of reasoning* that you can follow. Instead of thinking, oh, this is a heading, so I want it to be on its own line, so I'll put a `<br>` break in and I want it bold and in a bigger font and centred, you can just think, oh, this is `<h1>a heading</h1>`.
+It's faster and easier to code correctly, because there is a process of reasoning that you can follow. Instead of saying, "Oh, this is a book title, so it should be `<u>underlined</u>` or written in `<i>italics</i>`," you can just say, "Oh, this is `<cite>A Book Title</cite>`."
 
-So, throw out your `<font>` tags! Release your `<b>bolding</b>`! Deny your layout tables and reject your `<center>purely presentational markup</center>`! All that is for your CSS.
-
-Computers don't understand that `<i>this</i>` word is emphasised but `<i>The Lord of the Rings</i>` is a book unless you tell them that `<em>this</em>` word is emphasised and `<cite>The Lord of the Rings</cite>` is a book.
+We do this because, while people can use context to understand why text has been italicized, computers can't understand that `<i>this</i>` word is emphasised but `<i>The Lord of the Rings</i>` is a book. You have to tell them that `<em>this</em>` word is emphasised and `<cite>The Lord of the Rings</cite>` is a book.
 
 #### But It Looks Bad!
 
-Once your content is marked up in a consistent, semantic, and logical manner, you can go wild with your presentational CSS. You can change the way your entire site looks by changing a single line in a single document. If you decide you want to put a border around every image, for example, you can just write `img { border: 1px solid black; }`
+Once your content is marked up in a consistent, semantic, and logical manner, you can go wild with your presentational CSS. You can change the way your entire site looks by changing a single line in a single document. 
+
+Returning to the example of book titles, if you used `<i>italics</i>` and later decided you would prefer to have the titles `<u>underlined</u>`, you would have to go through and replace all the `<i>` tags around book titles with `<u>` tags. This becomes particularly tricky if you have also used `<i>italics</i>` in place of `<em>emphasis</em>`. However, if you used semantic XHTML with `<cite>` and `<em>` tags, you could change the formatting of all book titles with just one line of CSS: `cite { text-decoration: underline; }`.
 
 ### Resources
 
