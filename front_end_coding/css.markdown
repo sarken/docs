@@ -4,7 +4,7 @@ title: What is CSS
 ---
 Cascading Stylesheets (CSS) tell a browser how to display our XHTML document. We write a list of rules describing the colour of the text, the size of the boxes -- what goes where and what it looks like.
 
-To write a CSS document, conceptually, we examine the structure of an HTML document and lay our CSS document out in the same order:
+To write a CSS document, conceptually, we examine the structure of an HTML document:
 
 ```html
   <body>
@@ -24,6 +24,9 @@ To write a CSS document, conceptually, we examine the structure of an HTML docum
     </div>
 </body>
 ```
+
+...and then we lay out our CSS document in the same order: 
+
 
 ```css
 body { 
