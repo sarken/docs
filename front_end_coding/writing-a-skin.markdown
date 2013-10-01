@@ -23,7 +23,7 @@ Once you've entered the style block from the first step into the CSS field, you'
     }
     ```
 
-2.  Now let's use our striped pattern for the background of the page. We'll also set the lightest color from the corresponding palette as the fallback color to make sure we don't see the usual white even if our image fails to load.
+2.  Now let's use our striped pattern for the background of the page. We'll also set the lightest color from the corresponding palette as the fallback color to make sure we don't see the usual white even if our image fails to load. We'll do this with `background`, which is a [CSS Shorthand] property that lets you set values for multiple properties, including `background-color` and `background-image`, at the same time.
 
     ```css
     body {
