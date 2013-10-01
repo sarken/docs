@@ -2,17 +2,6 @@
 layout: front_end_guide
 title: What is CSS
 ---
-				<h1>What is <acronym title"cascading style sheets">CSS</acronym>?</h1>
-				<h2>Contents</h2>
-				<ul>
-					<li><a href="#intro">Introduction</a></li>
-					<li><a href="#terms">Terms</a></li>
-					<li><a href="#selecting">Selecting</a></li>
-					<li><a href="#values">Values</a></li>
-					<li><a href="#blockinline">Block and Inline</a></li>
-					<li><a href="#resources">Resources</a></li>
-				</ul>
-
 Cascading Stylesheets (CSS) tell a browser how to display our XHTML document. We write a list of rules describing the colour of the text, the size of the boxes -- what goes where and what it looks like.
 
 To write a CSS document, conceptually, we examine the structure of an HTML document and lay our CSS document out in the same order:
@@ -64,6 +53,7 @@ ul.navigation {
 #footer { 
   property: value;
 }
+```
 
 HTML documents are like tupperware on a shelf: boxes nested inside each other. Everything **nested** inside the body tag **inherits** the properties and values assigned to body, unless you say different. Everything inside `#main` inherits the properties of `body` and `#main`, and so on. CSS then, cascades down the page, sort of like champagne filling a pyramid of glasses.
 
