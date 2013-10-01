@@ -10,7 +10,7 @@ On the Archive, we use the term "blurb" to refer to the small summary box which 
 
 The work blurb is the most used chunk of HTML code in the Archive, so we've revised it a lot. It has to contain lots of information and allow different ways of accessing its material. The blurb is flexible, accessible, and has multiple redundancies (says the same thing in different ways).
 
-Since we usually have many blurbs listed together, the index page that holds the blurbs is coded as an HTML list, and each blurb is coded as a list item. The XHTML structure is laid out like so (this diagram includes the outer index container).
+Since we usually have many blurbs listed together, the index page that holds the blurbs is coded as an HTML list, and each blurb is coded as a list item. The XHTML structure, including the outer elements, is laid out like so:
 
 ```
 <h3 class="landmark heading">Listing Works</h3>
