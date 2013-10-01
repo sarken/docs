@@ -1,18 +1,18 @@
 ---
 layout: front_end_guide
-title: Case Study - The Blurb
+title: Case Study/: The Blurb
 ---
-On the Archive, we use the term "blurb" to refer to the small summary box which provides a description of a work, a bookmark, a collection, user, or series. Blurbs appear on what we call index pages —- for example, the [works page for the Alternate Universe tag](http://archiveofourown.org/tags/Alternate%20Universe/works) or the [bookmarks page for the user testy](http://archiveofourown.org/users/testy/bookmarks).
+On the Archive, we use the term "blurb" to refer to the small summary box which provides a description of a work, a bookmark, a collection, user, or series. Blurbs appear on what we call index pages —- for example, the [works page for the Alternate Universe tag](http://archiveofourown.org/tags/Alternate%20Universe/works) or the [bookmarks page for the user testy](http://archiveofourown.org/users/testy/bookmarks) are both index pages.
 
 ![work blurb in the default Archive style](images/workblurb.png)
 
-### Blurb HTML Structure
+### The Blurb HTML Structure
 
 The work blurb is the most used chunk of HTML code in the Archive, so we've revised it a lot. It has to contain lots of information and allow different ways of accessing its material. The blurb is flexible, accessible, and has multiple redundancies (says the same thing in different ways).
 
 Since we usually have many blurbs listed together, the index page that holds the blurbs is coded as an HTML list, and each blurb is coded as a list item. The XHTML structure, including the outer elements, is laid out like so:
 
-```
+```html
 <h3 class="landmark heading">Listing Works</h3>
 <ol class="work index group">
   <li class="work blurb group" id="work_1234" role="article">
@@ -135,3 +135,24 @@ This markup, which counts, groups, and names data, allows both linear and non-li
 As noted above, while the HTML structure of the blurb is incredibly important and should not be altered unless the actual content and purpose of the blurb changes, the display, which is governed entirely by CSS, is much more flexible.
 
 Here you see two different examples of the work blurb from the AO3, one using the default CSS and one using a skin, which have some of their fields mapped to the blurb diagram to help give you the idea.
+
+The Archive's default CSS for blurbs is located in [the style sheet named 13-group-blurb.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/13-group-blurb.css). 
+
+Let's examine the first rule block:
+
+```css
+.blurb ul li, .blurb dd ul li, .blurb ul.type {
+  display: inline;
+}
+```
+
+<dl>
+  <dt>.blurb ul li</dt>
+  <dd>This is the selector that tells the browser how to identify (select) the HTML elements that the CSS rule should be applied to. This selector says, to translate it into English, any list item (li) that appears inside an unordered list (ul) that appears inside any element that has the CSS class "blurb".</dd>
+  <dt>.blurb dd ul li</dt>
+  <dd>A second selector (you can have as many as you want in a CSS rule, comma-separated as here) that tells the browser to apply the style to any list item (li) that appears inside an unordered list (ul) that appears inside a definition list description (dd) that appears inside any element that has the CSS class "blurb".</dd>
+  <dt>{...}</dt>
+  <dd>The declaration block is a semicolon-separated list of property: value pairs that tell the browser how to style the selected elements.</dd>
+  <dt>display: inline;</dt>
+  <dd>This is the declaration. It is a property: value pair that, in this case, says to display these selected HTML elements inline (that is, following one another on the same line) instead of one after another each on a new line (which would otherwise be the default behavior for list items).</dd>
+</dl>
