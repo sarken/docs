@@ -11,8 +11,7 @@ It is not necessary to read all these pages before you start coding! They are in
 1.  [Tools](tools)
 2.  [What is Semantic XHTML?](semantic-xhtml)
 3.  [What is CSS?](css)
-4.  Semantic, Accessible, Flexible Design
-5.  [Writing a Skin](writing-a-skin)
+4.  [Writing a Skin](writing-a-skin)
 				
 ### How We Code Stuff
 
