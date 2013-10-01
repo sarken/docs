@@ -1,6 +1,6 @@
 ---
 layout: front_end_guide
-title: CSS
+title: What is CSS
 ---
 				<h1>What is <acronym title"cascading style sheets">CSS</acronym>?</h1>
 				<h2>Contents</h2>
