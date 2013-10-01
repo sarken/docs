@@ -2,7 +2,7 @@
 layout: front_end_guide
 title: CSS Shorthand
 ---
-On the Archive, we use CSS shorthand. This means we combine properties to make shorter rules. It's an efficient way to code and it's easy to learn with a bit of practice. With shorthand we can reduce 
+On the Archive, we use CSS shorthand. This means we combine properties to make shorter rules. It's an efficient way to code and it's easy to learn with a bit of practice. Without shorthand, our code might look like this:
 
 ```
 background-color: #ffffff;
@@ -12,7 +12,7 @@ background-attachment: scroll;
 background-position: left top;
 ```
 
-to
+But **with** shorthand, we can create the same style using only this:
 
 <code>background: <span title="color">#fff</span> <span title="image">url("../images/example.jpg")</span> <span title="repeat">no-repeat</span><span title="scroll is default value"> </span><span title="position">left top</span>;	
 </code>
