@@ -1,10 +1,10 @@
 ---
 layout: front_end_guide
-title: Case Study&59; The Blurb
+title: Case Study - The Blurb
 ---
 On the Archive, we use the term "blurb" to refer to the small summary box which provides a description of a work, a bookmark, a collection, user, or series. Blurbs appear on what we call index pages —- for example, the [works page for the Alternate Universe tag](http://archiveofourown.org/tags/Alternate%20Universe/works) or the [bookmarks page for the user testy](http://archiveofourown.org/users/testy/bookmarks).
 
-![work blurb in the default Archive style](../images/workblurb.png)
+![work blurb in the default Archive style](images/workblurb.png)
 
 ### Blurb HTML Structure
 
@@ -105,20 +105,19 @@ Since we usually have many blurbs listed together, the index page that holds the
 
 Here are some of the important things to understand about this layout:
 
-* *The content is presented in *logically readable order*, which has **nothing** to do with the order in which that information is displayed visually in a browser. The title comes first even though visually the first thing you see is the square of the required-tags icons.
-* *We don't use inline styles.*  You don't see any CSS embedded into the code like this: `<p style="color: blue;">`. This kind of styling is much harder to track down later on for debugging and maintenance. Please don't do it!
-* *We almost always use classes rather than IDs.* CSS rules attached to ids have higher priority than CSS rules attached to classes, so to make it as easy as possible to create skins, it's better if we use classes by default.
-* The class names are short, common single words. We use them in combination.
-* The class names describe and document what the information contained in that HTML element is.
-* *Classes are nested.* That is, CSS rules from the classes on an outer HTML tag will be inherited by an inner tag, as long as they aren't overridden.
-* A class is only declared on the outermost element that needs it. That is, we have work blurb and then the class blurb is inherited all the way down; we don't ALSO declare, for instance, `<p class="blurb datetime">`. We just declare `<p class="datetime">` and let it inherit the blurb class from above.
-* *We use headings with the `landmark` class and the `title` attribute to label otherwise unlabeled sections of HTML.* These are not displayed with the default CSS rules but are available to screenreaders and other special browsers to help with navigation.
+* **The content is presented in *logically readable order**, which has *nothing* to do with the order in which that information is displayed visually in a browser. The title comes first even though visually the first thing you see is the square of the required-tags icons.
+* **We don't use inline styles.**  You don't see any CSS embedded into the code like this: `<p style="color: blue;">`. This kind of styling is much harder to track down later on for debugging and maintenance. Please don't do it!
+* **We almost always name elements with classes rather than IDs.** Any single ID can only be used once per page. Additionally, CSS rules attached to IDs have higher priority than CSS rules attached to classes, so to make it as easy as possible to create skins, it's better if we use classes by default.
+* The class names are space-separated groups of short, common words that describe and document what the information contained in that HTML element is.
+* **Classes are nested.** That is, CSS rules from the classes on an outer HTML tag will be inherited by an inner tag, as long as they aren't overridden.
+* **A class is only declared on the outermost element that needs it.** That is, we have `work blurb` and then the class `blurb` is inherited all the way down; we don't *also* declare, for instance, `<p class="blurb datetime">`. We just declare `<p class="datetime">` and let it inherit the blurb class from above.
+* **We use headings with the `landmark` class and the `title` attribute to label otherwise unlabeled sections of HTML.** These are not displayed with the default CSS rules but are available to screenreaders and other special browsers to help with navigation.
 
 The structure of blurbs should be changed only with extreme caution! Everything about the display can be reorganized (and in fact the blurb can be skinned pretty easily by our users), but the HTML should not be altered.
 
 #### Reasons for the Structure
 
-Among other reasons, this structure means it is easy for a piece of software to accurately count the number of items (blurbs) shown in an index. Each new item —- work, index, page region -— is announced by a heading, so users know what information is attached to what title. As a result, a list of headings summarizes the entire index page.
+This structure means it is easy for a piece of software to accurately count the number of items (blurbs) shown in an index. Each new item —- work, index, page region -- is announced by a heading, so users know what information is attached to what title. As a result, a list of headings summarizes the entire index page.
 
 For example, a screenreader user may:
 
