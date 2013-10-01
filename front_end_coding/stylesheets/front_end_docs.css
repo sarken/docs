@@ -123,6 +123,7 @@ h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 
 }
 
 .header a, .header a:visited, .header a:active {
+  border-bottom: none;
   color: #fff;
 }
 
@@ -134,7 +135,7 @@ h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 
 .header .title {
   margin: 0 auto;
   padding: 1em 0;
-  width: 35em;
+  width: 45em;
 }
 
 .header .page {
@@ -146,9 +147,9 @@ h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 
 .main {
   line-height: 1.5;
   margin: 1.5em auto;
-  max-width: 39em;
+  max-width: 40em;
   min-width: 30em;
-  width: 35em;
+  width: 40em;
 }
 
 .navigation ul, .navigation li {
