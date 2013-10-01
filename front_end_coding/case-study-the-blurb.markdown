@@ -37,17 +37,17 @@ Since we usually have many blurbs listed together, the index page that holds the
           </a>
         </li>
         <li> 
-          <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="warning-no warnings" title="No Archive Warnings Apply"><span class="text">No Archive Warnings Apply</span></span>
+          <a href="..." aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="warning-no warnings" title="No Archive Warnings Apply"><span class="text">No Archive Warnings Apply</span></span>
           </a>
         </li>
         <li>
-          <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="category-multi category" title="F/M, M/M"><span class="text">F/M, M/M</span></span></a>
+          <a href="..." aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="category-multi category" title="F/M, M/M"><span class="text">F/M, M/M</span></span></a>
         </li>
         <li>
-          <a href="/help/symbols-key.html" aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="complete-no iswip" title="Work in Progress"><span class="text">Work in Progress</span></span>
+          <a href="..." aria-controls="#modal" class="help symbol question modal" title="Symbols key"><span class="complete-no iswip" title="Work in Progress"><span class="text">Work in Progress</span></span>
           </a>
         </li>
-  	  </ul>
+      </ul>
   	  
   	  <p class="datetime">30 Sep 2013</p>
     </div>
@@ -110,3 +110,14 @@ Since we usually have many blurbs listed together, the index page that holds the
   </li>
 </ol>
 ```
+
+Here are some of the important things to understand about this layout:
+
+* *The content is presented in *logically readable order*, which has **nothing** to do with the order in which that information is displayed visually in a browser. The title comes first even though visually the first thing you see is the square of the required-tags icons.
+* *We don't use inline styles.*  You don't see any CSS embedded into the code like this: `<p style="color: blue;">`. This kind of styling is much harder to track down later on for debugging and maintenance. Please don't do it!
+* *We almost always use classes rather than IDs.* CSS rules attached to ids have higher priority than CSS rules attached to classes, so to make it as easy as possible to create skins, it's better if we use classes by default.
+* The class names are short, common single words. We use them in combination.
+* The class names describe and document what the information contained in that HTML element is.
+* *Classes are nested.* That is, CSS rules from the classes on an outer HTML tag will be inherited by an inner tag, as long as they aren't overridden.
+* A class is only declared on the outermost element that needs it. That is, we have work blurb and then the class blurb is inherited all the way down; we don't ALSO declare, for instance, `<p class="blurb datetime">`. We just declare `<p class="datetime">` and let it inherit the blurb class from above.
+* *We use headings with the `landmark` class and the `title` attribute to label otherwise unlabeled sections of HTML.* These are not displayed with the default CSS rules but are available to screenreaders and other special browsers to help with navigation.
