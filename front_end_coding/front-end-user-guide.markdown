@@ -48,7 +48,7 @@ The dashboard is the only region that does not appear on every page. It most oft
 
 ##### Main
 
-The main region includes most of the site content. While filters, which typically appear as a sidebar on the right of index pages, are part of the main content, the dashboard is <em>not</em>.
+The main region includes most of the site content. While filters, which typically appear as a sidebar on the right of index pages, are part of the main content, the dashboard is *not*.
 
 Although the main region contains the majority of our content, this stylesheet contains perhaps the fewest rules. Here we focus on `<div id="main">` itself (e.g. setting it off to the right to give the dashboard room) rather than its contents, which we instead style in stylesheets 7 - 24.
 
