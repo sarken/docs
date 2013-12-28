@@ -2,7 +2,7 @@
 layout: front_end_guide
 title: What is CSS
 ---
-Cascading Stylesheets (CSS) tell a browser how to display our XHTML document. We write a list of rules describing the colour of the text, the size of the boxes -- what goes where and what it looks like.
+Cascading Stylesheets (CSS) tell a browser how to display our XHTML document. We write a list of rules describing the color of the text, the size of the boxes -- what goes where and what it looks like.
 
 To write a CSS document, conceptually, we examine the structure of an HTML document:
 
@@ -76,7 +76,7 @@ A property must always be paired with a value to form a valid **declaration**. A
 
 A **selector** is the part of the rule that says which elements are being styled. A rule set can have multiple selectors to make it apply to multiple elements, and different types of selectors can be combined in order to select an element only when it appears within a specific context.
 
-##### ID selector
+##### ID selectors
 
 Some elements that are used only once per page have unique names that are given to them with the HTML `id` attribute, like `<div id="header">`. To select an element by its `id`, use a hash sign in front of the element's `id` value.
 
@@ -132,23 +132,22 @@ body #footer p {
 
 #### Properties and values
 
-Think of each selector as a box. We can make it stack up, give it a background colour (or an image or both), a border, and we can give that border a colour and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, colour, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
+Think of each selector as a box. We can make it stack up, give it a background color (or an image or both), a border, and we can give that border a color and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (`margin`) and inside it (`padding`). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, color, font, and make it bold or italic; we can align it to the left or the right or center it. We can do (almost) anything!
 				
 ##### Values
 
-On the Archive, we primarily use hex codes to define colors. Hex codes are a set of six letters (a-f) and digits (0-9) that make up a colour. `#000000` is black. `#ffffff` is white. Everything else is somewhere in between.
+On the Archive, we primarily use hex codes to define colors. Hex codes are a set of six letters (a-f) and digits (0-9) that make up a color. `#000000` is black. `#ffffff` is white. Everything else is somewhere in between.
 
-
-				<p style="text-align:center;">
-					<img src="http://i122.photobucket.com/albums/o253/stylim/tutcaps/fff.jpg" style="background:3px solid #ccc;" />
-					<img src="http://i122.photobucket.com/albums/o253/stylim/tutcaps/000.jpg"  style="background:3px solid #ccc;" />
-					<img src="http://i122.photobucket.com/albums/o253/stylim/tutcaps/inbetween.jpg" style="background:3px solid #ccc;" />
+<ol class="diagram">
+<li style="display:inline;"><span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#000; margin:auto; padding:0;" title="#000"></span></li>
+<li style="display:inline;"><span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#fff; margin:auto; padding:0;" title="#fff"></span></li>
+<li style="display:inline;"><span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#900; margin:auto; padding:0;" title="#900"></span></li></ol>
 
 We use [ems](em-scale.html) as the general unit of measurement. 1 em is 100% of your font size; if your font size is 16px, 1 em is 16px.
 
 1 em square: <span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#000; margin:auto; padding:0;"></span>
 
-Em is a scalable measurement, so if your visitor needs to zoom in or scale up the text, your layout is less likely to go madly wrong. Em the measurement is different from the <acronym>HTML</acronym> tag &lt;em&gt;, which means <em>emphasis</em>.
+Em is a scalable measurement, so if your visitor needs to zoom in or scale up the text, your layout is less likely to go madly wrong. (Em the measurement is different from the <acronym>HTML</acronym> tag &lt;em&gt;, which means <em>emphasis</em>.)
 
 ###### Block and inline
 
@@ -178,7 +177,7 @@ Elements are either block or inline by default, but with CSS we can decide how w
 </li>
 </ol>
 				
-Think of each selector as a box. We can make it stack up, give it a background colour (or an image or both), a border, and we can give that border a colour and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, colour, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
+Think of each selector as a box. We can make it stack up, give it a background color (or an image or both), a border, and we can give that border a color and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, color, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
 				
 ### Resources
 * [CSS Terms and Definitions](http://www.impressivewebs.com/css-terms-definitions/)
