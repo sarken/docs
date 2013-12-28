@@ -146,21 +146,20 @@ On the Archive, we primarily use hex codes to define colors. Hex codes are a set
 
 We use [ems](em-scale.html) as the general unit of measurement. 1 em is 100% of your font size; if your font size is 16px, 1 em is 16px. Since ems are a scalable measurement, if your visitor needs to zoom in or scale up the text, your layout is less likely to go horribly wrong.
 
-1 em square: <span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#000; margin:auto; padding:0;"></span>
+<p class="diagram">1 em square: <span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#000; margin:auto; padding:0;"></span></p>
 
 ###### Block and inline
 
-HTML elements come in two flavors: block-level and inline. Block elements stack one beneath the other, like building blocks, while inline elements run along a line, like text.
+HTML elements come in two flavors: block-level and inline. Block elements stack vertically, like building blocks, while inline elements run in a horizontal line.
 
 <ol class="diagram" title="block-level HTML elements stacking up">
 <li>&lt;ul&gt;
 <ol>
 <li>&lt;li&gt;List items are block elements.&lt;/li&gt;</li>
 <li>&lt;li&gt;They stack.&lt;/li&gt;</li>
+<li>&lt;li&gt;Elements like <span>&lt;a href="http://..."&gt;<a href="">links</a>&lt;/a&gt;</span> and <span>&lt;em&gt;<em>emphasis</em>&lt;/em&gt;</span> run along in a line, like text does.&lt;/li&gt;</li>
 </ol></li>
 </ol>
-
-<p class="diagram">Elements like <span>&lt;a href="http://..."&gt;<a href="">links</a>&lt;/a&gt;</span> and <span>&lt;em&gt;<em>emphasis</em>&lt;/em&gt;</span> run along in a line, like text does.</p>
 
 Elements are either block or inline by default, but with CSS we can decide how we want to display *every single element* on the screen. So we can make the list items (`<li>`) of an unordered list (`<ul>`), which is a block containing a stack of blocks, into a line of elements very easily, with the rule `ul li { display: inline; }`
 
@@ -176,6 +175,7 @@ Elements are either block or inline by default, but with CSS we can decide how w
 Think of each selector as a box. We can make it stack up, give it a background color (or an image or both), a border, and we can give that border a color and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, color, font, and make it bold or italic or asscaps; we can align it to the left or the right or center it. We can do anything! (Almost anything.)
 				
 ### Resources
+
 * [CSS Terms and Definitions](http://www.impressivewebs.com/css-terms-definitions/)
 * [ProCSSor CSS Prettifier](http://procssor.com)
 * [W3C CSS Validator](http://jigsaw.w3.org/css-validator/)
