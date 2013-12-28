@@ -115,7 +115,8 @@ Looking again at the example HTML and CSS documents, notice that the selector in
 ```css
 p { 
   property: value;
-}`
+}
+```
 
 Or you can specify only certain paragraphs, in certain places, by combining different kinds of selectors:
 
