@@ -37,11 +37,26 @@ Only `simple` forms should be included inside actions blocks.
 <ol class="diagram">
 <li><code>&lt;ul class="navigation actions" role="menu"&gt;</code>
 <ol>
-<li>&lt;li&gt; <span>&lt;a&gt;Work Search&lt;/a&gt;</span></li>
-<li>&lt;li&gt; <span>&lt;span class="current"&gt;People Search&lt;/span&gt;</span></li>
-<li>&lt;li&gt; <span>&lt;a&gt;Bookmark Search&lt;/a&gt;</span></li>
-<li>&lt;li&gt; <span>&lt;a&gt;Tag Search&lt;/a&gt;</span></li>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;a&gt;Work Search&lt;/a&gt;</code></li>
 </ol>
+</li>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;span class="current"&gt;People Search&lt;/span&gt;</code></li>
+</ol>
+</li>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;a&gt;Bookmark Search&lt;/a&gt;</code></li>
+</ol>
+</li>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;a&gt;Tag Search&lt;/a&gt;</code></li>
+</ol>
+</li></ol>
 </li>
 </ol>
 

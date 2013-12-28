@@ -32,7 +32,7 @@ Design patterns are a major part of how we code things. While not every new feat
 
 * [XHTML Page Templates](patterns-xhtml-page-templates)
 * Diagrams of HTML Structures
-* Design Pattern: Actions
+* [Design Pattern: Actions](patterns-actions)
 * Design Pattern: Interactions
 * Design Pattern: Index
 * [Design Pattern: Blurb](patterns-blurb)

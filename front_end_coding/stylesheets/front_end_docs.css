@@ -116,15 +116,11 @@ dl {
 }
 
 dt {
-  clear: left;
-  float: left;
   font-weight: 700;
-  width: 9em;
 }
 
 dd {
-  float: left;
-  margin-bottom: 1.6em;
+  text-indent: 2em;
 }
 
 h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 + ul, h5 + ul, h6 + ul, p + p, ul + p, ol + p, p + ul, p + ol, li + li, .highlight + p, p + .highlight {
