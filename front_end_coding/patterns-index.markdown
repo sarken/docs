@@ -45,15 +45,12 @@ The following diagram is taken from the assignments page a user can access from 
 <ol>
 <li><code>&lt;a role="button"&gt;Default</code></li>
 </ol></li>
-</ol>
-</li>
-</ol>
-</li>
+</ol></li>
+</ol></li>
 <li><code>&lt;dt&gt;</code>
 <ol>
 <li><code>&lt;a&gt;Assignment link</code></li>
-</ol>
-</li>
+</ol></li>
 <li><code>&lt;dd&gt;</code>
 <ol>
 <li><code>&lt;a&gt;Work link</code>
@@ -62,10 +59,7 @@ The following diagram is taken from the assignments page a user can access from 
 <ol>
 <li><code>&lt;dt&gt;</code></li>
 <li><code>&lt;dd&gt;</code></li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
+</ol></li>
+</ol></li>
+</ol></li>
 </ol>
