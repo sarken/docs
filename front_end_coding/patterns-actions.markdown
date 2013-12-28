@@ -35,26 +35,38 @@ Only `simple` forms should be included inside actions blocks.
 ### XHTML Diagram
 
 <ol class="diagram">
-<li><code>&lt;ul class="navigation actions" role="menu"&gt;</code>
+<li><code>&lt;ul class="navigation actions" role="navigation"&gt;</code>
 <ol>
 <li><code>&lt;li&gt;</code>
 <ol>
-<li><code>&lt;a&gt;Work Search&lt;/a&gt;</code></li>
+<li><code>&lt;a&gt;</code></li></ol>
+</li>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;span class="current"</code></li>
+</ol>
+</li>
+<li><code>&lt;li aria-haspopup="true"&gt;</code>
+<ol>
+<li><code>&lt;a&gt;</code></li>
+<li><code>&lt;ul class="secondary"&gt;</code>
+<ol>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;a&gt;</code></li>
 </ol>
 </li>
 <li><code>&lt;li&gt;</code>
 <ol>
-<li><code>&lt;span class="current"&gt;People Search&lt;/span&gt;</code></li>
+<li><code>&lt;a&gt;</code></li>
+</ol>
+</li></ol>
+</li>
 </ol>
 </li>
 <li><code>&lt;li&gt;</code>
 <ol>
-<li><code>&lt;a&gt;Bookmark Search&lt;/a&gt;</code></li>
-</ol>
-</li>
-<li><code>&lt;li&gt;</code>
-<ol>
-<li><code>&lt;a&gt;Tag Search&lt;/a&gt;</code></li>
+<li><code>&lt;a&gt;</code></li>
 </ol>
 </li></ol>
 </li>
