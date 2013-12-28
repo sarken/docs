@@ -150,14 +150,13 @@ We use [ems](em-scale.html) as the general unit of measurement. 1 em is 100% of 
 
 ###### Block and inline
 
-HTML elements come in two flavosrs: block-level and inline.
+HTML elements come in two flavors: block-level and inline. Block elements stack one beneath the other, like building blocks, while inline elements run along a line, like text.
 
-<ol class="diagram" title="block level HTML elements stacking up">
+<ol class="diagram" title="block-level HTML elements stacking up">
 <li>&lt;ul&gt;
 <ol>
-<li>&lt;li&gt; block level elements &lt;/li&gt;</li>
-<li>&lt;li&gt; are like building blocks &lt;/li&gt;</li>
-<li>&lt;li&gt; they stack up one underneath the other &lt;/li&gt;</li>
+<li>&lt;li&gt;List items are block elements.&lt;/li&gt;</li>
+<li>&lt;li&gt;They stack.&lt;/li&gt;</li>
 </ol></li>
 </ol>
 
@@ -165,7 +164,7 @@ HTML elements come in two flavosrs: block-level and inline.
 
 Elements are either block or inline by default, but with CSS we can decide how we want to display *every single element* on the screen. So we can make the list items (`<li>`) of an unordered list (`<ul>`), which is a block containing a stack of blocks, into a line of elements very easily, with the rule `ul li { display: inline; }`
 
-<ol class="diagram" title="block level HTML elements displayed inline">
+<ol class="diagram" title="block-level HTML elements displayed inline">
 <li>&lt;ul&gt;
 <ol>
 <li style="display:inline;">&lt;li&gt; css &lt;/li&gt;</li>
