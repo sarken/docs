@@ -43,7 +43,7 @@ Each page follows the same basic structure and order. The structure is commented
 <h3 class="landmark"> </h3>
 ```
 
-Here's [a filterable work index](http://archiveofourown.org/tags/The%20X-Files/works) in brief:
+Here's a brief look at the structure of a a filterable work index, like the [work index for The X-Files](http://archiveofourown.org/tags/The%20X-Files/works):
 
 <ol class="diagram">
 <li>#main

@@ -35,7 +35,7 @@ Forms, which are styled in 07-interactions.css, should be labeled with fieldsets
 
 Form controls are inline elements, which means they have to be wrapped in block level elements.
 
-###### Definition Lists
+###### Definition lists
 
 We generally want forms set up as [definition lists](http://www.w3schools.com/tags/tag_dl.asp) (`<dl>`) because the [term](http://www.w3schools.com/tags/tag_dt.asp) (`<dt>`) and [definition](http://www.w3schools.com/tags/tag_dd.asp) (`<dd>`) structure corresponds nicely to the typical `<label>Label</label> <input>` structure of a form. We use `<dt>` for the label and `<dd>` for the input, and a `<dt>` can contain more than one `<dd>`. However, since a `<dl>` can only contain `<dt>` and `<dd>` as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
 
@@ -58,11 +58,11 @@ Here is the basic template to follow to meet all these rules:
 </form>
 ```
 
-###### Other Form Structures
+###### Other form structures
 
 Some forms cannot be logically structured as terms and definitions. As a last resort, these can be structured as paragraphs and can include linebreaks.
 
-#### XHTML Identifiers
+#### XHTML identifiers
 
 Identifiers are attributes that add meaning to an XHTML element by providing more information about the element's function. Identifiers come in two varieties, `class` and `id`. An element can have one, both, or neither type of identifier.
 
@@ -76,25 +76,23 @@ Stylesheets, scripts, and user agents can referece an elements by its `id`. An `
 
 A `class` identifier assigns a name to an element, but `class` names can be used multiple times per document and any element can have multiple `class` names, with each name separated by a single space: `<div class="preface group">This div has the names group and preface.</div>`.
 
-##### Our Identifier Naming Conventions
+##### Our identifier naming conventions
 
 Class names should be short, lowercase English (U.S.) words in common usage. They should describe the function, not presentation, of the element to which they are applied. There is more information available in the [Classes document](classes.html).
 
 An `id` name can and should be more complex to ensure that it only appears once per document. We use underscores to separate the words and numbers in the `id`: `<form id="work_filters">` or `<li id="work_1234">`
 							
-###### Banned Words
+###### Banned words
 
 Anything used in an `id` or `class`.
 
-#### References
-
-### CSS Specifications
+### CSS specifications
 
 We use aproximately 30 external stylesheets written primarily to [CSS 2.1 Specifications](http://www.w3.org/TR/CSS2/), although we do permit the use of CSS3 to provide non-essential formatting frills, such as box shadows, text shadows, and gradients.
 
 Before submitting any code, it is always a good idea to check your CSS with [the W3C CSS validation service](http://jigsaw.w3.org/css-validator/).
 
-#### Units of Measurement
+#### Units of measurement
 
 Since Archive users and visitors browse the site with a variety of technologies, needs, and settings, we want our layout to be as flexible as possible. Using the right units of measurement in the right context helps us accomplish that.
 
@@ -110,11 +108,12 @@ However, there are times when using an absolute measurement is the best option. 
 
 We have a separate stylesheet that controls the appearance of pages printed from the Archive. Text in our print stylesheet is sized using points.
 
-#### Our CSS Formatting Conventions
+#### Our CSS formatting conventions
 
 Since our stylesheets are edited by multiple coders, we have developed a house style that will allow us to easily read, track changes to, and avoid mistakes in our markup.
 
 A declaration block written for the archive should be formatted with:
+
 * Muliple selectors on the same line, separated by a comma and a single space
 * The opening curly brace on the same line as the selector, preceded by a single space
 * Each property indented and on a new line  
