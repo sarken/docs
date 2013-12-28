@@ -19,7 +19,6 @@ Our coding practice may be radically different from anything you've done before.
 
 * [Coding Standards](coding-standards)
 * [Front End User Guide](front-end-user-guide)
-* [Case Study: The Blurb](case-study-the-blurb)
 * [Coding Accessible Tables](coding-accessible-tables)
 * Archive Style Guide
 * [CSS Shorthand](css-shorthand)

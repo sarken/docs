@@ -206,5 +206,5 @@ There are different objects, or works, in the archive that you can interact with
 
 #### Blurbs
 
-Blurbs are like identity cards. They're probably the most used structure in the archive, so let's [look at the blurb in detail](case-study-the-blurb).
+Blurbs are like identity cards. They're probably the most used structure in the archive, so let's [examine the blurb in detail](patterns-blurb).
 
