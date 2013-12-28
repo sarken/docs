@@ -97,5 +97,7 @@ Here's a brief look at the structure of a filterable work index, like the [work 
 </li>
 <li>div .clear</li>
 </ol>
+</li>
+</ol>
 
 Other indices on the Archive, such as [a tag's bookmark index](http://archiveofourown.org/tags/The%20X-Files/bookmarks) and [the collections index](http://archiveofourown.org/collections), follow the same pattern. There are also variations of it that don't have filters, such as [the main works index](http://archiveofourown.org/works), or that have filters and appear a dashboard, such as [a user's bookmark index](http://archiveofourown.org/users/testy/bookmarks).
