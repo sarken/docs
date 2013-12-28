@@ -55,6 +55,16 @@ Here's a brief look at the structure of a filterable work index, like the [work 
 <li>li <span>a</span></li>
 <li>li <span>span .current</span></li>
 </ol></li>
+<li>h4 .landmark</li>
+<li>ol .pagination
+<ol>
+<li>li .previous <span>a</span></li>
+<li>li <span>span .current</span></li>
+<li>li <span>a</span></li>
+<li>li...</li>
+<li>li .next <span>a</span></li>
+</ol>
+</li>
 <li>h3 .landmark</li>
 <li>ol .work index
 <ol>
@@ -86,6 +96,7 @@ Here's a brief look at the structure of a filterable work index, like the [work 
 </li>
 </ol>
 </li>
+<li>h4 .landmark</li>
 <li>ol .pagination
 <ol>
 <li>li .previous <span>a</span></li>

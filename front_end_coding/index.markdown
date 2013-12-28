@@ -31,12 +31,12 @@ Our coding practice may be radically different from anything you've done before.
 
 Design patterns are a major part of how we code things. While not every new feature will fit an existing pattern, we strive to reuse as much XHTML and CSS as possible. 
 
-* XHTML Page Templates
+* [XHTML Page Templates](patterns-xhtml-page-templates)
 * Diagrams of HTML Structures
 * Design Pattern: Actions
 * Design Pattern: Interactions
 * Design Pattern: Index
-* Design Pattern: Blurb
+* [Design Pattern: Blurb](patterns-blurb)
 * Design Pattern: Listbox
 * Design Pattern: Meta
 * Design Pattern: Preface
