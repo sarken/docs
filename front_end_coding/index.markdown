@@ -24,7 +24,7 @@ Our coding practice may be radically different from anything you've done before.
 * Archive Style Guide
 * [CSS Shorthand](css-shorthand)
 * [Classes](classes)
-* Em Scale
+* [Em Scale](em-scale)
 * [Accessibility Statement](accessibility-statement)
 
 #### Patterns
