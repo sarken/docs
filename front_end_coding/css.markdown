@@ -146,37 +146,37 @@ On the Archive, we primarily use hex codes to define colors. Hex codes are a set
 
 We use [ems](em-scale.html) as the general unit of measurement. 1 em is 100% of your font size; if your font size is 16px, 1 em is 16px.
 
-1 em square: <span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#000; margin:auto; padding:0;"><!-- --></span>
+1 em square: <span style="display:inline-block; width:1em; height:1em; background:1px solid; background:#000; margin:auto; padding:0;"></span>
 
-Em is a scalable measurement, so if your visitor needs to zoom in or scale up the text, your layout is less likely to go madly wrong. Em the measurement is different from the <acronym>HTML</acronym> tag &lt;em&gt;, which means <em>emphasis</em>. <a href="em-scale.html">Learn about our "Em Scale"</a>.
-				</p>
+Em is a scalable measurement, so if your visitor needs to zoom in or scale up the text, your layout is less likely to go madly wrong. Em the measurement is different from the <acronym>HTML</acronym> tag &lt;em&gt;, which means <em>emphasis</em>.
 
 ###### Block and inline
 
 HTML elements come in two flavours: block-level and inline.
 
-				<ol class="diagram" title="block level html elements stacking up">
-					<li>&lt;ul&gt;
-						<ol>
-							<li>&lt;li&gt; block level elements &lt;/li&gt;</li>
-							<li>&lt;li&gt; are like building blocks &lt;/li&gt;</li>
-							<li>&lt;li&gt; they stack up one underneath the other &lt;/li&gt;</li>
-						</ol>
-					</li>
-				</ol>
-				<p class="diagram">Elements like <span>&lt;a href="http://..."&gt;<a href="">links</a>&lt;/a&gt;</span> and <span>&lt;em&gt;<em>emphasis</em>&lt;/em&gt;</span> run along in a line, like text does.
+<ol class="diagram" title="block level html elements stacking up">
+<li>&lt;ul&gt;
+<ol>
+<li>&lt;li&gt; block level elements &lt;/li&gt;</li>
+<li>&lt;li&gt; are like building blocks &lt;/li&gt;</li>
+<li>&lt;li&gt; they stack up one underneath the other &lt;/li&gt;</li>
+</ol>
+</li>
+</ol>
+
+<p class="diagram">Elements like <span>&lt;a href="http://..."&gt;<a href="">links</a>&lt;/a&gt;</span> and <span>&lt;em&gt;<em>emphasis</em>&lt;/em&gt;</span> run along in a line, like text does.</p>
 
 Elements are either block or inline by default, but with CSS we can decide how we want to display *every single element* on the screen. So we can make the list items (`<li>`) of an unordered list (`<ul>`), which is a block containing a stack of blocks, into a line of elements very easily, with the rule `ul li { display: inline; }`
 
-				<ol class="diagram" title="block level html elements displayed inline">
-					<li>&lt;ul&gt;
-						<ol>
-							<li style="display:inline;">&lt;li&gt; css &lt;/li&gt;</li>
-							<li style="display:inline;">&lt;li&gt; controls &lt;/li&gt;</li>
-							<li style="display:inline;">&lt;li&gt; presentation &lt;/li&gt;</li>
-						</ol>
-					</li>
-				</ol>
+<ol class="diagram" title="block level html elements displayed inline">
+<li>&lt;ul&gt;
+<ol>
+<li style="display:inline;">&lt;li&gt; css &lt;/li&gt;</li>
+<li style="display:inline;">&lt;li&gt; controls &lt;/li&gt;</li>
+<li style="display:inline;">&lt;li&gt; presentation &lt;/li&gt;</li>
+</ol>
+</li>
+</ol>
 				
 Think of each selector as a box. We can make it stack up, give it a background colour (or an image or both), a border, and we can give that border a colour and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, colour, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
 				
