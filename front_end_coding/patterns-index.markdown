@@ -44,8 +44,7 @@ The following diagram is taken from the assignments page a user can access from 
 <li><code>&lt;li&gt;</code>
 <ol>
 <li><code>&lt;a role="button"&gt;Default</code></li>
-</ol>
-</li>
+</ol></li>
 </ol>
 </li>
 </ol>
