@@ -7,13 +7,12 @@ title: XHTML Page Templates
 <ol>
 <li>ul #skiplinks</li>
 <li>div #header</li>
-<li class="emphasise">div #main	</li>
+<li class="emphasise">div #main</li>
 <li>div #footer</li>
-</ol>
-</li>
+</ol></li>
 </ol>
 
-The individual pages on our archive are contained within the division #main.
+The individual pages on the Archive are contained within the division `#main`.
 
 Some pages (user home, collection home, tag home, admin home) have a dashboard, which by default we display as a sidebar.
 
@@ -25,8 +24,7 @@ Some pages (user home, collection home, tag home, admin home) have a dashboard, 
 <li>div #dashboard</li>
 <li class="emphasise">div #main	.dashboard</li>
 <li>div #footer</li>
-</ol>
-</li>
+</ol></li>
 </ol>
 
 Each page follows the same basic structure and order. The structure is commented in the views. Each section is announced by a heading, although many of these headings are not displayed in the Archive default style; these are landmarks.
@@ -45,7 +43,7 @@ Each page follows the same basic structure and order. The structure is commented
 <h3 class="landmark"> </h3>
 ```
 
-Here's a work index in brief:
+Here's [a filterable work index](http://archiveofourown.org/tags/The%20X-Files/works) in brief:
 
 <ol class="diagram">
 <li>#main
@@ -61,7 +59,7 @@ Here's a work index in brief:
 <li>h3 .landmark</li>
 <li>ol .work index
 <ol>
-<li><a href="blurb.html">blurb</a></li>
+<li>blurb</li>
 <li>blurb</li>
 <li>blurb</li>
 <li>blurb...</li>
@@ -125,3 +123,5 @@ Here's a work index in brief:
 </ol>
 <li>div .clear</li>
 </ol>
+
+You can look at some of the more commonly used structures as diagrams, and look at [the blurb in detail](case-study-the-blurb).
