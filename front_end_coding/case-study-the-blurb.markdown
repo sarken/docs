@@ -123,7 +123,7 @@ This structure means it is easy for a piece of software to accurately count the 
 
 This markup, which counts, groups, and names data, allows both linear and non-linear interactions. This means the page makes sense if you read it top to bottom, makes sense if you read parts of it out of context, and helps you jump around.
 
-For example, a screenreader user may:
+For example, a screen reader user may:
 
 1.  enter search query <kbd>tag: bab5 het long</kbd>
 2.  jump to the <kbd>Work List</kbd> landmark heading
@@ -165,13 +165,13 @@ Let's examine the first generic blurb rule block from the blurb style sheet:
 ```
 
 <dl>
-  <dt>.blurb ul li</dt>
+  <dt><code>.blurb ul li</code></dt>
   <dd>This is the selector that tells the browser how to identify (select) the HTML elements that the CSS rule should be applied to. This selector says, to translate it into English, any list item (li) that appears inside an unordered list (ul) that appears inside any element that has the CSS class "blurb".</dd>
-  <dt>.blurb dd ul li</dt>
+  <dt><code>.blurb dd ul li</code></dt>
   <dd>A second selector (you can have as many as you want in a CSS rule, comma-separated as here) that tells the browser to apply the style to any list item (li) that appears inside an unordered list (ul) that appears inside a definition list description (dd) that appears inside any element that has the CSS class "blurb".</dd>
   <dt>{...}</dt>
   <dd>The declaration block is a semicolon-separated list of property: value pairs that tell the browser how to style the selected elements.</dd>
-  <dt>display: inline;</dt>
+  <dt><code>display: inline;</code></dt>
   <dd>This is the declaration. It is a property: value pair that, in this case, says to display these selected HTML elements inline (that is, following one another on the same line) instead of one after another each on a new line (which would otherwise be the default behavior for list items).</dd>
 </dl>
 

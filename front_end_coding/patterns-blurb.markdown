@@ -30,14 +30,13 @@ title: Blurb Design Pattern
 <li>list item(s) with relationship tags (if any) <code>&lt;li class="relationships"&gt;&lt;a class="tag"...</code></li>
 <li>list item(s) with character tags (if any) <code>&lt;li class="characters"&gt;&lt;a class="tag"...</code></li>
 <li>list item(s) with additional tags (if any) <code>&lt;li class="freeforms"&gt;&lt;a class="tag"...</code></li>
-</ol>
-</li>
+</ol></li>
 <li>landmark heading level 6 "summary" <code>&lt;h6 class="landmark heading"&gt;Summary&lt;/h6&gt;</code></li>
 <li>blockquote of summary <code>&lt;blockquote class="userstuff summary" title="summary"&gt;</code></li>
 <li>landmark heading level 6 "series" <code>&lt;h6 class="landmark heading"&gt;Series&lt;/h6&gt;</code></li>
 <li>unordered list of series <code>&lt;ul class="series"&gt;</code>
 <ol>
-<li>list item(s) with series <code>&lt;li&gt;Part &lt;strong&gt;X&lt;/strong&gt; of &lt;a href="..."&gt;Series Title&lt;/a&gt;&lt;/li&gt;</code></li>
+<li>list item(s) with series <code>&lt;li&gt;Part &lt;strong&gt;#&lt;/strong&gt; of &lt;a...&lt;/li&gt;</code></li>
 </ol>
 </li>
 <li>definition list of stats <code>&lt;dl class="stats" title="stats"&gt;</code>
