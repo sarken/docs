@@ -6,21 +6,21 @@ These pages are, like the Archive, a work in progress.
 
 It is not necessary to read all these pages before you start coding! They are intended to be references you can use as you go along. But whether you're a beginner or have previous experience with <abbr title="HyperText Markup Language">HTML</abbr> and <abrr title="Cascading Style Sheets">CSS</abbr>, it's very important that you refer to these documents and read the [Front End User Guide](front-end-user-guide) and the [Coding Standards](coding-standards) before you commit any code to the Archive.
 
-### Getting Started with <abbr title="eXtensible HyperText Markup Language">XHTML</abbr> and CSS
+### Getting started with <abbr title="eXtensible HyperText Markup Language">XHTML</abbr> and CSS
 
 1.  [Tools](tools)
 2.  [What is Semantic XHTML?](semantic-xhtml)
 3.  [What is CSS?](css)
 4.  [Writing a Skin](writing-a-skin)
 				
-### How We Code Stuff
+### How we code stuff
 
 Our coding practice may be radically different from anything you've done before. While our standards may seem limiting and fussy at first, they are designed to keep the code (and the Archive interface) as neat, consistent, and manageable as possible.
 
 * [Coding Standards](coding-standards)
 * [Front End User Guide](front-end-user-guide)
-* Case Study: The Blurb
-* Coding Accessible Tables
+* [Case Study: The Blurb](case-study-the-blurb)
+* [Coding Accessible Tables](coding-accessible-tables)
 * Archive Style Guide
 * [CSS Shorthand](css-shorthand)
 * [Classes](classes)
@@ -44,14 +44,14 @@ Design patterns are a major part of how we code things. While not every new feat
 * Design Pattern: Stats
 * Modifiers
 
-### Finding and Fixing Problems
+### Finding and fixing problems
 
 * Debugging the Front End
 * Debugging the Cascade
 * Debugging for Internet Explorer
 * Floats
 
-### Major Front-End Projects To Do
+### Major front-end projects to do
 
 * Forms
 * Proposals: Zoning the Archive

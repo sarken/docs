@@ -14,7 +14,7 @@ It's faster and easier to code correctly, because there is a process of reasonin
 
 We do this because, while people can use context to understand why text has been italicized, computers can't understand that `<i>this</i>` word is emphasised but `<i>The Lord of the Rings</i>` is a book. You have to tell them that `<em>this</em>` word is emphasised and `<cite>The Lord of the Rings</cite>` is a book.
 
-#### But It Looks Bad!
+#### But it looks bad!
 
 Once your content is marked up in a consistent, semantic, and logical manner, you can go wild with your presentational CSS. You can change the way your entire site looks by changing a single line in a single document. 
 

@@ -4,7 +4,7 @@ title: Coding Standards
 ---
 This is a guide to the specifications and formatting standards used in our front-end code, which involves a CSS cascade and a consistent HTML framework used across many of our pages. Our standards help us write code that is super-accessible and as easily maintainable as possible, so if you're committing code, please make sure it follows these standards.
 
-### XHTML Specifications
+### XHTML specifications
 
 All of our pages are written in [XHTML 1.0](http://www.w3.org/TR/xhtml1/) (Strict), which is a cleaner, stricter version of HTML that separates content from presentation. Our pages use `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">` as their `DOCTYPE` declaration.
 
@@ -19,11 +19,11 @@ Writing in XHTML 1.0 (Strict) means:
 
 While our use of the <abbr title="Accessible Rich Internet Applications">ARIA</abbr> `role` attribute means our pages will not validate, we still recommend checking your work with [the W3C Markup Validation Service](http://validator.w3.org") to catch any mistakes.
 
-#### Content-Type/Charset
+#### Content-type/charset
 
 The archive uses the UTF-8 character set: `<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />`
 
-#### Frequently Used Fragments
+#### Frequently used fragments
 
 There are some patterns that appear in many places throughout the archive. There are diagrams of these recurring patterns available in our [Patterns Index](patterns).
 

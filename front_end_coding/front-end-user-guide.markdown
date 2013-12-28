@@ -6,7 +6,7 @@ This is a detailed theoretical guide to the archive interface, focusing on the s
 
 Read this guide *first*. Rails is DRY (Don't Repeat Yourself) and so is our front end; this is **not** like what you have done before.
 
-### Our Philosophy
+### Our philosophy
 
 The AO3 front end, which is [XHTML](semantic-xhtml) and [CSS](what-is-css), uses a classification system that might be new to you in some ways, but will be familiar in others.
 
@@ -132,7 +132,7 @@ The system stylesheet covers the splash page, documentation pages, log-in and si
 
 The home zone is a type of `#main.dashboard` -- that is, a type of page with a dashboard. If the page has a module containing an icon, a heading, and some navigation, it's in the home zone. The main and profile pages for users and collections are examples of this zone.
 
-##### Search/Browse
+##### Search/browse
 
 The search zone refers to pages containing search forms; the browse zone refers to pages containing filters.
 
@@ -144,27 +144,27 @@ Pages for tags, tag sets, and tag wrangling belong to the tags zone.
 
 The Archive will eventually be translated into additional languages. Styles for the translation interface will go here.
 
-#### User Roles
+#### User roles
 
 These stylesheets override the Archive default styles for certain types of logged-in users. This is necessary to accommodate certain role-specific options. We sometimes further modify regions here (e.g. the footer background is teal for users who are logged in as administrators).
 
-##### Translator Role
+##### Translator role
 
 Style overrides for users who are logged in as translators will go here.
 
-##### Admin Role
+##### Admin role
 
 Style overrides for users who are logged in as administrators go here. 
 
-#### Stylesheet Roles
+#### Stylesheet roles
 
 There are seven stylesheets with styles that are only applied when the Archive is being accessed with specific hardware or software.
 
-##### Media Roles
+##### Media roles
 
 These stylesheets provide information for devices with screens smaller than 480px, screen readers, and printers.
 
-##### Internet Explorer Roles
+##### Internet Explorer roles
 
 These stylesheets make the site more compatible with older versions of Internet Explorer. We have stylesheets for Internet Explorer 5 - 8, but we are only actively supporting Internet Explorer 8.
 
@@ -172,27 +172,27 @@ These stylesheets make the site more compatible with older versions of Internet 
 
 The sandbox is where we put experimental styles and temporary style fixes. It is loaded *after* user skins, which means it overrides their styles. It can be handy for development, but it is generally best to make sure your styles are incorporated into the proper stylesheet before asking us to use your changes.
 
-### Page by Page Views
+### Page-by-page views
 
 Within the region `#main` the view changes. There are N basic views:
 
-#### Work View
+#### Work view
 
 Works are viewed on their own pages. They are similar to a blog post: metadata at the top and comments at the bottom.
 
-#### Bookmark View
+#### Bookmark view
 
 Bookmarks can be viewed on their own or grouped with all the bookmarks of a work. Grouped together, they are an index view.
 
-#### User, Collection View
+#### User, collection view
 
 Each identity has its own set of pages, listing activities like works written, works viewed, personal profile, preference settings, and so on. There's a persistent dashboard navigation on these pages.
 
-#### Profile View
+#### Profile view
 
 Profile view is only used in user and collection.
 
-#### Index View
+#### Index view
 
 Indices are lists of works, users, collections, or bookmarks. The metadata describing them is grouped in a blurb.
 

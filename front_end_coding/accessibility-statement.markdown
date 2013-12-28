@@ -2,13 +2,13 @@
 layout: front_end_guide
 title: Accessibility Statement
 ---
-### Everyone is Welcome
+### Everyone is welcome
 
 This page is an overview of ways we have tried to make the Archive accessible. Accessibility is always a work in progress, so this document will and should change.
 
 If you have any questions or comments, please do send us [feedback](http://archiveofourown.org/support). Portions of this document have been taken from [diveintoaccessibility.com](http://diveintoaccessibility.com). 
 
-#### Standards Compliance
+#### Standards compliance
 
 Note: many people have access to the AO3 code and can edit it, so standards compliance is generally a moving target for us. However, this represents the standards we strive to meet; where we sometimes miss the mark, we will aim to get back into compliance with code review at a future date.
 
@@ -26,21 +26,19 @@ When we talk about pages complying with a standard, we mean that the *site frame
 
 The Archive is an international development, made by people who speak lots of different languages. Our goal is to build a translation tool to allow the archive interface to be translated into any language that has volunteers to work on it.
 
-### Navigation Aids
+### Navigation aids
 
-1.  [BREADCRUMBS]
+1.  We aim to make our help and FAQs accessible in multiple ways. 
 
-2.  We aim to make our help and FAQs accessible in multiple ways. 
+2.  We have tried to provide help that is not biased towards sighted or mouse methods of using archive, by describing pages and interactions in several different ways, but we know we could always use help at doing this better, so please do [send us feedback](http://archiveofourown.org/support).
 
-3.  We have tried to provide help that is not biased towards sighted or mouse methods of using archive, by describing pages and interactions in several different ways, but we know we could always use help at doing this better, so please do [send us feedback](http://archiveofourown.org/support).
+3.  Our help buttons are styled text, so you can make them bigger if they're hard to see.
 
-4.  Our help buttons are styled text, so you can make them bigger if they're hard to see.
+4.  The home page and all archive pages include a search box. Advanced search options are available from any search results page and from the search menu.
 
-5.  The home page and all archive pages include a search box. Advanced search options are available from any search results page and from the search menu.
+5.  All navigation, sorting, actions, and page regions are announced by a relevant and descriptive heading. These headings are hidden from visual browsers by default, but we have a skin you can use to show these headings to any browser.
 
-6.  All navigation, sorting, actions, and page regions are announced by a relevant and descriptive heading. These headings are hidden from visual browsers by default, but we have a skin you can use to show these headings to any browser.
-
-7.  Blocks containing unlabelled content have been given titles, so you don't have to work out what something is from its context.
+6.  Blocks containing unlabelled content have been given title attributes, so you don't have to work out what something is from its context.
 
 ### Links
 
@@ -48,7 +46,7 @@ The Archive is an international development, made by people who speak lots of di
 
 2.  Links are written to make sense out of context.
 
-3.  Navigation and action links are visually styled as large and distinct buttons. They can be scaled up with text zoom to make them easier to click on with a mouse or a joystick. We're working on a 'bright button' and 'big button' skin to make them easier to see and click, and a 'fixed button' skin so they're always on the screen, which might be more useful if you're using a switch interface.
+3.  Navigation and action links are visually styled as large and distinct buttons. They can be scaled up with text zoom to make them easier to click on with a mouse or joystick. We offer a number of skins, such as the[Massive Buttons skin](http://archiveofourown.org/skins/895), that restyle the buttons to make them easier to see and click.
 
 ### Forms
 
@@ -65,7 +63,7 @@ The Archive is an international development, made by people who speak lots of di
 
 2. Our logo has a spoken or text equivalent, which communicates the *intent and feel* of the graphic.
 
-### Visual Design
+### Visual design
 
 1.  The Archive uses cascading style sheets for visual layout.
 
@@ -73,7 +71,7 @@ The Archive is an international development, made by people who speak lots of di
 
 3.  If your browser or browsing device does not support stylesheets at all, the content of each page is still readable.
 
-### Alternative Visual Layouts (Skins)
+### Alternative visual layouts (skins)
 
 You can skin the archive interface for yourself in any way that you find useful. We also work on (and welcome user contributions of!) public skins that help solve accessibility issues. 
 
@@ -85,7 +83,6 @@ You don't have to know how to code (though we'll teach you that too if you like)
 
 We use JavaScript on the AO3 to improve usability and performance, but all our content and core functionality is accessible with JavaScript turned off.
 
-
 ### Screenreaders
 
 1.  We use headings and lists to structure our pages. You can jump around the page regions by heading. Lists should always give you an accurate count of the number of different items on a page. If they don't, please [tell us](http://archiveofourown.org/support).
@@ -96,12 +93,12 @@ We use JavaScript on the AO3 to improve usability and performance, but all our c
 
 4.  We support aural skins.
 				
-### Keyboard Access
+### Keyboard access
 
 1.  We write our pages in a logical order, so you can tab through the whole Archive. We decided not to add accesskeys, because we know they can sometimes mess up your own shortcuts.
 
 2.  We are looking at using a new way to develop a really good keyboard interface, but this will take us a long time.
 
-### Small Screens, Slow Internet
+### Small screens, slow Internet
 
 We try and keep our site pages relatively small and functioning on screens of any size including mobile devices.

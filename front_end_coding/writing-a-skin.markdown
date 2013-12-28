@@ -6,7 +6,7 @@ Anyone with an Archive account can customize the way the Archive is presented to
 
 The skin system is also a great way to get familiar with CSS in general or the Archive's class structure. You can create a new skin by logging in and going to [the Skins index](http://archiveofourown.org/skins), where you will find a "Create Skin" link. Select that and you will be taken to a form, which will already be set up to create a Site Skin -- you just need to enter a unique title.
 
-### Styling the Header, Dashboard, Main, and Footer Regions
+### Styling the header, dashboard, main, and footer regions
 
 Here we'll walk through a simple skin that modifies the Archive's default appearance by changing fonts and colors, adding images, and adjusting margins and borders.
 
@@ -83,7 +83,7 @@ Once you've entered the style block from the first step into the CSS field, you'
     }
     ```
 
-### Styling Works
+### Styling works
 
 All user copy is placed inside either `<blockquote class="userstuff">` or `<div class="userstuff">`, so you can style it by targeting `.userstuff` as a whole or by using `.userstuff` along with another selector. 
 
@@ -109,7 +109,7 @@ You may want to...
 * Indent paragraphs: `#workskin p { text-indent: 2.5em; }`
 * Hide the work notes: `#workskin .preface .notes { display: none; }`
 
-#### Work Metadata
+#### Work metadata
 
 The work view has a lot of metadata on it, but other pages such as user stats, user profiles, and series pages also contain metadata that you might now want to style. The metadata is *not* inside `#workskin`, but you can use `.work-show .meta` to target the metadata for works.
 

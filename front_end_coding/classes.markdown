@@ -10,11 +10,11 @@ Class names are short and, ideally, English words in common usage. If you find y
 
 Our classes are how we describe and document our data, so it's very important to use them consistently and accurately. If you find a class that doesn't fit this system, it's probably a mistake and needs fixing. The main exceptions are classes for jQuery plugins, since it is easier to keep plugins up to date if we *don't* modify the class names. However, if you're writing new jQuery for the Archive, please keep our naming system in mind.
 
-### What Kind and Where?
+### What kind and where?
 
 It might be useful to look at some [diagrams of pages](diagrams.html) on our Archive, to really understand that in CSS, we write a path *to* places in our XHTML; we don't need to give everything a unique name, because we describe it: "what kind and where".
 
-### Rails Classes
+### Rails classes
 
 Rails automatically generates a unique class on `<div id="main">` on each page, named by the view partial that `div` calls. This means that each page on the Archive can have rules set independently, which is very useful for tweaking the layout, but ought not to be used as a core technique.
 

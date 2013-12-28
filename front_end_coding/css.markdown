@@ -60,7 +60,7 @@ ul.navigation {
 
 HTML documents are like tupperware on a shelf: boxes nested inside each other. Everything **nested** inside the body tag **inherits** the properties and values assigned to body, unless you say different. Everything inside `#main` inherits the properties of `body` and `#main`, and so on. CSS then, cascades down the page, sort of like champagne filling a pyramid of glasses.
 
-### CSS Terms
+### CSS terms
 
 A single CSS **rule set** is made up of the following parts:
 
@@ -76,7 +76,7 @@ A property must always be paired with a value to form a valid **declaration**. A
 
 A **selector** is the part of the rule that says which elements are being styled. A rule set can have multiple selectors to make it apply to multiple elements, and different types of selectors can be combined in order to select an element only when it appears within a specific context.
 
-##### ID Selector
+##### ID selector
 
 Some elements that are used only once per page have unique names that are given to them with the HTML `id` attribute, like `<div id="header">`. To select an element by its `id`, use a hash sign in front of the element's `id` value.
 
@@ -86,7 +86,7 @@ Some elements that are used only once per page have unique names that are given 
 }
 ```
 
-##### Class Selectors
+##### Class selectors
 
 For something used more than once, we may assign a class, or many classes. A class says this is a type, not a unique thing. Our example HTML has both `<ul class="navigation">` and `<span class="navigation">`. We could target both of those elements at once using their shared `class` value. 
 
@@ -98,7 +98,7 @@ To select elements by a `class` attribute, use a period in front of the desired 
 }
 ```
 
-##### Type Selectors
+##### Type selectors
 
 Type selectors apply a style to a type of HTML element. To select all elements that are a certain type, use the element name as the selector.
 
@@ -108,7 +108,7 @@ p {
 }
 ```
 
-##### Using Selectors
+##### Using selectors
 
 Looking again at the example HTML and CSS documents, notice that the selector in a style rule is actually a *path*. You can select every paragraph everywhere using just a type selector:
 
@@ -129,7 +129,7 @@ body #footer p {
 }
 ```
 
-#### Properties and Values
+#### Properties and values
 
 Think of each selector as a box. We can make it stack up, give it a background colour (or an image or both), a border, and we can give that border a colour and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, colour, font, and make it bold or italic or asscaps; we can align it to the left or the right or centre it. We can do anything! (Almost anything.)
 				
@@ -150,7 +150,7 @@ We use [ems](em-scale.html) as the general unit of measurement. 1 em is 100% of 
 Em is a scalable measurement, so if your visitor needs to zoom in or scale up the text, your layout is less likely to go madly wrong. Em the measurement is different from the <acronym>HTML</acronym> tag &lt;em&gt;, which means <em>emphasis</em>. <a href="em-scale.html">Learn about our "Em Scale"</a>.
 				</p>
 
-###### Block and Inline
+###### Block and inline
 
 HTML elements come in two flavours: block-level and inline.
 

@@ -2,15 +2,17 @@
 layout: front_end_guide
 title: Case Study The Blurb
 ---
-On the Archive, we use the term "blurb" to refer to the small summary box which provides a description of a work, a bookmark, a collection, user, or series. Blurbs appear on what we call index pages —- for example, the [works page for the Alternate Universe tag](http://archiveofourown.org/tags/Alternate%20Universe/works) or the [bookmarks page for the user testy](http://archiveofourown.org/users/testy/bookmarks) are both index pages.
+A blurb is the small summary box which provides a description of a work, bookmark, collection, user, or series. Blurbs appear on what we call index pages (e.g. the [works index for the Alternate Universe tag](http://archiveofourown.org/tags/Alternate%20Universe/works) or the [bookmarks index for the user testy](http://archiveofourown.org/users/testy/bookmarks)).
 
-![work blurb in the default Archive style](images/workblurb.png)
+The Archive's styles for blurbs are located in [the style sheet named 13-group-blurb.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/13-group-blurb.css).
 
-### The Blurb HTML Structure
+### The blurb HTML structure
 
 The work blurb is the most used chunk of HTML code in the Archive, so we've revised it a lot. It has to contain lots of information and allow different ways of accessing its material. The blurb is flexible, accessible, and has multiple redundancies (says the same thing in different ways).
 
-Since we usually have many blurbs listed together, the index page that holds the blurbs is coded as an HTML list, and each blurb is coded as a list item. The XHTML structure, including the outer elements, is laid out like so:
+![work blurb in the default Archive style](images/workblurb.png)
+
+Since we usually have many blurbs listed together, the index page that holds the blurbs is coded as an HTML list, and each blurb is coded as a list item. The XHTML structure for a work blurb, including the outer elements, is laid out like so:
 
 ```html
 <h3 class="landmark heading">Listing Works</h3>
@@ -105,7 +107,7 @@ Since we usually have many blurbs listed together, the index page that holds the
 
 Here are some of the important things to understand about this layout:
 
-* **The content is presented in *logically readable order**, which has *nothing* to do with the order in which that information is displayed visually in a browser. The title comes first even though visually the first thing you see is the square of the required-tags icons.
+* **The content is presented in logically readable order**, which has *nothing* to do with the order in which that information is displayed visually in a browser. The title comes first even though visually the first thing you see is the square of the required-tags icons.
 * **We don't use inline styles.**  You don't see any CSS embedded into the code like this: `<p style="color: blue;">`. This kind of styling is much harder to track down later on for debugging and maintenance. Please don't do it!
 * **We almost always name elements with classes rather than IDs.** Any single ID can only be used once per page. Additionally, CSS rules attached to IDs have higher priority than CSS rules attached to classes, so to make it as easy as possible to create skins, it's better if we use classes by default.
 * The class names are space-separated groups of short, common words that describe and document what the information contained in that HTML element is.
@@ -115,9 +117,11 @@ Here are some of the important things to understand about this layout:
 
 The structure of blurbs should be changed only with extreme caution! Everything about the display can be reorganized (and in fact the blurb can be skinned pretty easily by our users), but the HTML should not be altered.
 
-#### Reasons for the Structure
+#### Reasons for the structure
 
 This structure means it is easy for a piece of software to accurately count the number of items (blurbs) shown in an index. Each new item —- work, index, page region -- is announced by a heading, so users know what information is attached to what title. As a result, a list of headings summarizes the entire index page.
+
+This markup, which counts, groups, and names data, allows both linear and non-linear interactions. This means the page makes sense if you read it top to bottom, makes sense if you read parts of it out of context, and helps you jump around.
 
 For example, a screenreader user may:
 
@@ -128,20 +132,34 @@ For example, a screenreader user may:
 5.  list headings level 4
 6.  jump to item 4 and select title link
 
-This markup, which counts, groups, and names data, allows both linear and non-linear interactions. This means the page makes sense if you read it top to bottom, makes sense if you read parts of it out of context, and helps you jump around. Without this way of writing pages, it's hard to give alternative access technologies the kind of spatial interaction that a visual, mousing browser affords.
+Without the blurb's current HTML structure, it's hard to give alternative access technologies the kind of spatial interaction that a visual, mousing browser affords.
 
-### The Blurb Display
+### The blurb display
 
-As noted above, while the HTML structure of the blurb is incredibly important and should not be altered unless the actual content and purpose of the blurb changes, the display, which is governed entirely by CSS, is much more flexible.
+While the HTML structure of the blurb is incredibly important and should not be altered unless the actual content and purpose of the blurb changes, the display, which is governed entirely by CSS, is much more flexible.
 
 Here you see two different examples of the work blurb from the AO3, one using the default CSS and one using a skin, which have some of their fields mapped to the blurb diagram to help give you the idea.
 
-The Archive's default CSS for blurbs is located in [the style sheet named 13-group-blurb.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/13-group-blurb.css). 
+![work blurbs](images/blurb_diagram_mapping.png)
 
-Let's examine the first rule block:
+These blurbs use *the same HTML*. The only thing different is the CSS.
+
+#### Generic blurb styles
+
+There are many different blurbs in the Archive -- the work blurb, the bookmark blurb, the collection blurb, and so on -- which are all quite similar in their underlying purpose. Rather than having one set of CSS code for the work blurb, another very similar set for the slightly-different-looking bookmark blurb, and so forth, we have made the generic blurb style rules contain everything that these blurbs have in common (which we have deliberately made a lot!).
+
+The generic blurb style is controlled by the single HTML class `blurb`. Every blurb in the Archive should use this class. As you saw in the work blurb HTML, a work blurb uses it: 
+
+`<li class="work blurb group" id="work_1234" role="article">`
+
+If you look at a bookmark index, you will see bookmark blurbs use it as well:
+
+`<li id="bookmark_5678" class="bookmark blurb group" role="article">`.
+
+Let's examine the first generic blurb rule block from the blurb style sheet:
 
 ```css
-.blurb ul li, .blurb dd ul li, .blurb ul.type {
+.blurb ul li, .blurb dd ul li {
   display: inline;
 }
 ```
@@ -156,3 +174,98 @@ Let's examine the first rule block:
   <dt>display: inline;</dt>
   <dd>This is the declaration. It is a property: value pair that, in this case, says to display these selected HTML elements inline (that is, following one another on the same line) instead of one after another each on a new line (which would otherwise be the default behavior for list items).</dd>
 </dl>
+
+Can you tell which parts of the work blurb this rule affects? What about the parts of the bookmark blurb?
+
+#### Specific blurb styles
+
+Notice that the class declaration of our blurbs *also* includes a class that describes the *type* of blurb: work blurbs have the class `work` and bookmark blurbs have the class `bookmark`.
+
+This enables us to modify the basic setup slightly for different classes of blurb using the more specific class name. Normally these modifications are only going to be one or two lines. The most modification is for bookmark blurbs:
+
+```css
+.bookmark p.status {
+  position: absolute;
+  right: 0.25em;
+  width: 60px;
+  margin-top: 0.429em;
+}
+
+.bookmark .status span, .bookmark .status a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.bookmark .status a:focus {
+  overflow: hidden;
+}
+
+.bookmark span.count {
+  line-height: 1.875em;
+  position: absolute;
+  top: 0;
+  left: 28px;
+  text-align: center;
+}
+
+.bookmark .count a {
+  border-bottom: none;
+  color: #069;
+}
+
+.bookmark .count a:hover, .bookmark .count a:focus {
+  color: #111;
+}
+
+.bookmark .datetime {
+	top: 28px;
+}
+
+.bookmark .user {
+  border: 1px solid #ccc;
+  clear: right;
+  overflow: hidden;
+}
+
+.bookmark .user .meta {
+	display: inline;
+	font-family: Georgia, serif;
+	font-size: 0.875em;
+	line-height: 2;
+}
+
+/* line break between types of meta */
+.bookmark .user ul.meta:after {
+	content: '\A';
+	white-space: pre;
+}
+
+.bookmark .short .header {
+	min-height: 30px;
+}
+
+.bookmark .user .datetime, .bookmark .work .datetime {
+  top: 0;
+}
+
+.bookmark .short .status {
+	left: 30px;
+	margin-top: 0;
+	top: 0;
+	width: 25px;
+}
+
+.bookmark .dynamic {
+	position: static;
+}
+
+.bookmark .recent .index {
+    width: 100%;
+}
+```
+
+So what this means is, if we decided to add individual user blogs to the Archive and wanted an index of blogs, we wouldn't need to code it from scratch. Instead, we could copy the HTML structure used for work blurbs or user blurbs and we would only add a few lines of CSS using something like the `.blog .blurb` class names combined in order to make the blog blurbs look the way you wanted them to, keeping everything as consistent as possible with the other blurbs.

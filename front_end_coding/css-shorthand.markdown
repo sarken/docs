@@ -19,7 +19,7 @@ But **with** shorthand, we can create the same style using only this:
 
 Notice that all these properties begin with background. You can combine properties that have a common prefix.
 
-### Syntax Order
+### Syntax order
 
 Shorthand must be written in a specific order, with the property values separated by a single space. The shorthand `font` property is written like this: `font-style font-variant font-weight font-size line-height font-family`.
 
@@ -29,7 +29,7 @@ Commas denote alternative values. In the previous example, the comma says the va
 
 Shorthand for [box dimensions](http://www.w3.org/TR/CSS2/box.html), like `margin` and `padding`, are written *around the clock*. That means top, right, bottom, left: <code>margin: <span title="top">1em</span> <span title="right">2em</span> <span title="bottom">3em</span> <span title="left">4em</span>;</code>
 
-### Assumed Values
+### Assumed values
 
 In CSS we try to only write what is *different* from the default and inherited values. If your value is normal (the default), you can leave it out and the parser will assume you wrote it, just like it assumes <code>html body #main ol.work.index li<strong>.blurb</strong> h5 a<strong>.tag</strong></code> is the same as `.blurb .tag`.
 
@@ -50,7 +50,7 @@ But there are some values you must always declare:
 					<dd><code>font:<span title="font-size">1em</span> <span title="font-family">serif</span>;</code></dd>
 				</dl>
 
-### Combining Selectors
+### Combining selectors
 
 If several elements in a structure have the same rules, we can combine the selectors using a comma, which says we mean selector one *and* selector two.
 
