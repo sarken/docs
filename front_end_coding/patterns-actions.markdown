@@ -43,9 +43,8 @@ Only `simple` forms should be included inside actions blocks.
 </li>
 <li><code>&lt;li&gt;</code>
 <ol>
-<li><code>&lt;span class="current"</code></li>
-</ol>
-</li>
+<li><code>&lt;span class="current"&gt;</code></li>
+</ol></li>
 <li><code>&lt;li aria-haspopup="true"&gt;</code>
 <ol>
 <li><code>&lt;a&gt;</code></li>
@@ -72,9 +71,9 @@ Only `simple` forms should be included inside actions blocks.
 </li>
 </ol>
 
-### Action landmark headings
+### Actions and landmark headings
 
-Sometimes actions block are announced by a landmark heading. This is a case by case decision and must not be done reflexively, only where it is properly useful, like where there are lots of different kinds of actions blocks grouped, or where a user is probably going to load a page and go directly to a specific action. So, in layout, you can't rely on an actions block being directly preceded by a heading.
+Sometimes actions blocks are announced by a landmark heading. This is a case-by-case decision and must not be done reflexively, only where it is properly useful, like where there are lots of different kinds of actions blocks grouped, or where a user is probably going to load a page and go directly to a specific action. So, in layout, you can't rely on an actions block being directly preceded by a heading.
 
 ### ARIA roles and states
 

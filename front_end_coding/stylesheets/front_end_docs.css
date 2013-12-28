@@ -201,10 +201,12 @@ li.emphasize {
 }
 
 .diagram li:hover, .diagram span:hover { 
-  background:#fff; 
+  background: #fff; 
     -webkit-transition: all 0.2s ease-in;
 }
 
 .diagram code {
+  background: transparent;
+  border: none;
   display: block;
 }
