@@ -34,7 +34,7 @@ Design patterns are a major part of how we code things. While not every new feat
 * Diagrams of HTML Structures
 * [Design Pattern: Actions](patterns-actions)
 * Design Pattern: Interactions
-* Design Pattern: Index
+* [Design Pattern: Index](patterns-index)
 * [Design Pattern: Blurb](patterns-blurb)
 * Design Pattern: Listbox
 * Design Pattern: Meta
