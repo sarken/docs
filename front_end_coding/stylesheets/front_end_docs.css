@@ -111,7 +111,7 @@ li ol {
   list-style-type: lower-alpha;
 }
 
-h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 + ul, h5 + ul, h6 + ul, p + p, ul + p, ol + p, p + ul, p + ol, li + li {
+h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 + ul, h5 + ul, h6 + ul, p + p, ul + p, ol + p, p + ul, p + ol, li + li, .highlight + p, p + .highlight {
   margin-top: 1.6em;
 }
 
@@ -169,11 +169,30 @@ h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 
 
 /* diagram */
 
-ol.diagram, .diagram ol		{ list-style:none;}
-.diagram li, .diagram span, p.diagram
-						 	{ margin: 0.125em; padding:0.125em; border:1px solid; background:#ccc;}
-.diagram span 				{ line-height:2;}
-li.emphasise 				{ border:3px solid;}
-.diagram li:hover, .diagram span:hover 
-							{ background:#fff; -webkit-transition: all 0.2s ease-in;}
-.diagram code               { display: block; }
+ol.diagram, .diagram ol { 
+  list-style: none;
+}
+
+.diagram li, .diagram span, p.diagram {
+  background: #ccc;
+  border: 1px solid; 
+  margin: 0.125em;
+  padding: 0.125em; 
+}
+
+.diagram span {
+  line-height: 2;
+}
+
+li.emphasize { 
+  border: 3px solid;
+}
+
+.diagram li:hover, .diagram span:hover { 
+  background:#fff; 
+    -webkit-transition: all 0.2s ease-in;
+}
+
+.diagram code {
+  display: block;
+}

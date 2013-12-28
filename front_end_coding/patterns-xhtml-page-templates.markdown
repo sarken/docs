@@ -7,7 +7,7 @@ title: XHTML Page Templates
 <ol>
 <li>ul #skiplinks</li>
 <li>div #header</li>
-<li class="emphasise">div #main</li>
+<li class="emphasize">div #main</li>
 <li>div #footer</li>
 </ol></li>
 </ol>
@@ -22,7 +22,7 @@ Some pages (user home, collection home, tag home, admin home) have a dashboard, 
 <li>ul #skiplinks</li>
 <li>div #header</li>
 <li>div #dashboard</li>
-<li class="emphasise">div #main	.dashboard</li>
+<li class="emphasize">div #main	.dashboard</li>
 <li>div #footer</li>
 </ol></li>
 </ol>
@@ -93,8 +93,6 @@ Here's a brief look at the structure of a a filterable work index, like the [wor
 </li>
 </ol>
 </li>
-<li>
-</li>
 <li>ol .pagination
 <ol>
 <li>li .previous
@@ -123,5 +121,3 @@ Here's a brief look at the structure of a a filterable work index, like the [wor
 </ol>
 <li>div .clear</li>
 </ol>
-
-You can look at some of the more commonly used structures as diagrams, and look at [the blurb in detail](case-study-the-blurb).
