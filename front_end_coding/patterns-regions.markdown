@@ -28,7 +28,7 @@ The greeting block contains the user's icon and navigation items that are only a
 
 #### Dashboard
 
-<ol class="diagram"><li><code>&lt;div id="dashboard" class="region"&gt;</code><ol><li><code>&lt;h4 class="landmark heading"&gt;</code></li><li><code>&lt;ul class="navigation actions"&gt;</code><ol><li><code>&lt;li&gt;</code><ol><li><code>&lt;a&gt;</code></li></ol></li><li><code>&lt;li&gt;</code><ol><li><code>&lt;a&gt;</code></li></ol></li><li><code>&lt;li&gt;</code><ol><li><code>&lt;span class="current"&gt;</code></li></ol></li></ol></li><li><code>&lt;h4 class="landmark heading"&gt;</code></li><li><code>&lt;ul class="navigation actions"&gt;</code><ol><li><code>&lt;li&gt;</code><ol><li><code>&lt;a&gt;</code></li></ol></li><li><code>&lt;li&gt;</code><ol><li><code>&lt;a&gt;</code></li></ol></li><li><code>&lt;li&gt;</code><ol><li><code>&lt;span class="current"&gt;</code></li></ol></li></ol></li></ol></li></ol>
+<ol class="diagram"><li><code>&lt;div id="dashboard" class="region"&gt;</code><ol><li><code>&lt;h4 class="landmark heading"&gt;</code></li><li><code>&lt;ul class="navigation actions"&gt;</code><ol><li><code>&lt;li&gt;</code><ol><li><code>&lt;a&gt;</code></li></ol></li><li><code>&lt;li&gt;</code><ol><li><code>&lt;a&gt;</code></li></ol></li><li><code>&lt;li&gt;</code><ol><li><code>&lt;span class="current"&gt;</code></li></ol></li></ol></li><li><code>&lt;h4 class="landmark heading"&gt;</code></li><li><code>&lt;ul class="navigation actions"&gt;</code></li></ol></li></ol>
 
 #### Main
 
