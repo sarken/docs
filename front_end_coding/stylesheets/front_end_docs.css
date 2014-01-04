@@ -210,3 +210,7 @@ li.emphasize {
   border: none;
   display: block;
 }
+
+.diagram span code {
+  display: inline-block;
+}
