@@ -89,10 +89,8 @@ Here's a brief look at the structure of a filterable work index, like the [work 
 <li>dt .landmark</li>
 <li>dd .submit <span>input</span></li>
 </ol></li>
-</ol>
-</li>
-</ol>
-</li>
+</ol></li>
+</ol></li>
 <li>h4 .landmark</li>
 <li>ol .pagination
 <ol>
@@ -101,8 +99,7 @@ Here's a brief look at the structure of a filterable work index, like the [work 
 <li>li <span>a</span></li>
 <li>li...</li>
 <li>li .next <span>a</span></li>
-</ol>
-</li>
+</ol></li>
 <li>div .clear</li>
 </ol>
 </li>
