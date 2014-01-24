@@ -71,8 +71,7 @@ Here's a brief look at the structure of a filterable work index, like the [work 
 <li>blurb</li>
 <li>blurb</li>
 <li>blurb...</li>
-</ol>
-</li>
+</ol></li>
 <li>form .filters
 <ol>
 <li>h3 .landmark</li>
