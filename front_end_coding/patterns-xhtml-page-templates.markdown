@@ -88,8 +88,7 @@ Here's a brief look at the structure of a filterable work index, like the [work 
 <li>dd...</li>
 <li>dt .landmark</li>
 <li>dd .submit <span>input</span></li>
-</ol>
-</li>
+</ol></li>
 </ol>
 </li>
 </ol>
