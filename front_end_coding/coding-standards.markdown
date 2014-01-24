@@ -81,14 +81,10 @@ A `class` identifier assigns a name to an element, but `class` names can be used
 Class names should be short, lowercase English (U.S.) words in common usage. They should describe the function, not presentation, of the element to which they are applied. There is more information available in the [Classes document](classes.html).
 
 An `id` name can and should be more complex to ensure that it only appears once per document. We use underscores to separate the words and numbers in the `id`: `<form id="work_filters">` or `<li id="work_1234">`
-							
-###### Banned words
-
-Anything used in an `id` or `class`.
 
 ### CSS specifications
 
-We use aproximately 30 external stylesheets written primarily to [CSS 2.1 Specifications](http://www.w3.org/TR/CSS2/), although we do permit the use of CSS3 to provide non-essential formatting frills, such as box shadows, text shadows, and gradients.
+We use aproximately 30 external stylesheets written primarily to [CSS 2.1 Specifications](http://www.w3.org/TR/CSS2/), although we do permit the use of CSS3 to provide non-essential formatting frills, such as box shadows, text shadows, and gradients. We do not use inline styles.
 
 Before submitting any code, it is always a good idea to check your CSS with [the W3C CSS validation service](http://jigsaw.w3.org/css-validator/).
 
@@ -110,9 +106,9 @@ We have a separate stylesheet that controls the appearance of pages printed from
 
 #### Our CSS formatting conventions
 
-Since our stylesheets are edited by multiple coders, we have developed a house style that will allow us to easily read, track changes to, and avoid mistakes in our markup.
+Since our stylesheets are edited by multiple coders, we have developed a house style that will allow us to easily read, track changes to, and avoid mistakes in our styles.
 
-A declaration block written for the archive should be formatted with:
+A declaration block written for the Archive should be formatted with:
 
 * Muliple selectors on the same line, separated by a comma and a single space
 * The opening curly brace on the same line as the selector, preceded by a single space
