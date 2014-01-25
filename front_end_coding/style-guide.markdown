@@ -114,20 +114,20 @@ Most of our stylesheets relate to how the Archive is displayed on screen.
 
 <dl>
 <dt>Headings, subheadings, titles, addresses</dt>
-<dd>400 weight, <span class="georgia serif">Georgia</span>, <span class="serif">serif</span></dd>
-<dd>The serif font stack should be used in the structural elements `h1`, `h2`, `h3`, `h4`, `h5`, `h6` or in elements with the class `.heading`.</dd>
-<dd><span class="georgia serif">Georgia</span> is a core web font; this means that everyone has it installed on their computer.</dd>
-<dd>If <span class="georgia serif">Georgia</span> is not available, we fall back to the user's default <span class="serif">serif</span> font.</dd>
+<dd>400 weight, <span class="georgia serif">Georgia</span>, <span class="serif">serif</span>
+<ul><li>The serif font stack should be used in the structural elements <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code> or in elements with the class <code>heading</code>.</li>
+<li><span class="georgia serif">Georgia</span> is a core web font; this means that everyone has it installed on their computer.</li>
+<li>If <span class="georgia serif">Georgia</span> is not available, we fall back to the user's default <span class="serif">serif</span> font.</li></ul></dd>
 <dt>Body text</dt>
-<dd><span class="lucida-grande sans-serif">Lucida Grande</span>, <span class="lucida-sans sans-serif">Lucida Sans Unicode</span>, <span class="gnu-unifont sans-serif">GNU Unifont</span>, <span class="verdana sans-serif">Verdana</span>, <span class="helvetica sans-serif">Helvetica</span>, <span class="sans-serif">sans-serif</span></dd>
-<dd>This sans-serif font stack should be used in the main body of the text, on navigation actions, and on almost anything that isn't a heading.</dd>
-<dd><span class="lucida-grande sans-serif">Lucida Grande</span> is an Apple system font that all Mac users have; <span class="lucida-sans sans-serif">Lucida Sans Unicode</span> is the Windows equivalent. <span class="gnu-unifont sans-serif">GNU Unifont</span> is system font on most free operating systems (e.g. Linux).</dd>
-<dd><span class="verdana sans-serif">Verdana</span> is a core web font that nearly everyone has.</dd>
+<dd><span class="lucida-grande sans-serif">Lucida Grande</span>, <span class="lucida-sans sans-serif">Lucida Sans Unicode</span>, <span class="gnu-unifont sans-serif">GNU Unifont</span>, <span class="verdana sans-serif">Verdana</span>, <span class="helvetica sans-serif">Helvetica</span>, <span class="sans-serif">sans-serif</span>
+<ul><li>This sans-serif font stack should be used in the main body of the text, on navigation actions, and on almost anything that isn't a heading.</li>
+<li><span class="lucida-grande sans-serif">Lucida Grande</span> is an Apple system font that all Mac users have; <span class="lucida-sans sans-serif">Lucida Sans Unicode</span> is the Windows equivalent. <span class="gnu-unifont sans-serif">GNU Unifont</span> is system font on most free operating systems (e.g. Linux).</li>
+<li><span class="verdana sans-serif">Verdana</span> is a core web font that nearly everyone has.</li></ul></dd>
 <dt>Dates, pre-formatted text, and code</dt>
-<dd><span class="monaco monospace">Monaco</span>, <span class="consolas monospace">Consolas</span>, <span class="courier monospace">Courier</span>, <span class="monospace">monospace</span></dd>
-<dd>We use monospace fonts for `kbd`, `tt`, `code`, `var`, `pre` and many instances of dates and times, which typically have the class `datetime`.</dd>
-<dd><span class="monaco monospace">Monaco</span> is an Apple system font that all Mac users have. <span class="consolas monospace">Consolas</span> is the Windows equivalent.</dd>
-<dd><span class="courier monospace">Courier</span> is a core web font that nearly everyone has.</dd>
+<dd><span class="monaco monospace">Monaco</span>, <span class="consolas monospace">Consolas</span>, <span class="courier monospace">Courier</span>, <span class="monospace">monospace</span>
+<ul><li>We use monospace fonts for <code>kbd</code>, <code>tt</code>, <code>code</code>, <code>var</code>, <code>pre</code> and many instances of dates and times, which typically have the class <code>datetime</code>.</li>
+<li><span class="monaco monospace">Monaco</span> is an Apple system font that all Mac users have. <span class="consolas monospace">Consolas</span> is the Windows equivalent.</li>
+<li><span class="courier monospace">Courier</span> is a core web font that nearly everyone has.</li></ul></dd>
 </dl>
 
 #### Colors

@@ -249,7 +249,7 @@ li.emphasize {
 }
 
 .georgia {
-  font-family: Georgia !important;
+  font-family: Georgia, serif !important;
 }
 
 .sans-serif {
@@ -257,23 +257,23 @@ li.emphasize {
 }
 
 .lucida-grande {
-  font-family: 'Lucida Grande' !important;
+  font-family: 'Lucida Grande', sans-serif !important;
 }
 
 .lucida-sans {
-  font-family: 'Lucida Sans Unicode' !important;
+  font-family: 'Lucida Sans Unicode', sans-serif !important;
 }
 
 .gnu-unifont {
-  font-family: 'GNU Unifont' !important;
+  font-family: 'GNU Unifont', sans-serif !important;
 }
 
 .verdana {
-  font-family: Verdana !important;
+  font-family: Verdana, sans-serif !important;
 }
 
 .helvetica {
-  font-family: Helvetica !important;
+  font-family: Helvetica, sans-serif !important;
 }
 
 .monospace {
@@ -281,15 +281,15 @@ li.emphasize {
 }
 
 .monaco {
-  font-family: Monaco !important;
+  font-family: Monaco, monospace !important;
 }
 
 .consolas {
-  font-family: Consolas !important;
+  font-family: Consolas, monospace !important;
 }
 
 .courier {
-  font-family: Courier !important;
+  font-family: Courier, monospace !important;
 }
 
 .red {
