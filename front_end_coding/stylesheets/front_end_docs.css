@@ -150,14 +150,8 @@ tbody td {
   border: 2px #fff solid;
 }
 
-tbody tr:hover td {
-  background: #fff;
-  border-color: #ddd;
-}
-
-tbody tr:hover th {
-  background: #eee;
-  border-color: #ddd;
+tbody tr:hover th, tbody tr:hover td {
+  background: #fafafa;
 }
 
 /* header */
@@ -251,31 +245,31 @@ li.emphasize {
 /* examples */
 
 .georgia {
-  font-family: Georgia;
+  font-family: Georgia !important;
 }
 
 .serif {
-  font-family: serif;
+  font-family: serif !important;
 }
 
 .red {
-  background: #900;
-  color: #fff;
+  background: #900 !important;
+  color: #fff !important;
 }
 
 .white {
-  background: #fff;
+  background: #fff !important;
 }
 
 .black {
-  background: #000;
-  color: #fff;
+  background: #000 !important;
+  color: #fff !important;
 }
 
 .light-gray-ddd {
-  background: #ddd;
+  background: #ddd !important;
 }
 
 .dark-gray-333 {
-  background: #333;
+  background: #333 !important;
 }
