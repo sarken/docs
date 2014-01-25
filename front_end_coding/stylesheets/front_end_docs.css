@@ -136,19 +136,28 @@ th, td {
 }
 
 th {
-  text-align: left;
+  border: 2px #ddd solid;
   font-weight: 700;
+  text-align: left;
 }
 
 thead th {
   text-align: center;
-  border: 2px #eee solid;
-  border-bottom-color: #fff;
 }
 
 tbody td {
   background: #eee;
   border: 2px #fff solid;
+}
+
+tbody tr:hover td {
+  background: #fff;
+  border-color: #ddd;
+}
+
+tbody tr:hover th {
+  background: #eee;
+  border-color: #ddd;
 }
 
 /* header */
