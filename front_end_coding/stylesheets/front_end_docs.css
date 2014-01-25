@@ -214,3 +214,31 @@ li.emphasize {
 .diagram span code {
   display: inline-block;
 }
+
+/* examples */
+
+.georgia {
+  font-family: Georgia;
+}
+
+.red {
+  background: #900;
+  color: #fff;
+}
+
+.white {
+  background: #fff;
+}
+
+.black {
+  background: #000;
+  color: #fff;
+}
+
+.light-gray {
+  background: #ddd;
+}
+
+.dark-gray {
+  background: #333;
+}
