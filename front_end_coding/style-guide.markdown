@@ -200,8 +200,8 @@ We use a range of grays to color boxes, mark borders, and create shadows.
 <li style="background:#bbb">#bbb</li>
 <li style="background:#aaa">#aaa</li>
 <li style="background:#999">#999</li>
-<li style="background:#777">#777</li>
-<li style="background:#666">#666</li>
+<li style="background:#777; color:#fff">#777</li>
+<li style="background:#666; color:#fff">#666</li>
 <li style="background:#555; color:#fff">#555</li>
 <li style="background:#444; color:#fff">#444</li>
 <li style="background:#333; color:#fff">#333</li>
@@ -211,8 +211,8 @@ The header, footer, and tag clouds use a few more reds.
 
 <ul>
 <li style="background:#a00;">#a00</li>
-<li style="background:#800;>#800</li>
-<li style="background:#700;>#700</li>
+<li style="background:#800; color:#fff">#800</li>
+<li style="background:#700; color:#fff">#700</li>
 <li style="background:#600; color:#fff">#600</li>
 <li style="background:#500; color:#fff">#500</li>
 <li style="background:#400; color:#fff">#400</li>
@@ -225,9 +225,8 @@ The header, footer, and tag clouds use a few more reds.
 Some states have their own colors.
 
 <ul>
-<li style="background:#e8e6ed">#e8e6ed</li>
-<li style="background:green">green</li>
-<li style="background:#daa520">#daa520</li>
+<li style="background:#008000; color: #fff;">#008000 green: replied, offered</li>
+<li style="background:#daa520">#876714 gold: offered and requested</li>
 </ul>
 
 #### System and error messages
