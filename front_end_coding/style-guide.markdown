@@ -60,7 +60,7 @@ When the Archive name accompanies the logo or is used as a masthead, it should b
 <tr>
 <th scope="row">White</th>
 <td class="white color">&nbsp;</td>
-<td>#FFFFFF</td>
+<td>#ffffff</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -86,7 +86,7 @@ When the Archive name accompanies the logo or is used as a masthead, it should b
 <tr>
 <th scope="row">Light gray</th>
 <td class="light-gray-ddd color">&nbsp;</td>
-<td>#DDDDDD</td>
+<td>#dddddd</td>
 <td colspan="4">web only</td>
 <td>221</td>
 <td>221</td>
@@ -108,7 +108,7 @@ When the Archive name accompanies the logo or is used as a masthead, it should b
 
 ### Screen
 
-Most of our stylesheets relate to how the Archive is displayed on screen.
+Our e-mail styles also follow these screen styles.
 
 #### Fonts
 
@@ -131,6 +131,63 @@ Most of our stylesheets relate to how the Archive is displayed on screen.
 </dl>
 
 #### Colors
+
+<table summary="The colors we use in our website, how they are used, and their hexadecimal and RGB values">
+<caption>We use these colors on the screen</caption>
+<thead>
+<tr>
+<th scope="col" colspan="2">Color</th>
+<th scope="col">Use</th>
+<th scope="col"><abbr title="hexadecimal">HEX</abbr></th>
+<th scope="col"><abbr title="Red">R</abbr></th>
+<th scope="col"><abbr title="Green">G</abbr></th>
+<th scope="col"><abbr title="Blue">B</abbr></th>
+<td></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Red</th>
+<td class="red color">&nbsp;</td>
+<td>Logo, masthead, blurb titles, tag hover</td>
+<td>#990000</td>
+<td>187</td>
+<td>0</td>
+<td>17</td>
+<td class="red color">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">White</th>
+<td class="white color">&nbsp;</td>
+<td>Page background</td>
+<td>#ffffff</td>
+<td>255</td>
+<td>255</td>
+<td>255</td>
+<td class="white color">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">Dark gray</th>
+<td class="dark-gray-2a2a2a color">&nbsp;</td>
+<td>Text</td>
+<td>#2a2a2a</td>
+<td>42</td>
+<td>42</td>
+<td>42</td>
+<td class="dark-gray-2a2a2a color">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">Darkest gray</th>
+<td class="darkest-gray-111 color">&nbsp;</td>
+<td>Links</td>
+<td>#111111</td>
+<td>17</td>
+<td>17</td>
+<td>17</td>
+<td class="darkest-gray-111 color">&nbsp;</td>
+</tr>
+</tbody>
+</table>
 
 ### Print
 
@@ -162,7 +219,7 @@ Rather than using a specific font, all print text uses the <span class="serif">s
 <tr>
 <th scope="row">White</th>
 <td class="white color">&nbsp;</td>
-<td>#FFFFFF</td>
+<td>#ffffff</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>

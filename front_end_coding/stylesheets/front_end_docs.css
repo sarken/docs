@@ -313,3 +313,13 @@ li.emphasize {
 .dark-gray-333 {
   background: #333 !important;
 }
+
+.dark-gray-2a2a2a{
+  background: #2a2a2a !important;
+  color: #fff !important;
+}
+
+.darkest-gray-111 {
+  background: #111 !important;
+  color: #fff !important;
+}
