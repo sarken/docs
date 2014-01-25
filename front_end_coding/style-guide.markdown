@@ -31,7 +31,7 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 <caption>We use five basic colors in all our materials</caption>
 <thead>
 <tr>
-<th scope="col">Color</th>
+<th scope="col" colspan="2">Color</th>
 <th scope="col"><abbr title="hexadecimal">HEX</abbr></th>
 <th scope="col"><abbr title="Cyan">C</abbr></th>
 <th scope="col"><abbr title="Magenta">M</abbr></th>
@@ -40,11 +40,12 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 <th scope="col"><abbr title="Red">R</abbr></th>
 <th scope="col"><abbr title="Green">G</abbr></th>
 <th scope="col"><abbr title="Blue">B</abbr></th>
+<td></td>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row">red</th>
+<th scope="row">Red</th>
 <td class="red color">&nbsp;</td>
 <td>#990000</td>
 <td>26</td>
@@ -57,7 +58,7 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 <td class="red color">&nbsp;</td>
 </tr>
 <tr>
-<th scope="row">white</th>
+<th scope="row">White</th>
 <td class="white color">&nbsp;</td>
 <td>#FFFFFF</td>
 <td>0</td>
@@ -70,7 +71,7 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 <td class="white color">&nbsp;</td>
 </tr>
 <tr>
-<th scope="row">black</th>
+<th scope="row">Black</th>
 <td class="black color">&nbsp;</td>
 <td>#000000</td>
 <td>0</td>
@@ -83,7 +84,7 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 <td class="black color">&nbsp;</td>
 </tr>
 <tr>
-<th scope="row">light gray</th>
+<th scope="row">Light gray</th>
 <td class="light-gray-ddd color">&nbsp;</td>
 <td>#DDDDDD</td>
 <td colspan="4">web only</td>
@@ -93,7 +94,7 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 <td class="light-gray-ddd color">&nbsp;</td>
 </tr>
 <tr>
-<th scope="row">dark gray</th>
+<th scope="row">Dark gray</th>
 <td class="dark-gray-333 color">&nbsp;</td>
 <td>#333333</td>
 <td colspan="4">web only</td>
@@ -125,7 +126,7 @@ Rather than using a specific font, all print text uses the <span class="serif">s
 <caption>We use two colors in our print styles</caption>
 <thead>
 <tr>
-<th scope="col">Color</th>
+<th scope="col" colspan="2">Color</th>
 <th scope="col"><abbr title="hexadecimal">HEX</abbr></th>
 <th scope="col"><abbr title="Cyan">C</abbr></th>
 <th scope="col"><abbr title="Magenta">M</abbr></th>
@@ -134,11 +135,12 @@ Rather than using a specific font, all print text uses the <span class="serif">s
 <th scope="col"><abbr title="Red">R</abbr></th>
 <th scope="col"><abbr title="Green">G</abbr></th>
 <th scope="col"><abbr title="Blue">B</abbr></th>
+<td></td>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row">white</th>
+<th scope="row">White</th>
 <td class="white color">&nbsp;</td>
 <td>#FFFFFF</td>
 <td>0</td>
@@ -151,7 +153,7 @@ Rather than using a specific font, all print text uses the <span class="serif">s
 <td class="white color">&nbsp;</td>
 </tr>
 <tr>
-<th scope="row">black</th>
+<th scope="row">Black</th>
 <td class="black color">&nbsp;</td>
 <td>#000000</td>
 <td>0</td>

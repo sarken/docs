@@ -127,6 +127,19 @@ h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 
   margin-top: 1.6em;
 }
 
+table {
+  margin-top: 1.6em auto 0;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+}
+
+td {
+  padding: 0.5em;
+}
+
 /* header */
 
 .header {
