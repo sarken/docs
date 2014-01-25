@@ -5,7 +5,7 @@ title: Listbox Pattern
 
 A listbox is a box containing a list. We use listbox to show more than one index on a page. Listboxes can be list items and they can nest, but they don't have to. They can be expandable, draggable, and sortable. You can have a single listbox on a page so long as that page could show multiple indexes with enough user data; they don't need to be logicked out in the view file. For example, the [Yuletide Recs collection](http://archiveofourown.org/collections/yuletide_recs) is a collection that only contains bookmarks, but the bookmark index on the collection index is still a listbox. This is allowed because, if someone added a work to the collection, there would also be a work index on that page.
 
-Listbox styles are declared in [11-group-listbox.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/11-group-listbox.css). Listbox is a [group](supertype).
+Listbox styles are declared in [11-group-listbox.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/11-group-listbox.css). Listbox is part of the group [supertype](supertype).
 
 ### Rules
 
