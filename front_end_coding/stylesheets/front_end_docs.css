@@ -140,6 +140,15 @@ th {
   font-weight: 700;
 }
 
+thead th {
+  text-align: center;
+}
+
+tbody td {
+  background: #eee;
+  border: 2px #fff solid;
+}
+
 /* header */
 
 .header {
