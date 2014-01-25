@@ -142,6 +142,8 @@ th {
 
 thead th {
   text-align: center;
+  border: 2px #eee solid;
+  border-bottom-color: #fff;
 }
 
 tbody td {
