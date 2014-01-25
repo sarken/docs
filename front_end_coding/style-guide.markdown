@@ -3,9 +3,13 @@ layout: front_end_guide
 title: Style Guide
 ---
 
-To establish the Archive's identity and to keep a consistent look and feel across the site, we have a specific set of styles we use. These are closely tied to the styles of our parent organization and our sister projects, so *do not deviate from the styles in this document* without approval from the Design Lead, Front End Lead, or AD&T Committee Chair.
+To establish the Archive's identity and to keep a consistent look and feel across the site, we have a specific set of styles we use. These are closely tied to the styles of our parent organization and our sister projects, so **do not deviate from the styles in this document** without approval from the Design Lead, Front End Lead, or AD&T Committee Chair.
 
 ### General
+
+There are some styles that we use regardless of media.
+
+#### Copy
 
 When writing copy for the Archive, use American spelling, a single space between sentences, and a capital "A" when referring to the Archive.
 
@@ -108,13 +112,15 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 
 ### Screen
 
+Most of our stylesheets relate to how the Archive is displayed on screen.
+
 #### Fonts
 
 #### Colors
 
 ### Print
 
-Our print styles are defined in (https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/27-role-print.css)[27-role-print.css].
+Our print styles are defined in [27-role-print.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/27-role-print.css).
 
 #### Fonts
 
