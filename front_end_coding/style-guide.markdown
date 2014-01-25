@@ -15,6 +15,8 @@ When writing copy for the Archive, use American spelling, a single space between
 
 #### Logo
 
+![Archive logo](images/logo.png)
+
 The red used in our logo is `#990000`, which can be shorthanded as `#900`. Do not change the color. If there is insufficient contrast between the logo and the background, a border may be added.
 
 The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
@@ -124,7 +126,7 @@ Our print styles are defined in [27-role-print.css](https://github.com/otwcode/o
 
 #### Fonts
 
-Rather than using a specific font, all print text uses the <span class="serif">serif</span> font family. It tells the system to use its default serif font.
+Rather than using a specific font, all print text uses the <span class="serif">serif</span> font family. This tells the system to use its default serif font.
 
 #### Colors
 

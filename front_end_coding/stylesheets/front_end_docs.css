@@ -152,6 +152,8 @@ tbody td {
 
 tbody tr:hover th, tbody tr:hover td {
   background: #fafafa;
+  border-left-color: #ddd;
+  border-right-color: #ddd;
 }
 
 /* header */
