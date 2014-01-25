@@ -221,6 +221,10 @@ li.emphasize {
   font-family: Georgia;
 }
 
+.serif {
+  font-family: serif;
+}
+
 .red {
   background: #900;
   color: #fff;
@@ -235,10 +239,10 @@ li.emphasize {
   color: #fff;
 }
 
-.light-gray {
+.light-gray-ddd {
   background: #ddd;
 }
 
-.dark-gray {
+.dark-gray-333 {
   background: #333;
 }

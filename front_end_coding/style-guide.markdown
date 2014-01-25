@@ -84,26 +84,84 @@ The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 </tr>
 <tr>
 <th scope="row">light gray</th>
-<td class="light-gray color">&nbsp;</td>
+<td class="light-gray-ddd color">&nbsp;</td>
 <td>#DDDDDD</td>
 <td colspan="4">web only</td>
 <td>221</td>
 <td>221</td>
 <td>221</td>
-<td class="light-gray color">&nbsp;</td>
+<td class="light-gray-ddd color">&nbsp;</td>
 </tr>
 <tr>
 <th scope="row">dark gray</th>
-<td class="dark-gray color">&nbsp;</td>
+<td class="dark-gray-333 color">&nbsp;</td>
 <td>#333333</td>
 <td colspan="4">web only</td>
 <td>51</td>
 <td>51</td>
 <td>51</td>
-<td class="dark-gray color">&nbsp;</td>
+<td class="dark-gray-333 color">&nbsp;</td>
 </tr>
 </tbody>
 </table>
 
 ### Screen
 
+#### Fonts
+
+#### Colors
+
+### Print
+
+Our print styles are defined in (https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/27-role-print.css)[27-role-print.css].
+
+#### Fonts
+
+Rather than using a specific font, all print text uses the <span class="serif">serif</span> font family. It tells the system to use its default serif font.
+
+#### Colors
+
+<table summary="The two colors we use in our print materials, and their hexadecimal, CMYK, and RGB values">
+<caption>We use two colors in our print styles</caption>
+<thead>
+<tr>
+<th scope="col">Color</th>
+<th scope="col"><abbr title="hexadecimal">HEX</abbr></th>
+<th scope="col"><abbr title="Cyan">C</abbr></th>
+<th scope="col"><abbr title="Magenta">M</abbr></th>
+<th scope="col"><abbr title="Yellow">Y</abbr></th>
+<th scope="col"><abbr title="Key">K</abbr></th>
+<th scope="col"><abbr title="Red">R</abbr></th>
+<th scope="col"><abbr title="Green">G</abbr></th>
+<th scope="col"><abbr title="Blue">B</abbr></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">white</th>
+<td class="white color">&nbsp;</td>
+<td>#FFFFFF</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>255</td>
+<td>255</td>
+<td>255</td>
+<td class="white color">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">black</th>
+<td class="black color">&nbsp;</td>
+<td>#000000</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td class="black color">&nbsp;</td>
+</tr>
+</tbody>
+</table>
