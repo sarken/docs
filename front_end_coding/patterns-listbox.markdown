@@ -20,13 +20,23 @@ A listbox can be any block container that can contain these blocks: `h1—6`, `p
 
 You can never have an inline listbox of any kind. You can never have a listbox with restricted children: no `table.listbox`, `ol.listbox`, `ul.listbox`, or `dl.listbox`.
 
+The first element inside a listbox is always a heading, and it always contains an index (i.e. `<ol class="index group">`, `<ul class="index group">`, or `<dl class="index group">`). It might also contain a note (e.g. `<p class="note">`) or actions (e.g. `<p class="actions">`) outside the index.
+
 ### XHTML structure
 
-The following diagram is taken from [the index of theater fandoms](http://archiveofourown.org/media/Theater/fandoms). It's an example of a listbox within an index.
+The following diagram is taken from [the index of theater fandoms](http://archiveofourown.org/media/Theater/fandoms). It's an example of a listboxes within an index.
 
 <ol class="diagram">
 <li>&lt;ol class="alphabet fandom index group"&gt;
 <ol>
+<li>&lt;li class="letter listbox group"&gt;
+<ol>
+<li>&lt;h3 class="heading"&gt;
+<ol>
+<li>&lt;span class="action top"> <span>&lt;a&gt;</span></li>
+</ol></li>
+<li>&lt;ul class="tags index group"&gt;</li>
+</ol></li>
 <li>&lt;li class="letter listbox group"&gt;
 <ol>
 <li>&lt;h3 class="heading"&gt;
