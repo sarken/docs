@@ -36,7 +36,7 @@ Design patterns are a major part of how we code things. While not every new feat
 * Design Pattern: Interactions
 * [Design Pattern: Index](patterns-index)
 * [Design Pattern: Blurb](patterns-blurb)
-* Design Pattern: Listbox
+* [Design Pattern: Listbox](patterns-listbox)
 * Design Pattern: Meta
 * Design Pattern: Preface
 * Design Pattern: Comments

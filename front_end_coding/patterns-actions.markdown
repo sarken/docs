@@ -32,7 +32,7 @@ Nested actions blocks have the class `secondary`, which is a general modifier.
 
 Only `simple` forms should be included inside actions blocks.
 
-### XHTML Diagram
+### XHTML diagram
 
 <ol class="diagram">
 <li><code>&lt;ul class="navigation actions" role="navigation"&gt;</code>
