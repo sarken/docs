@@ -150,10 +150,8 @@ tbody td {
   border: 2px #fff solid;
 }
 
-tbody tr:hover th, tbody tr:hover td {
-  background: #fafafa;
-  border-left-color: #ddd;
-  border-right-color: #ddd;
+tbody tr:hover td {
+  background: #ddd;
 }
 
 /* header */
@@ -246,12 +244,52 @@ li.emphasize {
 
 /* examples */
 
+.serif {
+  font-family: serif !important;
+}
+
 .georgia {
   font-family: Georgia !important;
 }
 
-.serif {
-  font-family: serif !important;
+.sans-serif {
+  font-family: sans-serif !important;
+}
+
+.lucida-grande {
+  font-family: 'Lucida Grande' !important;
+}
+
+.lucida-sans {
+  font-family: 'Lucida Sans Unicode' !important;
+}
+
+.gnu-unifont {
+  font-family: 'GNU Unifont' !important;
+}
+
+.verdana {
+  font-family: Verdana !important;
+}
+
+.helvetica {
+  font-family: Helvetica !important;
+}
+
+.monospace {
+  font-family: monospace !important;
+}
+
+.monaco {
+  font-family: Monaco !important;
+}
+
+.consolas {
+  font-family: Consolas !important;
+}
+
+.courier {
+  font-family: Courier !important;
 }
 
 .red {
