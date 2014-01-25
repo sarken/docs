@@ -20,7 +20,7 @@ Our coding practice may be radically different from anything you've done before.
 * [Coding Standards](coding-standards)
 * [Front End User Guide](front-end-user-guide)
 * [Coding Accessible Tables](coding-accessible-tables)
-* Archive Style Guide
+* [Style Guide](style-guide)
 * [CSS Shorthand](css-shorthand)
 * [Classes](classes)
 * [Em Scale](em-scale)
