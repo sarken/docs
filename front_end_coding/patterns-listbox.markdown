@@ -22,9 +22,9 @@ You can never have an inline listbox of any kind. You can never have a listbox w
 
 The first element inside a listbox is always a heading, and it always contains an index (i.e. `<ol class="index group">`, `<ul class="index group">`, or `<dl class="index group">`). It might also contain a note (e.g. `<p class="note">`) or actions (e.g. `<p class="actions">`) outside the index.
 
-### XHTML structure
+### XHTML diagram
 
-The following diagram is taken from [the index of theater fandoms](http://archiveofourown.org/media/Theater/fandoms). It's an example of a listboxes within an index.
+The following diagram is taken from [the index of theater fandoms](http://archiveofourown.org/media/Theater/fandoms). It's an example of multiple listboxes within an index.
 
 <ol class="diagram">
 <li>&lt;ol class="alphabet fandom index group"&gt;
