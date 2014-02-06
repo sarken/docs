@@ -47,7 +47,7 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <ol>
 <li><code>&lt;fieldset class="warnings"&gt;</code>
 <ol>
-<li><code>&lt;ul</code>
+<li><code>&lt;ul&gt;</code>
 <ol>
 <li><code>&lt;li&gt;</code>
 <ol>
@@ -70,6 +70,25 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <ol>
 <li><code>&lt;input text="text"&gt;</code></li>
 <li><code>&lt;p class="footnote"&gt;</code></li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li><code>&lt;fieldset&gt;</code></li>
+<li><code>&lt;fieldset&gt;</code>
+<ol>
+<li><code>&lt;legend&gt;</code></li>
+<li><code>&lt;h3 class="landmark heading"&gt;</code></li>
+<li><code>&lt;ul class="actions"&gt;</code>
+<ol>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;input type="submit"&gt;</code></li>
+</ol></li>
+</ol></li>
+<ol>
+<li><code>&lt;li&gt;</code>
+<ol>
+<li><code>&lt;input type="submit"&gt;</code></li>
 </ol></li>
 </ol></li>
 </ol></li>
