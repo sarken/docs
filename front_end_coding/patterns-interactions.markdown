@@ -15,10 +15,10 @@ Some forms cannot be logically structured as terms and definitions. As a last re
 
 ### XHTML diagram
 
-The following diagram is taken from the new work form. It's arguably one of the most important forms on the Archive (without works, it's hard to have an Archive!), so it's been carefully coded and rigorously tested. If you're ever in doubt about how to structure a form, it's a good idea to look at the new work form.
+The following diagram is adapted from the new work form.
 
 <ol class="diagram">
-<li><code>&lt;form class="work verbose post"&gt;</code>
+<li><code>&lt;form class="verbose post"&gt;</code>
 <ol>
 <li><code>&lt;p class="required notice"&gt;</code></li>
 <li><code>&lt;fieldset&gt;</code>
@@ -28,41 +28,40 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <li><code>&lt;p class="note"&gt;</code></li>
 <li><code>&lt;dl&gt;</code>
 <ol>
-<li><code>&lt;dt class="rating required"&gt;</code>
+<li><code>&lt;dt class="required"&gt;</code>
 <ol>
 <li><code>&lt;label&gt;</code></li>
 </ol></li>
-<li><code>&lt;dd class="rating required"&gt;</code><ol>
+<li><code>&lt;dd class="required"&gt;</code><ol>
 <li><code>&lt;select&gt;</code>
 <ol>
 <li><code>&lt;option&gt;</code></li>
 <li><code>&lt;option&gt;</code></li>
 </ol></li>
 </ol></li>
-<li><code>&lt;dt class="warning required"&gt;</code>
+<li><code>&lt;dt class="required"&gt;</code>
 <ol>
 <li><code>&lt;label&gt;</code></li>
 </ol></li>
-<li><code>&lt;dd class="warning required"&gt;</code>
+<li><code>&lt;dd class="required"&gt;</code>
 <ol>
-<li><code>&lt;fieldset class="warnings"&gt;</code>
+<li><code>&lt;fieldset&gt;</code>
 <ol>
 <li><code>&lt;ul&gt;</code>
 <ol>
 <li><code>&lt;li&gt;</code>
 <ol>
-<li><code>&lt;input type="checkbox"&gt;</code></li>
-<li><code>&lt;label&gt;</code></li>
+<li><code><span>&lt;input type="checkbox"&gt;</span> <span>&lt;label&gt;</span></code></li>
 </ol></li>
 <li><code>&lt;li&gt;</code></li>
 </ol></li>
 </ol></li>
 </ol></li>
-<li><code>&lt;dt class="fandom required"&gt;</code>
+<li><code>&lt;dt class="required"&gt;</code>
 <ol>
 <li><code>&lt;label&gt;</code></li>
 </ol></li>
-<li><code>&lt;dd class="fandom required"&gt;</code>
+<li><code>&lt;dd class="required"&gt;</code>
 <ol>
 <li><code>&lt;input type="text"&gt;</code></li>
 <li><code>&lt;p class="footnote"&gt;</code></li>
@@ -75,11 +74,10 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <li><code>&lt;h3 class="landmark heading"&gt;</code></li>
 <li><code>&lt;dl&gt;</code>
 <ol>
-<li>&lt;dt&gt;</li>
-<li>&lt;dd&gt;</li>
+<li><code>&lt;dt&gt;</code></li>
+<li><code>&lt;dd&gt;</code></li>
 </ol></li>
 </ol></li>
-<li><code>&lt;fieldset&gt;</code></li>
 <li><code>&lt;fieldset&gt;</code>
 <ol>
 <li><code>&lt;legend&gt;</code></li>
