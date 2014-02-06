@@ -85,12 +85,6 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <li><code>&lt;input type="submit"&gt;</code></li>
 </ol></li>
 </ol></li>
-<ol>
-<li><code>&lt;li&gt;</code>
-<ol>
-<li><code>&lt;input type="submit"&gt;</code></li>
-</ol></li>
-</ol></li>
 </ol></li>
 </ol></li>
 </ol>
