@@ -2,16 +2,21 @@
 layout: front_end_guide
 title: Interactions Pattern
 ---
+Interactions are forms. The styles for forms and form elements are found in [07-interactions.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/07-interactions.css).
 
-Forms, which are styled in 07-interactions.css, should be labeled with fieldsets and legends. Every submit button should be marked up with a `<p class="submit">`. On some forms there are cancel buttons, so apply the class to the input (`<input class="cancel"...>`) and to that paragraph's classes (`<p class="cancel submit">`).
+Interactions is an abstract [supertype](supertype). "Abstract" just means you won't find an `interactions` class in our code -- instead, "interactions" is synonymous with the `form` element. So if we wanted all interactions to have a gray background, we would use `form { background: #ccc; }`.
 
-Form controls are inline elements, which means they have to be wrapped in block level elements.
+### Rules
 
-###### Rules
+Unless a form is very simple, it should be broken down into logical sections using `fieldset`. For example, the [Work Search form](http://archiveofourown.org/works/search) is grouped into Work Info, Work Tags, Work Stats, and Search.
 
-We generally want forms set up as [definition lists](http://www.w3schools.com/tags/tag_dl.asp) (`<dl>`) because the [term](http://www.w3schools.com/tags/tag_dt.asp) (`<dt>`) and [definition](http://www.w3schools.com/tags/tag_dd.asp) (`<dd>`) structure corresponds nicely to the typical `<label>Label</label> <input>` structure of a form. We use `<dt>` for the label and `<dd>` for the input, and a `<dt>` can contain more than one `<dd>`. However, since a `<dl>` can only contain `<dt>` and `<dd>` as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
+Each `fieldset` should be labeled with a `legend`. Some screen readers don't read form legends. For them, we repeat the legend text as a landmark heading, e.g. `<h3 class="landmark heading">`. If the `legend` text is more than a few words long, the form probably needs rearranging.
 
-Some forms cannot be logically structured as terms and definitions. As a last resort, these can be structured as paragraphs and can include linebreaks.
+Inputs should be labeled. Most of the time, this means using the `label` element, but in some very simple or very complex forms (e.g. form tables on wrangling pages), it means using the `title` attribute on the `input` itself. A label should come *before* a text field (`<input type="text">` or `<textarea>`) or select menu (`<select>`) but *after* a radio button (`<input type="radio">`) or checkbox (`<input type="checkbox">`).
+
+Form labels and controls are inline elements, which means they have to be wrapped in block level elements. We generally use [definition lists](http://www.w3schools.com/tags/tag_dl.asp) (`<dl>`) because the [term](http://www.w3schools.com/tags/tag_dt.asp) (`<dt>`) and [definition](http://www.w3schools.com/tags/tag_dd.asp) (`<dd>`) structure corresponds nicely to the typical `<label>Label</label>` and `<input>` structure of a form. However, if a form cannot be logically structured as terms and definitions, it can be structured as paragraphs.
+
+Submit buttons are a type of control, so they also need to be wrapped in block level elements. Most forms only have one submit button -- they can use `<p class="submit">`. Forms with many submit buttons (e.g. the work form) can use `<ul class="actions">`.
 
 ### XHTML diagram
 
