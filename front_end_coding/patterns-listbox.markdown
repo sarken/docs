@@ -24,7 +24,7 @@ The first element inside a listbox is always a heading, and it always contains a
 
 ### XHTML diagram
 
-The following diagram is taken from [the index of theater fandoms](http://archiveofourown.org/media/Theater/fandoms). It's an example of multiple listboxes within an index.
+The following diagram is taken from [an index of fandoms for a specific media type](http://archiveofourown.org/media/Theater/fandoms). It's an example of multiple listboxes within an index.
 
 <ol class="diagram">
 <li>&lt;ol class="alphabet fandom index group"&gt;

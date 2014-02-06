@@ -27,41 +27,6 @@ The archive uses the UTF-8 character set: `<meta http-equiv="Content-Type" conte
 
 There are some patterns that appear in many places throughout the Archive. There are diagrams of these recurring patterns available in our [Patterns Index](patterns).
 
-
-##### Forms
-<!-- This should be moved to the Forms section of Patterns if it's not too outdated -->
-
-Forms, which are styled in 07-interactions.css, should be labeled with fieldsets and legends. Every submit button should be marked up with a `<p class="submit">`. On some forms there are cancel buttons, so apply the class to the input (`<input class="cancel"...>`) and to that paragraph's classes (`<p class="cancel submit">`).
-
-Form controls are inline elements, which means they have to be wrapped in block level elements.
-
-###### Definition lists
-
-We generally want forms set up as [definition lists](http://www.w3schools.com/tags/tag_dl.asp) (`<dl>`) because the [term](http://www.w3schools.com/tags/tag_dt.asp) (`<dt>`) and [definition](http://www.w3schools.com/tags/tag_dd.asp) (`<dd>`) structure corresponds nicely to the typical `<label>Label</label> <input>` structure of a form. We use `<dt>` for the label and `<dd>` for the input, and a `<dt>` can contain more than one `<dd>`. However, since a `<dl>` can only contain `<dt>` and `<dd>` as top-level elements, the form tag itself cannot come inside the definition list, nor can other elements such as paragraphs or linebreaks. That's okay, though -- we take care of the forms' presentation with CSS.   
-
-Here is the basic template to follow to meet all these rules:
-
-**Key:** `<always>` | `{sometimes}`
-
-```html
-<form>
-  <fieldset>
-    <legend> </legend>
-    <h3 class="landmark heading"> </h3>
-    <dl>
-      <dt> <label> </label> </dt>
-      <dd> <input> </dd>
-      {dd} {input} {dd}
-    </dl>
-    <p class="submit actions"> <input type="submit"> </p>
-  </fieldset>
-</form>
-```
-
-###### Other form structures
-
-Some forms cannot be logically structured as terms and definitions. As a last resort, these can be structured as paragraphs and can include linebreaks.
-
 #### XHTML identifiers
 
 Identifiers are attributes that add meaning to an XHTML element by providing more information about the element's function. Identifiers come in two varieties, `class` and `id`. An element can have one, both, or neither type of identifier.

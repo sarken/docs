@@ -109,9 +109,9 @@ You may want to...
 * Indent paragraphs: `#workskin p { text-indent: 2.5em; }`
 * Hide the work notes: `#workskin .preface .notes { display: none; }`
 
-#### Work metadata
+### Styling work metadata
 
-The work view has a lot of metadata on it, but other pages such as user stats, user profiles, and series pages also contain metadata that you might now want to style. The metadata is *not* inside `#workskin`, but you can use `.work-show .meta` to target the metadata for works.
+The work view has a lot of metadata on it, but other pages such as user stats, user profiles, and series pages also contain metadata that you might not want to style. The metadata is *not* inside `#workskin`, but you can use `.work-show .meta` to target the metadata for works.
 
 You might want to suppress some metadata: 
 

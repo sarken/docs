@@ -59,9 +59,7 @@ Only `simple` forms should be included inside actions blocks.
 <li><code>&lt;a&gt;</code></li>
 </ol>
 </li></ol>
-</li>
-</ol>
-</li>
+</li></ol></li>
 <li><code>&lt;li&gt;</code>
 <ol>
 <li><code>&lt;a&gt;</code></li>
