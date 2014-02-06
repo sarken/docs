@@ -23,8 +23,8 @@ The following diagram is adapted from the new work form.
 <li><code>&lt;p class="required notice"&gt;* Required information&lt;/p&gt;</code></li>
 <li><code>&lt;fieldset&gt;</code>
 <ol>
-<li><code>&lt;legend&gt;Tags&lt;legend&gt;</code></li>
-<li><code>&lt;h3 class="landmark heading"&gt;Tags&lt;h3&gt;</code></li>
+<li><code>&lt;legend&gt;Tags&lt;/legend&gt;</code></li>
+<li><code>&lt;h3 class="landmark heading"&gt;Tags&lt;/h3&gt;</code></li>
 <li><code>&lt;p class="note"&gt;Tags are comma separated, 100 characters per tag.&lt;/p&gt;</code></li>
 <li><code>&lt;dl&gt;</code>
 <ol>
@@ -56,7 +56,7 @@ The following diagram is adapted from the new work form.
 </ol></li>
 <li><code>&lt;dt class="required"&gt;</code>
 <ol>
-<li><code>&lt;label&gt;</code></li>
+<li><code>&lt;label&gt;Fandoms*&lt;/label&gt;</code></li>
 </ol></li>
 <li><code>&lt;dd class="required"&gt;</code>
 <ol>
@@ -71,8 +71,8 @@ The following diagram is adapted from the new work form.
 <li><code>&lt;h3 class="landmark heading"...</code></li>
 <li><code>&lt;dl&gt;</code>
 <ol>
-<li><code>&lt;dt&gt;</code></li>
-<li><code>&lt;dd&gt;</code></li>
+<li><code>&lt;dt...</code></li>
+<li><code>&lt;dd...</code></li>
 </ol></li>
 </ol></li>
 <li><code>&lt;fieldset&gt;</code>
