@@ -161,9 +161,8 @@ tbody tr:hover td {
   color: #900;
 }
 
-.header a:hover, .header a:active, .header a:focus {
-  border-bottom: 1px solid;
-  outline: none;
+.header a:active, .header a:focus {
+  outline: 1px dotted;
 }
 
 .header .title {
