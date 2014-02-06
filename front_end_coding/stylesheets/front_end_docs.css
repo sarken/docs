@@ -156,10 +156,6 @@ tbody tr:hover td {
 
 /* header */
 
-.header {
-  color: #900;
-}
-
 .header a, .header a:visited, .header a:active {
   border-bottom: none;
   color: #900;
@@ -173,7 +169,7 @@ tbody tr:hover td {
 .header .title {
   margin: 0 auto;
   padding: 1em 0;
-  width: 45em;
+  width: 55em;
 }
 
 .header .page {
