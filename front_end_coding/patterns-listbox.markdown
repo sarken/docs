@@ -27,23 +27,23 @@ The first element inside a listbox is always a heading, and it always contains a
 The following diagram is taken from [an index of fandoms for a specific media type](http://archiveofourown.org/media/Theater/fandoms). It's an example of multiple listboxes within an index.
 
 <ol class="diagram">
-<li>&lt;ol class="alphabet fandom index group"&gt;
+<li><code>&lt;ol class="alphabet fandom index group"&gt;</code>
 <ol>
-<li>&lt;li class="letter listbox group"&gt;
+<li><code>&lt;li class="letter listbox group"&gt;</code>
 <ol>
-<li>&lt;h3 class="heading"&gt;A
+<li><code>&lt;h3 class="heading"&gt;A&lt;/h3&gt;</code>
 <ol>
-<li>&lt;span class="action top"> <span>&lt;a&gt;↑</span></li>
+<li><code>&lt;span class="action top"&gt; <span>&lt;a&gt;↑&lt;/a&gt;</span></code></li>
 </ol></li>
-<li>&lt;ul class="tags index group"&gt;</li>
+<li><code>&lt;ul class="tags index group"&gt;</code></li>
 </ol></li>
-<li>&lt;li class="letter listbox group"&gt;
+<li><code>&lt;li class="letter listbox group"&gt;</code>
 <ol>
-<li>&lt;h3 class="heading"&gt;B
+<li><code>&lt;h3 class="heading"...</code>
 <ol>
-<li>&lt;span class="action top"> <span>&lt;a&gt;↑</span></li>
+<li><code>&lt;span class="action top"&gt; <span>&lt;a...</span></code></li>
 </ol></li>
-<li>&lt;ul class="tags index group"&gt;</li>
+<li><code>&lt;ul class="tags index group"&gt;</code></li>
 </ol></li>
 </ol></li>
 </ol>
