@@ -54,11 +54,7 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <li><code>&lt;input type="checkbox"&gt;</code></li>
 <li><code>&lt;label&gt;</code></li>
 </ol></li>
-<li><code>&lt;li&gt;</code>
-<ol>
-<li><code>&lt;input type="checkbox"&gt;</code></li>
-<li><code>&lt;label&gt;</code></li>
-</ol></li>
+<li><code>&lt;li&gt;</code></li>
 </ol></li>
 </ol></li>
 </ol></li>
@@ -68,7 +64,7 @@ The following diagram is taken from the new work form. It's arguably one of the 
 </ol></li>
 <li><code>&lt;dd class="fandom required"&gt;</code>
 <ol>
-<li><code>&lt;input text="text"&gt;</code></li>
+<li><code>&lt;input type="text"&gt;</code></li>
 <li><code>&lt;p class="footnote"&gt;</code></li>
 </ol></li>
 </ol></li>
@@ -77,7 +73,11 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <ol>
 <li><code>&lt;legend&gt;</code></li>
 <li><code>&lt;h3 class="landmark heading"&gt;</code></li>
-<li><code>&lt;dl&gt;</code></li>
+<li><code>&lt;dl&gt;</code>
+<ol>
+<li>&lt;dt&gt;</li>
+<li>&lt;dd&gt;</li>
+</ol></li>
 </ol></li>
 <li><code>&lt;fieldset&gt;</code></li>
 <li><code>&lt;fieldset&gt;</code>
@@ -90,10 +90,7 @@ The following diagram is taken from the new work form. It's arguably one of the 
 <ol>
 <li><code>&lt;input type="submit"&gt;</code></li>
 </ol></li>
-<li><code>&lt;li&gt;</code>
-<ol>
-<li><code>&lt;input type="submit"&gt;</code></li>
-</ol></li>
+<li><code>&lt;li&gt;</code></li>
 </ol></li>
 </ol></li>
 </ol></li>
