@@ -31,17 +31,17 @@ The following diagram is taken from [an index of fandoms for a specific media ty
 <ol>
 <li>&lt;li class="letter listbox group"&gt;
 <ol>
-<li>&lt;h3 class="heading"&gt;
+<li>&lt;h3 class="heading"&gt;A
 <ol>
-<li>&lt;span class="action top"> <span>&lt;a&gt;</span></li>
+<li>&lt;span class="action top"> <span>&lt;a&gt;↑</span></li>
 </ol></li>
 <li>&lt;ul class="tags index group"&gt;</li>
 </ol></li>
 <li>&lt;li class="letter listbox group"&gt;
 <ol>
-<li>&lt;h3 class="heading"&gt;
+<li>&lt;h3 class="heading"&gt;B
 <ol>
-<li>&lt;span class="action top"> <span>&lt;a&gt;</span></li>
+<li>&lt;span class="action top"> <span>&lt;a&gt;↑</span></li>
 </ol></li>
 <li>&lt;ul class="tags index group"&gt;</li>
 </ol></li>
