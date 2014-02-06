@@ -193,7 +193,7 @@ Our e-mail styles also follow these screen styles.
 
 We use a range of grays to color boxes, mark borders, and create shadows.
 
-<ul>
+<ul class="swatches">
 <li style="background:#eee">#eee</li>
 <li style="background:#ddd">#ddd</li>
 <li style="background:#ccc">#ccc</li>
@@ -209,7 +209,7 @@ We use a range of grays to color boxes, mark borders, and create shadows.
 
 The header, footer, and tag clouds use a few more reds.
 
-<ul>
+<ul class="swatches">
 <li style="background:#a00;">#a00</li>
 <li style="background:#800; color:#fff">#800</li>
 <li style="background:#700; color:#fff">#700</li>
@@ -224,7 +224,7 @@ The header, footer, and tag clouds use a few more reds.
 
 Some states have their own colors.
 
-<ul>
+<ul class="swatches">
 <li style="background:#008000; color: #fff;">#008000 green: replied, offered</li>
 <li style="background:#daa520">#876714 gold: offered and requested</li>
 </ul>
@@ -235,7 +235,7 @@ System and error messages are color-coded and use their own separate color schem
 
 System and flash messages use these colors:
 
-<ul>
+<ul class="messages swatches">
 <li style="background:#d1e1ef; border:1px solid #c2d2df">blue: success, messages, additional information. The background is #d1e1ef with a border of #c2d2df. It uses the main text color.</li>
 <li style="background:#efd1d1; border: 1px solid #900">red: error, go back and fix this problem. The background is #efd1d1 with a border of #900.</li>
 <li style="background:#ffe34e; border: 1px solid #d89e36; color: #000">yellow: warning, click to proceed, correct this error before you proceed. #ffe34e with a border of #d89e36 and #000 text.</li>
@@ -243,7 +243,7 @@ System and flash messages use these colors:
 
 LiveValidation messages on forms use these colors:
 
-<ul>
+<ul class="messages swatches">
 <li style="background:#0c0">#0c0 green: success</li>
 <li style="background:#c00">#c000 red: error</li>
 </ul>

@@ -8,11 +8,15 @@ Classes are used to add structural meaning. A good class describes more specific
 
 Class names are short and, ideally, English words in common usage. If you find yourself combining several words to make a class, like `english_user_information`, stop and think whether you could use several more general classes: `english user information`.
 
+You should only write the class on the highest element it applies to on each level. All the elements nested inside this parent will inherit its properties anyway, and otherwise you could end up double-applying the attributes of that class to the nested elements.
+
 Our classes are how we describe and document our data, so it's very important to use them consistently and accurately. If you find a class that doesn't fit this system, it's probably a mistake and needs fixing. The main exceptions are classes for jQuery plugins, since it is easier to keep plugins up to date if we *don't* modify the class names. However, if you're writing new jQuery for the Archive, please keep our naming system in mind.
 
 ### What kind and where?
 
-It might be useful to look at some [diagrams of pages](diagrams.html) on our Archive, to really understand that in CSS, we write a path *to* places in our XHTML; we don't need to give everything a unique name, because we describe it: "what kind and where".
+It might be useful to look at some [diagrams of pages](diagrams.html) on our Archive to really understand that in CSS, we write a path *to* places in our XHTML; we don't need to give everything a unique name, because we describe it: "what kind and where".
+
+For example, we use a dotted line to underline all tag links: `a.tag { border-bottom: 1px dotted; }`. If we want to change how tag links look on bookmark blurbs, we don't add a new `bookmark-tag` class in the HTML -- we just use the bookmark tags' unique path in the DOM: `.bookmark a.tag { border-bottom: none; }`
 
 ### Rails classes
 

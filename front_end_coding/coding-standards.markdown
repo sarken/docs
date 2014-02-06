@@ -25,7 +25,7 @@ The archive uses the UTF-8 character set: `<meta http-equiv="Content-Type" conte
 
 #### Frequently used fragments
 
-There are some patterns that appear in many places throughout the archive. There are diagrams of these recurring patterns available in our [Patterns Index](patterns).
+There are some patterns that appear in many places throughout the Archive. There are diagrams of these recurring patterns available in our [Patterns Index](patterns).
 
 
 ##### Forms

@@ -2,7 +2,7 @@
 layout: front_end_guide
 title: Front End User Guide
 ---
-This is a detailed theoretical guide to the archive interface, focusing on the stylesheets. We also have a practical step by step tutorial on [writing a skin](writing-a-skin/).
+This is a detailed theoretical guide to the Archive interface, focusing on the stylesheets. We also have a practical step by step tutorial on [writing a skin](writing-a-skin/).
 
 Read this guide *first*. Rails is DRY (Don't Repeat Yourself) and so is our front end; this is **not** like what you have done before.
 
@@ -20,7 +20,7 @@ Layout makers and post-release users: If you are remaking the interface, you can
 
 ### Levels
 
-There Archive has 32 stylesheets, the first 29 of which are always applied. Of the remaining eight, three are media-specific (handheld for mobile devices, aural for speech synthesizers, and print for printers), four are Internet Explorer conditionals (used only when the site is accessed in the corresponding version of Internet Explorer), and one is our sandbox (always used, but home to temporary or experimental styles we aren't ready to put into the first 29). On your development environment, you will see all of the stylesheets listed in the document head. The order they are listed in is the cascade hierarchy.
+The Archive has 32 stylesheets, the first 29 of which are always applied. Of the remaining eight, three are media-specific (handheld for mobile devices, aural for speech synthesizers, and print for printers), four are Internet Explorer conditionals (used only when the site is accessed in the corresponding version of Internet Explorer), and one is our sandbox (always used, but home to temporary or experimental styles we aren't ready to put into the first 29). On your development environment, you will see all of the stylesheets listed in the document head. The order they are listed in is the cascade hierarchy.
 
 Things are a little different on our test and production environments, which use our skin system to combine the stylesheets. If you look at the page source on either of these environments, you will notice that the first 29 stylesheets have been grouped into a single file named 01\_site\_screen\_.css. (These skin stylesheets are cached, so if a change fails to show up after being deployed to test or production, the first step to figuring out why is to ask the person in charge of the code push to recache the stylesheets.)
 
@@ -174,37 +174,28 @@ The sandbox is where we put experimental styles and temporary style fixes. It is
 
 ### Page-by-page views
 
+Views follow regular layouts and contain repeating groups of HTML elements. These groups are described with [classes](classes). Rails generates some classes, and those contain underscores; you can use them to target rules at individual pages.
+
 Within the region `#main` the view changes. There are N basic views:
-
-#### Work view
-
-Works are viewed on their own pages. They are similar to a blog post: metadata at the top and comments at the bottom.
-
-#### Bookmark view
-
-Bookmarks can be viewed on their own or grouped with all the bookmarks of a work. Grouped together, they are an index view.
-
-#### User, collection view
-
-Each identity has its own set of pages, listing activities like works written, works viewed, personal profile, preference settings, and so on. There's a persistent dashboard navigation on these pages.
-
-#### Profile view
-
-Profile view is only used in user and collection.
 
 #### Index view
 
-Indices are lists of works, users, collections, or bookmarks. The metadata describing them is grouped in a blurb.
+An index is a list of works, users, collections, or bookmarks (e.g. the [work index for Bandom](http://archiveofourown.org/tags/Bandom/works) or the [ bookmark index for Supernatural](http://archiveofourown.org/tags/Supernatural/bookmarks)).
 
-Views follow regular layouts and contain repeating groups of HTML elements. These groups are described with classes. We use single English words in our classes. Rails generates some classes, and those contain underscores; you can use them to target rules at individual pages.
+The metadata describing the items in an index view is grouped in a [blurb](patterns-blurb).
 
-### Objects
+#### Work view
 
-Now we understand the taxonomy, let's look at how to manipulate different structures in the Archive. It's useful to think of these groups as objects.
+Works are viewed on their own pages (e.g. [Sliding Doors](http://archiveofourown.org/works/149319)). They are similar to a blog post: metadata at the top and comments at the bottom.
 
-There are different objects, or works, in the archive that you can interact with. A work might be a bookmark, a story, a comment, and they all follow a consistent design pattern: NAME CONTENT. Many other pieces of information may be attached to this HEAD BODY structure; this pattern is how all web pages are structured too, and all emails, SMS messages, and so on. First we name something; then we show it. The Archive by default shows as much information and as many actions as possible. Because all the information is classed, any of it can be hidden, de-emphasised or highlighted with CSS. We can easily reorganise pages as we develop and gladly allow our users to reorganise things to their own liking.
+#### Bookmark view
 
-#### Blurbs
+Bookmarks can be viewed on their own (e.g. a [single bookmark for Sliding Doors](http://archiveofourown.org/bookmarks/8020331)) or grouped with all the bookmarks of a work (e.g. the [list of bookmarks for Sliding Doors](http://archiveofourown.org/works/149319/bookmarks)).
 
-Blurbs are like identity cards. They're probably the most used structure in the archive, so let's [examine the blurb in detail](patterns-blurb).
+#### User, collection view
 
+Each identity (e.g. the [user testy](http://archiveofourown.org/users/testy) or the [Yuletide collection](http://archiveofourown.org/collections/yuletide)) has its own set of pages, listing activities like works written, works viewed, personal profile, preference settings, and so on. There's a persistent dashboard navigation on these pages.
+
+#### Profile view
+
+Profile view is only used in user and collection views (e.g. the [Yuletide collection profile](http://archiveofourown.org/collections/yuletide/profile) and [testy's profile](http://archiveofourown.org/users/testy/profile)).

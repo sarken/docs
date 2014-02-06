@@ -157,13 +157,12 @@ tbody tr:hover td {
 /* header */
 
 .header {
-  background: #900;
-  color: #fff;
+  color: #900;
 }
 
 .header a, .header a:visited, .header a:active {
   border-bottom: none;
-  color: #fff;
+  color: #900;
 }
 
 .header a:hover, .header a:active, .header a:focus {
@@ -240,6 +239,12 @@ li.emphasize {
 
 .diagram span code {
   display: inline-block;
+}
+
+/* swatches */
+
+ul.swatches {
+  list-style: none;
 }
 
 /* examples */
