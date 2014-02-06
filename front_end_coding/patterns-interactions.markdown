@@ -4,15 +4,15 @@ title: Interactions Pattern
 ---
 Interactions are forms. The styles for forms and form elements are found in [07-interactions.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/07-interactions.css).
 
-Interactions is an abstract [supertype](supertype). "Abstract" just means you won't find an `interactions` class in our code -- instead, "interactions" is synonymous with the `form` element. So if we wanted all interactions to have a gray background, we would use `form { background: #ccc; }`.
+Interactions is an abstract [supertype](supertype). That means you won't find an `interactions` class in our code. Instead, "interactions" is synonymous with the `form` element. So if we wanted all interactions to have a gray background, we would use `form { background: #ccc; }`.
 
 ### Rules
 
-Unless a form is very simple, it should be broken down into logical sections using `fieldset`. For example, the [Work Search form](http://archiveofourown.org/works/search) is grouped into Work Info, Work Tags, Work Stats, and Search.
+Unless a form is very simple, it should be broken down into logical sections using `<fieldset>`. For example, the [Work Search form](http://archiveofourown.org/works/search) is grouped into Work Info, Work Tags, Work Stats, and Search.
 
-Each `fieldset` should be labeled with a `legend`. Some screen readers don't read form legends. For them, we repeat the legend text as a landmark heading, e.g. `<h3 class="landmark heading">`. If the `legend` text is more than a few words long, the form probably needs rearranging.
+Each `<fieldset>` should be labeled with a `<legend>`. Some screen readers don't read form legends. For them, we repeat the legend text as a landmark heading, e.g. `<h3 class="landmark heading">`. If the legend text is more than a few words long, the form probably needs rearranging.
 
-Inputs should be labeled. Most of the time, this means using the `label` element, but in some very simple or very complex forms (e.g. form tables on wrangling pages), it means using the `title` attribute on the `input` itself. A label should come *before* a text field (`<input type="text">` or `<textarea>`) or select menu (`<select>`) but *after* a radio button (`<input type="radio">`) or checkbox (`<input type="checkbox">`).
+Inputs should be labeled. Most of the time, this means using `<label>`, but in some very simple or very complex forms (e.g. form tables on wrangling pages), it means using the `title` attribute on the `<input>` itself. A label should come *before* a text field (`<input type="text">` or `<textarea>`) or select menu (`<select>`) but *after* a radio button (`<input type="radio">`) or checkbox (`<input type="checkbox">`).
 
 Form labels and controls are inline elements, which means they have to be wrapped in block level elements. We generally use [definition lists](http://www.w3schools.com/tags/tag_dl.asp) (`<dl>`) because the [term](http://www.w3schools.com/tags/tag_dt.asp) (`<dt>`) and [definition](http://www.w3schools.com/tags/tag_dd.asp) (`<dd>`) structure corresponds nicely to the typical `<label>Label</label>` and `<input>` structure of a form. However, if a form cannot be logically structured as terms and definitions, it can be structured as paragraphs.
 
