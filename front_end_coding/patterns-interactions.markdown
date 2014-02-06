@@ -67,7 +67,7 @@ The following diagram is adapted from the new work form.
 </ol></li>
 <li><code>&lt;fieldset&gt;</code>
 <ol>
-<li><code>&lt;legend&gt;</code></li>
+<li><code>&lt;legend...</code></li>
 <li><code>&lt;h3 class="landmark heading"...</code></li>
 <li><code>&lt;dl&gt;</code>
 <ol>

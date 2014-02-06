@@ -33,7 +33,7 @@ The following diagram is taken from [an index of fandoms for a specific media ty
 <ol>
 <li><code>&lt;h3 class="heading"&gt;A&lt;/h3&gt;</code>
 <ol>
-<li><code>&lt;span class="action top"&gt; <span>&lt;a&gt;↑&lt;/a&gt;</span></code></li>
+<li><code>&lt;span class="action top"&gt; <span>&lt;a&gt;↑&lt;/a&gt;</span>&lt;/span&gt;</code></li>
 </ol></li>
 <li><code>&lt;ul class="tags index group"&gt;</code></li>
 </ol></li>
@@ -41,7 +41,7 @@ The following diagram is taken from [an index of fandoms for a specific media ty
 <ol>
 <li><code>&lt;h3 class="heading"...</code>
 <ol>
-<li><code>&lt;span class="action top"&gt; <span>&lt;a...</span></code></li>
+<li><code>&lt;span class="action top"...</code></li>
 </ol></li>
 <li><code>&lt;ul class="tags index group"&gt;</code></li>
 </ol></li>
