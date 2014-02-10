@@ -2,13 +2,24 @@
 layout: front_end_guide
 title: Accessibility Statement
 ---
-### Everyone is welcome
-
 This page is an overview of ways we have tried to make the Archive accessible. Accessibility is always a work in progress, so this document will and should change.
 
-If you have any questions or comments, please do send us [feedback](http://archiveofourown.org/support). Portions of this document have been taken from [diveintoaccessibility.com](http://diveintoaccessibility.com). 
+If you have any questions or comments, please do send us [feedback](http://archiveofourown.org/support). Portions of this document have been taken from [diveintoaccessibility.com](http://diveintoaccessibility.com).
 
-#### Standards compliance
+* [Standards compliance](#standards-compliance)
+* [Languages](#languages)
+* [Navigation aids](#navigation-aids)
+* [Links](#links)
+* [Forms](#forms)
+* [Images](#images)
+* [Visual design](#visual-design)
+    * [Alternative visual layouts (skins)](#visual-design-alternative-visual-layouts)
+* [JavaScript](#javascript)
+* [Screen readers](#screen-readers)
+* [Keyboard access](#keyboard-access)
+* [Small screens, slow Internet](#small-screens-slow-internet)
+
+<h3 id="standards-compliance">Standards compliance</h3>
 
 Note: many people have access to the AO3 code and can edit it, so standards compliance is generally a moving target for us. However, this represents the standards we strive to meet; where we sometimes miss the mark, we will aim to get back into compliance with code review at a future date.
 
@@ -22,11 +33,11 @@ When we talk about pages complying with a standard, we mean that the *site frame
 
 5.  While <abbr title="Accessible Rich Internet Applications">ARIA</abbr> roles cannot be validated with an XHTML 1.0 Strict checker, all framework pages on this site otherwise <a href="http://validator.w3.org/">validate as <acronym title="extensible hypertext markup language">XHTML</acronym> 1.0 Strict</a>.  This is not a judgement call; a program can determine with 100% accuracy whether a page is valid XHTML. For example, you can enter your AO3 user page URL on the [W3 validator](http://validator.w3.org/check) and check it for XHTML validity.
 
-### Languages
+<h3 id="languages">Languages</h3>
 
 The Archive is an international development, made by people who speak lots of different languages. Our goal is to build a translation tool to allow the archive interface to be translated into any language that has volunteers to work on it.
 
-### Navigation aids
+<h3 id="navigation-aids">Navigation aids</h3>
 
 1.  We aim to make our help and FAQs accessible in multiple ways. 
 
@@ -40,7 +51,7 @@ The Archive is an international development, made by people who speak lots of di
 
 6.  Blocks containing unlabelled content have been given title attributes, so you don't have to work out what something is from its context.
 
-### Links
+<h3 id="links">Links</h3>
 
 1.  Some links have title attributes which describe the link in greater detail, unless the text of the link already fully describes the target (such as the headline of an article).
 
@@ -48,7 +59,7 @@ The Archive is an international development, made by people who speak lots of di
 
 3.  Navigation and action links are visually styled as large and distinct buttons. They can be scaled up with text zoom to make them easier to click on with a mouse or joystick. We offer a number of skins, such as the[Massive Buttons skin](http://archiveofourown.org/skins/895), that restyle the buttons to make them easier to see and click.
 
-### Forms
+<h3 id="forms">Forms</h3>
 
 1.  Our forms are laid out in a limited and regular number of ways, and we've tried to make it clear when a form begins and ends.
 
@@ -56,14 +67,14 @@ The Archive is an international development, made by people who speak lots of di
 
 3.  We've written our forms so that you can click on the text to check the little box or button.
 
-### Images
+<h3 id="images">Images</h3>
 
 1. All images used in this site are described with text alternatives. Purely decorative graphics include null `alt` attributes.
 
 
 2. Our logo has a spoken or text equivalent, which communicates the *intent and feel* of the graphic.
 
-### Visual design
+<h3 id="visual-design">Visual design</h3>
 
 1.  The Archive uses cascading style sheets for visual layout.
 
@@ -71,7 +82,7 @@ The Archive is an international development, made by people who speak lots of di
 
 3.  If your browser or browsing device does not support stylesheets at all, the content of each page is still readable.
 
-### Alternative visual layouts (skins)
+<h4 id="visual-design-alternative-visual-layouts">Alternative visual layouts (skins)</h4>
 
 You can skin the archive interface for yourself in any way that you find useful. We also work on (and welcome user contributions of!) public skins that help solve accessibility issues. 
 
@@ -79,11 +90,11 @@ We try to design in an accessible way, which means that we've made the interface
 
 You don't have to know how to code (though we'll teach you that too if you like) to adapt the Archive. If you contact [Support](http://archiveofourown.org/support) with layout changes that would help you, Support will alert the coding team to your needs, and the coding team can attempt to make the necessary changes to the Archive's default style or to design a skin to address your needs.
 
-### JavaScript
+<h3 id="javascript">JavaScript</h3>
 
 We use JavaScript on the AO3 to improve usability and performance, but all our content and core functionality is accessible with JavaScript turned off.
 
-### Screenreaders
+<h3 id="screen-readers">Screen readers</h3>
 
 1.  We use headings and lists to structure our pages. You can jump around the page regions by heading. Lists should always give you an accurate count of the number of different items on a page. If they don't, please [tell us](http://archiveofourown.org/support).
 
@@ -93,12 +104,12 @@ We use JavaScript on the AO3 to improve usability and performance, but all our c
 
 4.  We support aural skins.
 				
-### Keyboard access
+<h3 id="keyboard access">Keyboard access</h3>
 
 1.  We write our pages in a logical order, so you can tab through the whole Archive. We decided not to add accesskeys, because we know they can sometimes mess up your own shortcuts.
 
 2.  We are looking at using a new way to develop a really good keyboard interface, but this will take us a long time.
 
-### Small screens, slow Internet
+<h3 id="small-screens-slow-internet">Small screens, slow Internet</h3>
 
 We try and keep our site pages relatively small and functioning on screens of any size including mobile devices.
