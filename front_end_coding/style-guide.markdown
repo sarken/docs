@@ -5,11 +5,11 @@ title: Style Guide
 
 To establish the Archive's identity and to keep a consistent look and feel across the site, we have a specific set of styles we use. These are closely tied to the styles of our parent organization and our sister projects, so **do not deviate from the styles in this document** without approval from the Design Lead, Front End Lead, or AD&T Committee Chair.
 
-1. General
-    1. Copy
-    2. Logo
-    3. Fonts
-    4. Colors
+1. [General](#general)
+    1. [Copy](#general-copy)
+    2. [Logo](#general-logo)
+    3. [Fonts](#general-fonts)
+    4. [Colors](#general-colors)
 2. Screen
     1. Fonts
     2. Colors
