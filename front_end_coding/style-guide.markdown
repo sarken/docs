@@ -20,15 +20,15 @@ To establish the Archive's identity and to keep a consistent look and feel acros
     1. [Fonts](#print-fonts)
     2. [Colors](#print-colors)
 
-### General <a id="general" class="anchor">Link</a>
+### <a id="general" class="heading">General</a>
 
 There are some guidelines we follow regardless of media.
 
-#### Copy <a id="general-copy" class="anchor">Link</a>
+#### <a id="general-copy" class="heading">Copy</a>
 
 When writing copy for the Archive (e.g. help text), use American spelling, a single space between sentences, and a capital "A" when referring to the Archive.
 
-#### Logo <a id="general-logo" class="anchor">Link</a>
+#### <a id="general-logo" class="heading">Logo</a>
 
 ![Archive logo](images/logo.png)
 
@@ -36,11 +36,11 @@ The red used in our logo is `#990000`, which can be shorthanded as `#900`. Do no
 
 The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 
-#### Fonts <a id="general-fonts" class="anchor">Link</a>
+#### <a id="general-fonts" class="heading">Fonts</a>
 
 When the Archive name accompanies the logo or is used as a masthead, it should be written in <span class="georgia serif">Georgia</span>.
 
-#### Colors <a id="general-colors" class="anchor">Link</a>
+#### <a id="general-colors" class="heading">Colors</a>
 
 <table summary="The five colors we use in our materials, and their hexadecimal, CMYK, and RGB values">
 <caption>We use five basic colors in all our materials</caption>
