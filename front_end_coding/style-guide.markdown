@@ -5,6 +5,22 @@ title: Style Guide
 
 To establish the Archive's identity and to keep a consistent look and feel across the site, we have a specific set of styles we use. These are closely tied to the styles of our parent organization and our sister projects, so **do not deviate from the styles in this document** without approval from the Design Lead, Front End Lead, or AD&T Committee Chair.
 
+1. General
+    1. Copy
+    2. Logo
+    3. Fonts
+    4. Colors
+2. Screen
+    1. Fonts
+    2. Colors
+        1. Variations
+            1. States
+            2. Messages
+            3. System and error messages
+3. Print
+    1. Fonts
+    2. Colors
+
 ### General
 
 There are some guidelines we follow regardless of media.
@@ -189,7 +205,7 @@ Our e-mail styles also follow these screen styles.
 </tbody>
 </table>
 
-#### Variations
+##### Variations
 
 We use a range of grays to color boxes, mark borders, and create shadows.
 
@@ -220,7 +236,7 @@ The header, footer, and tag clouds use a few more reds.
 <li style="background:#200; color:#fff">#200</li>
 </ul>
 
-#### States
+##### States
 
 Some states have their own colors.
 
@@ -229,7 +245,7 @@ Some states have their own colors.
 <li style="background:#daa520">#876714 gold: offered and requested</li>
 </ul>
 
-#### System and error messages
+##### System and error messages
 
 System and error messages are color-coded and use their own separate color scheme.
 
