@@ -7,7 +7,10 @@ Meta is a definition list in a wrapper div. We use meta in places such as the st
 
 Meta is part of the group [supertype](supertype) and is styled in [12-group-meta.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/12-group-meta.css).
 
-### Rules
+* [Rules](#rules)
+* [XHTML diagram](#xhtml-diagram)
+
+<h3 id="rules">Rules</h3>
 
 Meta is one of our simplest design patterns and has few rules.
 
@@ -16,28 +19,34 @@ Meta is one of our simplest design patterns and has few rules.
 
 The child `<dd>` elements may contain anything, but they normally contain dates and times, lists of tags, lists of mods or owners or other associations like Part X of Series Y, and a stats block (which *always* comes at the end!).
 
-### XHTML diagram
+<h3 id="xhtml-diagram">XHTML diagram</h3>
 
 The work header is the most familiar example of the meta pattern.
 
-<ol class="diagram">
-<li>&lt;div class="wrapper"&gt;
-<ol>
-<li>&lt;dl class="work meta group"&gt;
-<ol>
-<li>&lt;dt class="rating tags"&gt;</li>
-<li>&lt;dd class="rating tags"&gt;</li>
-<li>&lt;dt class="warning tags"&gt;</li>
-<li>&lt;dd class="warning tags"&gt;</li>
-<li>...</li>
-<li>&lt;dt class="stats"&gt;</li>
-<li>&lt;dd class="stats"&gt;
-<ol>
-<li>&lt;dl class="stats"&gt;
-<ol>
-<li>...</li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol>
+<div class="diagram">
+  <ol>
+    <li>&lt;div class="wrapper"&gt;
+      <ol>
+        <li>&lt;dl class="work meta group"&gt;
+          <ol>
+            <li>&lt;dt class="rating tags"&gt;</li>
+            <li>&lt;dd class="rating tags"&gt;</li>
+            <li>&lt;dt class="warning tags"&gt;</li>
+            <li>&lt;dd class="warning tags"&gt;</li>
+            <li>...</li>
+            <li>&lt;dt class="stats"&gt;</li>
+            <li>&lt;dd class="stats"&gt;
+              <ol>
+                <li>&lt;dl class="stats"&gt;
+                  <ol>
+                    <li>...</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</div>
