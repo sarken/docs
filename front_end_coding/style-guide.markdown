@@ -36,90 +36,92 @@ The red used in our logo is `#990000`, which can be shorthanded as `#900`. Do no
 
 The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 
-<h4 id="general-fonts"Fonts</h4>
+<h4 id="general-fonts">Fonts</h4>
 
 When the Archive name accompanies the logo or is used as a masthead, it should be written in <span class="georgia serif">Georgia</span>.
 
 <h4 id="general-colors">Colors</h4>
 
-<table summary="The five colors we use in our materials, and their hexadecimal, CMYK, and RGB values">
-<caption>We use five basic colors in all our materials</caption>
-<thead>
-<tr>
-<th scope="col" colspan="2">Color</th>
-<th scope="col"><abbr title="hexadecimal">HEX</abbr></th>
-<th scope="col"><abbr title="Cyan">C</abbr></th>
-<th scope="col"><abbr title="Magenta">M</abbr></th>
-<th scope="col"><abbr title="Yellow">Y</abbr></th>
-<th scope="col"><abbr title="Key">K</abbr></th>
-<th scope="col"><abbr title="Red">R</abbr></th>
-<th scope="col"><abbr title="Green">G</abbr></th>
-<th scope="col"><abbr title="Blue">B</abbr></th>
-<td></td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">Red</th>
-<td class="red color">&nbsp;</td>
-<td>#990000</td>
-<td>26</td>
-<td>100</td>
-<td>100</td>
-<td>28</td>
-<td>187</td>
-<td>0</td>
-<td>17</td>
-<td class="red color">&nbsp;</td>
-</tr>
-<tr>
-<th scope="row">White</th>
-<td class="white color">&nbsp;</td>
-<td>#ffffff</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>255</td>
-<td>255</td>
-<td>255</td>
-<td class="white color">&nbsp;</td>
-</tr>
-<tr>
-<th scope="row">Black</th>
-<td class="black color">&nbsp;</td>
-<td>#000000</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td class="black color">&nbsp;</td>
-</tr>
-<tr>
-<th scope="row">Light gray</th>
-<td class="light-gray-ddd color">&nbsp;</td>
-<td>#dddddd</td>
-<td colspan="4">web only</td>
-<td>221</td>
-<td>221</td>
-<td>221</td>
-<td class="light-gray-ddd color">&nbsp;</td>
-</tr>
-<tr>
-<th scope="row">Dark gray</th>
-<td class="dark-gray-333 color">&nbsp;</td>
-<td>#333333</td>
-<td colspan="4">web only</td>
-<td>51</td>
-<td>51</td>
-<td>51</td>
-<td class="dark-gray-333 color">&nbsp;</td>
-</tr>
-</tbody>
-</table>
+<div>
+  <table summary="The five colors we use in our materials, and their hexadecimal, CMYK, and RGB values">
+    <caption>We use five basic colors in all our materials</caption>
+    <thead>
+      <tr>
+        <th scope="col" colspan="2">Color</th>
+        <th scope="col"><abbr title="hexadecimal">HEX</abbr></th>
+        <th scope="col"><abbr title="Cyan">C</abbr></th>
+        <th scope="col"><abbr title="Magenta">M</abbr></th>
+        <th scope="col"><abbr title="Yellow">Y</abbr></th>
+        <th scope="col"><abbr title="Key">K</abbr></th>
+        <th scope="col"><abbr title="Red">R</abbr></th>
+        <th scope="col"><abbr title="Green">G</abbr></th>
+        <th scope="col"><abbr title="Blue">B</abbr></th>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Red</th>
+        <td class="red color">&nbsp;</td>
+        <td>#990000</td>
+        <td>26</td>
+        <td>100</td>
+        <td>100</td>
+        <td>28</td>
+        <td>187</td>
+        <td>0</td>
+        <td>17</td>
+        <td class="red color">&nbsp;</td>
+      </tr>
+      <tr>
+        <th scope="row">White</th>
+        <td class="white color">&nbsp;</td>
+        <td>#ffffff</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>255</td>
+        <td>255</td>
+        <td>255</td>
+        <td class="white color">&nbsp;</td>
+      </tr>
+      <tr>
+        <th scope="row">Black</th>
+        <td class="black color">&nbsp;</td>
+        <td>#000000</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="black color">&nbsp;</td>
+      </tr>
+      <tr>
+        <th scope="row">Light gray</th>
+        <td class="light-gray-ddd color">&nbsp;</td>
+        <td>#dddddd</td>
+        <td colspan="4">web only</td>
+        <td>221</td>
+        <td>221</td>
+        <td>221</td>
+        <td class="light-gray-ddd color">&nbsp;</td>
+      </tr>
+      <tr>
+        <th scope="row">Dark gray</th>
+        <td class="dark-gray-333 color">&nbsp;</td>
+        <td>#333333</td>
+        <td colspan="4">web only</td>
+        <td>51</td>
+        <td>51</td>
+        <td>51</td>
+        <td class="dark-gray-333 color">&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h3 id="screen">Screen</h3>
 
