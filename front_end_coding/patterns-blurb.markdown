@@ -6,7 +6,15 @@ A blurb is the small summary box which provides a description of a work, bookmar
 
 The Archive's styles for blurbs are located in [the style sheet named 13-group-blurb.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/13-group-blurb.css).
 
-### The blurb structure
+* [Structure](#structure)
+    * [XHTML diagram](#structure-xhtml-diagram)
+    * [HTML](#structure-html)
+    * [Reasons for the structure](#structure-reasons-for-the-structure)
+* [Display](#display)
+    * [Generic styles](#display-generic-styles)
+    * [Specific styles](#display-specific-styles)
+
+<h3 id="structure">Structure</h3>
 
 The work blurb is the most used chunk of HTML code in the Archive, so we've revised it a lot. It has to contain lots of information and allow different ways of accessing its material. The blurb is flexible, accessible, and has multiple redundancies (says the same thing in different ways).
 
@@ -14,58 +22,62 @@ The work blurb is the most used chunk of HTML code in the Archive, so we've revi
 
 Since we usually have many blurbs listed together, the index page that holds the blurbs is coded as an HTML list, and each blurb is coded as a list item.
 
-#### Diagram
+<h4 id="structure-xhtml-diagram">XHTML diagram</h4>
 
-<ol class="diagram">
-<li>landmark heading level 3 "list of works" <code>&lt;h3 class="landmark heading"&gt;Listing Works&lt;/h3&gt;</code></li>
-<li>list container work index <code>&lt;ul class="work index group"&gt;</code>
-<ol>
-<li class="emphasize">list item work blurb <code>&lt;li class="work blurb group"&gt;</code>
-<ol>
-<li>division header module <code>&lt;div class="header module"&gt;</code>
-<ol>
-<li>heading level 4 title link by user link <code>&lt;h4 class="heading" title="title"&gt;</code></li>
-<li>heading level 5 fandom tag link <code>&lt;h5 class="fandoms heading" title="fandom"&gt;</code></li>
-<li>unordered list of required tags <code>&lt;ul class="required-tags"&gt;</code>
-<ol>
-<li>list item with rating symbol<code>&lt;li&gt;...&lt;span class="rating...</code></li>
-<li>list item with warnings symbol<code>&lt;li&gt;...&lt;span class="warnings...</code></li>
-<li>list item with category symbol<code>&lt;li&gt;...&lt;span class="category...</code></li>
-<li>list item with work status symbol<code>&lt;li&gt;...&lt;span class="iswip...</code></li>
-</ol>
-</li>
-<li>paragraph datetime <code>&lt;p class="datetime"&gt;</code></li>
-</ol>
-</li>
-<li>landmark heading level 6 "tags" <code>&lt;h6 class="landmark heading"&gt;Tags&lt;/h6&gt;</code></li>
-<li>unordered list of tags <code>&lt;ul class="tags commas"&gt;</code>
-<ol>
-<li>list item(s) with warnings tags <code>&lt;li class="warnings"&gt;&lt;a class="tag"...</code></li>
-<li>list item(s) with relationship tags (if any) <code>&lt;li class="relationships"&gt;&lt;a class="tag"...</code></li>
-<li>list item(s) with character tags (if any) <code>&lt;li class="characters"&gt;&lt;a class="tag"...</code></li>
-<li>list item(s) with additional tags (if any) <code>&lt;li class="freeforms"&gt;&lt;a class="tag"...</code></li>
-</ol></li>
-<li>landmark heading level 6 "summary" <code>&lt;h6 class="landmark heading"&gt;Summary&lt;/h6&gt;</code></li>
-<li>blockquote of summary <code>&lt;blockquote class="userstuff summary" title="summary"&gt;</code></li>
-<li>landmark heading level 6 "series" <code>&lt;h6 class="landmark heading"&gt;Series&lt;/h6&gt;</code></li>
-<li>unordered list of series <code>&lt;ul class="series"&gt;</code>
-<ol>
-<li>list item(s) with series <code>&lt;li&gt;Part &lt;strong&gt;#&lt;/strong&gt; of &lt;a...&lt;/li&gt;</code></li>
-</ol>
-</li>
-<li>definition list of stats <code>&lt;dl class="stats" title="stats"&gt;</code>
-<ol>
-<li>definition list property: value pairs <code>&lt;dt&gt;Words:&lt;/dt&gt;&lt;dd&gt;151&lt;/dd&gt;...</code></li>
-</ol>
-</li>
-</ol>
-</li>
-<li>next list item work blurb</li>
-</ol>
-</li>
-</ol>
+<div class="diagram">
+  <ol>
+    <li>landmark heading level 3 "list of works" <code>&lt;h3 class="landmark heading"&gt;Listing Works&lt;/h3&gt;</code>
+    </li>
+    <li>list container work index <code>&lt;ul class="work index group"&gt;</code>
+      <ol>
+        <li class="emphasize">list item work blurb <code>&lt;li class="work blurb group"&gt;</code>
+          <ol>
+            <li>division header module <code>&lt;div class="header module"&gt;</code>
+              <ol>
+                <li>heading level 4 title link by user link <code>&lt;h4 class="heading" title="title"&gt;</code></li>
+                <li>heading level 5 fandom tag link <code>&lt;h5 class="fandoms heading" title="fandom"&gt;</code></li>
+                <li>unordered list of required tags <code>&lt;ul class="required-tags"&gt;</code>
+                  <ol>
+                    <li>list item with rating symbol<code>&lt;li&gt;...&lt;span class="rating...</code></li>
+                    <li>list item with warnings symbol<code>&lt;li&gt;...&lt;span class="warnings...</code></li>
+                    <li>list item with category symbol<code>&lt;li&gt;...&lt;span class="category...</code></li>
+                    <li>list item with work status symbol<code>&lt;li&gt;...&lt;span class="iswip...</code></li>
+                  </ol>
+                </li>
+                <li>paragraph datetime <code>&lt;p class="datetime"&gt;</code></li>
+              </ol>
+            </li>
+            <li>landmark heading level 6 "tags" <code>&lt;h6 class="landmark heading"&gt;Tags&lt;/h6&gt;</code></li>
+            <li>unordered list of tags <code>&lt;ul class="tags commas"&gt;</code>
+              <ol>
+                <li>list item(s) with warnings tags <code>&lt;li class="warnings"&gt;&lt;a class="tag"...</code></li>
+                <li>list item(s) with relationship tags (if any) <code>&lt;li class="relationships"&gt;&lt;a class="tag"...</code></li>
+                <li>list item(s) with character tags (if any) <code>&lt;li class="characters"&gt;&lt;a class="tag"...</code></li>
+                <li>list item(s) with additional tags (if any) <code>&lt;li class="freeforms"&gt;&lt;a class="tag"...</code></li>
+              </ol>
+            </li>
+            <li>landmark heading level 6 "summary" <code>&lt;h6 class="landmark heading"&gt;Summary&lt;/h6&gt;</code></li>
+            <li>blockquote of summary <code>&lt;blockquote class="userstuff summary" title="summary"&gt;</code></li>
+            <li>landmark heading level 6 "series" <code>&lt;h6 class="landmark heading"&gt;Series&lt;/h6&gt;</code></li>
+            <li>unordered list of series <code>&lt;ul class="series"&gt;</code>
+              <ol>
+                <li>list item(s) with series <code>&lt;li&gt;Part &lt;strong&gt;#&lt;/strong&gt; of &lt;a...&lt;/li&gt;</code></li>
+              </ol>
+            </li>
+            <li>definition list of stats <code>&lt;dl class="stats" title="stats"&gt;</code>
+              <ol>
+                <li>definition list property: value pairs <code>&lt;dt&gt;Words:&lt;/dt&gt;&lt;dd&gt;151&lt;/dd&gt;...</code></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>next list item work blurb</li>
+      </ol>
+    </li>
+  </ol>
+</div>
 
-#### HTML
+<h4 id="structure-html">HTML</h4>
 
 ```html
 <h3 class="landmark heading">Listing Works</h3>
@@ -170,7 +182,7 @@ Here are some of the important things to understand about this layout:
 
 The structure of blurbs should be changed only with extreme caution! Everything about the display can be reorganized (and in fact the blurb can be skinned pretty easily by our users), but the HTML should not be altered.
 
-#### Reasons for the structure
+<h4 id="structure-reasons-for-the-structure">Reasons for the structure</h4>
 
 This structure means it is easy for a piece of software to accurately count the number of items (blurbs) shown in an index. Each new item —- work, index, page region -- is announced by a heading, so users know what information is attached to what title. As a result, a list of headings summarizes the entire index page.
 
@@ -187,7 +199,7 @@ For example, a screen reader user may:
 
 Without the blurb's current HTML structure, it's hard to give alternative access technologies the kind of spatial interaction that a visual, mousing browser affords.
 
-### The blurb display
+<h3 id="display">Display</h3>
 
 While the HTML structure of the blurb is incredibly important and should not be altered unless the actual content and purpose of the blurb changes, the display, which is governed entirely by CSS, is much more flexible.
 
@@ -197,7 +209,7 @@ Here you see two different examples of the work blurb from the AO3, one using th
 
 These blurbs use *the same HTML*. The only thing different is the CSS.
 
-#### Generic blurb styles
+<h4 id="display-generic-styles">Generic styles</h4>
 
 There are many different blurbs in the Archive -- the work blurb, the bookmark blurb, the collection blurb, and so on -- which are all quite similar in their underlying purpose. Rather than having one set of CSS code for the work blurb, another very similar set for the slightly-different-looking bookmark blurb, and so forth, we have made the generic blurb style rules contain everything that these blurbs have in common (which we have deliberately made a lot!).
 
@@ -230,7 +242,7 @@ Let's examine the first generic blurb rule block from the blurb style sheet:
 
 Can you tell which parts of the work blurb this rule affects? What about the parts of the bookmark blurb?
 
-#### Specific blurb styles
+<h4 id="display-specific-styles">Specific styles</h4>
 
 Notice that the class declaration of our blurbs *also* includes a class that describes the *type* of blurb: work blurbs have the class `work` and bookmark blurbs have the class `bookmark`.
 
