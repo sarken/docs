@@ -2,7 +2,17 @@
 layout: front_end_guide
 title: CSS Shorthand
 ---
-On the Archive, we use CSS shorthand. This means we combine properties to make shorter rules. It's an efficient way to code and it's easy to learn with a bit of practice. Without shorthand, our code might look like this:
+On the Archive, we use CSS shorthand. This means we combine properties to make shorter rules. It's an efficient way to code and it's easy to learn with a bit of practice. 
+
+* [Why use shorthand?](#why-use-shorthand)
+* [Syntax order](#syntax-order)
+* [Assumed values](#assumed-values)
+* [Combining selectors](#combining-selectors)
+* [Resources](#resources)
+
+<h3 id="why-use-shorthand">Why use shorthand?</h3>
+
+Without shorthand, our code might look like this:
 
 ```
 background-color: #ffffff;
@@ -19,7 +29,7 @@ But **with** shorthand, we can create the same style using only this:
 
 Notice that all these properties begin with background. You can combine properties that have a common prefix.
 
-### Syntax order
+<h3 id="syntax-order">Syntax order</h3>
 
 Shorthand must be written in a specific order, with the property values separated by a single space. The shorthand `font` property is written like this: `font-style font-variant font-weight font-size line-height font-family`.
 
@@ -29,7 +39,7 @@ Commas denote alternative values. In the previous example, the comma says the va
 
 Shorthand for [box dimensions](http://www.w3.org/TR/CSS2/box.html), like `margin` and `padding`, are written *around the clock*. That means top, right, bottom, left: <code>margin: <span title="top">1em</span> <span title="right">2em</span> <span title="bottom">3em</span> <span title="left">4em</span>;</code>
 
-### Assumed values
+<h3 id="assumed-values">Assumed values</h3>
 
 In CSS we try to only write what is *different* from the default and inherited values. If your value is normal (the default), you can leave it out and the parser will assume you wrote it, just like it assumes <code>html body #main ol.work.index li<strong>.blurb</strong> h5 a<strong>.tag</strong></code> is the same as `.blurb .tag`.
 
@@ -50,7 +60,7 @@ But there are some values you must always declare:
 					<dd><code>font:<span title="font-size">1em</span> <span title="font-family">serif</span>;</code></dd>
 				</dl>
 
-### Combining selectors
+<h3 id="combining-selectors">Combining selectors</h3>
 
 If several elements in a structure have the same rules, we can combine the selectors using a comma, which says we mean selector one *and* selector two.
 
@@ -63,7 +73,7 @@ can be reduced to <code>.blurb .rating<strong>,</strong> .blurb .warning { margi
 
 In our stylesheets, we only combine selectors within a supertype class (e.g. `.blurb` and `.navigation`) section. We don't use 'streamlining' software to find and combine all selectors with the same rules. This makes code really hard to maintain, and can destroy a complex cascade design, so make sure you don't ever do this.
 
-### Resources
+<h3 id="resources">Resources</h3>
 
 Following are links to the shorthand specs for the properties you'll see most often in our code:
 				
