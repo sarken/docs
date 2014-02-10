@@ -7,7 +7,11 @@ A listbox is a box containing a list. We use listbox to show more than one index
 
 Listbox styles are declared in [11-group-listbox.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/11-group-listbox.css). Listbox is part of the group [supertype](supertype).
 
-### Rules
+* [Rules](#rules)
+* [XHTML diagram](#xhtml-diagram)
+* [Notes](#notes)
+
+<h3 id="rules">Rules</h3>
 
 A listbox can be any block container that can contain these blocks: `h1—6`, `p`, `div`, `ul`, `ol`, `dl`. So this means a listbox could be a:
 
@@ -22,7 +26,7 @@ You can never have an inline listbox of any kind. You can never have a listbox w
 
 The first element inside a listbox is always a heading, and it always contains an index (i.e. `<ol class="index group">`, `<ul class="index group">`, or `<dl class="index group">`). It might also contain a note (e.g. `<p class="note">`) or actions (e.g. `<p class="actions">`) outside the index.
 
-### XHTML diagram
+<h3 id="xhtml-diagram">XHTML diagram</h3>
 
 The following diagram is taken from [an index of fandoms for a specific media type](http://archiveofourown.org/media/Theater/fandoms). It's an example of multiple listboxes within an index.
 
@@ -70,7 +74,7 @@ The following diagram is taken from [an index of fandoms for a specific media ty
   </ol>
 </div>
 
-### Notes
+<h3 id="notes">Notes</h3>
 
 We call it listbox (instead of indexbox) because a listbox might be a dynamically inserted form or form component, and therefore would need managed focus. This seems most closely related to [the ARIA role listbox](http://www.w3.org/TR/wai-aria/roles#listbox).
 
