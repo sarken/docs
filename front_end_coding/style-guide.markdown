@@ -5,32 +5,30 @@ title: Style Guide
 
 To establish the Archive's identity and to keep a consistent look and feel across the site, we have a specific set of styles we use. These are closely tied to the styles of our parent organization and our sister projects, so **do not deviate from the styles in this document** without approval from the Design Lead, Front End Lead, or AD&T Committee Chair.
 
-<div class="contents">
-1. [General](#general)
-    1. [Copy](#general-copy)
-    2. [Logo](#general-logo)
-    3. [Fonts](#general-fonts)
-    4. [Colors](#general-colors)
-2. [Screen](#screen)
-    1. [Fonts](#screen-fonts)
-    2. [Colors](#screen-colors)
-        1. [Variations](#screen-colors-variations)
-            1. [States](#screen-colors-states)
-            2. [System and error messages](#screen-colors-system-and-error-messages)
-3. [Print](#print)
-    1. [Fonts](#print-fonts)
-    2. [Colors](#print-colors)
-</div>
+* [General](#general)
+    * [Copy](#general-copy)
+    * [Logo](#general-logo)
+    * [Fonts](#general-fonts)
+    * [Colors](#general-colors)
+* [Screen](#screen)
+    * [Fonts](#screen-fonts)
+    * [Colors](#screen-colors)
+        * [Variations](#screen-colors-variations)
+        * [States](#screen-colors-states)
+        * [System and error messages](#screen-colors-system-and-error-messages)
+* [Print](#print)
+    * [Fonts](#print-fonts)
+    * [Colors](#print-colors)
 
-### <a id="general" class="heading">General</a>
+<h3 id="general">General</h3>
 
 There are some guidelines we follow regardless of media.
 
-#### <a id="general-copy" class="heading">Copy</a>
+<h4 id="general-copy">Copy</h4>
 
 When writing copy for the Archive (e.g. help text), use American spelling, a single space between sentences, and a capital "A" when referring to the Archive.
 
-#### <a id="general-logo" class="heading">Logo</a>
+<h4 id="general-logo">Logo</h4>
 
 ![Archive logo](images/logo.png)
 
@@ -38,11 +36,11 @@ The red used in our logo is `#990000`, which can be shorthanded as `#900`. Do no
 
 The logo has an aspect ratio of 117:80. Do not change the aspect ratio.
 
-#### <a id="general-fonts" class="heading">Fonts</a>
+<h4 id="general-fonts"Fonts</h4>
 
 When the Archive name accompanies the logo or is used as a masthead, it should be written in <span class="georgia serif">Georgia</span>.
 
-#### <a id="general-colors" class="heading">Colors</a>
+<h4 id="general-colors">Colors</h4>
 
 <table summary="The five colors we use in our materials, and their hexadecimal, CMYK, and RGB values">
 <caption>We use five basic colors in all our materials</caption>
@@ -123,11 +121,11 @@ When the Archive name accompanies the logo or is used as a masthead, it should b
 </tbody>
 </table>
 
-### Screen
+<h3 id="screen">Screen</h3>
 
 Our e-mail styles also follow these screen styles.
 
-#### Fonts
+<h4 id="screen-fonts">Fonts</h4>
 
 <dl>
 <dt>Headings, subheadings, titles, addresses</dt>
@@ -147,7 +145,7 @@ Our e-mail styles also follow these screen styles.
 <li><span class="courier monospace">Courier</span> is a core web font that nearly everyone has.</li></ul></dd>
 </dl>
 
-#### Colors
+<h4 id="screen-colors">Colors</h4>
 
 <table summary="The colors we use in our website, how they are used, and their hexadecimal and RGB values">
 <caption>We use these colors on the screen</caption>
@@ -206,7 +204,7 @@ Our e-mail styles also follow these screen styles.
 </tbody>
 </table>
 
-##### Variations
+<h5 id="screen-colors-variations">Variations</h5>
 
 We use a range of grays to color boxes, mark borders, and create shadows.
 
@@ -237,7 +235,7 @@ The header, footer, and tag clouds use a few more reds.
 <li style="background:#200; color:#fff">#200</li>
 </ul>
 
-##### States
+<h5 id="screen-colors-states">States</h5>
 
 Some states have their own colors.
 
@@ -246,7 +244,7 @@ Some states have their own colors.
 <li style="background:#daa520">#876714 gold: offered and requested</li>
 </ul>
 
-##### System and error messages
+<h5 id="screen-colors-system-and-error-messages">System and error messages</h5>
 
 System and error messages are color-coded and use their own separate color scheme.
 
@@ -265,15 +263,15 @@ LiveValidation messages on forms use these colors:
 <li style="background:#c00">#c000 red: error</li>
 </ul>
 
-### Print
+<h3 id="print">Print</h3>
 
 Our print styles are defined in [27-role-print.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/27-role-print.css).
 
-#### Fonts
+<h4 id="print-fonts">Fonts</h4>
 
 Rather than using a specific font, all print text uses the <span class="serif">serif</span> font family. This tells the system to use its default serif font.
 
-#### Colors
+<h4 id="print-colors">Colors</h4>
 
 <table summary="The two colors we use in our print materials, and their hexadecimal, CMYK, and RGB values">
 <caption>We use two colors in our print styles</caption>
