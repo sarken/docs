@@ -6,7 +6,11 @@ Index is a very general class of list. You'll most often see it containing blurb
 
 It doesn't have its own style sheet, but index styles are declared in [the style sheet named 10-types-groups.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/10-types-groups.css).
 
-### Index HTML structure
+* [HTML structure](#html-structure)
+    * [dl.index](#html-structure-dl-index)
+        * [XHTML diagram of dl.index](#html-structure-dl-index-xhtml-diagram)
+
+<h3 id="html-structure">HTML structure</h3>
 
 An index can be any of the three kinds of HTML list.
 
@@ -16,50 +20,85 @@ An index can be any of the three kinds of HTML list.
 
 You can **never** have **any** other kind of index.
 
-#### dl.index
+<h4 id="html-structure-dl-index">dl.index</h4>
 
-`dl.index` is sometimes used to display simple paired data (e.g. on a [translated news post](http://archiveofourown.org/admin_posts/148)), but it more often functions as a sort of brief alternative to showing a full blurb (or a full list of blurbs). Instead of displaying a full work blurb on a user's related works or subscriptions page, we use a `dl.index` to provide basic information and options, and we do the same instead of displaying each individual request blurb on a user's assignments page.
+`dl.index` is sometimes used to display simple paired data (e.g. on a [translated news post](http://archiveofourown.org/admin_posts/148)), but it more often functions as a sort of brief alternative to showing a full blurb (or a full list of blurbs).
+
+Instead of displaying a full work blurb on a user's related works or subscriptions page, we use a `dl.index` to provide basic information and options, and we do the same instead of displaying each individual request blurb on a user's assignments page.
 
 While it's less work to display these shorter blurbs, Archive users frequently express a preference for more information rather than less, and it is not uncommon for us to switch from an abbreviated `dl.index` to an index with a full `li.blurb`.
 
-#### XHTML diagram of dl.index
+<h5 id="html-structure-dl-index-xhtml-diagram">XHTML diagram of dl.index</h5>
 
 The following diagram is taken from the assignments page a user can access from their dashboard.
 
-<ol class="diagram">
-<li><code>&lt;dl class="assignment index group"&gt;</code>
-<ol>
-<li><code>&lt;dt&gt;</code>
-<ol>
-<li><code>&lt;a&gt;Assignment link</code></li>
-</ol></li>
-<li><code>&lt;dd&gt;</code>
-<ol>
-<li><code>&lt;ul class="navigation actions" role="menu"&gt;</code>
-<ol>
-<li><code>&lt;li&gt;</code>
-<ol>
-<li><code>&lt;a role="button"&gt;Fulfill</code></li>
-</ol></li>
-<li><code>&lt;li&gt;</code>
-<ol>
-<li><code>&lt;a role="button"&gt;Default</code></li>
-</ol></li>
-</ol></li>
-</ol></li>
-<li><code>&lt;dt&gt;</code>
-<ol>
-<li><code>&lt;a&gt;Assignment link</code></li>
-</ol></li>
-<li><code>&lt;dd&gt;</code>
-<ol>
-<li><code>&lt;a&gt;Work link</code>
-</li>
-<li><code>&lt;dl class="stats"&gt;</code>
-<ol>
-<li><code>&lt;dt&gt;</code></li>
-<li><code>&lt;dd&gt;</code></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol>
+<div class="diagram">
+  <ol>
+    <li>
+      <code>&lt;dl class="assignment index group"&gt;</code>
+      <ol>
+        <li>
+          <code>&lt;dt&gt;</code>
+          <ol>
+            <li>
+              <code>&lt;a&gt;Assignment link</code>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <code>&lt;dd&gt;</code>
+          <ol>
+            <li>
+              <code>&lt;ul class="actions" role="menu"&gt;</code>
+              <ol>
+                <li>
+                  <code>&lt;li&gt;</code>
+                  <ol>
+                    <li>
+                      <code>&lt;a role="button"&gt;Fulfill</code>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  <code>&lt;li&gt;</code>
+                  <ol>
+                    <li>
+                      <code>&lt;a role="button"&gt;Default</code>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <code>&lt;dt&gt;</code>
+          <ol>
+            <li>
+              <code>&lt;a&gt;Assignment link</code>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <code>&lt;dd&gt;</code>
+          <ol>
+            <li>
+              <code>&lt;a&gt;Work link</code>
+            </li>
+            <li>
+              <code>&lt;dl class="stats"&gt;</code>
+              <ol>
+                <li>
+                  <code>&lt;dt&gt;</code>
+                </li>
+                <li>
+                  <code>&lt;dd&gt;</code>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</div>
