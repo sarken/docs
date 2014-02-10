@@ -206,7 +206,7 @@ a.heading {
 
 /* diagram */
 
-ol.diagram, .diagram ol { 
+.diagram ol { 
   list-style: none;
 }
 
