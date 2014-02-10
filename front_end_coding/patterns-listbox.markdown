@@ -42,7 +42,7 @@ The following diagram is taken from [an index of fandoms for a specific media ty
               <code>&lt;h3 class="heading"&gt;A&lt;/h3&gt;</code>
               <ol>
                 <li>
-                  <code>&lt;span class="action top"&gt;       
+                  <code>&lt;span class="action top"&gt;
                     <span>&lt;a&gt;↑&lt;/a&gt;</span>&lt;/span&gt;
                   </code>
                 </li>
