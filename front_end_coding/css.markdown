@@ -13,7 +13,7 @@ Cascading Stylesheets (CSS) tell a browser how to display our XHTML document. We
         * [Using selectors](#terms-selectors-using)
     * [Properties and values](#terms-properties-and-values)
         * [Values](#terms-properties-and-values-values)
-            * [Block and inline](#terms-properties-and-values-block-and-inline)
+            * [Block and inline](#terms-properties-and-values-values-block-inline)
 * [Resources](#resources)
 
 <h3 id="concepts">Concepts</h3>
