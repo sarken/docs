@@ -26,27 +26,34 @@ The first element inside a listbox is always a heading, and it always contains a
 
 The following diagram is taken from [an index of fandoms for a specific media type](http://archiveofourown.org/media/Theater/fandoms). It's an example of multiple listboxes within an index.
 
-<ol class="diagram">
-<li><code>&lt;ol class="alphabet fandom index group"&gt;</code>
-<ol>
-<li><code>&lt;li class="letter listbox group"&gt;</code>
-<ol>
-<li><code>&lt;h3 class="heading"&gt;A&lt;/h3&gt;</code>
-<ol>
-<li><code>&lt;span class="action top"&gt; <span>&lt;a&gt;↑&lt;/a&gt;</span>&lt;/span&gt;</code></li>
-</ol></li>
-<li><code>&lt;ul class="tags index group"&gt;</code></li>
-</ol></li>
-<li><code>&lt;li class="letter listbox group"&gt;</code>
-<ol>
-<li><code>&lt;h3 class="heading"...</code>
-<ol>
-<li><code>&lt;span class="action top"...</code></li>
-</ol></li>
-<li><code>&lt;ul class="tags index group"&gt;</code></li>
-</ol></li>
-</ol></li>
-</ol>
+<div>
+  <ol class="diagram">
+    <li><code>&lt;ol class="alphabet fandom index group"&gt;</code>
+      <ol>
+        <li><code>&lt;li class="letter listbox group"&gt;</code>
+          <ol>
+            <li><code>&lt;h3 class="heading"&gt;A&lt;/h3&gt;</code>
+              <ol>
+                <li><code>&lt;span class="action top"&gt; <span>&lt;a&gt;↑&lt;/a&gt;</span>&lt;/span&gt;</code></li>
+              </ol>
+            </li>
+            <li><code>&lt;ul class="tags index group"&gt;</code></li>
+          </ol>
+        </li>
+        <li><code>&lt;li class="letter listbox group"&gt;</code>
+          <ol>
+            <li><code>&lt;h3 class="heading"...</code>
+              <ol>
+                <li><code>&lt;span class="action top"...</code></li>
+              </ol>
+            </li>
+            <li><code>&lt;ul class="tags index group"&gt;</code></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</div>
 
 ### Notes
 
