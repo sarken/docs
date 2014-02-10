@@ -4,7 +4,13 @@ title: Accessible Tables
 ---
 We don't use many tables in the Archive, but it's worth knowing how to write them well. A table is the right way to mark up three or more pieces of information in a matrix for cross referencing. It is not the right way to do anything else.
 
-### Structure
+* [Structure](#structure)
+* [Some elements and attributes in detail](#elements-and-attributes-in-detail)
+* [Things to remember](#things-to-remember)
+* [Going further with table accessibility](#going-further-with-table-accessibility)
+* [Resources](#resources)
+
+<h3 id="structure">Structure</h3>
 
 The following is an example of a table that might appear inside a form, which is a design pattern frequently found in the tag wrangling and admin areas of the Archive. Whether or not a table appears in a form, it should be structured in a similar way. Note that the header (`<thead>`) and footer (`<tfoot>`) are at the top of the table, below the caption (`<caption>`) and above the body (`<tbody>`).
 
@@ -34,7 +40,7 @@ The following is an example of a table that might appear inside a form, which is
 </table>
 ```
 
-### Some elements and attributes in detail
+<h3 id="elements-and-attributes-in-detail">Some elements and attributes in detail</h3>
 
 * Each table should have a `summary` attribute in the `<table>` tag, and its value should be a brief description of what the table does or what data it displays. For example, the summary on [the sign-up table for the Yuletide 2012 gift exchange challenge](http://archiveofourown.org/collections/yuletide2012/signups/summary) says, "Number of requests and offers for each requested fandom in this challenge, listed by fewest offers and most requests."
 
@@ -57,7 +63,7 @@ Never leave the first cell in your thead empty; it should always be a `<th>` sco
   
 * `<tbody>` is where the main content of your table lives; it's probably where you're used to a table beginning if you've used tables before, but for us it comes a way down the markup.
 
-### Things to remember
+<h3 id="things-to-remember">Things to remember</h3>
 
 * We don't ever use tables just for layout.
 
@@ -69,11 +75,11 @@ Never leave the first cell in your thead empty; it should always be a `<th>` sco
 
 * If you want to check your work against some real examples, there are lots of tables in the admin views; a lot of admin work is managing tabular data.
 
-### Going further with table accessibility
+<h3 id="going-further-with-table-accessibility">Going further with table accessibility</h3>
 
 Our tables generally show lots of data, and not all text-to-speech agents support `scope`; we are considering titling our `<td>` elements in addition to scoping columns and rows, so users always know what property a table value relates to. It's not clear whether this is useful or annoying. At the moment, there are some pilot tables which are both scoped and titled, in tag wrangling, our most used tabular data views. It would be very useful for someone to research this. If you use a screenreader regularly, your input is especially desired.
 
-### Resources
+<h3 id="resources">Resources</h3>
 
 * [Accessible Data Tables](http://www.usability.com.au/resources/tables.cfm)
 * [Building Accessible Websites by Joe Clark: Tables and frames](http://joeclark.org/book/sashay/serialization/Chapter10.html)
