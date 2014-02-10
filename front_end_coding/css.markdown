@@ -196,7 +196,7 @@ Elements are either block or inline by default, but with CSS we can decide how w
   </ol>
 </div>
 				
-Think of each selector as a box. We can make it stack up, give it a background color (or an image or both), a border, and we can give that border a color and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, color, font, and make it bold or italic or asscaps; we can align it to the left or the right or center it. We can do anything! (Almost anything.)
+Think of each selector as a box. We can make it stack up, give it a background color (or an image or both), a border, and we can give that border a color and a thickness and a style. We can decide how big each box is and much blank space is going to be around it (margin) and inside it (padding). We can position (float, top, left) each box on the page. We can make the text in the box a particular size, color, font, and make it bold or italic or all-caps; we can align it to the left or the right or center it. We can do anything! (Almost anything.)
 				
 <h3 id="resources">Resources</h3>
 
