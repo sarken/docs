@@ -7,7 +7,7 @@ Cascading Stylesheets (CSS) tell a browser how to display our XHTML document. We
 * [Concepts](#concepts)
 * [Terms](#terms)
     * [Selectors](#terms-selectors)
-        * [ID selectors](#terms-selectors-id)
+        * [Id selectors](#terms-selectors-id)
         * [Class selectors](#terms-selectors-class)
         * [Type selectors](#terms-selectors-type)
         * [Using selectors](#terms-selectors-using)
@@ -90,7 +90,7 @@ A property must always be paired with a value to form a valid **declaration**. A
 
 A **selector** is the part of the rule that says which elements are being styled. A rule set can have multiple selectors to make it apply to multiple elements, and different types of selectors can be combined in order to select an element only when it appears within a specific context.
 
-<h5 id="terms-selectors-id">ID selectors</h5>
+<h5 id="terms-selectors-id">Id selectors</h5>
 
 Some elements that are used only once per page have unique names that are given to them with the HTML `id` attribute, like `<div id="header">`. To select an element by its `id`, use a hash sign in front of the element's `id` value.
 
