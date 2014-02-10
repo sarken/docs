@@ -2,7 +2,6 @@
 layout: front_end_guide
 title: Style Guide
 ---
-
 To establish the Archive's identity and to keep a consistent look and feel across the site, we have a specific set of styles we use. These are closely tied to the styles of our parent organization and our sister projects, so **do not deviate from the styles in this document** without approval from the Design Lead, Front End Lead, or AD&T Committee Chair.
 
 * [General](#general)
