@@ -79,7 +79,7 @@ The header is the first region, styled in [ 13-group-blurb.css](https://github.c
               </li>
             </ol>
           </li>
-        <li>log in or greeting block</li>
+        <li><a href="#header-region-log-in-block">log in block</a> or <a href="#header-region-greeting-block">greeting block</a></li>
         <li>
           <code>&lt;h3 class="landmark heading"&gt;</code>
         </li>
