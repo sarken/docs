@@ -51,7 +51,7 @@ The five regions are contained within two wrappers. The outer wrapper surrounds 
   </ol>
 </div>
 
-<h3 id="header-region">Header region</h4>
+<h3 id="header-region">Header region</h3>
 
 The header is the first region, styled in [ 13-group-blurb.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/03-region-header.css). It contains our branding, the main navigation, and depending on whether or not you are logged in, the log in or greeting block.
 
