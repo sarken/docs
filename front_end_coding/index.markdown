@@ -31,7 +31,7 @@ Our coding practice may be radically different from anything you've done before.
 Design patterns are a major part of how we code things. While not every new feature will fit an existing pattern, we strive to reuse as much XHTML and CSS as possible. 
 
 * [XHTML Page Templates](patterns-xhtml-page-templates)
-* Diagrams of HTML Structures
+* [Diagrams of Regions](patterns-regions)
 * [Design Pattern: Actions](patterns-actions)
 * [Design Pattern: Interactions](patterns-interactions)
 * [Design Pattern: Index](patterns-index)
@@ -56,6 +56,5 @@ Design patterns are a major part of how we code things. While not every new feat
 * Proposals: Zoning the Archive
 * Mailings
 * Errors and Validation
-* Footer
 * Help
 * Site Map

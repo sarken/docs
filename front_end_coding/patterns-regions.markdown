@@ -2,6 +2,7 @@
 layout: front_end_guide
 title: Diagrams of Regions
 ---
+While the regions aren't themselves reusable patterns -- each region appears a maximum of once per page -- they do make use of patterns.
 
 * [Regions overview](#regions-overview)
 * [Header region](#header-region)
@@ -368,6 +369,8 @@ The greeting block contains the user's icon and navigation items that are only a
 
 <h3 id="dashboard-region">Dashboard region</h3>
 
+The dashboard is the second region, styled in [ 04-region-dashboard.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/04-region-dashboard.css). It does not appear on every page, but when it *is* on the page, it comes after the header and before the main region.
+
 <div id="diagram">
   <ol class="diagram">
     <li>
@@ -418,6 +421,56 @@ The greeting block contains the user's icon and navigation items that are only a
 
 <h3 id="main-region">Main region</h3>
 
-The structure of `#main` varies significantly from page to page.
+The structure of `#main` varies significantly from page to page. Most of the remaining style sheets deal with elements found in main; the [ 05-region-main.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/05-region-main.css) style sheet only covers very basic styles, like how wide it should be when appearing with a dashboard.
 
 <h3 id="footer-region">Footer region</h3>
+
+The footer is the final region, and its styles are in [ 06-region-footer.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/06-region-footer.css).
+
+<div class="diagram">
+  <ol>
+    <li>
+      <code>&lt;div id="footer" class="region"&gt;</code>
+      <ol>
+        <li>
+          <code>&lt;h3 class="landmark heading"&gt;</code>
+        </li>
+        <li>
+          <code>&lt;ul class="navigation actons"&gt;</code>
+          <ol>
+            <li>
+              <code>&lt;li class="module group"&gt;</code>
+                <ol>
+                  <li>
+                    <code>&lt;h4 class="heading"&gt;</code>
+                    <ol>
+                      <li>
+                        <code>&lt;ul class="menu"&gt;</code>
+                        <ol>
+                          <li>
+                            <code>&lt;li&gt;</code>
+                            <ol>
+                              <li>
+                                <code>&lt;a&gt;</code>
+                              </li>
+                            </ol>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <code>&lt;ul class="menu"&gt;</code>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <code>&lt;li class="module group"&gt;</code>
+              </li>
+            </ol>
+          </li>
+        </li>
+      </ol>
+    </li>
+  </ol>           
+</div>
