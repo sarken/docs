@@ -8,6 +8,7 @@ A listbox is a box containing a list. We use listbox to show more than one index
 Listbox styles are declared in [11-group-listbox.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/11-group-listbox.css). Listbox is part of the group [supertype](supertype).
 
 * [Rules](#rules)
+* [Quick reference](#quick-reference)
 * [XHTML diagram](#xhtml-diagram)
 * [Notes](#notes)
 
@@ -25,6 +26,22 @@ A listbox can be any block container that can contain these blocks: `h1—6`, `p
 You can never have an inline listbox of any kind. You can never have a listbox with restricted children: no `table.listbox`, `ol.listbox`, `ul.listbox`, or `dl.listbox`.
 
 The first element inside a listbox is always a heading, and it always contains an index (i.e. `<ol class="index group">`, `<ul class="index group">`, or `<dl class="index group">`). It might also contain a note (e.g. `<p class="note">`) or actions (e.g. `<p class="actions">`) outside the index.
+
+<h3 id="quick-reference">Quick reference</h3>
+
+<dl class="key"><dt>[...]</dt><dd>always included</dd>
+<dt>{...}</dt><dd>sometimes included</dd></dl>
+
+<pre>
+[listbox]
+	[heading] {span actions} [/heading]
+	{p note}{/p} {ul actions} {div form}
+	[index]
+		{listbox}...{/listbox}
+	[/index]
+	{p note} {ul actions}
+[/listbox]
+</pre>
 
 <h3 id="xhtml-diagram">XHTML diagram</h3>
 

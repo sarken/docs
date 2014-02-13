@@ -29,7 +29,7 @@ You can never have an inline preface, or a phrase element preface.
 [preface]
 	{title heading} {byline heading}
 	[block module]
-	  [heading] {span actions}[/heading]
+	  [heading] {span actions} [/heading]
 	  [blockquote userstuff]
 	  {p note} {ul actions}
 	[block module]
