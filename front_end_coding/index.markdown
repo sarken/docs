@@ -26,6 +26,15 @@ Our coding practice may be radically different from anything you've done before.
 * [Em Scale](em-scale)
 * [Accessibility Statement](accessibility-statement)
 
+#### Classes
+
+Classes are how we describe and document our data, so it's very important to use them consistently and accurately.
+
+* Taxonomy
+* Supertypes
+* Types
+* Modifiers
+
 #### Patterns
 
 Design patterns are a major part of how we code things. While not every new feature will fit an existing pattern, we strive to reuse as much XHTML and CSS as possible. 
@@ -38,10 +47,9 @@ Design patterns are a major part of how we code things. While not every new feat
 * [Design Pattern: Blurb](patterns-blurb)
 * [Design Pattern: Listbox](patterns-listbox)
 * [Design Pattern: Meta](patterns-meta)
-* Design Pattern: Preface
+* [Design Pattern: Preface](pattern-preface)
 * Design Pattern: Comments
 * Design Pattern: Stats
-* Modifiers
 
 ### Finding and fixing problems
 
