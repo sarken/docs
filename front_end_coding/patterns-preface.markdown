@@ -22,7 +22,7 @@ You can never have an inline preface, or a phrase element preface.
 
 <h3 id="quick-reference">Quick reference</h3>
 
-<dl><dt>[...]</dt><dd>always included</dd>
+<dl class="key"><dt>[...]</dt><dd>always included</dd>
 <dt>{...}</dt><dd>sometimes included</dd></dl>
 
 <pre>
@@ -62,8 +62,6 @@ This diagram is taken from a challenge profile.
           </ol>
         </li>
         <li><code>&lt;div id="faq" class="module"&gt;</code>
-      <ol>
-        <li><code>&lt;div id="intro" class="module"&gt;</code>
           <ol>
             <li><code>&lt;h3 class="landmark heading"&gt;</code>
             <li><code>&lt;ul class="actions"&gt;</code></li>
