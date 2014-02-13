@@ -2,7 +2,7 @@
 layout: front_end_guide
 title: Preface Pattern
 ---
-Preface groups together user notes about a work, collection, or challenge. Modules that are grouped in preface include: summary, notes, end notes, FAQ, rules, about, description. On a work page, preface is inside `#workskin`, so it can be styled in work skins as well as site skins.
+Preface groups together user notes about a work, collection, or challenge. Items that are grouped in preface include: summary, notes, end notes, FAQ, rules, about, description. On a work page, preface is inside `#workskin`, so it can be styled in work skins as well as site skins.
 
 The preface style is declared in [14-group-preface.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/14-group-preface.css).
 
@@ -25,6 +25,7 @@ You can never have an inline preface, or a phrase element preface.
 <dl><dt>[...]</dt><dd>always included</dd>
 <dt>{...}</dt><dd>sometimes included</dd></dl>
 
+<pre>
 [preface]
 	{title heading} {byline heading}
 	[block module]
@@ -33,5 +34,45 @@ You can never have an inline preface, or a phrase element preface.
 	  {p note} {ul actions}
 	[block module]
 [/preface]
+</pre>
 
 <h3 id="xhtml-diagram">XHTML diagram</h3>
+
+This diagram is taken from a challenge profile.
+
+<div class="diagram">
+  <ol>
+    <li><code>&lt;div class="preface group"&gt;</code>
+      <ol>
+        <li><code>&lt;div id="intro" class="module"&gt;</code>
+          <ol>
+            <li><code>&lt;h3 class="landmark heading"&gt;</code>
+            <li><code>&lt;ul class="actions"&gt;</code>
+              <ol>
+                <li><code>&lt;li&gt;</code>
+                  <ol>
+                    <li><code>&lt;a&gt;</code></li>
+                  </ol>
+                </li>
+                <li><code>&lt;li&gt;</code></li>
+              </ol>
+            </li>
+            <li><code>&lt;h3 class="heading"&gt;</code></li>
+            <li><code>&lt;blockquote class="userstuff"&gt;</code></li>
+          </ol>
+        </li>
+        <li><code>&lt;div id="faq" class="module"&gt;</code>
+      <ol>
+        <li><code>&lt;div id="intro" class="module"&gt;</code>
+          <ol>
+            <li><code>&lt;h3 class="landmark heading"&gt;</code>
+            <li><code>&lt;ul class="actions"&gt;</code></li>
+            <li><code>&lt;h3 class="heading"&gt;</code></li>
+            <li><code>&lt;blockquote class="userstuff"&gt;</code></li>
+          </ol>        
+        </li>
+        <li><code>&lt;div id="rules" class="module"&gt;</code></li>
+      </ol>
+    </li>
+  </ol>
+</div>
