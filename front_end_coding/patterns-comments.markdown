@@ -43,32 +43,39 @@ This diagram is taken from a challenge profile.
       <ol>
         <li><code>&lt;li class="odd comment group"&gt;</code>
           <ol>
-            <li><code>&lt;h4 class="byline heading"&gt;</code></li>
-            <li><code>&lt;div class="icon"&gt;</code></li>
+            <li><code>&lt;h4 class="byline heading"&gt;</code>
+              <ol>
+                <li><code>&lt;a&gt</code></li>
+                <li><code>&lt;span class="posted datetime"&gt;</code></li>
+              </ol>
+            </li>
+            <li><code>&lt;div class="icon"&gt;</code>
+              <ol>
+                <li><code>&lt;a&gt;</code>
+                  <ol>
+                    <li><code>&lt;img class="icon"&gt;</code></li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
             <li><code>&lt;blockquote class="userstuff"&gt;</code></li>
+            <li><code>&lt;p class="edited datetime"&gt;</code></li>
             <li><code>&lt;h5 class="landmark heading"&gt;</code></li>
             <li><code>&lt;ul class="actions"&gt;</code></li>
           </ol>
         </li>
-        <li><code>&lt;li class="even comment group"&gt;</code>
-          <ol>
-            <li><code>&lt;h3 class="landmark heading"&gt;</code></li>
-            <li><code>&lt;ul class="actions"&gt;</code></li>
-            <li><code>&lt;h3 class="heading"&gt;</code></li>
-            <li><code>&lt;blockquote class="userstuff"&gt;</code></li>
-          </ol>        
-        </li>
+        <li><code>&lt;li class="even comment group"&gt;</code></li>
         <li><code>&lt;li&gt;</code>
           <ol>
             <li><code>&lt;ol class="thread"&gt;</code></li>
               <ol>
-                <li><code>&lt;li class="even comment group"&gt;</code></li>
-                <li><code>&lt;li class="odd comment group"&gt;</code></li>
+                <li><code>&lt;li class="even comment group"...</code></li>
+                <li><code>&lt;li class="odd comment group"...</code></li>
                 <li><code>&lt;li&gt;</code>
                   <ol>
-                    <li><code>&li;ol class="thread"&gt;</code>
+                    <li><code>&lt;ol class="thread"&gt;</code>
                       <ol>
-                        <li><code>&lt;li class="even comment group"&gt;</code></li>
+                        <li><code>&lt;li class="even comment group"...</code></li>
                       </ol>
                     </li>
                   </ol>
