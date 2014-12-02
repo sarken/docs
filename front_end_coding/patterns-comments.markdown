@@ -22,20 +22,19 @@ An individual comment is always a `li` contained within an `ol`. These comment l
 <pre>
 [ol thread]
   [li odd comment group]
-    []
+    [byline heading] {a} [span datetime] [/heading]
+    [div icon] {a} {img} {/a} [/div]
+    [blockquote userstuff]
+    {p datetime}
+    {landmark heading}
+    {ul actions}
   [/li]
-	{title heading} {byline heading}
-	[block module]
-	  [heading] {span actions} [/heading]
-	  [blockquote userstuff]
-	  {p note} {ul actions}
-	[block module]
 [/ol]
 </pre>
 
 <h3 id="xhtml-diagram">XHTML diagram</h3>
 
-This diagram is taken from a challenge profile.
+This diagram is taken from a news post comment thread.
 
 <div class="diagram">
   <ol>
