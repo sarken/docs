@@ -26,7 +26,7 @@ Our coding practice may be radically different from anything you've done before.
 * [Em Scale](em-scale)
 * [Accessibility Statement](accessibility-statement)
 
-#### Classes
+#### How we name things
 
 Classes are how we describe and document our data, so it's very important to use them consistently and accurately.
 
@@ -35,7 +35,7 @@ Classes are how we describe and document our data, so it's very important to use
 * Types
 * Modifiers
 
-#### Patterns
+#### How we structure things
 
 Design patterns are a major part of how we code things. While not every new feature will fit an existing pattern, we strive to reuse as much XHTML and CSS as possible. 
 
