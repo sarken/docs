@@ -48,7 +48,7 @@ Design patterns are a major part of how we code things. While not every new feat
 * [Design Pattern: Listbox](patterns-listbox)
 * [Design Pattern: Meta](patterns-meta)
 * [Design Pattern: Preface](patterns-preface)
-* Design Pattern: Comments
+* [Design Pattern: Comments](patterns-comments)
 * Design Pattern: Stats
 
 ### Finding and fixing problems
