@@ -49,7 +49,7 @@ Design patterns are a major part of how we code things. While not every new feat
 * [Design Pattern: Meta](patterns-meta)
 * [Design Pattern: Preface](patterns-preface)
 * [Design Pattern: Comments](patterns-comments)
-* Design Pattern: Stats
+* [Design Pattern: Stats](patterns-stats)
 
 ### Finding and fixing problems
 
