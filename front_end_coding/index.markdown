@@ -55,7 +55,6 @@ Design patterns are a major part of how we code things. While not every new feat
 
 * Debugging the Front End
 * Debugging the Cascade
-* Debugging for Internet Explorer
 * Floats
 
 ### Major front-end projects to do
