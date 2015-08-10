@@ -18,7 +18,9 @@ Stats always come at the end of meta and work blurbs. Stats may also appear in o
 
 `dl.stats` <em>may</em> appear within a `dd.stats`, but it can't be depended on.
 
-The colon should be included in the translation string.
+The colon should be included in the translation string, <strong>not</strong> inserted with CSS.
+
+Property and value pairs may be given matching class names. Never give a class to the property and not the value (or vice verse).
 
 <h3 id="quick-reference">Quick reference</h3>
 
@@ -40,20 +42,19 @@ This diagram is taken from work meta.
   <ol>
     <li><code>&lt;dl class="stats"&gt;</code>
       <ol>
-        <li><code>&lt;dt class="published"&gt;Published:&lt;/dt&gt;</code></li>
-        <li><code>&lt;dd class="published"&gt;2015-03-01&lt;/dd&gt;</code></li>
-        <li><code>&lt;dt class="words">Words:&lt;/dt&gt;</code></li>
-        <li><code>&lt;dd class="words">958&lt;/dd&gt;</code></li>
-        <li><code>&lt;dt class="chapters">Chapters:&lt;/dt&gt;</code></li>
-        <li><code>&lt;dd class="chapters">1/1&lt;/dd&gt;</code></li>
-        <li><code>&lt;dt class="comments">Comments:&lt;/dt&gt;</code></li>
-        <li><code>&lt;dd class="comments">2&lt;/dd&gt;</code></li>
-        <li><code>&lt;dt class="kudos">Kudos:&lt;/dt&gt;</code></li>
-        <li><code>&lt;dd class="kudos">4&lt;/dd&gt;</code></li>
-        <li><code>&lt;dt class="hits">Hits:&lt;/dt&gt;</code></li>
-        <li><code>&lt;dd class="hits">37&lt;/dd&gt;</code></li>
+        <li><code>&lt;dt class="published"&gt;</code></li>
+        <li><code>&lt;dd class="published"&gt;</code></li>
+        <li><code>&lt;dt class="words"&gt;</code></li>
+        <li><code>&lt;dd class="words"&gt;</code></li>
+        <li><code>&lt;dt class="chapters"&gt;</code></li>
+        <li><code>&lt;dd class="chapters"&gt;</code></li>
+        <li><code>&lt;dt class="comments"&gt;</code></li>
+        <li><code>&lt;dd class="comments"&gt;</code></li>
+        <li><code>&lt;dt class="kudos"&gt;</code></li>
+        <li><code>&lt;dd class="kudos"&gt;</code></li>
+        <li><code>&lt;dt class="hits"&gt;</code></li>
+        <li><code>&lt;dd class="hits"&gt;</code></li>
       </ol>
-      <code>&lt;/dl</code>
     </li>
   </ol>
 </div>
