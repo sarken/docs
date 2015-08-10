@@ -64,6 +64,12 @@ a:hover {
   text-decoration: none;
 }
 
+blockquote {
+  font-family: Georgia, serif;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 code {
   background: #eee;
   border: 1px #ccc solid;
