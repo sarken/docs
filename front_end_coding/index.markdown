@@ -53,7 +53,6 @@ Design patterns are a major part of how we code things. While not every new feat
 
 ### Finding and fixing problems
 
-* Debugging the Front End
 * Debugging the Cascade
 * Floats
 
