@@ -129,7 +129,7 @@ dd {
   text-indent: 1.6em;
 }
 
-h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 + ul, h5 + ul, h6 + ul, p + p, ul + p, ol + p, p + ul, p + ol, .highlight + p, p + .highlight, .diagram + p, p + .diagram, dd + dt {
+h3 + blockquote, h4 + blockquote, h5 + blockquote, h6 + blockquote, h3 + p, h4 + p, h5 + p, h6 + p, h3 + ol, h4 + ol, h5 + ol, h6 + ol, h3 + ul, h4 + ul, h5 + ul, h6 + ul, blockquote + p, p + p, ul + p, ol + p, p + ul, p + ol, .highlight + p, p + .highlight, .diagram + p, p + .diagram, dd + dt, p + blockquote {
   margin-top: 1.6em;
 }
 
