@@ -44,23 +44,23 @@ The following is an example of a table that might appear inside a form, which is
 
 * Each table should have a `summary` attribute in the `<table>` tag, and its value should be a brief description of what the table does or what data it displays. For example, the summary on [the sign-up table for the Yuletide 2012 gift exchange challenge](http://archiveofourown.org/collections/yuletide2012/signups/summary) says, "Number of requests and offers for each requested fandom in this challenge, listed by fewest offers and most requests."
 
-  Table summaries are not visible on the page, but they are useful to users of screen readers.
+    Table summaries are not visible on the page, but they are useful to users of screen readers.
 
 * `<caption>` *is* normally visible on the page, but we use CSS to hide captions by default. A caption should be really *short* and written in *simple* language. You can copy from the `.landmark` heading if there is one in the view already.
 
-  Captions can be very useful to people with cognitive disabilities, and people browsing on small screens and phones, amongst others.
+    Captions can be very useful to people with cognitive disabilities, and people browsing on small screens and phones, amongst others.
 
 * Group your main headings in a `<thead>`. You can have multiple rows (`<tr>`) in a thead, so you can further group your headings in more complicated tables.
 Never leave the first cell in your thead empty; it should always be a `<th>` scoped to the column. Leaving the cell empty causes problems for users of some screen readers.
 
 * All `<th>` elements should have a `scope` attribute to tell user agents which heading relates to which part of the table. It's obvious when you *look* at a table that the bold word above or beside a normal weight word is the heading for that column or row, but it's not always obvious to a screen reader. Some user agents announce the relevant headings before every `<td>`, which can really help non-visual spatial navigation.
 
-  Generally, if the `<th>` is in the table head, it will have a `scope` of `col`; a `<th>` in the table foot or body will usually have a `scope` of `row`.
+   Generally, if the `<th>` is in the table head, it will have a `scope` of `col`; a `<th>` in the table foot or body will usually have a `scope` of `row`.
 
 * The `<tfoot>` comes before the body! This is so, for a really long table, a user agent can print the head and foot to the page and then scroll or paginate the body, and possibly progressively load it.
 
-  You don't always need a tfoot, but if you have a "check all" or a final "submit" table row in a form, this is where those things should go.
-  
+    You don't always need a tfoot, but if you have a "check all" or a final "submit" table row in a form, this is where those things should go.
+
 * `<tbody>` is where the main content of your table lives; it's probably where you're used to a table beginning if you've used tables before, but for us it comes a way down the markup.
 
 <h3 id="things-to-remember">Things to remember</h3>
