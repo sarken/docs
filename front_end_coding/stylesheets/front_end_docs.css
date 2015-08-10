@@ -225,6 +225,10 @@ li.emphasize {
   border: 3px solid;
 }
 
+.diagram li {
+  display: block;
+}
+
 .diagram li:hover, .diagram span:hover { 
   background: #fff; 
     -webkit-transition: all 0.2s ease-in;
