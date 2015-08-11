@@ -371,7 +371,7 @@ The greeting block contains the user's icon and navigation items that are only a
 
 The dashboard is the second region, styled in [ 04-region-dashboard.css](https://github.com/otwcode/otwarchive/blob/master/public/stylesheets/site/2.0/04-region-dashboard.css). It does not appear on every page, but when it *is* on the page, it comes after the header and before the main region.
 
-<div id="diagram">
+<div class="diagram">
   <ol>
     <li>
       <code>&lt;div id="dashboard" class="region"&gt;</code>
