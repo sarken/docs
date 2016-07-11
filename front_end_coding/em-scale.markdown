@@ -62,7 +62,7 @@ We know that setting the child element's color will override the parent's and gi
 
 First, the browser will calculate the size of the div's text to be 1.5 times the size of the default font. Then it will calculate the paragraph text to be 1.25 times the size of the div's font size. So, a visitor with a default font size of 16px will see the div text at 24px and the paragraph text at 30px. The top and bottom margins would be 60px and the side margins would be 30px.
 
-<h3 id="the-standard-scale-in-ems">The standard scale in ems</h3>
+<h3 id="standard-scale-in-ems">The standard scale in ems</h3>
 
 The standard scale for font sizes is 8, 9, 10, 12, 14, 16, 18, 24, 36, 48, 60, 72. Assuming that most people are browsing with a default font size of 16px, let's calculate how we would express those sizes in ems:
 
@@ -80,7 +80,7 @@ The standard scale for font sizes is 8, 9, 10, 12, 14, 16, 18, 24, 36, 48, 60, 7
 * 8/16 = 0.5em
 * 6/16 = 0.375em
 
-<h4 id="the-standard-scale-in-ems-our-scale">Our scale in ems</h4>
+<h4 id="standard-scale-in-ems-our-scale">Our scale in ems</h4>
 
 Almost all of the Archive's content is inside #main, a div where the font size is set to 0.875em, which is 14px on web browsers with a default font size of 16px. This means that any element that is a direct child of `<div id="main">` should have its em scale calculated as if 1em were equal to 14px. Here is how the standard font scale would be expressed in ems. Numbers have been rounded to three decimal places:
 
@@ -99,7 +99,7 @@ Almost all of the Archive's content is inside #main, a div where the font size i
 * 6/14 = 0.429em
 * 5/14 = 0.375em
 
-<h5 id="margins-and-padding">Margins and padding in the Archive em scale</h5>
+<h5 id="standard-scale-in-ems-our-scale-margins-and-padding">Margins and padding in the Archive em scale</h5>
 
 It can be a bit difficult to get your head round using ems for margins and padding, so here are some tips:
 
