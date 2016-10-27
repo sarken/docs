@@ -4,7 +4,7 @@ title: Working with the Archive Front End
 ---
 These pages are, like the Archive, a work in progress.
 
-It is not necessary to read all these pages before you start coding! They are intended to be references you can use as you go along. But whether you're a beginner or have previous experience with <abbr title="HyperText Markup Language">HTML</abbr> and <abrr title="Cascading Style Sheets">CSS</abbr>, it's very important that you refer to these documents and read the [Front End User Guide](front-end-user-guide) and the [Coding Standards](coding-standards) before you commit any code to the Archive.
+It is not necessary to read all these pages before you start coding! They are intended to be references you can use as you go along. But whether you're a beginner or have previous experience with <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>, it's very important that you refer to these documents and read the [Front End User Guide](front-end-user-guide) and the [Coding Standards](coding-standards) before you commit any code to the Archive.
 
 ### Getting started with <abbr title="eXtensible HyperText Markup Language">XHTML</abbr> and CSS
 
