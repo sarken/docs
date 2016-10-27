@@ -2,7 +2,7 @@
 layout: front_end_guide
 title: What is Semantic XHTML
 ---
-In our [Coding Standards](coding-standards), we say that with semantic <abbr title="Extensible HyperText Markup Language">XHTML</abbr> and <abbr title="Cascading Style Sheets">CSS</acronym> we separate our content from our presentation. eXtensible HyperText Markup Language and Cascading Style Sheets are flexible, accessible, and logical ways to mark up content for the web.
+In our [Coding Standards](coding-standards), we say that with semantic <abbr title="Extensible HyperText Markup Language">XHTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> we separate our content from our presentation. eXtensible HyperText Markup Language and Cascading Style Sheets are flexible, accessible, and logical ways to mark up content for the web.
 
 * ["Code what you mean; mean what you code."](#code-what-you-mean)
     * [But it looks bad!](#but-it-looks-bad)
